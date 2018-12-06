@@ -1,0 +1,8 @@
+sudo -u postgres psql bice
+
+pg_restore -h 127.0.0.1 -p 5432 -U postgres -d my_new_database my_old_database.backup
+
+psql -h localhost -U postgres -p 5432 my_new_database < my_old_database.backup
+
+//kill all sesion
+SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'basededatos';
