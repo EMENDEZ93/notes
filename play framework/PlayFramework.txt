@@ -1,0 +1,6 @@
+// download all dependencies
+sbt update
+
+//build project
+sbt
+compile
