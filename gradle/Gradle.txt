@@ -1,0 +1,12 @@
+// run task -> "-q" only show the task
+gradle -q name_task
+
+// list all task in project
+gradle -q tasks
+gradle -q tasks --all
+
+//building project
+gradle -q build
+
+//compile code
+java -cp .\build\classes\java\main Main

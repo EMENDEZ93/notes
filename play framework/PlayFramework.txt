@@ -4,3 +4,9 @@ sbt update
 //build project
 sbt
 compile
+
+//create new project
+sbt new playframework/play-java-seed.g8
+
+//eclipse app/project/plugins.sbt
+addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "5.2.2")
