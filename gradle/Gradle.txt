@@ -10,3 +10,11 @@ gradle -q build
 
 //compile code
 java -cp .\build\classes\java\main Main
+
+//add application
+apply plugin: 'application'
+ - gradle -q run
+
+// run task before other task
+gradle -g a_task b_task
+gradle -g b_task a_task
