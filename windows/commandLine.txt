@@ -1,0 +1,2 @@
+//show if it's working
+netstat -an|findstr 9032
