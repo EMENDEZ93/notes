@@ -1,4 +1,5 @@
 //into postgres
+sudo -u postgres psql
 sudo -u postgres psql bice
 
 // reload/restore postgres backup

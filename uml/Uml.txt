@@ -1,0 +1,7 @@
+
+Lenguaje de diagramas ilustrativos
+
+tipos
+- casos de uso
+- secuencia
+- clases

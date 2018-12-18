@@ -1,0 +1,13 @@
+Principio de Responsabilidad Única
+
+*concepto:
+ - una clase = un concepto y responsabilidad
+ - una clase deberia tener sólo 1 razón para cambiar
+
+*como
+ - clases de servicios pequeñas con objetivos acotados
+
+*finalidad:
+ - alta cohesión y robustez
+ - permitir composición de clases
+ - evitar duplicidad
