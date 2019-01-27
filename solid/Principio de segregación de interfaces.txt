@@ -1,0 +1,13 @@
+principio de segregación de interfaces
+ 
+concepto:
+ ningún cliente deberia verse forzado a depender de métodos que no usa.
+
+Como:
+ defifnir contratos de interfaces basándonos en los clientes que las usan y no 
+ en las implementaciones que pudiéramo tener
+
+Evitar Header interfaces promoviendo Role interface
+
+finalidad:
+ Alta cohesion y bajo acoplamiento estructural

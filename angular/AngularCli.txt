@@ -1,0 +1,10 @@
+ng new name-project
+
+ng serve --open
+ng serve --o
+
+optional - angular material
+npm install --save @angular/material @angular/cdk @angular/animations
+ng add @angular/material
+
+ng generate service [name]

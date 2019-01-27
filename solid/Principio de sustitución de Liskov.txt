@@ -1,0 +1,11 @@
+Principio de sustitución de liskov
+
+concepto:
+ si S es un subtipo de T, instanccias de T debería poderse sustituir por
+ instancias de S sin alterar las propiedades del programa
+
+como:
+ el comportamiento de subclases debe respetar el contrato de la superclase
+
+Finalidad:
+ Mantener correctitud para poder aplicar OCP.

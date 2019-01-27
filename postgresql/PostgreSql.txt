@@ -2,6 +2,8 @@
 sudo -u postgres psql
 sudo -u postgres psql bice
 
+drop database name_db;
+
 // reload/restore postgres backup
 pg_restore -h 127.0.0.1 -p 5432 -U postgres -d my_new_database my_old_database.backup
 psql -h localhost -U postgres -p 5432 my_new_database < my_old_database.backup

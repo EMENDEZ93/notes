@@ -1,0 +1,19 @@
+principio de abierto-cerrado
+
+Concepto:
+ el software debería esta abierto a extensión y cerrado a modificacíon
+
+Cómo:
+ no depender de implementaciones especificas
+
+finalidad:
+ facilidad de añadir nuevos casos de uso
+
+Beneficios interface:
+ no modifica arbol jerarquía
+ permite implementar N
+
+Beneficios abstract class:
+ permite patrón template method empujando la lógica al modelo
+ problema: Dificultad de trazar
+ getters privados 

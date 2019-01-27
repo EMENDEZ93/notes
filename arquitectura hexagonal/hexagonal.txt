@@ -1,0 +1,24 @@
+principales beneficios
+ - mantenibilidad
+ - cambiabilidad
+ - testing
+ - simplicidad
+
+Evitar crecimiento complejidad accidental
+
+puertos y adaptadores
+
+capas de arquitectura hexagonal
+ - infractructure -> i/o
+ - application -> punto de entrada, casos de uso ejemplo poder publicar un video, 
+   servicios de aplicación. 
+ - domain -> modelos de dominio- interface servicio de infraestructura.
+
+ejemplo
+
+infraestrutura -> application -> domain
+controller     -> servicio    -> services - models - repos
+
+DDD
+domian -> el que?
+infraestructura -> el como?

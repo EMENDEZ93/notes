@@ -1,0 +1,13 @@
+principio de inversión de dependencias
+
+concepto:
+ módulos de alto nivel no deberian depender de los de bajo nivel. ambos deberian depender de abstracciones
+
+cómo:
+ inyectar dependencias - parámetros recibidos idealmente en constructor
+ depender de las interfaces - contratos - de estas dependencias y no de implementacions concretas
+ lsp como premisa. 
+
+finalidad:
+ facilitar la modificación y substitución de implementaciones
+ mejor testatibilidad de clases

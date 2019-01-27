@@ -1,0 +1,100 @@
+1. Se tienen por defecto tres branches: master, release y develop Siendo develop la rama 
+   o branch donde ocurre todo y master la branch de producción.
+
+2. A partir de develop se crean nuevas ramas con el prefijo feature para la creación de 
+   nueva funcionalidad y arreglo de errores que no tienen urgencia. 
+
+3. En cualquier momento se debe poder pasar de develop a master, lo que quiere decir que
+   no se debe desarrollar en develop si no en las branches que empiezan con feauture
+
+4. Para pasar de develop a master se debe usar una branch intermedia llamada release.
+   Esta branch se usa como un punto intermedio en la cual solo se pueden corregir errores
+   que puedan surgir antes de pasar a master.
+
+5. Si al pasar a master se descubre un error, se usan branches con prefijo hotfix 
+   para corregir errores de producción.
+
+6. Cada vez que se pasa a master, se debe crear una etiqueta con el nombre del release.
+
+-> git flow init
+-> git push -u origin master
+-> git push -u origin develop
+
+Creación de una nueva funcionalidad o corrección de un error.
+
+-> git flow feature start id-historia-factoring
+
+Sobre los nombres de los branches
+7. Se recomienda que al trabajar con git-flow los branches sigan una convención de nombres 
+   que esté fuertemente ligada con el bug traker ya sea Jira, The Bug Genie, etc.
+
+IdDelBug-NumeroDeComentario-DescripciónDeLaFuncionalidad
+
+-> git flow feature publish <feature>
+
+-> git fetch
+-> git checkout feature/1234-7890-un-pequeno-cambio
+…. (cambios a los archivos)
+git fetch #(se trae cambio remotos)
+git rebase origin feature/1234-7890-un-pequeno-cambio
+… (mas cambios)
+git push
+
+
+8. Finalización del feature
+ Cuando se termine de crear la nueva funcionalidad, Se debe ejecutar git flow feature 
+ finish <feature> y así pasar nuevamente a la rama develop
+
+-> git flow feature finish <feature>
+
+
+Lo que hace este comando es
+
+ Hacer merge con develop
+ Borrar la rama feature en la que estábamos trabajando
+ No regresa a la rama develop
+
+
+9. Limpieza
+ Con el feature finalizado, esta rama ya no es necesarias, entonces lo mejor es borrar la 
+ rama del feature del servidor remoto y así no tener miles de ramas, una por feature. El comando a ejecutar aquí es directamente de git:
+
+-> git push origin :feature/<feature>
+
+10. Release
+ Una ves terminados todos los features que se querían corregir o implementar, se pasa a crear un release. En términos de git, esto significa 
+ hacer un merge a master. Para esto está el comando git flow release start <release>
+
+-> git flow release start <release>
+
+ El resultado de este comando es la creación de una nueva rama con el nombre release/2014-09-20.0 que se puede enviar al 
+ servidor para que la puedan descargar los colaboradores.
+
+ En este punto se puede hacer Quality Assurance, es decir, todo lo que tenga que ver con 
+ testing y aseguramiento de calidad.
+
+11. Una vez terminado el QA, se finaliza el release con git flow relees finish <release> 
+ que pasará todos los cambios a master
+
+-> git flow releaes finish <release> 
+-> git push origin :release/fecha -> limpieza en el servidor
+
+Sobre los nombres de los releases
+Al igual que los features, se recomienda usar un formato para nombrar los releases.
+
+12. El más usado es la fecha en formato AAAA-MM-DD.#, es decir año-mes-dia más el número de release por día. Esto en caso de que sea necesario hacer varios varios releases en el mismo día
+
+13. Corrección de errores
+Si lo que se va a hacer es una corrección de errores en producción, se debe usar git flow hotfix start <release> y git flow hotfix finish <release>
+
+-> git flow hotfix start <release>
+-> git flow hotfix finish <release>
+
+14. Nota Al hacer git flow finish … se hace push tanto a master como a develop. Esto con el fin
+ de no perder en develop los arreglos hechos en master
+
+Finalmente enviamos a master
+
+fuente.
+
+https://dazzet.co/tutorial-de-git-flow/

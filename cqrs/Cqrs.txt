@@ -1,0 +1,9 @@
+patron de diseño a alto nivel
+
+beneficio
+reusar
+asincronas
+
+comand -> DTO
+                                     domain interface        descomponer
+request -> sent dto -> controller -> build dto comand bus -> handler 
