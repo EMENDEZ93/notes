@@ -1,0 +1,9 @@
+//version linux
+lsb_release -a
+cat /etc/*-release
+cat  /etc/issue
+
+
+readlink -f $(which java)
+
+ sudo chmod -R 777

@@ -1,0 +1,49 @@
+1. Core Container
+Core is considered as the important parts of the framework which including the IoC and Dependency Injection features.
+
+Bean has BeanFactory – a complex implementation of the factory pattern. You don’t need programmatic singletons and you can separate the configuration and specification of dependencies from program logic.
+
+Context inherits its features from the Bean module, it supports internationalization (for example, resource bundles), event propagation, resource loading, and has a Servlet container. Context also supports EJB, JMX, and basic remoting.
+
+Context has an central interface – ApplicationContext. Spring Context Support can help you integrate common third-party libraries into a Spring application context for caching (EhCache, Guava, JCache), mailing (JavaMail), scheduling (CommonJ, Quartz) and template engines (FreeMarker, JasperReports, Velocity).
+
+SpEL is used for querying and manipulating an graph object at runtime. It supports setting and getting property values, property assignment, method invocation, accessing arrays, collections and indexers, logical and arithmetic operators, named variables, and retrieval of objects by name from Spring’s IoC container. SpEL also supports list projection, selection and common list aggregations.
+
+2. Data Access/Integration
+JDBC has abstraction layer, so that you don’t need to code JDBC or parse database-vendor specific error codes.
+
+ORM provides JPA, JDO, and Hibernate. Using this module, you can use those O/R-mapping frameworks with all other Spring features together.
+
+OXM supports Object/XML mapping implementations such as JAXB, Castor, XMLBeans, JiBX and XStream.
+
+JMS (Java Messaging Service) includes features for producing and consuming messages. Since Spring Framework 4.1, it has integrated with the spring-messaging module.
+
+Transaction has programmatic and declarative transaction management which supports POJOs (Plain Old Java Objects) and classes that implement special interfaces.
+
+3. Web
+Web has many basic web-oriented integration features: multipart file uploading, initialization of the IoC container using Servlet listeners, a web-oriented application context, an HTTP client and the web-related parts of Spring’s remoting support.
+
+Web-MVC (aka Web-Servlet) contains Spring MVC and REST Web Services implementation for web applications. Spring MVC makes a clean separation between domain model code and web forms and integrates with other features of the Spring Framework.
+
+Web-Socket supports for WebSocket-based, two-way communication between client and server in web applications.
+
+Web-Portlet is implementation of MVC that can be used in a Portlet environment and mirrors the functionality of the Web-MVC module.
+
+4. Aspect Oriented Programming and Instrumentation
+Aspect Oriented Programming (AOP) helps you define method interceptors and pointcuts to decouple code that should be separated. You can add additional behavior to existing code without modifying the code itself.
+
+Spring AOP is implemented in pure Java, you don’t not need to control the class loader hierarchy, so it is suitable for using in a Servlet container or application server.
+
+The goal is not to build a complete AOP implementation but to make a close integration between AOP implementation and Spring IoC to solve common problems in enterprise applications.
+
+Spring AOP now supports only method execution join points. Field interception is not implemented. If you need to advise field access and update join points, consider AspectJ.
+
+Aspects provides integration with AspectJ.
+
+Instrumentation has class instrumentation support and class loader implementations to be used in application servers. The spring-instrument-tomcat contains Spring’s instrumentation agent for Tomcat.
+
+5. Messaging
+Messaging has key abstractions such as Message, MessageChannel, MessageHandler, and others. It helps to build messaging-based applications. Messaging also contains a set of annotations for mapping messages to methods, similar to the Spring MVC annotation based programming model.
+
+6. Test
+Test supports the unit testing and integration testing with JUnit or TestNG. It provides consistent loading of Spring ApplicationContexts and caching of those contexts. It has mock objects that can be used to test code in isolation.

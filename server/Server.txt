@@ -1,0 +1,26 @@
+* Tipo de servidores web *
+
+-> Compartido
+ puede tener uno o más proyectos dentro del servidor
+ - el balance de los recursos no son equilibrados.
+ - bajo rendimiento.
+ - recursos limitados.
+ - banda ancha baja.
+ - no soporta proyectos grandes.
+
+-> VPS
+ servidor virtual.
+ construye una maquina virtual para cada sitio web.
+ - comparte los recursos equilibrados.
+ - óptimo rendimiento
+ - banda ancha óptimo
+ - soporta proyectos grandes.
+
+-> Dedicado
+ solo ingreso personal
+ - Alto rendimiento.
+ - control total.
+ - banda ancha óptimo.
+ -100% para el proyecto
+
+video -> 5 la nube salda ... 
