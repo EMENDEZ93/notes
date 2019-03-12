@@ -1,3 +1,5 @@
+sbt sbtVersion
+
 // download all dependencies
 sbt update
 

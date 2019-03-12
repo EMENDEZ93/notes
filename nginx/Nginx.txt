@@ -1,0 +1,11 @@
+- sevidores de archivos estáticos, indices y autoindexado.
+- proxy inverso con opciones de caché.
+- balanceo de carga.
+- tolerancia a fallos.
+- soporte de HTTP Y HPPT2 sobre ssl
+- soporte para FastcGI con opciones de caché.
+- servidores virtuales basados en nombre y/o en dirección IP.
+- soporte para autenticación.
+- conpatible con IPV6.
+- compresión gzip.
+- habilidato para soportar más de 10.000 conexiones simultáneas.

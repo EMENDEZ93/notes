@@ -1,0 +1,23 @@
+docker run -it ubuntu
+docker images
+
+docker run -itd --name name_container ubuntu:18.04 /bin/bash
+docker run -itd -p 80:80 --name project-v2.tar ubuntu:18.04 /bin/bash
+docker exec -it name_container bash -> inside container
+
+docker export name_container > name_container_export.tar
+docker run -itd --name name_container ubuntu:18.04 /bin/bash
+docker exec -it ubuntu bash
+
+cat ubuntu_export.tar | docker import - ubuntu:18.04
+
+docker rmi name_images -f -> delete docker images
+docker ps -aq -> list all containers - only ids
+docker stop $(docker ps -aq) -> stop all running container
+docker rm $(docker ps -aq) -> remove all containers
+docker rmi $(docker images -q) -> remove all images
+
+** Publish **
+docker commit container_id hud-user/repo:tag
+docker tag IMAGE_ID emendez93/project:tag -> if not exist repo
+docker push emendez93/project

@@ -22,3 +22,47 @@ controller     -> servicio    -> services - models - repos
 DDD
 domian -> el que?
 infraestructura -> el como?
+
+
+*********** Libro *************
+arquitectura de Uvinum
+
+
+Mantenibilidad:
+ - modificar funcionalidades ya existentes
+ - añadir nuevas funcionalidades.
+ - controlar los errores que se puedan producir
+ - corregir errores que se produzcan
+ 
+ -> Funcional
+    - modificar.
+    - añadir funciones al sistema
+ -> Control de errores
+    - prevención.
+    - detección.
+    - corrección.
+
+Complejidad esencial:
+ - de un problema proble se define en base al coste intrínseco de esa funcionalidad o modificación
+ - es la parte del problema que se aisla de cualquier otro factor externo.
+Complejidad accidental:
+ - este tipo de complejidad se define justamente como el complementario de la complejidad esencial.
+ - es todo factor externo al propio problema a resolver que hace que se nor complique la tarea de llevarlo a cabo.
+
+ 
+capa application:
+ - clases que representan nuestros casos de uso en forma de application services o event subscribers.
+
+capa dominio:
+ - representa el centro de nuestra aplicación.
+ - basándonos en la premisa de la regla de dependencia de fuera hacia dentro, implica que no estará acoplado a ningún elemento del exterior
+ - servicios de dominio:
+   - estos servicios ejecutan acciones invocables desde los casos de uso (capa de aplicación), de tal forma que son reutilizable y fomentan la aplicación del principio SRP
+
+capa infraestructura:
+ - la capa más externa de nuestro hexágono. es la que provee de las implementaciones concretas (adaptadores) para los contratos (puertos) definidos en la capa de aplicación
+
+** building blocks
+** aggregate
+** aggregate root
+** value object

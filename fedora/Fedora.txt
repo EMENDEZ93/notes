@@ -6,4 +6,7 @@ cat  /etc/issue
 
 readlink -f $(which java)
 
- sudo chmod -R 777
+sudo chmod -R 777
+
+ps -ef | grep tomcat-comex
+kill -9 pid

@@ -19,3 +19,7 @@ java class -> Consumer<>
 Java Class -> function<>
 Spring Framework supports 7 scopes
 akkacluster
+redis
+encache
+cache
+varnish

@@ -1,0 +1,21 @@
+Tactical Design:
+
+Model-Driven Design:
+ -> Mapear contexto - modelar - terminos de servicios. 
+    
+    Servicios:
+    -> logica de dominio
+    
+    Entity:
+    -> entidades del negocio. 
+    
+    Value Object:
+    ->
+ 
+    Aggregates:
+    -> object dentro de otro. se guardaran dentro de repository.
+      
+    Repository:
+    -> patron - 
+  
+  
