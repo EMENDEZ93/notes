@@ -23,3 +23,5 @@ redis
 encache
 cache
 varnish
+servicelocator
+jhon papa

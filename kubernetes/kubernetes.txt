@@ -1,0 +1,84 @@
+¿que es docker?
+ 
+¿qué es un orquestador?
+ lanzar contenedores en un cluster
+ service discovery
+ balanceo de carga
+ configuración de red
+ dinamismo y escalabilidad
+ loggin y monitoreo
+ respuesta a fallo
+ ecosistema
+
+ejemplos de orquestadores:
+ scrptin, ansible, terraform
+ mixto; un conector por máquina virtual
+ docker swarm
+ mesosphere
+ ECS y AWS Fargate
+ Kubernetes
+
+Caracteristicas:
+ orquestador Open Source
+ evolución de borg, google.
+ lanza contenedores en un cluster de máquinas
+ gestiona multiples containers por maquina
+ declarativo - respuesta a fallo
+ escala a miles de maquinas
+ corre en cloud público y private - multi-cloud
+ gran comunidad
+ muy flexible, pero alta curva de aprendizaje
+
+
+Arquitectura Componentes:
+ Tipos de nodos:
+  master:
+      capa de control de kubernetes que va ha gestionar estado declarativo, resilencia, generador de contenedores etc.
+      * una configuración de master debe ser inpar 
+      master expone un API al publico que se manaje usualmente con kubectl
+      autorizacion:
+          que puede hacer ctl con las credenciales que tiene.
+      rest:
+         acceso a etcd - bases de datos distribuida de kubernete - protocolo rarp
+      Autorización:
+          indica que permiso tiene para crear comandos ctl 
+      scheduler:
+          lenguaje declarativo indica cuantos contenedores y en que cluster, nodo, pod debe ir
+          sheduler le indica a kubelet.
+  workers:
+      ejecutores de las apliaciones.
+      pod:
+          agrupación de contenedores - se considera una unidad.
+          kubernetes despliega pods
+      kubelet:
+          escucha todo lo de le indica la capa de controller - si necesita levantar otro contenedor - pod en cierto nodo
+      kube-proxy:
+          se encarga de la gestion de red
+          utiliza reglas de iptables - indica a los contenedores que ip van a utilizar - que sean visibles entre ellos y actua como balanceador
+
+
+Kubernetes divide los nodos de un clúster en master nodes y en worker nodes. Los master nodes son la capa de control y en principio no ejecutan contenedores de usuario. Los worker nodes son los responsables de ejecutar los contenedores de usuario. Aunque esta división es la más habitual, cuando corremos Kubernetes en local se suele crear un clúster de un solo nodo, que actúa a la vez como master y como worker node.
+
+La lógica de la capa de control se fundamenta en etcd, una base de datos distribuida que nos asegura la consistencia de los datos usando el protocolo RAFT. Sobre etcd tenemos la capa REST, que es a través de la que pasan todos los accesos a la base de datos. Esa capa REST se expone vía un módulo de autenticación, para que podamos invocarla, por ejemplo, usando comandos kubectl. El resto de la lógica que corre en los master nodes son controladores, que son funciones que se ejecutan en bucle y que comprueban si el estado deseado para el clúster se corresponde con el estado actual, o si  por el contrario hay que crear o eliminar contenedores.
+
+Los worker nodes, además de los contenedores de usuario, tienen principalmente dos componentes, el kubelet y el kube-proxy. El kubelet se encarga de chequear el estado de etcd vía la capa REST para ver qué contenedores tiene asignados para ejecutar, y en base a ello, crear o eliminar contenedores en el nodo que gestiona. Por su parte, el kube-proxy se encarga de gestionar la red y el service discovery entre contenedores creando reglas de iptables.
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

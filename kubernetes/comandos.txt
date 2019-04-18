@@ -1,0 +1,8 @@
+instalacion:
+    minikube
+    kubernetes
+
+minikube start
+    //crea máquina donde va installa todos los componentes de kubernetes
+    //crea el cluster kubernetes
+

@@ -7,5 +7,6 @@ optional - angular material
 npm install --save @angular/material @angular/cdk @angular/animations
 ng add @angular/material
 
+ng g component name_component
 ng generate service [name]
 ng  generate module app-routing .\src\app\ .
