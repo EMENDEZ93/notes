@@ -63,7 +63,22 @@ La lógica de la capa de control se fundamenta en etcd, una base de datos distrib
 
 Los worker nodes, además de los contenedores de usuario, tienen principalmente dos componentes, el kubelet y el kube-proxy. El kubelet se encarga de chequear el estado de etcd vía la capa REST para ver qué contenedores tiene asignados para ejecutar, y en base a ello, crear o eliminar contenedores en el nodo que gestiona. Por su parte, el kube-proxy se encarga de gestionar la red y el service discovery entre contenedores creando reglas de iptables.
       
+Pods:
+    un pod un conjunto de contenedores que se despliegan como una unidad
+    accesible via localhost
+    volúmenes compartidos
 
+
+apiVersion: v1    -> version de kubernetes
+kind: Pod    -> tipo de recurso
+metadata:    -> información de la aplicación
+  name: pod    -> nombre del pod
+spec:    -> recursos dentro del pod - usualmente contenedores, volumenes etc.
+  containers:
+  - name: nginx -> nombre del contenedor
+    image: nginx:1.7.9    -> imagen del contenedor a usar
+    ports:
+    - containerPort: 80
 
 
 

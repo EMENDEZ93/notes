@@ -1,0 +1,12 @@
+Istio es un marco de código abierto para conectar, asegurar y administrar microservicios, incluidos los servicios que se ejecutan en Google Kubernetes Engine (GKE). Le permite crear una red de servicios implementados con equilibrio de carga, autenticación de servicio a servicio, monitoreo y más, sin requerir ningún cambio en el código de servicio.
+
+Usted agrega el soporte de Istio a los servicios al implementar un proxy de sidecar especial en cada uno de los Pods de su aplicación. El proxy intercepta toda la comunicación de red entre microservicios y se configura y administra mediante la funcionalidad del plano de control de Istio.
+
+Este código muestra cómo instalar y configurar Istio en Kubernetes Engine, implementar una aplicación multiservicio habilitada para Istio y cambiar dinámicamente el enrutamiento de solicitudes.
+
+
+gcloud beta container clusters create hello-istio --project=$PROJECT_ID \
+    --addons=Istio --istio-config=auth=MTLS_STRICT \
+    --cluster-version=latest \
+    --machine-type=n1-standard-2 \
+    --num-nodes=4

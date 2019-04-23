@@ -1,0 +1,461 @@
+por que hacer tests:
+    verifican el código
+    localizar errores
+    se automatizan
+    documentan el código
+    muestran cómo usarlo
+    obliga a mejorar el codigo
+    facilita los cambios en el código
+
+Mejoras en el código:
+    obliga a refactorizar y mejorar
+    te lleva a desacoplar
+    te lleva a simplificar métodos
+
+Metodologías basadas en test:
+    3 leyes de tdd:
+        no escriba código de producción hasta que no tengas un test unitario que falle
+        escribe un test unitario con el código justo paara que falle
+        escribe el código de producción suficiente para pasar ese test
+
+"Un programa debería poder leerse como una prosa bien escrita"
+    - grady booch 
+
+Comentarios:
+    "si necesitas comentar un fragmento del codigo significa que el codigo no es limpio"
+    malos comentarios:
+        comentarios obvios en encabezados de los metodos
+  	comentarios corporativos o legales
+        historial de cambios dentro del codigo -> esto es funcionalidad de git
+	javadocs -> si el codigo va ha ser libre o publico
+ 	indicaciones de cierres metodos, clases, etc
+    buenos comentarios:
+    	expresiones regulares: ya que son dificiles de entender -> podria tener un ejemplo sencillo en una linea
+   	momentos de latencia o timeout que no es obvio en el codigo
+
+Nombres:
+    habilidades que debería tener:
+   	lógica
+  	abstracción
+      	poner buenos nombres
+	deben explicar y aclarar
+ 	no escatimar en longitud
+ 	deben ser coherentes
+    Variables:
+    	deben ser sustantivos -> int age, string firstname
+	deben describir el propósito
+  	booleanos -> boolean isDead
+    Métodos:
+	deben ser verbos -> loadFile, validate
+        deben describir su función
+        Booleanos isFinished
+    Clases:
+	deben ser sustantivos o frase de nombres
+	Order -> XmlParser
+	evitar verbos
+ 	evita los nombres genéricos -> Data -> Loader
+    Nombres:
+        sujetos al dominio
+	significados especiales:
+	    Patrones: CustomerFactory
+	Implementación de interfaces -> ParserImp
+	Estructuras subyacentes -> CustomerMap, OrderList
+	Interfaces -> no deberian tener un subfijo ni prefijo solo la implementación -> ClassImp
+   	pronunciables -> evitar abreviaturas
+	evitar ambiguedad
+	evitar la desinformación
+	distinguir correctamente:
+	    message -> si un metodo retorna un mensaje en base64 la variable deberia ser -> codifiedMessage
+        Procurar conceptos únicos:
+	    Director
+	    Manager
+	    GodEmperor
+	evitar codificaciones:
+	    prefijos:
+		String _variable
+		boolean generoBoolean
+		class userClass
+		int ageInt
+	la regla de ámbito:
+	    la longitud de una variable debe ser proporcional a su ámbito:
+		si esta dentro de un metodo es valido el nombre ambiguo en ciclos o iteraciónes:
+		    for(Customer c: listCustomer)
+		
+Métodos:
+    debe hacer solo una cosa
+    esa cosa, la debe hacer bien
+    debe hacer eso, únicamente
+    Extensión:
+	evolución de la extensión ideal de un metodos:
+	    No más de (20-24) lines	
+	debe caber en una pantall proyectada y ser legible desde la ultima fila de la sala
+    CodigoLimpio:
+        el método no deberia tener mas de 5 lineas
+        extract until you drop
+    Bloques:
+	if, else, while:
+	    cuerpos de una linea
+	    esa línea, una llamada a un método
+    Parametros:
+	No mas de 3 parametros:
+	    si excede deberia ser un objeto
+	No usar booleanos como entrada al metodo:
+            ya que deberiamos crear dos comportamientos 
+        Evitar swicth case dentro de un metodo
+        No usar nulos:
+	    no deberiamos recibir nulos dentro de un metodo ya que debariamos crear dos comportamientos
+	No usar parametros OUT o de salida:
+  	    In:
+                solo de entrada, su valor no cambia al terminar la llamada
+	    Evitar
+		Out:
+		    solo de salida, su valor puede cambiar al terminar la llamada
+	    	In/Out:
+	    	    tanto entrada como salida
+	Evitar la programación defensiva:
+	    validar que los parametros son correctos dentro de un metodo
+	Separa Comando y consulta:
+	    métodos de consulta no deberian hacer una modificación
+	    métodos de modificación no deberian retornar una consulta o modificación	    
+	Afirma, no pidas:
+	    No se deberia hacer llamada tras llamadas de un objeto:
+		instancia.getA().getN().getZ();
+            Seria Mejor:
+		instancia.gatX();
+		ley de demeter
+	Break, continue, return:
+	    evitar romper la linea de ejecución
+	    alteran la ejecución normal
+	    si la función es grande, problematicos
+	    en métodos pequeños, aceptables
+	    goto: Nunca
+	Evitar códigos de error:
+	    No deberiamos retornar codigos de error -> system.error en varias validaciones if
+	    Es mejor:
+		try catch
+		    throw ExceptionEtc || system.error	    
+	    Escenarios: ErrorHandling
+
+Clases:
+    Responsabilidades, tamaño, cohesión, cambios
+    las clases deben ser pequeñas:
+	no en tamaño si no en numero de responsabilidades
+	las clases se miden en numero de responsabilidades
+    Principio de responsabilidad única:
+	1 clase = 1 responsabilidad
+	si hay que cambiar la clase, solo debe haber un motivo para cambiarla
+    Cohesión:
+	trabajar con otras clases sin solaparse
+        Clases cohesivas:
+	    poco atributos
+	    utilizados por todos los métodos posibles
+    Control de cambios:
+	Riesgos:
+	    errores, añadir, responsabilidades
+	Proteccion de clases
+	Uso de interfaces
+    Estructura de datos vs Objetos:
+	se distinguen segun:
+	    lo que se exponen
+	    lo que ocultan
+	Estructura de datos:
+	    exponen datos -> clase con atributos y metodos get - set
+	Objetos:
+	    oculta los datos y exponen funciones
+	    exponen funcionalidad -> clase con atributos no visibles y funcionalidades complejas -> service o util
+
+    DTO y registros activos
+	Mapean datos de una DB
+	Dto:
+	    datos
+	Registros Activos:
+	    datos con métodos para gestionar registros
+    Ley de Demeter:
+        mide la cualidad de encapsulación
+	el método f de una clase c solo puede llamar a:
+	    métodos de c
+	    objetos creador por f
+	    objetos pasados como argumentos a f
+	    objetos contenidos en atributos de c
+
+
+Arquitectura:
+    Características:
+	elementos fácilmente localizables
+	retrasamos decisiones
+	si cambiamos algo en una parte de esa arquitectura no afecta al resto
+	es fácilmente testeable
+    Casos de uso:
+	lo es todo
+	debe exponerse ese uso
+	no debe mezclase con ui, db
+    Posponer decisiones como:
+	lenguage de programación
+	db
+	frameworks
+	web o mobile
+	esto son solo herramientas
+    MVC no es una arquitectura
+    Buena arquitectura:
+        deja opciones abiertas hasta el final
+	maximiza el numero de opciones disponibles
+    Donde deberia estar el valor del sistema:
+	no debería estar en el UI
+	el valor está en los casos
+	UI -> depende de los casos de uso
+    Casos de uso:
+        Ejemplo:
+	    Sacar Dinero:
+		Datos:
+		    DNICliente
+		    CuentaCorriente
+		    Cantidad
+		Proceso Convencional:
+		    El operador lanza la operación con los datos
+		    El sistema:
+			verifica los datos
+			modifica el deposito
+			confirma la operación al operador
+	    Particionado:
+		Business Object:
+		    Entities:
+			entidades, independientes de la aplicación
+			representan elementos del dominio, pero no mapean exactamente la db
+		Use Case: 
+		    Control/interactor:
+      			son métodos específicos de la aplicación, los casos de uso
+		UI Object: 
+		    Boundaries:
+			la frontera entre la arquitectura y el exterior
+			son mecanismos de entrega
+			comunican los casos de uso con:
+			    El UI
+			    La BD
+
+Code Smells:
+    Copy/Paste
+    No existe abstracciones, ni herencia
+    Software procedimental
+    Aunque no haya Copy/Paste, no hay reglas de negocio claras
+    Problemas:
+	Rigidez:
+            el software resulta difícil de cambiar
+ 	    un cambio oblige a modificar módulos dependientes
+	    cuanto más cambio se precisa, mayor rigidez
+	    no permitir estimar con precision el tiempo necesario para introducir cambios
+	Fragilidad:
+	    comportamiento inesperado del sistema
+	    el sistema se rompe al introducir un cambio
+	    se introduce un cambio en un punto y se produce un fallo en otra parte del sistema
+	Viscosidad:
+	    existen diferentes maneras de implementar cambios
+	    los cambios pueden alterar el diseño del sistema
+	    es más fácil usar hacks que cambios correctos
+	    es más fácil meter la pata que acertar a la hora de introducer cambios
+	    entorno viscoso:
+		la compilación, los test unitarios, necesitan mucho tiempo para ejecutarse
+	Inmovilidad:
+	    el sistema contiene partes que podrian usarse en otros sistemas pero no se pueden separar
+	    el esfuerzo y el riesgo de serarlas es demasiado grande
+	Complejidad innecesaria:
+	    código y diseño para problemas futuros
+	    métodos, atributos, variables que no se utilizan
+	    Áreas de codigo innaccesibles
+	    codigo muerto/podrido
+	    funcionalidades no solicitadas
+	Opacidad:
+	    diseño dificil de entender
+	    codigo dificil de leer
+	Múltiples lenguajes - idiomas
+	    html-js-css
+	    java-xml-html-json
+	    inglés-español
+	Comportamiento
+	    no hay comportamiento obvio o esperable
+	    no funciona en casos extremos: vacio, nulo, negativos
+    
+    El test de Joel:
+	¿ es bueno un equipo de desarrollo?
+	    Source control
+		deberian trabajar:
+		    git, mercurial, team foundation server
+	    Daily Builds:
+		¿hacen builds diarios?
+		¿puedes hacer un build en un solo paso?
+	    Up-to-date Schedule
+		planificación existente
+		funcionalidades concretas
+		dependen de la metodologia
+	    Specs
+		¿existe un registro de especificaciones?
+		usualmente no se escriben
+		no deberia haber código no especificado
+		los test pueden ser especificaciones
+	    Tools & conditions:
+		¿tienes buenos equipos?
+		¿tienes las mejores herramientas?
+		¿tienes servidores de pruebas?
+		¿tienes un ambiente tranquilo?
+		¿te interrumpen?
+	    Testing:
+		¿se hace testing?
+		¿se hacen pruebas unitarias?
+		¿las pruebas son parte del build?
+		¿tienes gente dedicada en exclusiva las pruebas?
+		¿hay control de cobertura de test?
+		¿hay control de cobertura de test?
+		¿los test se ejecutan rápidamente?
+		¿haces pruebas de usabilidad de vestibulo?
+	    Code screening:
+		¿Se hace programar a nuevos candidatos en la entrevista?
+    Comentarios:
+	no deberia haber comentarios salvo contadas excepciones
+    Métodos largos:
+	extrae hasta tener métodos de no mas de cinco lines:
+	    extract method
+	    replace temp with query
+	    replace method with method object
+    Parameter list:
+	no deben usarse más de tres parametros y si hay mas se deben refactorizar paara cmabios
+	    indroduce parameter object
+	    replace parameter with method call
+    código duplicado:
+	una de las plagas primordiales del mal software
+    uso de instanceof:
+        puede ocultar una violación del principio de liskiv
+    Combinatorial Exposion:
+	cuando tenemos mucho código que hace casi lo mismo con pequeñas variaciones de datos o comportamiento deben usarse        clase demasiado largas:
+	las clases no deberian ser excesivamente largas, si es asi puede que tengas demasiadas responsabilidades
+	    extract class
+	    introduce parameter object
+    Solucion Rara:
+	deberia haber una solución simple para un problema, si puede haber más de una solución.
+	es una solución inconsistente
+	puede que haya duplicidad de código
+	substitute algorithm
+    Atributos temporales/opcionales
+	clases con muchos campos opcionales o innecesarios
+    Clases similares con distinto interface
+        existen clases muy similares que se podrian generalizar, renombrando, creando una superclase y reduciendo duplicidad
+    Obsesión por valores primitivos:
+	se utilizan excesivos valores primitivos para almacenar datos y conviene extraer una clase con todos ellos
+	replace data value with object
+	introduce parameter object
+    clase de datos:
+	las clases en general, deberian mostrar comportamiento y no solo ser almacénes de datos
+	    encapsulate field
+	    encapsulate colletion
+	    move method
+    agrupaciones de datos:
+	los datos de distintas clases aparecen siempre juntas, quizas haya que agruparoas en una clase
+    herencia rechazada:
+	estamos aplicando herencia pero resulta que no utilizamos los métodos heredados en la subclase, o si los utilizamos el efecto es distinto.
+	replace inheritance with delegation
+    intimidad inapropiada:
+	se trata de que las clases sepan mucho unas de las otras.
+ 	no deberia haber interdependencia
+    Exposición indecente:
+	evitar que las clases muestren más de lo necesario
+    Clase vaga:
+	se trata de clases con poca importancia que deberian integrase en otras
+    intermediario:
+	cuando una clase acaba delegando todas sus acciones
+    Cambio divergente
+	al hacer cambios en una clase te das cuenta de que se hacen en apartados muy dispares quizas tu clase haga demasiadas cosas
+    Cirugía de escopeta:
+	cuando un cambio en una clase require cambiar muchas otras clases relacionadas
+
+refactorizacion:
+    Rename
+    Ocultar propiedades y métodos
+    Magic Numbers -> creacion de constantes -> permiten dar información en condicionales con respecto a un valor:
+	 if(edad>18) -> mayordeedad=18 -> if(edad>mayorde edad)
+    Extract Method:
+	Que es:
+	    sacar parte de un código de un método y meterlo en un nuevo método
+	Motivación:
+	    simplificar los métodos
+	Beneficios:
+	    código más legible
+	    elimina el código duplicado
+	    reduce el tamaño de métodos
+
+
+Solid:
+    permiten un código:
+	Más limpio
+	Más mantenible
+	Más extensible
+
+    Principios:
+	SRP: Single Responsability Principle:
+	    principio de responsabilidad única:
+		las clases deben ser pequeñas en responsabilidad
+		una clase debe tener una única responsabilidad dentro de todo el proyecto
+		si se cambia algo, solo debería haber una razon
+	    ¿Cómo sabemos si son demasiadas responsabilidades?
+		cuando más de un rol utiliza estas clases
+	    ¿Qué problema hay?
+		si se cambia algo afectara a otros
+		tiene más acoplamientos, dependencias y es sensible a cambios
+	OCP: Open/Closed Principle:
+	    abierto:
+		deberia ser fácil cambiar el comportamiento del módiñp
+	    cerrado:
+		ese comportamiento se debería poder cambiar sin modificar el módulo        
+	LSP: Imterfaces Segregation Principle:
+	    si S es un subtipo de T, los objectos de tipo T en un programa pueden ser intercambiados por objetos de tipo S sin alterar ninguna de sus propiedades
+	ISP: Interface Segregation Principle:
+	    los clientes no deberian implementar interfaces que no utilicen
+	    es preferible crear varias interfaces que sean implementados por clientes especificos
+	DIP: Dependency Inversion Principle:
+	    los módulos de alto nivel, deben depender de abstracciones, no de los módulos de bajo nivel
+	    las abstracciones, no deben depender de los detalles de bajo nivel. los módiñps debajo nivel, tambien deben depender de abstracciones
+
+Principios LEAN:
+    surgimiento del agile manifest
+    Eliminate waste:
+	tolo los que no aporte valor al usuario = waste
+	desarrollar una funcionalidad o producto incorrecto
+	no gestionar bien el backlog
+	volver a hacer el mismo trabajo
+	desarrollar soluciones innecesariasmente complejas
+	carga cognitiva
+	stress psicologico
+	espera/multitarea
+	perdida de comunicación
+	comunicación inefectiva
+    Amplify learning:
+	desarrollo -> aprendizaje continuo
+	las ideas se plasma en codigo
+	reuniones -> aprendizaje dominio y necesidades
+	ciclos cortos con refactoring y tests
+    Decide as late as posible:
+	posponer decisiones criticas
+	ajustar la solucion en ciclos
+	probar y evaluar
+    Deliver as fast as posible:
+	proyectos:
+	    web y mobiles
+	feedback continuo
+	el primeo en llegar triunfa
+    Empower the team:
+	sin gestores ni recursos
+	el equipo asue su gestion
+	tareas asumibles y contacto con cliente
+	¿cumple el test de joel?
+	deja en paz al equipo
+    Build integrity in
+	ofrecer umagen de robustez
+	integridad = flexibilidad + mantenibilidad
+	¿Como?:
+	    Contacto con cliente
+	    Ciclos
+	    Información en pequñas dosis
+	    Refactoring + Testing + CI
+    See th whole:
+	piensa a lo grande, actúa a pequeña escala, falla pronto; aprende rápidamente:
+	    proyectos complejos
+	    dividir y descomponer tareas
+	    trabajar con equipos estables
+	    implicar todas las partes

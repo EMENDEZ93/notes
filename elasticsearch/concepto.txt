@@ -1,0 +1,62 @@
+Motor de búsqueda:
+    Diseña:
+        escalar
+        horizontalmente lucene
+    Capa Software por encim de lucene:
+        facilitar el desarrollo
+        apirestful operaciones crear, actualizar, borrar
+        simplificación consulta QueryDsl
+
+Caracteristicas:
+    Escalabilidad horizontal
+    Proximo al tiempo real: latencia < 1 seg - desde indexado hasta disponibilidad para búsqueda
+    Tolerancia a fallos en nodos - alta disponibilidad, replicación, datos en nodos diferentes
+    funciones de búsqueda de texto completo - full text search
+    considera a todo el contenido de doumentos - no solo titulo, referencia, etc
+    orientado a documentos JSON
+    No requiere esquemas: indexado rápido, auto-deteccion de los tipos de los campos de los documentos
+    documentos indice con numero campos variables
+    respetadando tipos de los campos comunes
+    Desarrollo amigable: apis sencillas
+
+ElasticSearch:
+    distingue entre dos tipos de búsquedas:
+        con puntuación (score): queries
+	sin puntuación: filters
+    Queries: pensadas para búsquedas sobre frases, miden cuánto se parece frase, buscada a la almacenada.
+    Filters: para búsquedas binarias (si-no), Más rápida y se cachean en memoria. utilizamos campos no sean texto
+    
+Cláusulas comunes en queries
+    campo igual a valor: term
+    texto contiene palabra (token): match
+    texto contiene palabras en orden dado: match_phrase
+    campo en un rango: (gt, gte, lt, lte)
+
+Búsquedas conpuestas: bool
+    operador or <> should (condicion1 || condicion2)
+    operador and <> must (condicion1 && condicion2)
+
+Tambien agregacipnes (aggs, como media, avg)	
+
+Protocolos de comunicación:
+    protocolo nativo en binario:
+         solo pensao para el lenguaje java.
+         puerto 9300 por defecto
+    protocolo HTTP:
+         Api Rest
+         Puerto 9200 por defecto
+         forma más comun de conexion
+         rest es un protocolo de uso general -> operaciones y herramientas de test conocidas
+         posibilidad de implementar clientes en lenguajes diferentes a java
+
+
+Configuración con spring:
+    inyección de dependencias con archivo de configuración
+    Declaramos:
+        elasticsearch:transport-cliente
+        elasticsearch:repositories
+        indicamos donde está repositorio
+    TransportClient:
+        necesita bean:
+            elasticsearchTemplate
+        añadir espacio de nombres de elasticsearch en la declaración de beans      

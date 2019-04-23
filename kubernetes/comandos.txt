@@ -2,7 +2,27 @@ instalacion:
     minikube
     kubernetes
 
-minikube start
+minikube start --vm-driver=virtualbox
     //crea máquina donde va installa todos los componentes de kubernetes
     //crea el cluster kubernetes
+
+minikube delete 
+    // borra el cluster
+
+minikube status
+
+kubectl config get-contexts
+    //list activate cluster
+
+kubectl describe pod_name
+
+kubectl logs pod_name
+kubectl logs  -f pod_name
+    //see realtime logs
+
+
+kubectl get all
+
+kubectl deleted -f .
+
 
