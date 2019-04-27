@@ -1,0 +1,4 @@
+Java EE:
+    java platform entreprise edition
+    java EE - conocido como java 2 platform o J2EE hasta la version 1.4
+    conocido popularmente como java empresarial

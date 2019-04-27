@@ -10,3 +10,122 @@ ng add @angular/material
 ng g component name_component
 ng generate service [name]
 ng  generate module app-routing .\src\app\ .
+
+ng lint -> verifica mantenibilidad y legibilidad de nuestro código
+ng lint --format stylish
+ng lint --fix -> corrige los errors posibles.
+
+arquitectura:
+    app:
+	components:
+	    folders topic page
+	    example:
+		app:
+		    components:
+		        login:
+			    components:
+				login-card:
+				    login-card.component.css
+				    login-card.component.html
+				    login-card.component.ts
+				login-routing.module.ts
+				    const loginRoutes: Routes
+					component: LoginContainerComponent
+					children:
+					    path: '', component: LoginContainerComponent, pathMatch: 'full'
+					    path: 'login', component: LoginCardComponent
+				login.module.ts
+				    imports:
+					LoginRoutingModule
+				    declarations:
+					LoginCardComponent
+			    layout:
+ 				container:
+				    login-container.component.css
+				    login-container.component.html
+					<router-outlet></router-outlet>
+				    login-container.component.ts
+				login-layout.module.ts
+				    declarations:
+					LoginContainerComponent
+		        weather:
+			    components:
+				models:
+				   Anyclass
+				weather-card:
+				    weather-car.components.css
+				    weather-card.components.html
+				    weather-card.components.ts
+				weather-forecast:
+				weather-search
+			    layout:
+				container:
+				weather-layout.module.ts
+			
+	core:
+	    funcionalidades de mi aplicacion poder moverlas a otra
+	    example:
+		app:
+		    core:
+			autorization:
+			cache:
+			function:
+			    funciones globales en la aplicación
+			localization:
+            
+	ui-controls:
+	    modulos estructurales
+	    material:
+	    pipes:
+	    directives:
+	    form-controls:
+		ui-button:
+		ui-icons:
+		ui-inputs:
+	    dialogs:
+	    
+	services:
+	    los servicios deberian ser globales con la idea de poder reutilizarlo en varios componentes y no solo en en propio.
+	shared:
+
+componentes:
+    la descripción siempre separada por -:
+	descripcion-any.component.ts:
+	    uso de camel case nombre de la clase:
+		DescripcionAnyComponent
+    	descripcion-any.component.html
+	descripcion-any.component.css
+    estructura-orden:
+	variables
+	constructor
+	implementaciones
+	public method
+	private method		
+
+Modulos:
+    la descripción siempre separada por -:
+	descripcion.module.ts
+  
+Directivas:
+    la descripción siempre separada por -:
+	descripcion.directive.ts
+
+Pipes:
+    la descripción siempre separada por -:
+	descripcion.pipe.ts
+
+Routing:
+    la descripcion siempre separada por -:
+	descripcion.model.ts
+
+Modelos:
+    la descripcion siempre separada por -:
+	descripcion.model.ts
+
+
+
+
+
+
+
+
