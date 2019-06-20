@@ -1,0 +1,20 @@
+Ciclo de vida de un bean:
+    podemos interactuar mediante callbacks
+    despues de que se instancie/ antes de que se destruya.
+    interfaces initializingBean y DisposableBean
+    Tambien a traves de xml
+
+Interfaces InitializingBean y DisposableBean:
+    el bean debe implementar los interfaces.
+    desventaja: configuracion e implementacion van unidos.
+    ventaja: la interfaz es un contrato; nos da la firma del método a implementar.
+
+Configuracion Via XML:
+    propiedades init-method y destroy-method
+    el valor de la propiedad es un String
+    debe ser el nombre de un método del bean.
+        void
+	sin parámetros 
+	throws exception
+    ventaja:
+	bajo acoplamiento

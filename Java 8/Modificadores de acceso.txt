@@ -1,0 +1,9 @@
+Modificadores de acceso:
+    Nos permiten indicar quien puede hacer uso de una clase, o de sus atributos y métodos.
+    Public:
+	cualquiera
+    Private:
+	solo la propie clase.
+    protected:
+	las clases cercanas - que estén en el mismo paquete.
+	

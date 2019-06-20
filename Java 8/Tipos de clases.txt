@@ -1,0 +1,7 @@
+Modelo:
+    representan objetos o hechos de la naturaleza:
+        un coche, un asiento, contable, los datos meteorologicos de un dia.
+	suele tener atributos, getter y setter, equal, hashcode, toString...
+
+Servicios:
+    implementan la logica de negocio. Suelen tener algunos atributos pero sobre todo métodos publicos y privados.

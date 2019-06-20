@@ -1,0 +1,6 @@
+Responsable de crear instancias, configurar y ensamblar los beans
+
+se consigue a través de los metadatos:
+    xml
+    anotaciones
+    java

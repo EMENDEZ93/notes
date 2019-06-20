@@ -1,0 +1,45 @@
+Spring Core:
+
+Requisitos:
+    Java SE 8.
+    Metodologia de programación orientada a objetos.
+    
+Spring:
+    Spring Framework
+    Spring Boot
+    Spring Data
+    Spring Security
+    Spring Cloud
+    Spring Hateoas
+    Spring Batch
+    Spring for Andriod
+
+¿Que es una aplicación empresarial?:
+    gran aplicacion comercial
+    compleja, escalable, distribuida, critica
+    despliegue en redes corporativas o internet
+    centrada en los datos
+    intuitiva, de uso facil
+    requisitos de seguridad y mantenibilidad
+
+Estructura de una aplicación empresarial:
+    datos
+    procesos
+    personas
+    tecnologia
+    redes	
+
+Estructura de una aplicación empresarial:
+    interfaz de usuario
+    aplicación
+    datos
+    infraestructura de la plataforma
+    infraestructura del hardware:
+   	servidores
+   	sistema operativo
+	
+
+Inversión de control ioc
+    principio de diseño o patron
+    el objetivo es conseguir desacoplar objetos
+

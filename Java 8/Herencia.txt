@@ -1,0 +1,8 @@
+Herencia:
+    Una clase que extiende a otra herada sus atributos y sus métodos - no constructores.
+    Puede añadir atributos y métodos nuevos.   
+
+    Modificadores protected:
+	si usamos protected en la clase base tendremos acceso directo a los atributos.
+  	en otro caso, tendremos que acceder vía getter/setters.
+	ojo - los contructores no se heredan aunque sean públicos.

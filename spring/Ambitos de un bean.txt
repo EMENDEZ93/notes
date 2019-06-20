@@ -1,0 +1,31 @@
+Ambito de un bean:
+    Cuando definimos un bean - por ejemplo en xml creamos un receta.
+    Esta nos permite crear instancias reales de la clase sobre la que definimos el bean.
+    A partir de esa receta, es posible crear muchas instancias.
+    podemos configurar el ámbito de un bean a nivel de configuración - sin tener que hacerlo al viejo estilo
+
+Ambito singleton:
+    solamente se crea una instancia compartida de esa clase.
+    toda las referencias que obtengamos a ese bean serán el mismo objeto en memoria.
+    es el ambito por defecto
+
+Ambito prototype:
+    se crea una instancia cada vez que se le requiere.
+    estas instancias se crean en tiempo de ejecución.
+
+Ambitos web:
+    solo disponibles con un contexto web - por ejemplo XmlWebApplicationContext.
+    en caso de usar otros no web - por ejemplo ClassPathXmlApplicationContext producirá excepción.
+    Ambitos:
+        request:
+            se creará un objeto por cada petición http.
+	    cuando la petición ermina de procesarse se descarta el objeto.
+ 	session:
+	    se creará un objeto por cada sesión http que se cree.
+    	    cuando la sesión se destruye, se descarta el objeto.
+	application:
+	    se creará un objeto por cada ServletContext.
+	    en la práctica, se trata de un objeto por cada instancia de la aplicación.
+		uso:
+		    datos que se usan en footer o algun titulo.
+	websocket

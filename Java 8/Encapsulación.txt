@@ -1,0 +1,4 @@
+Encapsulación:
+    los objetos conocen solamente su estructura, no la de los demas.
+    el trato entre objetos se realiza a través de los métodos.
+    normalmente los atributos de un objeto se deben consultar o editar através de metodos.

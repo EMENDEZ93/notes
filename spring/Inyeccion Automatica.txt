@@ -1,0 +1,8 @@
+inyeccion automatica:
+    Spring permite la inyeccion automatica entre beans que se necesitan.
+    busca candidatos dentro del contexto.
+    
+Ventajas:
+    Reduce la configuración necesaria.
+    útil durante el desarrollo
+    permite requerir objetos sin configurarlo explicitamente

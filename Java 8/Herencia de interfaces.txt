@@ -1,0 +1,3 @@
+Herencia de interfaces:
+    Tambien podemos establecer relaciones jerárquicas entre interfaces
+    Nos regimos por las mismas reglas que en el caso de las clases.

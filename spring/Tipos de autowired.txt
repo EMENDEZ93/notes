@@ -1,0 +1,19 @@
+No:
+    sin autocableado.
+
+byName:
+    en función del nombre de la propiedad requerida.
+
+byType:
+    en función del tipo de la propiedad requerida.
+    si hay más de un bean de este tipo, se produce excepción.
+
+constructor:
+    análogo a bytype, pero para argumentos del constructor.
+
+Inconvenientes del autocableado:
+    es útil si se usa siempre en un proyecto.
+    en otro caso, puede ser confuso.
+    no se puede autoinyectar tipos primitivos o string
+    menos exacto que la inyección explicita
+    posible ambiguedad en inyeccion bytype.

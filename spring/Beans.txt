@@ -1,0 +1,7 @@
+Beans:
+    Se trata de un objeto - cualquiera
+    gestionado por nuestro contenedor de inversión de control
+    objetos manejados por el contenedor ioc
+    se crean con los metadatos que nosotros proporcionamos - ejemplo xml
+    debemos darle un id unico dentro del contenedor
+    tambien debemos iniciar la clase sobre la que definimos el bean
