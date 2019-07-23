@@ -1,0 +1,21 @@
+Microservicios:
+    evolucion de arquitectura soa.
+    tamaño reducido.
+    desarrollable en unad dos semanas.
+    abordable por equipo pequeño.
+    independientes.
+    despliegue más sencillo.
+    altamente reutilizable.
+    faciles de externalizar.
+
+Teniendo en cuenta estos principios, el concepto de microservicios es un poco la manera que se ha puesto de moda para referirse a las arquitecturas Soa, pero incidiento más aún en que la funcionalidad de dichos servicios debe ser la minima posible. una medida extendida es que un microservicio es un componente que deberia ser desarrollable en unas dos semanas. las ventajas de una arquitectura basada en microservicios son la siguientes:
+
+Son componentes pequeños que agilizan los procesos de desarrollo de software y son faciles de abordar por     un equipo de desarrolladores.
+
+Son servicios independientes, si un microservicio falla no deberia afectar a los demas.
+
+El despliegue de un microservicio a producción es más sencillo que el de una aplicación monolitica.
+
+Los microservicios son altamente reutilizables.
+
+Los microservicios son más faciles de externalizar.

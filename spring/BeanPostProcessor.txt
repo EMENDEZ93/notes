@@ -1,0 +1,21 @@
+BeanPostProcessor:
+    spring permite extender el contenedor de IoC.
+    BeanPostProcessor es una interfaz que nos permite gestionar:
+        instanciación
+	configuración
+	inyeccion de dependencias
+    podemos definir cuantos procesadores necesitemos.
+
+@Required:
+    nos permite indicar que una prodiedad debe ser necesariamente inyectada.
+    nos inidica cómo debe realizar la inyección:
+        explicita
+	autowired
+    si no se satisface, produce una excepción.
+    permite evitar NullPointerException
+
+@Autowired:
+    se puede mezclar los 3 tipos de uso de autowired
+    en la propiedad es muy cómodo
+    si el método setter tiene alugna logica especial seria adecuado.
+    para atributos final, usamos el constructor

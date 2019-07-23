@@ -1,0 +1,3 @@
+@Configuration:
+    a nivel de clase
+    indica que una clase va a definir uno o más @Bean

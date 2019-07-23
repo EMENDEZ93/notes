@@ -1,0 +1,10 @@
+Docker:
+    virtualizacion a nivel de s.o
+    Aislamiento de recursos a nivel de kernel:
+	cgroups
+	namespaces
+    Flexibilidad y portabilidad
+    enfocado a sistemas altamente distribuidos
+
+instalar docker:
+    https://docs.docker.com/install/linux/docker-ce/ubuntu/

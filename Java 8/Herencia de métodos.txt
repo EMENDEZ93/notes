@@ -1,0 +1,3 @@
+Herencia de métodos:
+    una subclase puede acceder a los métodos de su clase base - public y protected.
+    también puede sobrescribir el comportamiento del mismo

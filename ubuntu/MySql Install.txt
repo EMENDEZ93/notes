@@ -1,0 +1,5 @@
+sudo apt-get update
+
+Install MySQL Server with apt:
+    sudo apt-get install mysql-server
+    mysql --version

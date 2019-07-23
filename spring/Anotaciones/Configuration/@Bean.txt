@@ -1,0 +1,8 @@
+@Bean:
+    anotación a nivel de metodo
+    define un bean
+    en clases:
+  	@Configuration: preferible
+	@Component y derivados: lite mode
+    atributos:
+ 	name, init-method, destroy.method 

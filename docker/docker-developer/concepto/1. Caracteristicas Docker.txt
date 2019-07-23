@@ -1,0 +1,15 @@
+Caracteristicas Docker:
+    es open source.
+    es una friendly api a contenedores:
+	es un proceso aislado de resto de los procesos de la máquina gracias a correr sobre su propio
+	sistema de ficheros, su propio espacio de usuarios y procesos, sus propias interfaces de red.
+   	es por ello que a veces se dice que es un contenedor es una máquina virtual ligera.
+
+    Build, ship and run, any app, anywhere:
+	portabilidad.
+	inmutabilidad.
+	ligero.	
+    
+    ficheros independientes de otros contenedores o host.
+    el kernel es el unico componente comun entre host y contenedores.	
+    una maquina vitual (VBOX) se crea un kernel independiente del host consumiendo mas recursos de la maquina.
