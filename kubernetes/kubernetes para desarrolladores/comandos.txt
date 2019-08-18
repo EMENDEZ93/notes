@@ -1,0 +1,29 @@
+kubectl get all:
+    ver lo que hay corriendo en nuestro clúster.    
+
+kubectl apply -f .:
+    corre todos los archivos yml que se encuentra en el folder actual
+
+kubectl logs -f pod-xxxxx-yyy
+    ver los logs de un contenedor.
+
+kubectl port-forward:
+    acceder a los puertos de un pod.
+    exponerlos en la interfaz de localhost
+
+kubectl exec:
+    entrar dentro de un contenedor.
+
+kubectl delete:
+    eliminar un objeto
+    
+kubectl delete -f .:
+    eliminar la aplicación entera.
+
+sudo kubectl port-forward result-67b55f79b8-lb55p 8088:80
+    exponer un puerto diferente al del pod, solo en local
+
+kubectl rollout history deployment.apps/deployment:
+    versiones guardades de pods desplegados.
+
+minikube ip:

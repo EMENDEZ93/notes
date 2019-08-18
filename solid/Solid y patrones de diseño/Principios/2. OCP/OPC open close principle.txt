@@ -1,0 +1,5 @@
+el principio de abierto/cerrado:
+    dice que un modulo/clase de software esta abierto para extension y cerrado para modificación
+
+en pocas palabras:
+    si queremos añadir nuevo código, lo ideal seria poder construir sobre lo que ya existe, sin tener     que hacer modificaciones grandes.

@@ -1,0 +1,2 @@
+Bajo Acoplamiento:
+    lograr la mas baja dependencia de clases entre si.

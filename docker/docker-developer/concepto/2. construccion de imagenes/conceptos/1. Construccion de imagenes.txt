@@ -1,0 +1,28 @@
+la manera recomendada de construir una imagen es utilizar un fichero DockerFile, es un fichero con un conjunto de instrucciones que indican cómo construir una imagen de docker. las instrucciones principales que pueden utilizarse en un Dockerfile son:
+
+From image:
+    para definir la imagen base de nuestro contenedor.
+
+Run comando:
+    para ejecutar un comando en el contexto de la imagen.
+
+ENTRYPOINT comando:
+    para definir el entrypoint que ejecuta el container al arrancar.
+
+CMD comando:
+    para definir el comando que ejecuta el container al arrancar.
+
+WORKDIR path:
+    para definir el directorio de trabajo en el contenedor.
+
+ENV var=value:
+    para definir variables de entorno.
+
+EXPOSE puerto:
+    para definir puertos donde el contenedor acepta conexiones.
+
+VOLUME path: 
+    para definir volumenes en el contenedor.
+
+COPY origen destion:
+    para copiar ficheros dentro de la imagen. Tambien se usa para multi-stage builds.

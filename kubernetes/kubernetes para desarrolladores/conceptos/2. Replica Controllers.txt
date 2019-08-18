@@ -1,0 +1,9 @@
+Replica Controller:
+    Stateless:
+        no estado, no sesiones, no writes.
+    Escalan el número de pods.
+    Respuesta a fallo.
+
+un replica Set es un mecanismo de abstracción sobre un conjunto de pods que nos garantiza que un número contreto de instancias de un pod este siempre operativo. Debe aplicar sobre pods stateless, es decir, que no tengan estado, no tengan sesiones, ni hagan escrituras a disco.
+
+asi, por ejemplo, el replica set es el encargado de escalar arriba o abajo el numero de instancias de un pod segun hayan definido el usuario, o de detectar si un pod esta unhealty para reemplazarlo por uno nuevo.

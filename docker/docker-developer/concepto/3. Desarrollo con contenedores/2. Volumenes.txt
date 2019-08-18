@@ -1,0 +1,55 @@
+Cuando un contenedor es eliminado, la información contenida en él desaparece. para evitar este problema y que los datos generados en el interior de un contenedor no se eliminen cuando el contenedor termina podemos hacer uso de volúmenes de datos (data volume).
+
+Un volumen es un directorio dentro del contenedor que se asociado con un directorio del host, por lo que persiste a la finalizacion del contenedor.
+
+un contenedor puede tener varios volumenes, y un mismo volumen puede montarse en varios contenedores para compartir información.
+
+Volúmenes de datos:
+los volumenes de datos tiene las siguientes caracteristicas:
+    cuando borramos el contenedor, no se elimina el volumen asociado.
+    nos permite guardar e intercambiar informacion entre contenedores.
+    no son gestionados por los storage drivers, por lo que las operaciones de entrada/salida son     muchos mas eficientes.
+
+los volumenes de datos tienen su propia interfaz con linea de comandos docker.
+
+docker volumen create:
+    crea un nuevo volumen de datos.
+
+docker volumen ls:
+    muestra los volumenes de datos de nuestra maquina.
+
+docker inspect:
+    devuelve informacion a un volumen.
+
+docker volumen rm: 
+    elimina un volumen de datos.
+    tambien se puede eliminar automaticamente al eliminar un contenedor si ejecutamos:
+        docker rm -f
+
+si hacemos un docker inspect de un contenedor con volumenes asociados esta informacion aparece en el campo mounts.
+por ultimo podemos comprobar que aunque borremos el contenedor, el volumen no se borra
+
+docker run -it -v `pwd`:/data alpine sh
+cd data
+ls
+
+Gestion de Volumenes con docker-compose:
+el siguiente ejemplo ilustra la gestion de volumenes con docker-compose.
+
+version: '3.4'
+services:
+  mysql:
+    image: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+      - logs:/var/log/mysql
+      - /etc:/etc
+  mysql:
+    image: log-analizer
+    volumes:
+      - logs:/var/log:ro
+volumes:
+  data:
+  logs:
+
+

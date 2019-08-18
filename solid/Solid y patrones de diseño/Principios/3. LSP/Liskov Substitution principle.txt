@@ -1,0 +1,6 @@
+Si S es un subtipo de T, entonces los objetos de tipo T en un programa de computadora pueden ser sustituidos por objetos de tipo S(es decir, los objetos de tipo S pueden sustituir objetos de tipo T), sin alterar ninguna de las propiedades deseable de ese programa.
+
+El principio de sustitución de liskov establece que deberia poder utilizar cualquier clase derivada en lugar de una clase principal y hacer que se comporte de la misma manera sin modificaciones.
+
+Asegurar que una clase derivada no afecte el comportamiento de la clase principal, en otras palabras, que una clase derivada debe ser sustituible por su clase base.
+

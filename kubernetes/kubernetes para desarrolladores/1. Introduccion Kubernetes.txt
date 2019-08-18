@@ -1,0 +1,21 @@
+Kubernetes divide los nodos de un cluster en master nodes y en worker nodes.
+
+los master nodes:
+son la capa de control y el principio no ejecutan contenedores de usuario
+
+los worker nodes:
+son los responsable de ejecutar los contenedores de usuario. 
+
+aun que esta división es la más habitual, cuando corremos kubernetes en local se suele crear un cluster de un solo nodo, que actua a la vez como master y como worker node.
+
+la lógica de la capa de control se fundamenta en etcd, una base de datos distribuida que nos asegura la consistencia de los datos usando el protocolo RAFT. 
+
+sobre etcd tenemos la capa REST, que es atraves de la que pasan todos los accesos a la base de datos. esta capa REST se expone via un modulo de autenticación, para que podamos invocarla, por ejemplo, usando comando kubectl.
+
+el resto de la logica que corre en los master nodes son controladores, que son funciones que se ejecutan en bucle y que comprueban si el estado deseado para el cluster se corresponde con el estado actual, osi por el contrario hay que crear o eliminar contenedores.
+
+los worker nodes, ademas de los contenedores de usuario, tiene principalmente dos componentes, el kubelet y el kube-proxy.
+
+el kubelet se encarga de chequear el estado de etcd via la capa REST para ver que contenedores tiene asignados para ejecutar, y en base a ello, crear o eliminar contenedoresen el nodo que gestiona, por su parte,
+
+el kube-proxy se encarga de gestionar la red y service discovery entre contenedores creando reglas de iptables.

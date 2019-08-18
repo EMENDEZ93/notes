@@ -1,0 +1,18 @@
+como hemos dicho anteriormente, cada capa de una imagen se corresponde con una instrucción del Dockerfile, compare el Dockerfile
+
+RUN apt-get update
+RUN apt-get install -y bzr
+RUN apt-get install -y cvs
+RUN apt-get install -y git
+RUN apt-get install -y mercurial
+
+con este otro
+
+RUN apt-get update && apt-get install -y \
+    bzr \ 
+    cvs \ 
+    git \ 
+    mercurial \ 
+    apt-get clean
+
+ambos son igualmente legibles, pero el primero genera 5 capas, y el segundo solo una, que ademas un apt-get clean que reduce el tamaño de dicha capa. recuerda que cada instruccion del Dockerfile genera una capa en la imagen final. por tanto si hacemos un apt-get install en una instruccion, y una apt-get clean en otra, hablemos dejado una capa con todos los ficheros que luego el apt-get clean borra.

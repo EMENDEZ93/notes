@@ -1,0 +1,16 @@
+Docker y otras tecnologías de contenedores no solucionan todos los problemas que aparecen en una arquitectura basada en microservicios, es más, el hecho de tener varios contenedores corriendo en la misma máquina hace imposible el uso de servicios diseñador para el mundo de las máquinas virtuales. Los principales problemas que quedan sin resolver por los contenedores en un entorno de producción son:
+
+Service Discovery: debido a la cantidad de microservicios, estos deben ser fáciles de localizar por los servicios que quieran contactar con ellos. También debe ser sencillo (y seguro) conocer las credenciales para establecer dicha conexión. 
+
+Balanceo de Carga: si un microservicio está corriendo en varios contenedores, debe haber un endpoint único de acceso al microservicio que balancee las peticiones entre los distintos contenedores. 
+Configuración de Red: algunos de estos servicios sólo pueden ser contactados por un subconjunto de nuestros microservicios. Este problema suele solucionarse con la gestión de redes (y subredes) de tal manera que servicios en redes diferentes no pueden verse el uno al otro. 
+
+Persistencia: algunos servicios inevitablemente tienen estado. Un contenedor puede ser fácilmente recreado en una nueva máquina si hay un fallo en el servidor donde se estaba ejecutando, pero lo mismo no aplica a los datos persistentes que utilizaba dicho contenedor. 
+
+Escalabilidad: nuestras herramientas de orquestación y monitoreo debe escalar al número de contenedores desplegados en producción. 
+Personalización: la herramienta que utilicemos debe ser fácilmente configurable con las sub-herramientas que sean más cómodas al equipo de operaciones. 
+
+Logging y Monitoreo: debido a la gran cantidad de contenedores desplegados en producción debemos utilizar herramientas de monitoreo que nos faciliten identificar los contenedores donde se producen fallos del sistema. 
+
+Respuesta a fallo: es importante monitorizar nuestros contenedores y desplegarlos en un nuevo servidor si hay una falla en la máquina donde estaban ejecutando. 
+Como hemos dicho, Docker no resuelve la mayoría de estas cuestiones, ya que su principal objetivo es facilitar la creación de imágenes, su distribución y su ejecución de una manera fiable. Es por esto que existen hoy en día multitud de herramientas de gestión de clusters que vienen a solucionar en lo posible estos problemas.

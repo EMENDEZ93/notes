@@ -1,0 +1,5 @@
+en los valores de todos y cada uno de los campos del fichero docker-compose.yml podemos hacer uso de la notacion ${VERSION:-value}, para tomar el valos de la variable $VERSION, o el valor value si la veriable $VERSION no esta definida, por ejemplo, podriamos usarlo para parametrizar la version de go que queremos usar:
+
+example:
+    image: golang:${GO_VERSION:-1.9}
+    command: go test ./...

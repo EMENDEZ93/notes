@@ -1,0 +1,3 @@
+Alta Cohesión:
+    la información que almacena una clase debe ser coherente y en la medida de lo posible relacionada
+    con la clase.

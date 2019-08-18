@@ -1,0 +1,5 @@
+tu imagen Docker solo debe contener lo estrictamente necesario para ejecutar tu aplicacion. con el objetivo de reducir complejidad, dependencias, tamaño de las imagenes, tiempos de build de una imagen, debes evitar la instalacion de paquetes solo por el hecho de que puedan ser útiles para depurar un contenedor. como ejemplo, no incluyas editores de texto en tus imagenes.
+
+otra opcion muy practica es el uso de imagenes base paqueñas, por ejemplo, haciendo uso de alpine.
+
+por ejemplo, compara docker-for-dev/flask-ubuntu y docker-for-dev/flask-alpine

@@ -1,0 +1,7 @@
+1. Uso .dockerignore
+el build de una imagen se ejecuta a partir de un dockerfile y de un directorio, que se conoce con el nombre de contexto. este directorio suele ser el mismo que el directorio donde se encuentra el Dockerfile, por lo que si ejecutamos la instrucción:
+
+ADD app.py /app/app.py
+
+Estamos añadoiendo a la imagen el fichero app.py del contexto, es decir, el fichero app.py que se encuentra en el directorio donde está el Dockerfile. dicho directorio se comprime y se manda al Docker Engina para construir la imagen, pero puede que tenga ficheros que no son necesarios. es por eso que este directorio puede tener un fichero .dockerignore, que de una manera similar al fichero .gitignore, indica los ficheros que no deben ser considerados como parte del contexto del build.
+

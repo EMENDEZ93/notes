@@ -1,0 +1,10 @@
+aunque el proceso de hacer build de una imagen esta muy optimizado gracias al uso de la cache de docker, aunque solo sea para mandar el contexto a la api de docker, suele tardar algunos segundos como poco. por tanto construir una imagen de docker para cambio de codigo que hagamos puee resultar ineficiente.
+
+la solución es montar el directorio de trabajo actual en el contenedor que estamos ejecutando. por ejemplo, el siguiente servicio corre los test de una aplicación go sin necesidad de construirlo en cada ejecucion:
+
+  test:
+    image: golang:1.9
+    working_dir: /go/src/app
+    volumes:
+      - ${PWD}:/go/src/app
+    command: go test ./...

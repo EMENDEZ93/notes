@@ -1,0 +1,1 @@
+salvo raras excepciones, es recomendable correr solo un proceso por contenedor, esto permite reutilizar contenedores más facilmente, que sean mas faciles de escalar, y da lugar a sistemas mas desacoplados, por ejemplo saca tu logica de logging a un contenedor independiente

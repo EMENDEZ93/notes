@@ -1,0 +1,5 @@
+las labels son un mecanismo de consulta y filtrado muy potente que nos ofrece kunernetes, pero con el que hay que tener especial atención porque es una fuente común de errores en la configuración de mis aplicaciones.
+
+los labels son pares clave/valor que podemos asociar a cualquier objeto de kubernetes. por ejemplo, podemos añadir la clave environment en todos mis objetos, y darle el valor dev, stagin o prod según el entorno en el que estemos ejecutando. estos nos va a permitir hacer consultas por el valos de estos labels, y asi refinar los resultados que recibo.
+
+pero muy importante, las labels sirven para muchas más cosas. ya que hemos visto como usarlas para mapear los pods a los que afecta un replica controller, y que tambien para decidir entre que pods hace balanceo de carga a un service, otro usuo comun es para seleccionar los nodos en los que un pod puede ser ejecutado.

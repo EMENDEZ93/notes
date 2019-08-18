@@ -1,0 +1,20 @@
+Estos son los comandos más comunes para el manejo de imagenes:
+  
+docker build:
+    nos permite crear una imagen a partir de un Dockerfile.
+
+docker login:
+    autentica la cli de docker contra un registro, por defector DockerHub.
+
+docker pull:
+    descargar una imagen a la que tengamos acceso desde un registro.
+
+docker image ls:
+    lista las imagenes que estan disponible en nuestra maquina.
+
+docker inspect:
+    muestra información detallada de una imagen. se puede acceder a un campo particular con el
+    comando docker inspect -f '{{-Size}}' imagen.
+
+docker image rm:
+    elimina una imagen.

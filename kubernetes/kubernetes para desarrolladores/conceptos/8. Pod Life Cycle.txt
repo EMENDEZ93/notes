@@ -1,0 +1,23 @@
+un pod se puede encontrar en uno de estos estados:
+
+Running:
+    al menos uno de sus contenedores esta siendo ejecutado.
+
+Pending:
+    significa que estamos descargando la imagen de alguno de los contenedores, o que no hay recursos
+    disponibles para ejecutar el pod.
+
+Succeeded:
+    significa que todos los contenedores del pod acabaron su ejecución correctamente (exit code = 0)
+
+Failed:
+    significa que al menos uno de los contenedores del pod falló con error (exit code != 0)
+
+Unknown:
+    significa que no se puede acceder al estado del pod, probablemente por problemas de red.
+
+ademas, es importante conocer el orden de ejcución de los contenedores de un pod, y cuando se activa los hooks y los healchecks. lo primero que podemos definir un conjunto de init containers, que se ejecutan de manera secuencial cuando un pod arranca. cuando termina el ultimo de los init containers, pasan a ejecutarse en paralelo todos los main container.
+
+Cada uno de estos contenedores puede definir un hook de post start y de pre stop. ambos son scripts que se ejecutan en el contexto del contenedor, uno al arrancar el contenedor, otro cuando recibe la señal de que pare su ejecucion.
+
+loes readinessprobe y los livennessprobe se ejecutan contra los main containers, pero se puede configurar una cantidad de initialdelayseconds para darle tiempo al contenedor de arrancar correctamente y no entrar en un bucle inifinito donde kubernetes mata el pod antes de que al pod le de tiempo de arrancar correctamente.

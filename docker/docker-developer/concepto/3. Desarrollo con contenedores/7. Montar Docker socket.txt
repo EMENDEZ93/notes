@@ -1,0 +1,8 @@
+otro caso muy comun es cuando necesitamos que un contenedor acceda a la api de docker. una solucion que nosotros no recomendamos esel uso do docker in docker, DinD, un contenedor que necesita correr en modo privilegiado y que puede crear contenedores dentro de el. DinD no es del todo estable, nosotros recomendamos usar el mismo docker que esta corriendo en el host, para ellos, nuestro contenedor solo necesitara tener la linea de comando de docker instalada, y montar el socket donde docke publica su api /var/run/docker.sock como ejemplo, el siguiente servicio lista los contenedores del host.
+
+  docker:
+    image: docker:17.10
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    entrypoint: docker
+    command: ps

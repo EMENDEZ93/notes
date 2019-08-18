@@ -1,0 +1,7 @@
+Son un concepto muy util para crear particiones logicas dentro de mi cluster, o lo que tambien podemos llamar clúster virtuales dentro de mi cluster fisico de kubernetes.
+
+es importante recordar que para cada tipo de objeto de kubernetes, por ejemplo un service o un deployment, el nombre del objecto debe ser unico. pero dentro de un cluster podemos crear distintos namespaces, y esta restriccion de unicidad aplica solo dentro de cada namespace. asi por ejemplo, puedo tener un namespace staging y otro producction, y sere capaz de crear un deployment web tanto en uno como en otro namespace.
+
+otro uso muy util de los namespace es para gestionar equipos, ya que cada desarrollador podria tener acceso a un namespace distinto, y de esta manera compartir los recursos de cluster sin que el trabajo de un desarrollador afecte al otro miembre del equipo porque tiene aislamiento a nivel de namespaces. por defecto, este aislamiento es solo por nivel de los nombre de los objetos que vamos a crear y por ejemplo se comparte la misma red, pero podemos hacer uso de pod polices y network policues para limitar estos accesos.
+
+por último, podemos limitar los recursos máximos que se pueden consumir dentro de un namespace. de esa forma podemos asegurarnos de que ningun desarrollador consume mas de una cirta cpu o memoria en su namespaces de desarrollo.

@@ -1,0 +1,4 @@
+Pods:
+    un conjunto de contenedores que se despliegan como una unidad.
+    accesible via localhost.
+    volumenes compartidos.

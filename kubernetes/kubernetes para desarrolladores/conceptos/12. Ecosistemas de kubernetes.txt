@@ -1,0 +1,13 @@
+helm:
+    es un empaquetador de aplicaciones para kubernetes. muy util para hacer templating en nuestro
+    manifests y gestionar aplicaciones que requieren de gran cantidad de manifiestros yaml de     kubernetes.
+
+Istio:
+   es un servico mesh que me permite "programa" la capa de red de mi cluster. asi podemos configurar    retries entre servicios, latencias de red, encriptacion a nivel de red o incluso autorizacion y    autenticacion de logia de mi aplicacion.
+
+Spinnaker:
+    es un proyecto anterior a kunernetes que lanzo netflix. permite configurar entrega continua en 
+    kubernetes soportando escenarios muy avanzados de canaries, test de validacion.
+
+Open FassS:
+    es una implementacion de serverless sobre kubernetes.

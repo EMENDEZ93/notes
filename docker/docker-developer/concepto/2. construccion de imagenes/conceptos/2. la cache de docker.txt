@@ -1,0 +1,17 @@
+la construccion de una imagen de docker dado un Dockerfile puede ser un proceso costoso ya que puede implicar la instalación de un número elevado de librerias, y al mismo tiempo es un proceso bastante repetitivo porque sucesivos builds del mismo Dockerfile suele ser similares entre si. Es por eso que Docker introduce el concepto de la cache para optimizar el proceso de construcción de imágenes.
+
+La primera optimización que hace la cache de Docker es la de descargar de la imagen base de nuestro Dockerfile. Docker descargará la imagen base siempre que la misma no se encuentre ya descargada en la máquina que hace el build. esta optimización parece obvia ya ques estas imágenes pueden tener una tamaño de cientos de MB, pero hay que tener cuidado ya que si la versión remota de la imagen cambia, Dokcer seguira utilizando la versión local. por tanto, si queremos ejecutar nuestro Dockerfile con la nueva versión de la imagen base deberemos de hacer un docker pull manual de la imagen base, o ejecutar docker build --pull.
+
+como hemos comentado anteriormente, una imagen de docker tiene una estructura interna bastante parecida a un repositorio de git. lo que conocemos como commits en git lo denomimanos capas de una imagen en Docker, por lo tanto, una imagen (o repositorio) es una secesión de capas en un registro de docker, donde cada capa almacena un diff respecto de la capa anterior. Eso es importanta de cara a optimizar nuetros Dockerfile.
+
+por ahora bastara sber que cada instruccion de nuestro dockerfile creara una y solo una capa de nuestra imagen. por lo tanto, la cache de docker funciona a nivel de instruccion. en otras palabras, si una linea del Dockerfile no cambia, en lugar de recomputarla, Docker asume que la capa que genera esa instrucción es la misma que la ejecución anterior del Dockerfile.
+
+que no ha cambiado entre dos build sucesivos, los comando apt-get no se ejecutaran, sino que se reusara la capa que se genero el primer build. por tanto, aunque antes de ejecutar el segundo build haya una nueva versión del parquete de git, la imagen construida a partir de este Dockerfile tendrá la versión de git anterior. la que se instalo en el primer build de este Dockerfile. podemos desativar el usuo de la cache ejecutando docker build --no-cache
+
+Es importante destacar los siguientes aspectos sobre la cache de Docker:
+    la cache de docker es local, es decir, si la primera vez que haces el build de un Dockerfile en     una mpaquina dad, todas las instrucciones del Dockerfile seran ejecutadas, aunque la imagen ya     haya sido construida en un registro de docker.
+
+    si una instruccion ha cambiado y no puede utilizar la cache, la cache queda invalidada y las     siguientes instrucciones del Dockerfile seran ejecutadas sin hacer uso de la cache.
+
+    el comportamiento de las instruccipones ADD y COPY es distinto en cuanto al comportamiento de la 
+    cache aunque estas instrucciones no cambien, invalidadn la cache si el contenido de los ficheros     que se estan copiando ha sido modificado.

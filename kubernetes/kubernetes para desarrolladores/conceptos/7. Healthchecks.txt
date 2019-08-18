@@ -1,0 +1,16 @@
+Health checks:
+    necesarios en producción.
+    comando periodico por http checks.
+    readinessprobe.
+
+healthchecks son un mecanismo fundamental para cargas productivas. es el principal mecanismo por el cual kubernetes va a saber si nuestro pods estan funcionando correctamente o no.
+
+hay dos tipos de healchecks. podemos configurar la ejecución de comando periodico que se ejecuta en contexto de uno de los contenedores de mi pod, o podemos ejecutar llamadas http aun endpoint que nos responda si nuestro servicio está funcionando correctamente.
+
+por ultimo, kubernetes distingue entre dos tipod de healthchecks: 
+    linenessprobe:
+        indica si el contenedor esta funcionando incorrectamente y tiene que ser recreadi.
+    readinessProba:
+        indica si esta listo para recibir trafico.
+ 
+nosete que no significan lo mismo, un contenedor podria estar pasando el livenessProbe, pero no pasar el readinessprobe porque, por ejemplo, necesita acceder a una base de datos que en este momento no esta disponible. 

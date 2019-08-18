@@ -1,0 +1,6 @@
+optimiza el uso de la cache añadiendo al principio de tu Dockerfile las instrucciones que menos cambian (como la instalación de librerias), y dejando para el final las que más cambian (como el copiado de codigo fuente). como ejemplo compare el Dockerfile:
+
+por ejemplo, compara docker-for-dev/flask-alpine y docker-for-dev/flask-build-cache
+
+el primer cachea la instalaciones de las dependencias pip siempre que no añadamos nuevas dependencias al fichero requirements.txt, antes de añadir el codigo fuente. sin embargo, el segundo, aunque genere menos capas, no reusa la instalación de las dependencias porque ADD * /app invalida la cache en cuanto hay un cambio en nuestro codigo fuente.
+

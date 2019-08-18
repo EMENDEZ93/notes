@@ -1,0 +1,25 @@
+son unos principios que deberiamos tener como base antes de proponer una arquitectura de software para el desarrollo de nuestras aplicaciones.
+
+estos principios nos brindan formas de pasar del codigo estrechamente acoplado y pobremente encapsulado a los resultados deseados de las necesidades reales de una empresa.
+
+Siguiendo SOLID se desarrolla un codigo que pueda ser escalable a un futuro.
+
+Este acronimo tiene bastante relacion con los patrones de diseño, en especial, con la alta cohesión y el bajo acoplamiento.
+
+SOLID:
+es un acronimo de lo siguiente.
+
+S:
+    single responsibility principle (SRP)
+
+O:
+    Open/Closed principle (OCP)
+
+L:
+    Liskov substitution principle (LSP)
+
+I:
+    Interface Segregation Principle (ISP)
+
+D:
+    Dependency Inversion Principle (DIP)    

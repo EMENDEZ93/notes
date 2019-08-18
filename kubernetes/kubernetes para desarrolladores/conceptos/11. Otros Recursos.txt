@@ -1,0 +1,22 @@
+configmaps:
+    funcionan de una manera muy parecida a los secrets, pero estan pensados para definir ficheros
+    configuracion que no necesitan estar encriptados.
+
+volumes:
+    aunque hemos visto un ejemplo de un vplumen compartido entre contenedores en un mismo pod, hay     escenarios más avanzados.
+
+jobs:
+    son un tipo especial del pod para tareas que tienen principio y final, como una tarea asincronao     le ejecucuón de una tarea de integracion continua.
+
+deamonset:
+    son un tipo especial de pod que se caracteriza por ejecutar una instancia del pod en cada nodo     del cluster. son interesantes para correr herramientas de monitorizacion o de control de cluster
+
+Statefulset:
+    esta pensado para aplicaciones con estado, y que suelen hacer uso de volumes kubernetes trata de      recrear lo minimo posible pods pertenecientes a un statelfulset.
+
+pod presets:
+    es una manera muy util de hacer modificaciónes - por ejemplo añadir labels - a cada pod que se     cree en cluster.
+
+affinity:
+    no permite definir reglas de tipo a que dos tipos de pods deben desplegarse siempre en el mismo     nodo. o que siempre tiene que desplegar en nodos distintos.
+    por ejemplo, las instancias de un pod de base de datos deberian de desplegarse en nodos     distintios para aumentar su tolerancia a un fallo de infraestructura.

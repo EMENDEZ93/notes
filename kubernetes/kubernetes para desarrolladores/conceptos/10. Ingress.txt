@@ -1,0 +1,15 @@
+Ingress:
+    permite conexiones entrantes al cluster.
+    funciona con servicios tipo clusterip
+    ingress controller.
+
+cuando tenemos que exponer nuestros servicios a tráfico externo hemos visto que podemos crear un servicio de tipo load balancer, pero esta solucion puede resultar demasiado rigida y costosa. la alternativa es utilizar un ingress
+
+Ingrees:
+    nos permite difinir rutas de entradas a nuestro servicio de una manera programatica.
+
+existen numerosos ingress controller, como el de nginx, HAproxy o Istio, cada uno de ellos permitiendo distintas configuraciones.
+
+Por ejemplo. con el nginx ingress controller, podemos definir a donde redirigir una petición en base al dominio solicitado, o al path solicitado dentro de esa petición.
+
+en la demo veremos como redireccionar el trafico de entrada a mi cluster en funcion de la cabecera host de la peticion entrante.

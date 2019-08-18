@@ -1,0 +1,16 @@
+Services:
+    pods son demasiados dinamicos.
+    necesitan endpoint permanente.
+    balanceo de carga.
+    clusterip:
+	ip privada dentro del cluster.
+    nodeport:
+	exponer ip "servicio" en todas las maquinas del cluster.
+    loadbalancer:
+		puerto expuesto todos los nodos del cluster
+
+    30000:32767
+
+si algo hemos visto hasta este momento es que la vida de un pod es muy dinamica. los pods se crean y destruyen constantemente en un clúster de kubernetes, por lo que el acceso entre aplicaciónes no se puede basar en la ip de los pods. de alguna manera, es necesario tener un endpoint permanente que de acceso a un conjunto de pods.
+
+esta es la función de un service. un service se asocia a un conjunto de pods. cada service tiene un endpoint de acceso fijo que se corresponde con su nombre (aunque tembién podriamos acceder a él via un load balancer externo o un ingress) por tanto cada vez que accedamos por DNS a nombre un servicio, el servicio redirigira la paticion a uno de los pods a los que esta asociado, ofreciendo un mecanismo eficaz de service discovery y de balanceo de carga.
