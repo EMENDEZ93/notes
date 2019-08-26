@@ -1,0 +1,2 @@
+windows cmd:
+    scp id_rsa_taller userlab@192.168.1.65:~/.ssh/authorized_keys
