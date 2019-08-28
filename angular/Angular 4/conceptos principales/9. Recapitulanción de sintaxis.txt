@@ -1,0 +1,20 @@
+{{}}:
+    interpolación:
+	disabled={{component_variable}}
+
+[]:
+    property binding:
+	[disabled]="component_variable"
+
+():
+    event binding:
+	(click)="component_method"
+
+#:
+    declaración variable:
+	<input #name>
+
+*:
+    structural directives:
+	<p "ngFor="let talk to talks">
+	    

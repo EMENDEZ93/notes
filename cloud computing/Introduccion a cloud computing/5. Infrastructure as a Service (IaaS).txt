@@ -1,0 +1,9 @@
+IaaS:
+    infraestructura como servicio en la nube.
+    utilizado principalmente por administradores de sistemas.
+    se proporciona principalmente capacidad de cómputo, redes y diversos modos de almacenamiento.
+    Ejemplos:
+	AWS.
+	GCE.
+	Azure.
+	OpenStack.

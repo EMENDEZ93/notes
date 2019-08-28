@@ -1,0 +1,2 @@
+Directivas:
+componentes ya definidos por angular que usamos en nuestros templates, basicamente dos útiles ngFor para iterar sobre una lista y renderizar varios elementos y ngIf para renderizar algo o no dependiendo de una condición.

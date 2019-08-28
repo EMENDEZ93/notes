@@ -1,0 +1,11 @@
+Que es el cloud computing:
+    no existe la nube, solo es el computador de otro.
+
+this NIST Definition of cloud computing:
+    servicio disponible de forma automática y a demanda.
+    accesible a través de la red.
+    modelo multi-tenancy:
+	se comparten los recursos con otros usuario, pero debe garantizarse aislamiento y seguridad.
+    los recursos se agrupan en pools
+    elastica.
+    pago por uso.

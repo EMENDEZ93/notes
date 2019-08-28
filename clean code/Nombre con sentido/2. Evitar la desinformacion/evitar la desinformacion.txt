@@ -1,0 +1,10 @@
+debemos evitar palabras cuyo significado se aleje del que pretendemos.
+    ejemplo:
+	hp, aix, sco
+son nombres de variables pobres ya que son los nombres de plataformas o variantes de Unix.
+
+No haga referencia a un grupo de cuentas como accountList a menos que realmente sea una lista (List).
+si el contenedor de las cuentas no es realmente una lista, puede provocar falsas conclusiones.
+
+la ortografía similar de conceptos parecidos es información; el uso de ortografía incoherente es desinformación.
+

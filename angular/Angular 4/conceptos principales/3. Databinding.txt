@@ -1,0 +1,2 @@
+Databinding:
+en vez de usar JQuery o el DOM directamente para cambiar la visibilidad o el valor de un elemento usaremos databinding. con el databinding conseguiremos cambiar el valor de nuestro template de forma dinámica sin tener que manipular el DOM, es un pequeño lenguaje dentro del html, con múltiples sintaxis dependiendo del tipo  pero la más sencilla es el estilo moustache({{variable}}). Angular se encargará de mostrar el valor actualizado.

@@ -1,0 +1,1 @@
+los atributos que usamos dentro de la anotación del componente. Es la configuración del componente y nos permite indicar dónde está la ruta de nuestro template, definir un template inline (templateUrl), el selector para usar el componente.

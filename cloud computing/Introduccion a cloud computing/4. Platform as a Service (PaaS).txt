@@ -1,0 +1,10 @@
+PaaS:
+    plataforma de desarrollo web en la nube.
+    Utilizado por desarrolladores de software.
+    se proporciona toda la plataforma de desarrollo y despliegue de una aplicación al desarrollador.
+    Ejemplo:
+	Heroku.
+	Google App Engine.
+	Windows Azure.
+	Openshift.
+	CloudFoundry.

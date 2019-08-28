@@ -1,0 +1,2 @@
+inyección de dependencias:
+una aplicación de un patrón (inversión de control) con la idea de desacoplar la creación de componentes del uso de los mismos.

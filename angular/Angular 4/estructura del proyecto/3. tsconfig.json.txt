@@ -1,0 +1,2 @@
+tsconfig.json:
+    con la configuración por defecto de typescript.

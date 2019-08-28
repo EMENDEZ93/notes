@@ -1,0 +1,2 @@
+src/app:
+    dónde alojaremos nuestros componentes(nombre.component.ts), templates(_nombre.component.html), módulos.

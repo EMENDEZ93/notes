@@ -1,0 +1,4 @@
+Template/Vista:
+codigo html (con tags estandar) con atributos y etiquetas específicas de angular.
+será la forma de vincular componentes entresi, definiendo un selector (normalmente una etiqueta html con div) y 
+usando ese selector en nuestro template.

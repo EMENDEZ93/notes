@@ -1,0 +1,2 @@
+angular.cli.json:
+    es el fichero de configuración de angular cli, la consola de creación rápida de aplicaciones.

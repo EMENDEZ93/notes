@@ -1,0 +1,2 @@
+Modulos:
+una forma de organizar nuestra aplicación angular. en vez de tener muchos componentes comunicándose entre si, haremos pequeñas agruáciones de componentes relacionados(por negocio, caso de uso) y tendremos componenteprivados y públicos

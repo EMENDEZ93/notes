@@ -1,0 +1,2 @@
+package.json:
+    dónde especificaremos nuestra dependencias y librerías (es de npm)

@@ -1,0 +1,9 @@
+SaaS:
+    aplicación como servicio en la nube.
+    el usuario utiliza una aplicación a traves de la web en lugar de tenerla instalada en el propio equipo.
+    no todas las aplicaciónes web son SaaS, deben cumplir con las catacteristicas.
+    utilizado por cualquier usuario.
+    ya lo usamos, pero se prevé que se use cada vez más.
+    Ejemplos:
+	servicios de google.
+	Office365.
