@@ -1,0 +1,94 @@
+
+
+
+DDD ayudará en las aplicaciones empresariales porque: Cantidad de datos: bajo Rendimiento:
+baja Lógica de negocios complejidad: alta Complejidad técnica: baja
+
+Atributos más importantes de cada proyecto de software: 
+Cantidad de datos Desempeño Lógica de negocios complejidad Complejidad técnica
+
+La primera es la noción de lenguaje ubicuo, es decir, el lenguaje estructurado en torno 
+al modelo de dominio y utilizado por todos los miembros del equipo para referirse a los 
+elementos de ese dominio. Es posible que haya notado que en muchos proyectos, los expertos 
+en dominios y los desarrolladores usan diferentes conjuntos de términos cuando hablan del dominio. 
+Esta diferencia lleva a malentendidos y ralentiza el proceso de desarrollo general. 
+La noción de lenguaje ubicuo ayuda a eliminar la barrera. El diseño impulsado por el dominio 
+nos sugiere señalar explícitamente esas diferencias y ajustar la terminología para cumplir con un 
+solo lenguaje ubicuo. 
+
+bounded context:
+Si su sistema consta de dos partes, una de las cuales es ventas y la otra es soporte, sería una 
+buena decisión introducir un contexto acotado por separado para cada una de ellas e indicar 
+explícitamente la relación entre ellas. Veremos cómo podemos definir contextos limitados en 
+nuestra base de código en los módulos futuros.
+
+Core domain: enfoque en la parte más importante del sistema El tercer concepto es la noción de dominio central. 
+El diseño basado en el dominio establece que la parte principal de cualquier sistema es su lógica 
+de negocios, y no todos, pero la parte más intrínseca, es decir, el problema que el software debe 
+resolver es el dominio central. En el ejemplo de aplicación de ventas, puede haber mucha lógica de 
+negocios, pero no toda es esencial. Por ejemplo, puede tener una funcionalidad de contabilidad que puede 
+delegarse fácilmente a un software externo. Es fácil hacerlo, ya que no es el problema central para el 
+que está diseñada su aplicación, y es más económico comprar una solución existente en lugar de intentar 
+implementarla desde cero. El diseño basado en el dominio propone que siempre enfoquemos la mayor parte de nuestros 
+esfuerzos en el dominio central. Estos conceptos, el lenguaje ubicuo, el contexto acotado y el dominio central, 
+son las partes más importantes del diseño impulsado por el dominio. Puedes pensar en ellos como los elementos 
+estratégicos de DDD. Las otras nociones, como entidades, valoran.
+
+Para aprovechar al máximo el diseño basado en dominios, debe perfeccionar constantemente el conocimiento de su dominio con la ayuda de los expertos en su empresa, y no debe ser un proceso de una sola vía
+. Si ve alguna inconsistencia en el lenguaje que usan los expertos o en el modelo que dibujan, indíquelo. Puede ser que encuentre una manera de describir y resolver el problema de una manera mucho más sencilla de lo que se propuso al principio. Trabaje constantemente con los expertos y esfuércese por ayudarlos a simplificar o incluso a repensar completamente el problema. 
+
+Veamos la estructura de una aplicación típica construida con los principios de diseño de dominio en mente. Las nociones de DDD forman una construcción llamada arquitectura de cebolla. Se llama así porque se asemeja a una cebolla con múltiples capas y un núcleo en su interior. Las capas superiores dependen de las inferiores, pero las capas inferiores no saben de las superiores. Puede parecer similar a una arquitectura clásica de capas de cebolla. La diferencia aquí es que la arquitectura de cebolla enfatizó el hecho de que la parte central de esta estructura no puede depender de nada más, excepto de sí misma. Significa que los elementos centrales de nuestro modelo de dominio deben actuar de forma aislada de los demás. Éste es un punto importante. Hablaremos de ello en un minuto.
+
+
+1333/5000
+Pongamos los bloques de construcción de diseño impulsado por dominio en esta imagen. La parte central de esta llamada cebolla es la noción de entidad, objeto de valor, evento de dominio y agregado. La siguiente capa consiste en repositorios, fábricas y servicios de dominio. Los servicios de aplicación van más allá de eso, y finalmente, la interfaz de usuario es la capa más externa, si, por supuesto, la aplicación contiene una interfaz de usuario. Quizás te preguntes a dónde pertenece la base de datos en esta imagen. Todo el trabajo con una base de datos debe ser encapsulado en repositorios. Pueden referirse a él directamente o usar un ORM, pero la regla general debe permanecer. El código que trabaja con el almacenamiento de datos debe reunirse en los repositorios de su modelo de dominio. Estos cuatro elementos, entidades, objetos de valor, eventos de dominio y agregados, son los más básicos. Pueden referirse entre sí, por ejemplo, y luego pueden contener un objeto de valor o un objeto de valor puede mantener una referencia a una raíz agregada, pero no pueden trabajar con otras nociones de DDD, como repositorios y fábricas. De manera similar, los repositorios, las fábricas y los servicios de dominio pueden conocerse entre sí y los cuatro elementos básicos, pero no deben referirse a los servicios de aplicación.
+
+Entonces, ¿por qué este tipo de aislamiento es tan importante? ¿Por qué debemos mantener los cuatro elementos centrales del modelo de dominio separados de los demás? La razón principal es la separación de preocupaciones. Las entidades, los objetos de valor, los eventos de dominio y los agregados llevan la parte más importante de la aplicación, su lógica empresarial. Ellos no contienen todo eso, por supuesto. Los repositorios y las fábricas también pueden mantener parte de la lógica empresarial, pero estos cuatro elementos incluyen la mayoría. En la situación en la que tiene algunos elementos tan profundamente involucrados en la representación del dominio del problema, es vital mantenerlos lo más libres posible de otros deberes. De ahí, la noción de separación de preocupaciones. Me gustaría enfatizarlo una vez más. Es crucial dejar que las entidades y los objetos de valor hagan solo una cosa, representan la lógica del dominio en su aplicación. En la práctica, significa que no deben contener ningún conocimiento sobre cómo se persisten o cómo se crean. Estas dos operaciones deben ser hasta repositorios y fábricas. Tampoco deben contener ningún conocimiento sobre las tablas y columnas en la base de datos donde se almacenan. Esto debe ser regalado a los mapeadores de datos. Todo lo que deben saber es el dominio que representan.
+
+*
+Diseño impulsado por el dominio y pruebas unitarias Cuando se trata de pruebas unitarias, es importante mantener un equilibrio entre la cobertura de la prueba y la cantidad de esfuerzo que se pone en las pruebas. Alcanzar el 100% es una marca costosa y no necesariamente proporciona un valor proporcional a la calidad de su software
+Cuanto más nos acercamos al 100%, menos valor nos proporcionan las pruebas adicionales.
+
+En la práctica, significa que debe cubrir con pruebas unitarias solo las partes de su base de código que son las más significativas para la aplicación, y esta es la capa más interna de su arquitectura de cebolla, entidades, objetos de valor, agregados y eventos de dominio, el Elementos que contienen la mayor parte del conocimiento de dominio de su aplicación. Es una buena idea obtener el 100% o cerca del 100% como cobertura de ellos. Esa es otra razón por la que debemos mantener la capa central del modelo de dominio aislada de otras partes de la aplicación, como la base de datos, el servicio de correo electrónico, etc.
+
+En primer lugar, vio que comenzamos con el dominio central de inmediato sin modelar primero la interfaz de usuario o la base de datos. Es una buena idea hacer siempre esto. Siempre debe comenzar el proyecto experimentando con su modelo de dominio, ya que es la parte más importante de su aplicación. 
+
+En segundo lugar, comience siempre con un contexto acotado único para toda la lógica empresarial en su aplicación. No trates de dividirlo en varios pedazos al frente. Si bien los contextos limitados ayudan a reducir la complejidad de su código, la aplicación se justifica solo cuando su base de código ya es bastante grande; de lo contrario, no reducirán la complejidad, sino que la aumentarán.
+
+Y en tercer lugar, evalúe constantemente su código y busque abstracciones ocultas. Usted vio que después de que introdujéramos la clase Money, el código de la máquina de bocadillos se simplificó enormemente.
+
+Entidades: 
+  Tienen identidad inherente 
+  mutable.
+
+Objetos de valor: 
+ no tienen un campo de identificación. Se pueden tratar de manera intercambiable,
+ inmutable
+
+Entonces, ¿en qué se diferencia la forma en que identificamos las entidades y los objetos de valor? La diferencia aquí es que la igualdad de identificador se refiere a entidades exclusivamente, mientras que los objetos de valor poseen igualdad estructural. En la práctica, esto significa que los objetos de valor no tienen un campo de identificador, y si dos objetos de valor tienen el mismo conjunto de atributos, podemos tratarlos indistintamente. Tiene mucho sentido si nos fijamos en la noción de dinero en nuestro modelo de dominio. Si tenemos dos billetes de $ 1, realmente no importa con cuál de ellos trabajemos. No nos importa su identidad. Podemos reemplazar fácilmente un conjunto de monedas y billetes por otro, siempre que estos dos conjuntos tengan la misma composición. Al mismo tiempo, incluso si dos máquinas de bocadillos tienen la misma cantidad de dinero en el interior, no los tratamos indistintamente. Nos importa con cuál de ellos trabajamos. Puede pensarlo de una manera similar a como pensaría en dos personas que llevan el mismo nombre. No los tratamos como la misma persona por eso. Ellos tienen su propia identidad inherente. Otra distinción entre las dos nociones es la inmutabilidad. Los objetos de valor deben ser inmutables en el sentido de que si necesitamos cambiar un objeto de este tipo, construimos una nueva instancia basada en el objeto existente en lugar de cambiarlo. Por el contrario, las entidades son casi siempre mutables.
+
+entity base class:
+Interfaz pública IEntity {} La primera opción que tenemos aquí es introducir una interfaz como esta. De esa manera, nos aseguraremos de que todas las entidades de dominio en nuestro modelo tengan alguna funcionalidad mínima, la propiedad de ID. Aunque puede parecer una buena decisión, en la mayoría de los casos, tener una interfaz como entidad base es una mala idea.
+
+Doesn’t show proper relations between entities.
+
+El uso de una interfaz no muestra la relación adecuada entre las entidades de dominio. Implementar una interfaz significa que su clase promete tener alguna funcionalidad definida en la interfaz.
+
+Relación "puede hacer": interfaz pública IEntity {} clase pública Entity1 implementa IEntity {} clase pública Entity2 implementa IEntity {}
+
+Relación "is-a": clase abstracta pública Entidad {} clase pública Entity1 extiende Entidad {} clase pública Entity2 extiende Entidad {}
+
+Clase base de la entidad: 
+ Id propiedad miembros de igualdad
+
+Clase base de objeto de valor Clase base de objeto de valor: no tiene una propiedad de identificación No puede colocar miembros de igualdad en la clase base
+
+Los objetos de valor no tienen su propia identidad y, por lo tanto, no deberían tener la propiedad de ID como entidades. También significa que no podemos colocar todo el código requerido para la igualdad en la clase base. Para implementar la igualdad estructural, necesitamos conocer los aspectos internos de cada clase de objeto de valor. Sin embargo, todavía podemos reunir alguna lógica común a tales clases.
+
+Entity base class
+  Identificador de igualdad de referencia Igualdad de igualdad Debe tener una identidad. Lugar único para miembros de igualdad
+
+Value Object base class
+  Igualdad de referencia Igualdad estructural No tiene una identidad No hay un lugar único para los miembros con igualdad
+
+Bien, reiterémoslo una vez más. La distinción más importante entre entidades y objetos de valor es la diferencia en la forma en que los identificamos. Hay tres tipos de igualdad. La igualdad de referencia pertenece tanto a las entidades como a los objetos de valor. Identificador de igualdad para entidades, igualdad estructural para valorar objetos. Esto significa que cada entidad debe tener su propia identidad, que se expresa mejor utilizando una propiedad de identificación separada. También significa que podemos crear un único método de igualdad que alimentaría a cada entidad. Los objetos de valor al mismo tiempo no tienen una identidad, por lo que no pueden tener un campo de ID separado. La igualdad estructural significa que debemos implementar la lógica de comparación en cada clase de objeto de valor aparte, pero esta tarea se puede aliviar mediante la factorización de una lógica común a la clase base.
