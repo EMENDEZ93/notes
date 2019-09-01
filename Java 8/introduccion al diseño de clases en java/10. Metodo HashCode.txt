@@ -1,0 +1,5 @@
+hashcode:
+    devuelve un número asociado a la clase.
+    sirve como posición de memoria en hexadecimal.
+    por definición, si dos objetos son iguales (equals), su hash code también debe serlo.
+    si sobrescribimos el método equals, también tenemos que sobreescribir hashCode para que se cumpla esa propiedad.

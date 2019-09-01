@@ -1,0 +1,26 @@
+los nombres de una letra y las constantes numéricas tiene un problema:
+    no son fáciles de localizar en el texto.
+    se puede detectar MAX_CLASSES_PER_STUDENT, pero el número 7 resulta más complicado.
+    mucho peor si la constante es un número extenso y alguien ha intercambiado los digitos, lo que genera
+    error inmediato y no aparece en la búsqueda.
+   
+si una variable o constante se usa en varios puntos del código, debe asignarle un nombre que se pueda buscar.
+
+for(int j=0; j<34; j++){
+    s += (t[j]*4)/5;
+}
+
+-> 
+int realDaysPeridealDay = 4;
+const int WORK_DAYS_PER_WEEK =5;
+int sum = 0;
+
+for(int j=0; j<NUMERO_OF_TASKS; j++){
+    int realTaskDays = taskEstimate[j] * realDaysPerIdealDay;
+    int realTaskWeeks = (realdays / WORK_DAYS_PER_WEEK);
+    sum += realTaskWeeks;
+}
+
+en este ejemplo, sum no es un nombre espeialmente útil pero al menos se puede buscar. se usa una función más extensa
+pero comprobará que resulta mucho más fácil buscar WORK_DAYS_PER_WEEK que todas las instancias de 5 y filtar la lista
+a los casos con el significado adecuado.

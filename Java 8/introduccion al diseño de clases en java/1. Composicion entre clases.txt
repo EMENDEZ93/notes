@@ -4,7 +4,7 @@ Asociacion entre clases:
     una de ellas es la composicion.
     
 Composición de clases:
-    dentro de la clase todo tendremosuna referencia a la clase parte.
+    dentro de la clase todo tendremos una referencia a la clase parte.
     también es posible que la multiplicidad nos indique que debemos tener una colección.
     normalmente hay dependencias de existencia entre la parte y el todo.
    

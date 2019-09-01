@@ -1,0 +1,7 @@
+Herencia de object:
+    todo objeto, de forma explícita o implícita, hereda de Object.
+    Es la clase base de cualquier otra en java.
+    Tiene algunos métodos:
+	equals.
+	hashCode.
+	toString.
