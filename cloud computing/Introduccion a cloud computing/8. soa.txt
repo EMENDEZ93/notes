@@ -1,0 +1,7 @@
+SOA:
+    service-oriented architecture.
+    servicios independientes
+    multiples tecnologias interaccionando.
+    comunicación via WSDL y SOAP.
+    colas de mensajes.
+    se relacionan con aplicaciones corporativas.

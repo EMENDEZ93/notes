@@ -1,0 +1,5 @@
+Constantes:
+    Se suelen definir como estáticas.
+    static final double PI = 3.14....
+    No se puede modificar su valor.
+    Nombre en mayúsculas, separado de palabras con guiones bajos.

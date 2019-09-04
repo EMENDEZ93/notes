@@ -1,0 +1,3 @@
+Hibernate OGM:
+    se trata de mapeardor objeto-grid, y está orientado hacia bases de datos NoSql.
+    Tiene soporte para su uso con JPA.

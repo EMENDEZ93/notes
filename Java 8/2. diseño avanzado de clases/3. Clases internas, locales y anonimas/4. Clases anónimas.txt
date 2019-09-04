@@ -1,0 +1,7 @@
+Clases anónimas:
+    permiten definir e instancias una clase a la vez.
+    son como clases locales sin nombre.
+    sinrven para ser usadas una vez.
+
+las podemos definir a partir de otra clase o de ua interfaz.
+podemos crearlas en el cuerpo de un método, de una clase, o como argumento de una método.

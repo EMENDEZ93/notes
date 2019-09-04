@@ -1,0 +1,6 @@
+Clases internas:
+    se llaman asi a las clases anidadas no estaticas.
+    solo pueden existir en el marco de una instancia de la clase externa.
+    pueden acceder a sus miembros (de la clase externa).
+
+si definimos una variable miembro en la clase interna, con el mismo nombre otra de la clase externa, la interna oculta a la externa. a esto se le llama shadowing.

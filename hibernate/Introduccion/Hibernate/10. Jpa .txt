@@ -1,0 +1,5 @@
+JPA:
+    es la especificación para estandarizar ORM's en Java.
+
+Hibernate:
+    es un vendor de una implementación del estandar JPA

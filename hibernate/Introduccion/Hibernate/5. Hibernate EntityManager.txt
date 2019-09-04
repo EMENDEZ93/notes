@@ -1,0 +1,2 @@
+Hibernate EntityManager:
+    Tambien conocido como Jpa Provier, este módulo es el que nos permite utilizar hibernate como implementacion del     estanda JPA

@@ -1,0 +1,9 @@
+Variables Final:
+Basicamente indican que aquella variable a la que afectan no se puede modificar.
+podemos diferenciar entre:
+    Tipos primitivos:
+	serán valores inmodificables, constantes, suelen usarse junto con static.
+    Objetos:
+	si declaramos una referencia como final, estamos diciendo que esa referencia no podrá asignarse a otro objeto.
+	sin embargo si que podemos modificar el estado del objeto con sus propios métodos.
+	los mismo sucederia en el caso de arrays.

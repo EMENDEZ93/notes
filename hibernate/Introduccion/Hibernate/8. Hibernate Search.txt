@@ -1,0 +1,2 @@
+Hibernate Search:
+    podremos realizar busquedas de texto completo a través de un índice mantenido dentro de una base de datos de     apache lucene.

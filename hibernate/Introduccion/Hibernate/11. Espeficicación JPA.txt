@@ -1,0 +1,5 @@
+Especificación JPA:
+    Una facilidad para espeficicar como nuestros objetos java se relacion con el esquema de una db.
+    Una api sencilla para realizar las operaciones CRUD.
+    Un lenguaje y un API para realizar consultas sobre los datos(JPQL)
+    Elementos de optimización (actualización de entidades, captura de asociaciones, caché..)

@@ -1,0 +1,7 @@
+cloud native:
+    enfasis en la adaptación de la infraestructura al a demanda.
+    uso extensivo de la elasticidad:
+ 	infraestructura dinamica.
+    aplicaciones resilentes.
+    elasticidad horizontal.
+    automatización.

@@ -1,0 +1,3 @@
+Clases Locales:
+    son clases que se definen de un bloque, normalmente el cuerpo de un método.
+    sirven para afinar aun más la cohesión del codigo.

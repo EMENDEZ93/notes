@@ -1,0 +1,6 @@
+Modificador Final:
+    Se puede utilizar en diferentes contextos:
+	Clases final.
+	Metodos final.
+	Variables final.
+    En todos los casos, indica que de una u otra forma, el ámbito sobre el que aplica no podrá ser modificado.

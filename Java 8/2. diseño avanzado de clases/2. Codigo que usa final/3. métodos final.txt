@@ -1,0 +1,4 @@
+Métodos Final: 
+    Se definen en clases susceptible de ser extendidas. 
+    Nos permiten indicar que un método no se va a poder sobrescribir.
+    En la clase extendida habrá que usar, obligatoriamente, la implementación de la clase base.

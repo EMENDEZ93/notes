@@ -1,0 +1,4 @@
+Clases final:
+    Son clases que no se pueden extender.
+    En una jerarquia de herencia, son el último nodo.
+    se pueden instanciar y tratar con normalidad.

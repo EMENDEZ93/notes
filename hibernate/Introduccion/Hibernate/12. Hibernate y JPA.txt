@@ -1,0 +1,3 @@
+Hibernate y JPA:
+    Las funcionalidades de hibernate van más allá de la espeficación JPA. además, el documento que define JPA
+    Está basado, a grander rasgos, en como trabaja hibernate.

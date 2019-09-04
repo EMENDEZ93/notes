@@ -1,0 +1,21 @@
+Clases Abstractas:
+    Abstract:
+	Es una palabra reservada, que puede usarse a nivel de método o de clase.
+  	Sirve para indicar la obligación de implementear un método o de extender de una clase completa. 
+
+    A Nivel de Clase:
+        Son clases que no se pueden instanciar.
+	Puede tener métodos con implementación y atributos, y también métodos abstractos.
+
+        public abstract class ObjectoGrafico implements Transformable {
+	    protected int x, y;
+	    public void moverA(int nuevaX, int nuevaY) {
+        	this.x = nuevaX;
+        	this.y = nuevaY;
+    	    }
+	    abstract public void dibujar();
+	    abstract public void cambiarTamanio(int factorAumento);
+	}
+
+
+ 

@@ -1,0 +1,7 @@
+Febrero del Año 2001.
+17 personalidades del desarrollo del software se reúnen en Utah, EEUU.
+Escriben el manifiesto de desarrollo ágil y 12 principios de desarrollo ágil.
+
+Manifiesto de desarrollo ágil:
+en febrero de 2001 17 expertos en metodologias "livianas" se reunieron. El propósito era tratar de llegar a un consenso sobre de las maneras de trabajo que estaban utilizando. Dos de los asistentes eran Jeff Sutherland y Ken Schwaber, fundadores de Scrum. También estaba Mike beedle, quien trabajó en la redacción del primer libro de scrum. el grupo se autodenominó "The Agile Alliance"
+Esta reunión se definió lo que se conoce como el manifiesto para el desarrollo ágil de software y lod doce principios que respaldan el manifiesto.

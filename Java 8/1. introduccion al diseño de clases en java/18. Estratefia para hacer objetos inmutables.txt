@@ -1,0 +1,4 @@
+Estrategia para hacer objetos inmutables:
+    Definir las propiedades como final y private.
+    No añadir métodos setter.
+    declarar la clase misma como final.

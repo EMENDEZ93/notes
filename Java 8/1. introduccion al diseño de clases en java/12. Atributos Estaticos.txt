@@ -1,0 +1,6 @@
+Atributos Estaticos:
+    Estám asociados a la clase, no a una instancia de ella.
+    Son llamados atributos estaticos.
+    Compartidos para todas las instancias de esa clase.
+    Pueden ser manipulados por cualquier instancia.
+    Tambien pueden ser manipulados sin crear instancias de esa clase.

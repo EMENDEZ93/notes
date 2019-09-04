@@ -1,0 +1,5 @@
+Atributos de objeto y de clase:
+    Los objetos son instancias de una clase.
+    Cada Objeto tiene una copia de los atributos.
+    ¿Y si quisieramos tener un atributo común a todos los objetos de una clase?
+    Static

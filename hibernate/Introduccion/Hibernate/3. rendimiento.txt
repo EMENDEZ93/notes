@@ -1,0 +1,3 @@
+Rendimiento:
+    aunque las persistencia manual podria permitir un rendimiento mayor, hibernate aporta muchas optimizaciones, como
+    el almacenamiento en caché.

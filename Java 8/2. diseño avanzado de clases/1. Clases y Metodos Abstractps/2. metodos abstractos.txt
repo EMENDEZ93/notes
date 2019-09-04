@@ -1,0 +1,5 @@
+Métodos Abstractos:
+    Los métodos definidos como absract deben estar en una clase abstracta.
+    Definen la fima del método, pero sin implementación.
+    Sus subclases se comprometen a implementarlo. si no lo hacen, tambien deben ser abstractas, pueden convivir
+    con métodos normales.

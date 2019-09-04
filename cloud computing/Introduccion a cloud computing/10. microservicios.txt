@@ -1,0 +1,7 @@
+Microservicios:
+    deriva del esquema SOA.
+    no existe una definicion formal.
+    servicios llevados a la minima expresión (un proceso por nodo); Microservicios.
+    Comunicación via Http Rest.
+    Relacionado con procesos ágiles de desarrollo: entrega continua.
+    suele implementarse sobre contenedores.

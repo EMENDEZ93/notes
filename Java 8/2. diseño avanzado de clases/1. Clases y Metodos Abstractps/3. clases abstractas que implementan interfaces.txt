@@ -1,0 +1,19 @@
+Clases Abstractas que implementan interfaces:
+    una clase implementa una interfaz tiene obligación de implementar todos sus métodos, sin embargo, una clase 
+    abstract puede dejar métodos sin implementación, obligando a quienes la extienan a hacerlo.
+
+    public interface Transformable {
+        public void rotar();
+        public void voltearHorizontal();
+        public void voltearVertical();
+    }
+
+    public abstract class ObjectoGrafico implements Transformable {
+        protected int x, y;
+        public void moverA(int nuevaX, int nuevaY) {
+            this.x = nuevaX;
+            this.y = nuevaY;
+        }
+        abstract public void dibujar();
+        abstract public void cambiarTamanio(int factorAumento);
+    }

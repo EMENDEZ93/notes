@@ -1,0 +1,6 @@
+Metodos Estaticos:
+    Similares a las variables estaticas.
+    Se pueden incovar sin crear una instancia de esa clase.
+    Clase.metodoEstatico().
+    Para acceder a una variable estática necesitamos un método estatico.
+    Clases con metodos auxiliares como por ejemplo java.util.arrays.

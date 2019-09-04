@@ -1,0 +1,4 @@
+Objetos inmutables:
+    Objetos cuyo estado no puede ser modificado una vez se haya iniciado.
+    No son constantes (estas se definen en tiempo de compilación, y los inmutables en tiempo de ejecución).
+    Un ejemplo de inmutable es String.

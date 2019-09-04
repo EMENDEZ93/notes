@@ -1,0 +1,8 @@
+Clase dentro de otras clases:
+Java permite definir clases dentro de otras clases. A esta clases se le llaman anidadas.
+puede ser de dos tipos, estaticas o no estaticas. No se trata de composición de clases, sino anidamiento. en algunos casos, pueden acceder a los atributos de la clase que le envuelve.
+
+Las razones para uso son varias:
+    agrupamiento lógico de clases que se utilizan en un solo lugar. por tanto hay mayor cohesión.
+    aumento de la encapsulación.
+    código más legible y fácil de mantener.

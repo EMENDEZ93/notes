@@ -1,0 +1,9 @@
+Aplicación Monolitica:
+    Todos los componentes en el mismo nodo.
+    Escalado Vertical.
+    Arquitectura muy sencilla.
+    Consideraciones de seguridad.
+    Interferencias entre componentes
+    Complejidad en las actualizaciones.
+    Infraestructura estática y fija por años.
+    Aplicación no tolerante a fallos.

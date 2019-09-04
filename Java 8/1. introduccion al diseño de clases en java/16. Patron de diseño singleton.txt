@@ -1,0 +1,4 @@
+patron de diseño singleton:
+    patron de diseño (GoF)
+    para aquellas clases de las que no queremos tener mpas de una instancia(por ejemplo, los servicios)
+    

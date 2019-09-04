@@ -1,0 +1,3 @@
+Habernate Validator:
+    Hibernate proporciona una implementacion del estandar JSR 303 Bean Valiation. 
+    proporciona una validación declarativa para nuestras clases modelo.

@@ -1,0 +1,4 @@
+Clases Estaticas:
+    Valido para clases internas (las estudiaremos en profundidad más adelante)
+    Nos permiten agrupar código.
+    Para crear una instancia de la clase interna, no necesitamos una de la clase externa.

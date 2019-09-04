@@ -1,0 +1,3 @@
+Hibernate Envers:
+    Nos permite auditar los cambios en nuestra persistencia, manteniendo múltiples versiones de los datos en nuestra
+    base de datos SQL.
