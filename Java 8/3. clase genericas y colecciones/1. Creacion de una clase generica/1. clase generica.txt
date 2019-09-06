@@ -1,0 +1,13 @@
+Clase Genérica:
+    se trata de una clase parametrizada sobre uno o más tipos:
+
+    public clas box:
+	    private Object object.
+		
+		public void set(Object object):
+			this.object = object.
+
+		public Object get():
+			return object.
+
+* este tipo de codigo es propenso a producir errores.

@@ -1,0 +1,16 @@
+Clase genérica a partir de java se 5:
+
+	public class Box<T>:
+		private T object;
+		
+		public void set(T object):
+			this.object = object.
+		
+		public T get():
+			return object.
+			
+* se asigna el tipo en tiempo de compilación.
+
+	public class Box<T, C>:
+		private T objectT;
+		private C objectC;

@@ -1,0 +1,9 @@
+Instanciación y operador diamond:
+para instanciar un objeto generico tenemos que indicar los tipos deos veces:
+	
+	Par<String, String> pareja2 = new Par<String, String>("E","M");
+	
+* Este estilo es muy verboso.
+* desde Java SE / tenemos el operador <> diamond.
+
+	Par<String, String> pareja = new Par<>("E","M");

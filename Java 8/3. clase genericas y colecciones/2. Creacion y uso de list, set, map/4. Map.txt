@@ -1,0 +1,29 @@
+Map:
+    Estructura clave valor.
+    Posibilidad de orden de elementos.
+	No es un subtipo de collection (list y set si lo son)
+	Cada elemento tiene estructura clave, valor.
+	La clave sirve para acceder directamente al valor.
+	Las implementaciones son HashMap, TreeMap y LinkedHashMAp. las consideraciones son análogas a Set.
+	
+Operaciones con Map:
+	clear:
+		elimina todos los elementos del diccionario.
+	containsKey;
+		comprueba si una clave está presente en el diccionario.
+	containsValue:
+		comprueba si un valor está presente en el diccionario.
+	get:
+		devuelve el valor asociado a una clave.
+	isEmpty:
+		verifiva si el conjunto está vacio.
+	keySet:
+		devuelve un set con todas las claves.
+	put:
+		permite insertar un par clave, valor.
+	remove:
+		elimina un elemento del conjunto.
+	size:
+		devuelve el número de elementos de la lista.
+	values:
+		devulve una collection con los valores.

@@ -1,0 +1,8 @@
+Convención sobre el nombre de parametros:
+    los nombres de tipos de párametros más usados son:
+		E (element, elemento).
+		K (key, clave).
+		N (number, numero)
+		T (type, tipo)
+		V (value, valor)
+		S,U,V (2°, 3°, 4°, ...tipo)

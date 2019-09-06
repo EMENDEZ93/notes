@@ -1,0 +1,28 @@
+Set:
+    No soporta duplicados.
+    Posibilidad de orden de elementos.
+	propote tres implementaciones:
+		HashSet:
+			Es la más eficiente, pero no nos asegura nada sobre el orden.
+		TreeSet:
+			Utiliza un árbol red-back, ordena según el valor.
+		LinkedHastSet
+			Es un HashSet ordenado por orden de inserción.
+			
+Operaciones con set:
+	add:
+		añade un elemento al conjunto, si aun no esta contenido.
+	addAll:
+		añade todos los elementos de la colección pasada como argumento si es que aun no están presentes.
+	clear:
+		elimina todoss los elementos del conjunto.
+	contains:
+		comprueba si un elemento está o no en el conjunto.
+	isEmpty:
+		verifica si el conjunto está vacío.
+	remove:
+		elimina un elemento del conjunto.
+	size:
+		devuelve el número de elementos de la lista.
+	toArray:
+		devuelve la lista como un array.

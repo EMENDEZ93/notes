@@ -1,0 +1,13 @@
+Genéricos con tipos cerrados:
+podemos indicar que el tipo de parametrizado sea uno en particular (o sus derivados):
+
+    public class NumericBox <T extends Number>:
+	private T Object;
+
+pueden ser mas de 1 clase:
+
+    public class A:
+   
+    public class B:
+
+    public class StrangeBox <T extends A & B>:

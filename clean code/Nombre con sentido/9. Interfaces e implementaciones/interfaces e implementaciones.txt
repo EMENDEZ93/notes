@@ -1,0 +1,10 @@
+interfaces e implementaciones:
+Existe un caso especial para usar codificaciones.
+Imagine por ejemplo que crea una factoria abstracta para crear formas. esta factoria será una interfaz y se implementará por medio de una clase concreta.
+
+¿Que nombres debe asignar?
+¿IShapeFactory y ShapeFactory? 
+
+* Prefiero las interfaces sin adornos.
+* La I inical, tan habitual en los archivos de legado actuales es, en el mejor de los casos, una distracción, y en el peor un exceso de información, No quiero que mis usuarios sepan que se trata de una interfaz, solamente que se trata de ShapeFactory. si tengo que codificar la interfaz o la implementación, opto por ésta última.
+* es mejor usar ShapeFactoryImp o incluso CShapeFactory, que codificar la interfaz.

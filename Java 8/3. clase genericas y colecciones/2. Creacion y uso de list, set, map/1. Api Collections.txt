@@ -1,0 +1,10 @@
+Api Collections:
+desde Java SE 2 se ofrece el tratamiento de colecciones. Actualmente tiene:
+	Interfaces:
+		tipos de datos.
+	Implementaciones:
+		concreciones de los diferentes interfaces.
+	Algoritmos:
+		para realizar operaciones como ordenación, búsqueda.
+
+todas las colecciones están definidas como genéricas.

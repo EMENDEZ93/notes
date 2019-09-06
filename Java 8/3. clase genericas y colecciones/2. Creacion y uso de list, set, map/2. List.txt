@@ -1,0 +1,10 @@
+List:
+    lineal.
+    posibilidad de orden.
+    repetidos.
+    los elementos tienen posición.
+    Permite duplicados.
+    Tambien permite búsqueda e iteraciones.
+    Las implementaciones más conocidas son:
+	ArrayList y LinkedList.
+    Si no sabemos cual escoger, utilizaremos siempre ArrayList.

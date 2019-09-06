@@ -1,0 +1,27 @@
+Operaciones con List:
+    add:
+		añade un elemento al final de la lista.
+		
+	addAll:
+		añade todos los elementos de la colección pasada como argumento.
+	
+	clear:
+		elimina todos los elementos de la lista.
+		
+	contains:
+		comprueba si un elemento está o no en la lista.
+		
+	get:
+		devuelve el elemento de la posición especifica de la lista.
+		
+	isEmpty:
+		varifica si la lista está vacia.
+		
+	remove:
+		elimina un elemento de la lista.
+		
+	size:
+		devuelve el número de elementos de la lista.
+		
+	toArray:
+		devuelve la lista como un array.
