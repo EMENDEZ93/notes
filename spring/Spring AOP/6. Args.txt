@@ -1,0 +1,7 @@
+Args:
+	permite especificar el tipo deseado para los argumentos.
+	No se suee usar tal cual, sino combinado con execution() como un truco para darle nombre a los argumentos.
+	
+		ejemplo:
+			args(java.io.Serializable):
+				cualquier método que tenga un solo parametro y que implemente Serializable.

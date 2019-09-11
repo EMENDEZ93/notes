@@ -1,0 +1,13 @@
+Advice:
+	es una acción que hay que ejecutar en determinados puntos de un código, para conseguir implementar un aspecto.
+	Nuestro ejemplo la acción a ejecutar seria la llamada a chequearPermisos.
+	
+	un advide es algo que hay que hacer en un cirto punto de corte, ya sea antes, despues, o alrededor del punto.
+	Los advices se especifican con una anotación con el pointcut y la definición del método Java a ejecutar (signatura y codigo)
+	Como en Spring los puntos de corte deben ser ejecuciones de métodos los casos posibles son:
+		Antes de la ejecución de un metodo (@Before).
+		Despues de la ejecución normal, es decir, si no se genera una excepción (@AfterReturning).
+		Después de la ejecución con excepción/es (@AfterThrowing)
+		Después de la ejecución, se hayan producido o no excepciones (@After)
+		Antes y después de la ejecución (@Around)
+		

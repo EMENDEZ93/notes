@@ -1,0 +1,23 @@
+PointCuts con nombre:
+	se le puede asignar un nombre arbitrario a un pointcut (lo que se denomica una signatura). esto permite referenciarlo y
+	reutilizarlo de manera más corta y sencilla que si tuvieramos que poner la expresion completa que la define. la 
+	definición completa consta de la anotación @PointCuts seguida de la expresión que lo define y la signatura. para definir
+	la asignatura. para definir la signatura se usa la misma sintaxis que era para definir la de un método Java en una interfaz.
+	Eso si el valor de retorno debe ser void.
+
+	ejemplo:
+		@Pointcuts( execution(public * get*()))
+		public void unGetterCualquiera(){
+		}
+		
+	Esta signatura se puede usar por ejemplo al combinar pointcuts:
+	
+		@Pointcut("execution(public * get*())")
+		public void unGetterCualquiera() {}
+		
+		@Pointcut("within(es.ua.em.*)")
+		public void enNegocio(){}
+		
+		@Pointcut("unGetterCualquiera() && enNegocio()")
+		public void getterDeNegocio() {}
+		

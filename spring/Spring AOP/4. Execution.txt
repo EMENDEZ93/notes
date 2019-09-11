@@ -1,0 +1,23 @@
+Execution:
+	la expresión más usada en pointcuts de spring es execution()m que representa la llamada a un método
+	que encaje con una deternimanda signatura.
+	Se puede especificar la asignatura completa del método incluyendo tipo de acceso (public, protected), tipo de entorno
+	nombre de la clase (incluyendo paquetes), nombre de método y argumento.
+	
+		ejemplo:
+		1. para especificar todos los métodos con acceso public de cualquier clase dentro del paquete:
+			execution( public * es.ua.em.aop.*.*(..)):
+				1.1 donde el primer * representa cualquier tipo de retorno.
+				1.2 el segundo * cualquier clase.
+				1.3 el tercer * cualquier método.
+				1.4 los .. representan cualquier conjunto de parámetros.
+			
+				ejemplos de execution():
+					execution (public * get*()):
+						ejecucion de cualquier getter - metodo publico cuyo nombre comience por get y que no tenga parámetro.
+					execution (public * es.ua.em..*.*(..)):
+						ejecucion de cualquier método public de cualquier clase en el paquete es.ua.em o subpaquetes.
+					execution (void es.um.em.*.*(String,...)):
+						ejecución de cualquier método de cualquier clase en el paquete es.ua.em que devulva void y cuyo primer
+						parámetro sea de tipo String se omite el modificador de acceso.
+					

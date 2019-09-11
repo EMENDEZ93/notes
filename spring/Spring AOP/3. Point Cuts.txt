@@ -1,0 +1,4 @@
+Point Cuts:
+	el conjunto de puntos del código donde se debe ejecutar un advice.
+	En nuestro ejemplo seria metodoDelNegocio() y metodoDelNegocio(), notese que aunque se hable de punto de corte
+	en singular, en general no es un único punto del codigo.

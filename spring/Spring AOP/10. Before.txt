@@ -1,0 +1,18 @@
+Before:
+	esta anotación ejecuta un advice antes de la ejecución del punto de corte especificado.
+	
+	ejemplo:
+		import org.aspectj.lang.annotation.Aspect;
+		import org.aspectj.lang.annotation.Before;
+
+		@Aspect
+		public class EjemploBefore {
+
+			@Before("execution(public * get*())")
+			public void controlaPermisos() {
+				// ...
+			}
+
+		}
+		
+		Ejecutaría controlaPermisos() antes de llamar a cualquier getter.

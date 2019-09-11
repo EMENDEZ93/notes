@@ -1,0 +1,3 @@
+After;
+	esta anotación ejecuta un advice después de la ejecución del punto de corte especificado, genere o no una excepción, es decir, al
+	estilo de finally de Java, se usa tipicamente para liberar recursos y otras tareas habituales para finally.

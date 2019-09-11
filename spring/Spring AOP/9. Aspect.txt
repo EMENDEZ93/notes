@@ -1,0 +1,12 @@
+Aspect:
+	es un conjunto de advices. siguiendo la sintaxis de AspectJ, los aspectos se representan como clases Java
+	Marcadas con la anotación @Aspect. en Spring, además, un aspecto debe ser un bean, por lo que tendremos que anotarlo como tal.
+
+	import org.aspectj.lang.annotation.Aspect;
+	import org.springframework.stereotype.Component;
+ 
+	@Component
+	@Aspect
+	public class EjemploDeAspecto {
+		//aquí vendrían los advices...
+	}	

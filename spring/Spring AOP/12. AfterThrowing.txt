@@ -1,0 +1,20 @@
+AfterThrowing:
+	Esta anotación ejecuta un advice despues de la ejecución del punto de corte especificado, si el método del punto
+	de corte genera una excepción. podemos tanto acceder generada como restringir el tipo de las excepciones que nos interesan
+	usando una sintaxis como la siguiente:
+	
+	import org.aspectj.lang.annotation.Aspect;
+	import org.aspectj.lang.annotation.AfterThrowing;
+
+	@Aspect
+	public class EjemploAfterThrowing {
+
+		@AfterThrowing(
+		pointcut="execution(public * get*())", throwing="daoe")
+		public void logException(DAOException daoe) {
+			// ...
+		}
+	}
+	
+	el ejemplo anterior indicaria que no hay que ejecutar el advice a menos que la excepción generada sea del tipo DAOException y nos 
+	permite acceder a su valor a través del parámetro daoe.

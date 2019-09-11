@@ -1,0 +1,11 @@
+Combinar Pointcuts:
+	se pueden combinar poincuts usando los operadores logicos &&, || y !, con el mismo significado que en el 
+	lenguaje C.
+		ejemplo:
+			execution (public * get*()) || execution (public void set*(*)):
+				todos los getters o setter de cualquier clase.
+	
+	el operador && se suele usar en conjunción eon args como una forma de dar nombre a los parámetros.
+		ejemplo:
+			execution (public void set*(*)) && args(nuevoValor):
+				encajaría con un seter cualquiera, dándole el nombre nuevoValor al parámetro pasando al mismo.

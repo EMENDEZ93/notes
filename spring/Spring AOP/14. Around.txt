@@ -1,0 +1,25 @@
+Around:
+	Esta anotación ejecuta parte del advice antes y parte despues de la ejecución del punto de corte especificado.
+	La filosofia consiste en que el usuario es el que debe especificar en el codigo del advice en qué momento se debe llamar al
+	punto de corte. por ello, el advice debe tener como minimo un parametro de la clase ProceedingJoinPoint, que representa
+	al punto de corte, llamado al metodo proceed() de esta clase, ejecutamos el punto de corte. Por ejemplo:
+	
+	import org.aspectj.lang.annotation.Aspect;
+	import org.aspectj.lang.annotation.Around;
+	import org.aspectj.lang.ProceedingJoinPoint;
+
+	@Aspect
+	public class EjemploAround {
+
+		@Around("execution(public * get*())")
+		public Object ejemploAround(ProceedingJoinPoint pjp) throws Throwable {
+			System.out.println("ANTES");
+			Object valorRetorno = pjp.proceed();
+			System.out.println("DESPUES");
+			return valorRetorno;
+		}
+	}
+	
+	Hay que destacar varias cuestiones del código anterior. Como ya se ha dicho, cuando queremos llamar al punto de corte
+	invocamos a proceed(), ademas debemos devolver como valor de retorno del advice el devuelto por el punto de corte. finalmente, si el
+	método del punto requiere parámetro, podemos pasarle un Object[].

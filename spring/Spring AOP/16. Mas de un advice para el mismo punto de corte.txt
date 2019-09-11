@@ -1,0 +1,16 @@
+Más de un advice para el mismo punto de corte:
+	aun que no se ha dicho explicitamente hasta el momento, por supuesto se puede definir más de un advice	
+	que encaje con el mismo punto de corte. la pregunta surge entonces de forma natural:
+		¿Cual es el orden de aplicación de los advices?.
+		
+	Para los advices especificados dentro del mismo aspecto:
+		se puede tomar como una regla básica que el orden de ejecución es el mismo que el de declaración.
+		Es decir, que si declaramos varios advice de tipo before, se ejecutará primero el que aparezca declarado,
+		y si declaramos varios e tipo after ocurrirá lo mismo (en realidad en el caso after si se piensa un poco se verá
+		que el mayor importacia es el que se ejecuta el ultimo)
+		
+	El caso en que tenemos advices definidos en aspectos distintos es más complejo, ya que en principio no esta definida la
+	precedencia por defecto y para especificarla hay que escribir algo de codigo java, en concreto el aspecto debe implementar
+	el interface org.springframework.core.Ordered. remitimos al lector a la documentación de Spring para más información.
+	
+	

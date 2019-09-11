@@ -1,0 +1,36 @@
+Acceder a los parametros y otra información del punto de corte:
+	Spring ofrece al advice acceso tanto a los parámetros del método del punto de corte como a información adicional sobre
+	el mismo. Ya hemos visto como acceder al valor de retorno, en el ejemplo de @AfterReturning, y a la exepción lanzad en el caso de 
+	@AfterThrowing.
+	
+	para hacer accesible al advice los argumentos del punto de corte se puede usar args.
+	ejemplo:
+		//...
+			@AfterReturning("execution(public void set*(*)) && args(nuevoValor)")
+			public void log(int nuevoValor) {
+				// ...
+			}
+		//...
+		
+	con esto enlazamos el valor del argumento del punto de corte con la variable nuevoValor, y además al poner int como tipo de
+	nuevoValor indicamos que solo queremos aplicar el advice si el argumento del punto de corte es int.
+	
+	Otra forma de hacer lo anterior sería usar un punto de corte "con nombre":
+	
+	//..
+		@Pointcut("execution(public void set*(*))&& args(nuevoValor)")
+		public void unSetter(int nuevoValor) {}
+	
+		@AfterReturning("unSetter(nuevoValor)")
+		public void log(int nuevoValor) {
+			//...
+		}
+	//..
+	
+	podemos accedeer a información sobre el punto de corte en el primer parámetro del advice si es de tipo JoinPoint. esta clase tiene métodos para obtener
+	por ejemplo la signatura del método del punto de corte o sus argumentos, etc.
+	
+	@Before("execution(public void set*(*))")
+	public void beforeGetter(JoinPoint jp) {
+		System.out.println("Antes de ejecutar " + jp.getSignature());
+	}

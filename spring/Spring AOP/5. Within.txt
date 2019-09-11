@@ -1,0 +1,7 @@
+Within:
+	permite especificar todas las llamadas a métodos dentro de un paquete o subpaquetes del mimsmo (usando el comodin .. al
+	igual que en la sintaxis de execution().
+	
+	ejemplo:
+		within(es.ua.em..*):
+			cualquier llamada a método dentro del paquete es.ua.em o subpaquetes.

@@ -1,0 +1,37 @@
+AfterReturning:
+	Esta anotación ejecuta un advice después de la ejecución del punto de corte especificado, siempre que el método del punto
+	de corte retorne de forma normal (sin generar excepciones).
+	
+	ejemplo:
+		import org.aspectj.lang.annotation.Aspect;
+		import org.aspectj.lang.annotation.AfterReturning;
+
+		@Aspect
+		public class EjemploAfterReturning {
+
+			@AfterReturning("execution(public * get*())")
+			public void log() {
+				// ...
+			}
+
+		}
+		
+		Evidentemente para hacer log nos puede interesar saber el valor retornado por el método del punto de corte.
+		Este valor es accesible con la sintaxis alternativa.
+		
+		import org.aspectj.lang.annotation.Aspect;
+		import org.aspectj.lang.annotation.AfterReturning;
+
+		@Aspect
+		public class EjemploAfterReturning {
+
+			@AfterReturning(
+			pointcut="execution(public * get*())", returning="valor")
+			public void log(Object valor) {
+				// ...
+			}
+		}
+		
+		Al poner Object como tipo de la variable asociada al valor de retorno, estamos indicando que nos da igual el tipo
+		que sea (incluso si es primitivo). especificando un tipo distinto, podemos reducir el ámbito de advice para que solo
+		se aplique a los puntos de corte que devuelvan un valor del tipo deseado.

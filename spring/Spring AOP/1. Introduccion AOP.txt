@@ -1,0 +1,6 @@
+AOP:
+	apect oriented programming:
+	es un paradigma de programación que intenta formalizar de forma concisa los elementos que son transversales apect a todo el sistema.
+	En los lenguajes orientados a objetos, la estructura del sistema se basa en la idea de clases y jerarquias de clases.
+	La Herencia permite modularizar el sistema, eliminando la necesidad de duplicar codigo, no obstante, siempre hay aspectos
+	que son transversales a esta estructura.

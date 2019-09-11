@@ -1,0 +1,51 @@
+AOP implicita e Spring 3:
+	la AOP constituye uno de los pilares en que se fundamenta Sprin, incluso aunque nunca la usáramos en nuestros proyectos
+	de modo explicito. a continuación resumimos alguno de los usos directos de aop en el framework.
+	
+	Transaccionalidad Declarativa:
+		la gestión automática de las transacciones implica la intercepción AOP de métodos marcados como transaccionales.
+		El TransactionManager es el que intercapta los métodos y se encarga de crear nuevas transacciones, hacer rollback automaticos
+		etc. Según Sea necesario.
+		
+	Seguridad:
+		Spring security es un proyecto que intenta mejorar la seguridad declarativa estándar de JavaEE, haciendola mas potente
+		sin aumentar la complejidad de uso, mediante este proyecto se puede por ejemplo controlar de manera declarativa el acceso a los metodos de los
+		beans, de manera similar a como se hacer en Servlet 3.0:
+		
+			@RolesAllowed("ROLE_ADMIN")
+			public void eliminarUsuario(Usuario usuario) {
+				...
+			}
+				
+		pero va mucho más allá, permitiendo el uso de expresiones en el lenguaje de spring para evaluar los permisos de acceso, por ejemplo, queremos que tambien el propio
+		usuario pueda borrar su cuenta, además del administrador:
+			
+			@PreAuthorize("#usuario.login == authentication.name or hasRole('ROLE_ADMIN')")
+			public void eliminarUsuario(Usuario usuario) {
+				...
+			}
+			
+		authentication.name seria el login del usuario que se ha autenticado, y estamos intentando comprobar si corresponde con el del usuario 
+		que queremos borrar (el # nos da acceso al parametro).
+		
+	Spring roo:
+		es in framework de desarrollo rápido de aplicaciónes. crea la estructura CRUD de la aplicación usando Spring
+		en todas las capas (presentación, negocio y datos). todo el codigo necesario se introduce de forma "no invasiva usando AOP
+		por ejemplo si decimos que queremos usar JPA y de gestionar l Entity Manager y los métodos JPA basicos, pero todo este codigo no
+		sera visible directamente en nuestras clases y no nos "molestaria". todo esto se hace usando Aspect, aun que es un uso más
+		avanzado que el que nosotros hemos visto aqui.
+		
+	Cache declarativa:
+		es una de las nuevas caracteristicas incorporadas en la versión 3.1. nos permite usar de manera transparente framework
+		para gestionar de cache ya conocidos y muy probados como el cache. por ejemplo, podemos hacer un método que un método de una Dao
+		cachee automaticamente los resultados sin mas usar la anotación correspondiente:
+			@Cacheable("libros")
+			public LibroTO getLibro(String isbn) {
+				...
+			}
+	sy ya se ha llamado anteriormente al método con el mismo valor de isbn, en lugar de ejecutar ek método, se acabara el LibroTO de la cache.
+	Lo que está pasando es que con AOP se esta interceptando el método con @before y comprobando si es necesario o no ejecutarlo.
+			
+		
+		Ejemplo:
+			podemos
