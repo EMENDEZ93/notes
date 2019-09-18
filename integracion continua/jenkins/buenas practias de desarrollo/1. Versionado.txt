@@ -1,0 +1,8 @@
+Versionado:
+	Estrategia:
+		nombre de ramas.
+		detectar bugs.
+		manejo de hotfix.
+	Lineal - mainline:
+	
+	Paralelo:

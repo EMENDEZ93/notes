@@ -1,0 +1,14 @@
+Nombres de clases:
+	las clases y los objetos deben tener nombre o fraces de nombre como:
+		Customer.
+		WikiPage.
+		Account.
+		AddressParser.
+
+	Evite palabras como:
+		Manager.
+		Processor.
+		Data.
+		Info.
+		
+	en el nombre de una clase. el nombre de una clase no debe ser un verbo.
