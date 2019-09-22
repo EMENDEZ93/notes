@@ -1,0 +1,9 @@
+Elementos del Manifiesto:
+	Individuos e interacciones:
+		sobre procesos y herramientas.
+	Software funcionando:
+		sobre documentación extensiva.
+	Colaboración con el cliente:
+		sobre negociación contractual.
+	Respuesta ante el cambio:
+		sobre seguir un plan.

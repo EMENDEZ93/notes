@@ -1,0 +1,4 @@
+¿Que es git?:
+	git es un sistema de control de versiones, que nació para dar soporte al core linux, cuya principal caracteristica
+	es que es capaz de mantener una gran cantidad de código fuente distribuido y gestionado por equipos de envergadura,
+	de forma rápida y sencilla.

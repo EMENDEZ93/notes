@@ -1,0 +1,10 @@
+Rama Realese:
+	esta rama se genera cuando quiere realizarse la tentativa de entrega de una versión, habitualmente cuando se aproxima la finalización de un sprint.
+	
+	Esto congela los desarrollos, que prosiguen en develop, y agrupa una serie de nuevas caracteristicas en la nueva rama realeas, que puede llamarse
+	por ejemplo:
+		release/v2.2.0
+		
+	Sobre ella pueden realizarse pequeños cambios, corrección de defectos, establecer versiones de producto, pero no desarrollar nuevas características.
+	una vez finalizado y testeado, se mergea con master, como nueva versión que es candidata a subir a producción; y develop, ya que hay defectos
+	corregidos que deben volvarse a la rama de desarrollo.

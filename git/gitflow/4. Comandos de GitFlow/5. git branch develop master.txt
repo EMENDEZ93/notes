@@ -1,0 +1,2 @@
+git branch develop master:
+	crear rama apartir de master.

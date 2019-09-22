@@ -1,0 +1,11 @@
+Rama Feature:
+	cada vez que se va a desarrollar una nueva funcionalidad o modificar una existente, se genera una rama de tipo feature.
+	a partir de develop, cuyo nombre está formado por esta palabra y por la caracteristica a implementar, por ejemlo:
+		feature/nueva-funcionalidad.
+	
+	Sobre ella se sube el código a través de commits del equipo que debe ser probado antes de mergear con develop, por lo que
+	durante este proceso hay una funcionalidad en curso codificándose, pudiendo trabajar barios miembros a la vez en ella.
+	
+	Una buena práctica es hacerlas lo más atómicas posibles, pudiendo generar más de una para cubrir una caracteristicas y
+	mergeando código de una a otras.
+	

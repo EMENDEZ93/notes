@@ -1,0 +1,2 @@
+git checkout nombre_de_la_rama:
+	cambiar de rama.

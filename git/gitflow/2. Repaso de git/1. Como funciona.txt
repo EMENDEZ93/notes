@@ -1,0 +1,14 @@
+¿Cómo Funciona?:
+	Local:
+		working directory:
+			git add:
+				-> Staging Area:
+					git commit:
+						-> Localrepo:
+							git push:
+								-> Remote Repo:
+							git pull:
+						Localrepo <-:
+					git checkout:
+					git merge:
+	Local <-

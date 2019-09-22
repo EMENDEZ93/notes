@@ -1,0 +1,2 @@
+git checkout -b develop master:
+	crear la rama develop apartir de master y ubicarse en develoo.

@@ -1,0 +1,2 @@
+git merge --no-ff develop:
+    se trae los cambios de la rama develop a la actual.

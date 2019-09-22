@@ -1,0 +1,6 @@
+Rama Develop:
+	es la rama principal del repositorio que contiene, ademas del contenido de master características desarrolladas que aún no están en producción.
+	En esta rama se está desarrollando código de forma continua, eso si, todo el contenido que recibe a través de merges de ramas feature principal
+	mente, está testeado y verificado, por lo que es código estable.
+	no se hace commit de código de ella, salvo circunstancias muy especiales, al igual que en la rama master.
+	El principal objetivo de esta rama es evitar conflictos en master, por lo que el código se depura en esta rama primero.

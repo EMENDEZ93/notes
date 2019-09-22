@@ -1,0 +1,3 @@
+GitFlow:
+	Es un modelo de branching que propone una estrategia de ramificación y de generación de versiones de productos usando un repositorio Git.
+	Ayuda a los equipos a asegurar la calidad del código y la eficiencia en la integración en equipos de más de un miembro.

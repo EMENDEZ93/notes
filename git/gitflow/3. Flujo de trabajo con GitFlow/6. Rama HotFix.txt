@@ -1,0 +1,8 @@
+Rama HotFix:
+	esta rama se genera habitualmente cuando se detecta un defecto en producción que debe ser corregido con agilidad.
+	Para ello se genera una rama tipo hotfix, que parte del código existente en master.
+	
+	Sobre ella pueden realizarse las correciones que sean necesarias para arreglar el bug, para luego volver a mergear con master, añadiéndole un nuevo
+	tag de versión.
+	
+	Tambien es necesario mergear con develop para que el defecto tambien quede corregido en desarrollo.

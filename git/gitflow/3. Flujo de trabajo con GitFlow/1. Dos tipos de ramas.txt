@@ -1,0 +1,20 @@
+Dos tipos de ramas:	
+	GitFlow define dos tipos de ramas, las principales y las auxiliares. las principales diferencias entre estos dos grupos de ellas son:
+	
+	Ramas principales:
+		Master:
+		Develop:
+		
+		No se pueden instancias.
+		Su nombre no tiene complementos, se llaman master y develop a secas.
+		No se puede commitear código directamente sobre ella, para no perder el control de los cambios, solo recibe merge de otras ramas.
+		
+	Ramas Auxiliares:
+		Feature:
+		Realeas:
+		HotFix:
+		
+		Se puede instanciar tantas veces como caracteristicar, versiones y defectos haya. No hay limite.
+		Su nombre consta de una raíz, que corresponde al tipo de rama, más la característica implementada o versión. este complemento lo hace inconfundible.
+		el objetivo es trabajar directamente sobre ella, subiendo código a la rama. luego se mergea con las ramas principales.
+	
