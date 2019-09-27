@@ -1,0 +1,19 @@
+Anemic Domain Model:
+	se produce cuando solo se tiene entidades de datos como clases que poseen solamente campos y propiedades y la logica de dominio
+	perteneciente a dichas entidades esta mezclada en clases del nivel superior (los servicios de dominio).
+	
+	Es importante resaltar que normalmente los servicios si deben poseer lógica relativa a ENTIDADES pero lógica que trata a dichas
+	entidades como un todo, una unidad o incluso colleciones de dichas unidades. pero cada entidad deberia poseer la lógica relativa a su
+	parte interna, la logica relacionada con sus datos internos en memoria.
+	
+	Si los Servicios poseyeran absolutamente el 100% de la lógica de las ENTIDADES, esta mezcla de lógica de dominio pertenecientes a
+	diferentes entidades seria lo peligroso. eso seria una implementación Transaction Scrip, completamente contraria al Domain Model
+	u orientada al dominio.
+	
+	Es importante:
+		destacar que la lógica relativa a consumir/invocar repositorios de la capa de infraestructura, es la lógica que debe de estar en los
+		servicios. 
+		
+		Un objeto ENTIDAD:
+			no tiene que saber como guardarse/construirse a si mismo, al igual que un motor en la vida real proporciona capacidad de motor,
+			no de fabricarse a si mismo, o un libro no sabe como guardarse a si mismo en una estanteria.

@@ -1,0 +1,3 @@
+Entidades deben ser POJO en una arquitectura DDD:
+	para poder cumplir el principio PI persistance ignorance y no tener dependencias directar con tecnologias de infraestructura, es 
+	importante que nuestras entidades sean un POJO.

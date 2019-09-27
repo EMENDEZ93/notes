@@ -1,0 +1,15 @@
+Diseño de objetos valor:
+	debido a la falta de restricciones que tiene los objetos de valor, podemos diseñarlos de diferentes formas. siempre favoreciendo
+	a la forma que más simplifique el diseño o que más optimice el rendimiento del sistema. Probablemente la única restricción
+	de los objetos valor es que sus valores deben ser inmutables desde su creación. por lo tanto, en su creación (constructor) es cuando 
+	se le debe proporcionar sus valores y no permitir ser cambiado durante la vida del objeto.
+	
+	Relativo al rendimiento, los objetos valor nos permiten realizar ciertos trucos gracias a sus naturaleza de inmutabilidad. 
+	Especialmente, en sistemas donde pueden existir miles de instancias de objetos valor como muchas coincidencias de los mismo valores,
+	dichas inmutabilidad nos permitiria reutilizarlos, seria objetos intercambiables, por que sus valores son los mismos y no tiene identidad
+	como si les pasa a las entidades. este tipo de optimizaciónes pueden a ve3ces marcar la diferencia entre un software lento y otro con un
+	buen rendimiento.
+	Por supuesto, todo esto depende del tipo de entorno y contexto de la aplicación.
+	El compartir objetos a veces puede tener un mejor rendimiento pero en cierto contexto (una aplicación distribuida) puede ser menos escalable
+	que el disponer de copias, pues el accedeer a un punto central de objetos compartidos reutilizable puede suponer un cuello de botella en las
+	comunicaciones.

@@ -1,0 +1,3 @@
+Entidad-Objeto:
+	relativo a DDD, y de acuerdo con la definición de Eric Evans:
+		un objeto primariamente definido por su identidad se le denomina Entidad.

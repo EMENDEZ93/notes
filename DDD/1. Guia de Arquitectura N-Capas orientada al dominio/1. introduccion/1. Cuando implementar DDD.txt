@@ -1,0 +1,11 @@
+Cuando implementar DDD:
+	descarga de responsabilidad:
+		Queremos insistir en este punto y descartar que la presente propuesta de Arquitectura N-Capas Orientada al Dominio no es adecuada para cualquier
+		tipo de aplicaciones.
+	Es Adecuada:
+		para aplicaciones complejas empresariales con un volumen importante de lógica de negocio y una vida de aplicación larga, donde es importante
+		implementar conceptos de desacoplamiento y ciertos patrones DDD. 
+	Para Aplicaciones pequeñas y orientada a datos:
+		probablemente sea más adecuada una aproximación de arquitecturas mas sencillas implementadas con tecnologias RAD:
+			rapid application development.
+	asi mismo, esta guia es simplemente una propuesta a tener en cuenta y ser evaluada y personalizada por las organizaciones y empresas que lo deseen.

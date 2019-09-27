@@ -1,0 +1,12 @@
+Identificación de ENTIDADES basadas en la identidad:
+	Norma:
+		cuando a un objeto se le distingue por su identidad y no por sus atributos, dicho objeto debe ser primario en la definición
+		del modelo de donimio. Debe ser una entidad. se debe mantener una definición de clase sencilla y focalizada en la continuidad del
+		ciclo de vida e identidad. 
+		
+		Debe tener alguna forma de distincion aun cuando cambie de atributos o incluso de forma o historia.
+		
+		Relacionando con esta ENTIDAD, deberá de existir una operación que garantice el obtener un resultado único para cada objeto, posiblemente
+		sleccionando por un identificador unico. 
+		
+		El modelo debe definir que significa que sea el mismo objeto entidad.

@@ -1,0 +1,8 @@
+Cuando hacer uso IPOJO:
+	algunas tecnologias ORM permiten hacer uso de POJO e IPOJO, si bien cuando las clases entidad que nos puedan ser generadas son IPOJO
+	normalmente nos van a permitir realizar aspectos avanzados.
+	Como:
+		Self Tracking Entities:
+			Es muy util para escenarios N-Tire y gestión de concurrencia optimista.
+	asi pues, para escenarios de aplicaciones N-TIER, es bastante recomendable el uso de IPOJO por ofrecernos una gran potencia y menos
+	trabajo manual a implementar por nosotros.

@@ -1,0 +1,17 @@
+Entidad y Objeto valor:
+	las entidades son muy importantes en el modelo del dominio y tienen que ser identificadas y diseladas cuidadosamente.
+	Lo que en algunas aplicaciones puede ser una ENTIDAD, en otras aplicaciones no debe de serlo.
+	Por ejemplo:
+		una dirección:
+			en algunos sistemas puede no tener una identidad en absoluto, pues puede estar representando solo atributos
+			de una persona o compañia.
+			En otros Sistemas:
+				sin embargo, como en una aplicación para una empresa de electricidad, la dirección de los clientes puede
+				ser muy importante y debe ser una identidad por que la facturación puede estar ligada directamente con la
+				dirección. en este caso una dirección tiene que clasificarse como una ENTIDAD del dominio.
+			En otros casos, como en un comercio electrónico, la dirección puede ser simplement un atributo del perfil de una persona.
+			En este otro caso, la dirección no es tan importante y deberia clasificarse como un OBJETO VALOR, en DDD denominado
+			VALUE-OBJECT.
+			
+		
+				

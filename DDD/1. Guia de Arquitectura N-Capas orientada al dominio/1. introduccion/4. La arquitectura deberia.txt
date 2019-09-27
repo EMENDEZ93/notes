@@ -1,0 +1,8 @@
+La arquitectura deberia:
+	Mostrar la estructura del sistema pero ocultar los detallers.
+	Realizar todos los casos de uso.
+	Satisfacer en la medida de lo posible los intereses de los agentes.
+	Ocuparse de los requisitos funcionales y de calidad.
+	Determinar el tipo de sistema a desarrollar.
+	Determinar los estilos arquitecturales que se usarán.
+	Tratar las principales cuestiones transversales.

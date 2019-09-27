@@ -1,0 +1,8 @@
+Para Diseñar la arquitectura de un sistema:
+	Es importante tener en cuenta los intereses de los distintos agentes que participan.
+	Estos agentes son:
+		los usuarios del sistema.
+		el propio sistema.
+		y los objetivos de negocio.
+	Cada uno de ellos impone requisitos y restricciones que deben ser tenidos en cuenta en el diseño de la arquitectura y que puedan llegar
+	a entrar en conflicto, por lo que se debe alcanzar un compromiso entre los intereses de cada participante

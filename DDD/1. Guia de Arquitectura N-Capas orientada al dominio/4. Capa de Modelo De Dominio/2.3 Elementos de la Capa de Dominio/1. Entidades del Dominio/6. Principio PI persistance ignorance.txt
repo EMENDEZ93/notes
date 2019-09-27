@@ -1,0 +1,41 @@
+Principio PI:
+	este concepto, donde se recomienda que la implementación de las entidades del dominio deba ser POJO, es casi lo más importante a
+	tener en cuenta en la implementación de entidades siguientdo una arquitectura orientada al dominio.
+	
+	Está completamente sustentado en el principio, es decir, que todos los componenetes de la capa de dominio ignoren completamente las
+	tecnologias con a las que está ligada la capa de infraestructura de persistencia de datos, como ORMS.
+	y en concreto, las clases entidad, tambien deben ser independientes de las tecnologias utilizadas en la capa de infraestructura de
+	persistencia de datos. por eso deber ser implementadas como clases POJO.
+	
+	La forma en como estos objetos entidad sean implementados, toma una importancia especial para muchos diseños.
+	Por un lado, para muchos diseños (como en DDD) es vital aislar a estos elementos de conocimiento alguno de tecnologias base de 
+	acceso a datos, de tal forma que realmente sean ignorantes de la tecnologia subyacente que se utilizará pára su persistencia o trabajo.
+	
+	A los objetos entidad que no implementen ninguna clase base e interfaz alguna ligadas a la tecnologia subyacente, se les suele
+	denominar POJO. 
+	Por el contrario, los objetos de transferencia de datos que si implementan una determinada clase base o interfaz ligado con la 
+	tecnologia subyacente, son conocidos por el nombre de Clases Prescriptivas.
+	
+	La decisión de decantarse por una alternativa u otra, por supuesto no es algo que uno pueda tomar al azar, más bien todo lo contrario,
+	pensada detenidamente. 
+	
+	Por un lado los objetos POJO nos dan un amplio grado de libertad con respecto al modelo de persistencia que tomemos, de hecho, nada 
+	tiene que saber de él, y nos permite intercambiar la información de una forma mucho más transparente, puesto que solamente, en
+	aplicaciones distribuidas, intercambiariamos un esquema de tipos primitivos, sin conocimiento algun de una clase de trabajo especial.
+	
+	Como todo no van a ser ventajas:
+		el uso de POJO tambien lleva unas restricciones y/o sobrecargas (tradicionalmente supone un mayor trabajo de desarrollo)
+		asociadas al grado de ignoracia que el motor de persistencia de turno tendra sobre estas entidades y su correspondencia con el
+		modelo relacional.
+		
+	Las clases POJO suelen tenr un mayor coste inicial de implementación, a no ser que el ORM que estmos utilizando nos ayude en ciertas
+	generación de clase entidad POJO apartir de un modelo de datos del dominio.
+	
+	el concepto de IPOJO (interfaz pojo) es muy similar al pojo pero algo más laxo, es decir, las clases de datos que definen las entidades
+	no son completamente limpias, sino que dependen de implementar una o más interfaces que especifican que implementación minima deben de
+	proporcionar.
+	En este caso IPOJO y para cumplir el principio PI, es importante que dicha interfaz este bajo nuestro contro de codigo propio y no forme
+	parte de tecnologias externas de infraestructura. De lo contrario, nuestras entidades dejarian de ser agnosticas con respecto a las capas de
+	infraestrctura y tecnologias externar y pasarian a ser clases prescriptivas.
+	
+	

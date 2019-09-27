@@ -1,0 +1,40 @@
+Implementación Value Object:
+	a nivel de implementación, los objeto-valor normalmente se pasaran y/o devolveran como parámetros en mensajes entre objetos.
+	y como deciamos antes, normalmente tendran una vida corta sin un seguimiento de su identidad.
+	Asimismo, una entidad suele estar compuesta por diferentes atributos.
+	Por ejemplo:
+		una persona puede ser modelada como una entidad, con una identidad, e internamente esta compuesta por un conjunto de atributos como
+		nombre, apellidos, dirección, etc.. los cuales son simplemente valores. De dichos valores, los que nos importen como un conjunto
+		como la dirección, deberemos tratarlos como Objeto-Valor.
+		
+	el siguietne ejemplo muestra un diagrama de clases de una aplicación concreta donde remarcamos que podria ser una Entidad y que
+	podria ser posteriormente un Objeto-Valor dentro de una Entidad:
+	
+	Entidad:
+		Customer:
+			Atributes:
+				city
+				CustomerID
+				CustomerName
+				privince
+				street
+				zip
+			Operations:
+				get.
+				set
+				
+				
+	Objeto-Valor:
+		Customer:
+			atributes:
+				CustomerID
+				CustomerName
+				Address:
+					atributes:
+						city
+						Province
+						Street
+						Zip
+					Operations:
+						get
+						set

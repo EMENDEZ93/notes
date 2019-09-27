@@ -1,0 +1,8 @@
+Lógica interna en la entidad:
+	es bueno que los propios objetod de entidad posean tambien cierta logica relativa a los datos en memoria de dicha entidad.
+	Por ejemplo:
+		podemos tener logica relativa a validaciones de datos en el momento que se añaden/actualizan a dicha entidad, lógica
+		de campos calculados y en definitiva, cierta lógica relativa a la parte interna de dicha entidad.
+	es posible que algunas clases de nuestra entidades no dispongan de lógica propia, si realmente no lo necesita, pero si 
+	todas nuestras entidades carecieran completamente de lógica, estariamos cayendo en el anti-patron Anemic Domain Model
+	mencionado por Martin Fowler

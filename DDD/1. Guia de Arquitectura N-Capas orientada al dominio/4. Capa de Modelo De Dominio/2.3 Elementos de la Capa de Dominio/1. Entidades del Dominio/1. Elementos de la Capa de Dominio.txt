@@ -1,0 +1,2 @@
+Elementos de la capa de dominio:
+	A continuación explicamos brevemente las responsabilidades de cada tipo de elemento propuesto para el Modelo del Dominio.

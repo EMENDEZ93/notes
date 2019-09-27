@@ -1,0 +1,12 @@
+Preguntas antes de la construcción:
+	Durante el diseño de la arquitectura se tratan los temas que pueden tener un impacto importante en el exito o fracaso de nuestro sistema.
+	Algunas preguntas que hay que hacerse al respecto son:
+		¿En qué entorno va a ser desplegado nuestro sistema?
+		¿Cómo va a ser nuestro sistema puesto en producción?
+		¿Cómo van a utilizar los usuarios nuestro sistema?
+		¿Qué otros requisitos debe cumplir el sistema?:
+			seguridad.
+			rendimiento.
+			concurrencia.
+			configuración.
+		¿Qué cmabios en la arquitectura pueden impactar al sistema ahora o una vez desplegados?

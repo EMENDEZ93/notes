@@ -1,0 +1,6 @@
+Identificar e Implementar patron Objeto-Valor:
+Recomendacion:
+	cuando ciertos atributos de un elemento de modelo nos importan de forma agrupada, pero dicho objeto debe carecer de identidad trazable,
+	debemos clasificarlos como OBJETO-VALOR. Hay que expresar el significado de dichos atributos y dotarlos de una funcionalidad relacionada.
+	Asi mismo, debemos tratar los objeto-valor como información inmutable durante toda su vidad, desde el momento en el que se crean hasta
+	en el que se destruyen.

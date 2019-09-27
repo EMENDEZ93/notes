@@ -1,0 +1,70 @@
+Pasos para realizar la arquitectura:
+	En una metodología ágil como scrum:
+		La fase de diseño de la arquitectura comienta durante en el (Pre-juego) o fase de inicio (Inception) en RUP, en un punto
+		donde ya hemos capturado la visión del sistema que queremos construir.
+		
+		En el diseño de la arquitectura:
+			lo primero que se decide es el tipo de sistema o aplicación que vamos a construir.
+			Los principales son:
+				Aplicaciones móviles.
+				Escritorio.
+				Rias (Rich Internet Application).
+				Aplicaciones de servicios.
+				Aplicaciones Web.
+		Es importante entender que el tipo de aplicación viene determinado por la topología de despliegue y los requisitos y restricciones
+		indicadas en los requisitos.
+		
+		La selección de un tipo de aplicación determina en cierta medida el estilo de arquitectura que se va a usar.
+		
+		El estilo de arquitectura:
+			es en esencia la partición más básica del sistema en bloques y la forma en que se relacionan estos bloques.
+			
+			Los principales estilos de arquitectura son:
+				Cliente/Servidor.
+				Sistemas de componentes.
+				Arquitectura en capas.
+				MVC.
+				N-Niveles.
+				SOA.
+			Como ya hemos dicho, el estilo arquitectural que elegimos depende del tipo de aplicación, una aplicación que ofrece servicios
+			lo normal es que se haga con un estilo arquitectura SOA.
+			
+			Por otra parte, a la hora de diseñar la arquitectura tenemos que entender también que un tipo de aplicación suele responder a más
+			de un estilo arqutectural.
+			Por ejemplo:
+				una pagina web hecha ASP.NET MVC sigue un estilo Cliente/Servidor pero al mismo tiempo el servidor sigue un estilo MVC.
+				
+		Tras haber seleccionado el tipo de aplicación y haber determinado los estilos arquitecturales que más se ajustan al tipo de sistema
+		que vamos a construir, tenermos que decidir cómo vamos a construir los bloques que forman nuestro sistema.
+		Por ello el siguiente paso es seleccionar las distintas tecnologías que vamos a usar:
+			Estas tecnologías estan limitadas por la restricciones de despliegue y las impuestas por el cliente, hay que entender las tecnologias
+			como ladrillos que usamos para construir nuestro sistema.
+			
+		Cuando ya hemos analizado nuestro sistema y lo hemos fragmentado en partes más manejables, tenemos que pensar como implementamos todos los 
+		requisitos de calidad que tiene que satisfacer.
+		
+		Los requisitos de calidad:
+			son propiedades no funcionales que debe tener el sistema.
+			Como por ejemplo:
+				la seguridad.
+				la persistencia.
+				la usabilidad.
+				la mantenibilidad.
+			conseguir que nuestro sistema tenga estas propiedades va a traducirse en implementar funcionalidad extra, pero esta funcionalidad es
+			ortogonal a la funcionalidad básica del sistema.
+			
+		Para trata los requisitos de calidad:
+			el primer paso es preguntar:
+				¿Qué requisitos de calidad requiere el sistema?:
+					para averiguarlo tenemos que analizar los casos de uso.
+			Una vez hemos tenido un listado de los requisitos de calidad las siguientes preguntas son:
+				¿Cómo consigo que mi sistema cumpla estos requisitos?
+				¿Se puede medir esto de alguna forma?
+				¿Que criterios indican que mi sistema cimple dichos requisitos?
+			Los requisitos de calidad nos van a obligar a tomar decisiones transversales sobre nuestro sistema.
+			Por ejemplo:
+				cuando estamos tratando la seguridad de nuestro sistema tendremos que decidir:
+					cómo se autentican los usuarios.
+					como se maneja la autorización entre distintas capas de nuestro sistema.
+			de la misma forma tendremos que tratar otros temas como la comunicaciones, la gestion de excepciones, la instrumentación o el cacheo de datos.
+			

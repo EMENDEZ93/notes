@@ -1,0 +1,13 @@
+Entidades Son objetos flotantes:
+	a lo largo de toda la arquitectura o parte de la arquitectura. Pues si hacemos posteriormente uso de DTOs
+	para la comunicaciones remotas entre Tiers, en ese caso, las entidades internas del modelo de dominio no fluirian hasta la capa de
+	presentación ni cualquier otro punto externo a las capas internas del servicio, serian los objetos DTO los que serian
+	proporcionados a la capa de presentación situada en un punto remoto.
+	
+	por ultimo, considerar requerimientos de serialización de clases que puedan existir de cara a comunicaciones remotas. el pasar 
+	entidades de una capa o otra.
+	Por ejemplo:
+		de la capa de servicios remotos a la capa de presentación.
+	requerira que dichas entidades puedan serializarse, tendran que soportar algún mecanismo de serialización a formatos tipo XML o binarios.
+	Para esto es importante confirmar que el tipo de entidad elegido soporte efectivamente una serialización. Otra opción es, como deciamos. la
+	conversión y/o agregación a Dtos. en la capa de Serviciós-Distribuidos.

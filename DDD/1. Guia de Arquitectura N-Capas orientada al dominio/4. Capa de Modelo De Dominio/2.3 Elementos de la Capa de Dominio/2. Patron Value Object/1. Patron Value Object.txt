@@ -1,0 +1,38 @@
+Patron Value Object:
+	Muchos objetos no poseen identidad conceptual. Esos objetos describen ciertas caracteristicas de una cosa.
+	
+	La definición de value objetct:
+		es, objetos que describen cosas.
+	y siendo más precisos, un objeto sin ninguna identidad conceptual, que describe un aspecto del dominio.
+	en definitiva:
+		son objtetos que instanciamos para representar elementos del diseño y que nos importan solo de forma temporal.
+	Nor importa lo que son, no quienes son.
+	Ejemplo basico:
+		son los numeros.
+		Los Strings. etc.
+	Pero tambien conceptos de más alto nivel.
+	por ejemplo:
+		una dirección en un sistema podria ser una ENTIDAD porque en dicho sistema la dirección es importante como identidad.
+		Pero otro sistema diferente, la dirección puede tratarse simplemente de un Objeto-Valor	, un atributo descriptivo de una 
+		empresa o persona.
+		
+	Un Objeto Valor:
+		puede ser también un conjunto de otros valores o incluso de referencia a otras entidades.
+		Por ejemplo:
+			en una aplicación donde se genere una ruta para ir de una punto a otro, dicha ruta seria un Objeto-Valor (porque seria
+			una foto de puntos a paser por dicha ruta, pero dicha ruta no tendria identidad ni queremos persistirla, etc), aun cuando
+			internamente está refenciado a entidades (Ciudades, Carreteras, etc)
+	
+	Los atributos que conforman un objeto-valor deben formar un todo conceptual.
+	por ejemplo:
+		la calle.
+		ciudad.
+		codigo postal
+		No deberian ser normalmente simples atributos separados dentro de un objeto persona (Depende del dominio de la aplicación)
+	Realmente son tanbien parte de una dirección, lo cual simplifica el objeto de la persona y hace mas coherente el objeto-valor.
+	Sin embargo, este ejemplo puede ser valida dependiendo del caso, en que en otra aplicación diferente, la dirección podria querer
+	Tratarse como ENTIDAD por ser lo suficientemente importante en dicho Dominio como para poseer identidad y trazabilidad de dicha
+	identidad.
+	Por Ejemplo:
+		un dominio de negocio de una aplicación electrica o telefonica, etc)
+			

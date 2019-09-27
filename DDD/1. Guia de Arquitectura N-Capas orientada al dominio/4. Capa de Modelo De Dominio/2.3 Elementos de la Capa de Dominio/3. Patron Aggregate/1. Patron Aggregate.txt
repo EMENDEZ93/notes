@@ -1,0 +1,45 @@
+Patron Aggregate:
+	es un patron de dominio que se utiliza para definir pertenencias y fronteras de objetos del modelo de dominio.
+	
+	Un modelo:
+		puede tener un número indefinido de objetos (entidades y objetos-valor), y normalmente estarán relacionados entre ellos.
+		incluso de formas complejas, es decir, un mismo objeto entidad puede estar relacionado con varias entidades, no solo con
+		otra entidad
+	
+	Tendremos, por lo tanto diferentes tipos de asociaciones. las asociaciones/relaciones entre objetos, se reflejaran en el código
+	e incluso en la base de datos.
+	
+	Por Ejemplo:
+		una asociacion uno a uno e implicaria probablemente tambien una relación entre dos tables de base de datos.
+		si hablamos de relaciones uno a muchos, el contexto se complica mucho mas. pero puede existir muchas relaciones que no sean
+		esenciales para el dominio concreto en el que estamos trabajando.
+	
+	En definitiva:
+		es dificil garantizar la consistencia en los cambios de un modelo que tenga muchas asociaciones complejas.
+		Asi pues:
+			uno de los objetivos que debemos tener presente es poder simplificar al máximo el número de relaciónes presente en el 
+			modelo de entidades del donimio.
+	
+	Para esto aparece el concepto de o Patron AGGREGATE:
+		Un agregado es un grupo/conjunto de objetos asociados que se consideran como una única unidad en lo relativo a cambios de datos.
+		El agregado se delimipa por una frontera que se separa de los objetos internos de los objetos externos. Cada agregado tendra un 
+		Objeto raíz que será la entidad raiz y será el único objeto accesible, de forma inicial, desde el exterior.
+		
+		El Objeto Entidad Raiz:
+			tendra referencia a cualquiera de los objetos que componen el agregado, pero un objeto externo solo puede tener referencia al
+			Objeto-Entidad raiz. si dentro de la frontera del agregado hay otras entidades (tambien podrian ser tambien objetos-valor), la
+			identidad de estos objetos-entidad es solo local y tiene solamente sentido perteneciendo a dicho agregado y no de forma aislada.
+			precisamente ess único punto de entrada al agregado (entidad raiz) es lo que asegura la integridad de datos.
+			Desde el exterior del agregado no se podra acceder ni cambiar datos de los objetos secundarios del agregado, solamente a travez del
+			Raiz, lo cual implica un nivel de control muy importante. si la entidad raiz se borra, el resto de objetos de agregado deberian 
+			borrarse tambien.
+			
+		Si los objetos de un agregado:
+			deben poder persistirse en base de datos entonces solo deben poder consultarse a través de la entidad raiz.
+		Los Objetos secundarios:
+			deberán obtenerse mediante asociaciones transversales.
+		esto implica que solo las entidades raiz de un agregado (o entidad sueltas), podran tener REPOSITORIOS asociados. lo mismo pasa en un nivel
+		superior con los SERVICIOS. podremos tener servicios directamente relacionados con la entidad raíz de un agregado, pero nunca directamente con solo
+		un objeto secundario de un agregado.
+	lo que si se debe permitir:
+		es que los objetos internos de un agregrado tenga referencia a entidad raíz de otros agregados (o a entidades simples).

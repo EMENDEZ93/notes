@@ -1,0 +1,14 @@
+Diseño de la implementacion de Entidades:
+	a nivel de diseño e implementación, estos objetos son entidades de datos desconectados y se utilizan para obtener y transferir datos
+	de entidades entre las diferentes capas.
+	Estos datos representan entidades de negocio del mundo real, como productos o pedidos.
+	Las entidades de datos que la aplicación utiliza internamente, son en cambio, estructura de datos en memoria, como pueden ser clases
+	propias, clases de framework o simplemente XML. si estos objetos entidad son dependientes de la tecnologia de acceso a datos
+	por ejemplo:
+		Entity Framework.
+	Entonces estos elementos podrian situarse dentro de la capa de infraestructura de persistencia de datos, puesto que estarían ligados
+	a una tecnologia concreta.
+	
+	Por el contrario, si seguimos los patrones que recomienda DDD y hacamos uso de objetos POJO, es decir, de clases independientes,
+	entonces estas ENTIDADES deben situarse mejor como elementos de la capa de dominio, puesto que son entidades del dominio e independientes
+	de cualquier tecnologia de infraestructura (ORM, ETC.)

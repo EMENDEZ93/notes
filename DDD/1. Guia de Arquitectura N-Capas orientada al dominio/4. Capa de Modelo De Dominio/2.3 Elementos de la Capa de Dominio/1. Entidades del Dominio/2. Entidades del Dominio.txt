@@ -1,0 +1,63 @@
+Entidades del Dominio:
+	Este concepto representa la implementación del patrón Entidades:
+		Entity Pattern.
+		
+	Las Entidades:
+		representan objetos del dominio y estan definidas fundamentalmente por su identidad y continuidad en el tiempo de dicha
+		identidad y no solamente por lo atributos que la componen.
+		
+		Las entidades normalmente tiene una correspondencia directa con los objetos principales de negocio-dominio.
+		como:
+			cliente.
+			empleado.
+			pedido.
+			etc..
+		asi pues, lo mas normal es que dichas entidades se persistan en base de datos, pero esto depende completamente del dominio
+		y de la aplicación. No es una obligación.
+		Pero precisamente el aspecto de Continuidad:
+			tiene que ver mucho con el almacenamiento en base de datos.
+			
+		La Continuidad:
+			Significa que una entidad tiene que poder sobrevivir a los ciclos de ejecución de la aplicación.
+			Si bien cada vez que la aplicación se rearranca, tiene que ser posible reconstruir en memoria/ejecución estas entidades.
+			
+		Para diferenciar una entidad de otra, es fundamental entonces el concepto de identidad que las identifica de forma inequivoca
+		incluso aunque dos entidades coincidan con los mismos valores en sus atributos-datos.
+		
+		La Identidad:
+			en los datos es un aspecto fundamental en las aplicaciones.
+			Caso de identidad equivocada:
+				en una aplicación puede dar lugar a problemas de corrupción de datos y errores de programa.
+			Muchas cosas, en el dominio real (la Realidad del Negocio) o en el modelo de dominio de la aplicación (abstracción del negocio),
+			estan definidas por su identidad y no por sus atributos.
+			Un Buen ejemplo de entidad:
+				es una persona.
+				Los atributos de las entidades pueden ir cambiando a lo largo de su vida, como la dirección, datos financieros e incluso el nombre
+				y sin embargo, se continúa siendo la misma entidad, la misma persona, en este ejemplo.
+			Por lo tanto el concepto fundamental de una ENTIDAD es una vida continua abstracta que puede evolucionar a diferentes estados
+			y formas, pero que siempre será la misma entidad.
+			
+			
+		algunos objetos no estan definidos de forma primaria por sus atributos representan un hilo de identidad con una vida concreta
+		y a menudo con diferentes representaciones.
+		
+		Una Entidad:
+			debe poder distinguirse de otra entidad diferente aunque tenga los mismo atributos descriptivos.
+			Por ejemplo:
+				pueden existir dos personas con el mismo nombre y apellido.
+				Los errores de identidad pueden ocasionar corrupción de datos.
+				
+		Una Entidad:
+			puede ser de muchos tipos, podria ser una persona, un coche una transacción bancaria, etc.
+			Pero lo importante a destacar es que depende del modelo de dominio concreto si es o no una entidad.
+			
+		Un Objeto:
+			concreto no tiene por qué ser una ENTIDAD en cualquier modelo de dominio de aplicaciones. Asi mismo, no todos los objetos
+			en el modelo son ENTIDADES.
+			Por Ejemplo:
+				a nivel de transacciones bancarias, dos ingresos de la misma cantidad y en el mismo dia, son sin embargo distintas
+				transacciones bancarias, por lo que tiene una identidad y son ENTIDADES.
+				Incluso, aun cuando los atributos de ambas entidad (en este caso ingreso) fueran exactamente iguales (incluyendo la hora y
+				minutos exactos), aun asi, serian diferentes ENTIDADES. el propósito de los identificadores es precisamente poder asignar
+				identidades a las ENTIDADES.
+			

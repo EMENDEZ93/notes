@@ -1,0 +1,11 @@
+Cuando hacer uso de POJO:
+	en escenarios puramente SOA y donde la interoperabilidad es critica, normalmente ahi se haga uso de DTOs especificamente creados
+	para servicios distribuidos.
+	Si se hace uso de DTOs, lógicamente, los aspectos avanzados de las Self Tracking Entities no tiene sentido, asi pues, ahi se 
+	recomienda el uso de entidades POJO, que nos ofrece la mayor independencia de la capa de persistencia (cumpliendo el principio pi)
+	y puesto que el trabajo relacionado con las comunicaciones remotas lo realizaremos en los DTOS, tiene todo el sentido trabajar en las
+	capas internas con el tipo de entidas mas simplificado: POJO
+	
+	Otra opción es hacer uso de entidades IPOJO para aplicaciónes N-Tier (comunicacion desde capa de persistencia, etc) y simultaneamente dispones
+	de una capa SOA especialmente diseñasa para intetraciones externar e interoperabilidad, siendo dicha capa SOA ofrecida por lo tantos a 
+	otras aplicaciones/servicios externos que consumiran unos servicios-web de integración más simplificados y con DTOS
