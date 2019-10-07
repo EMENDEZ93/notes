@@ -1,0 +1,34 @@
+Orientado a Objetos:
+	el estilo orientado a objetos e un estilo que define el sistema como un conjunto de objetos que cooperan entre si en lugar de como un conjunto de procedimientos.
+	Los objetos son discretos, independientes y poco acoplados, se comunican mediante interfaces y permiten enviar y recibir mensajes.
+	
+	Características:
+		Es un estilo para diseñar aplicaciones basado en un número de unidades lógicas y código reusable.
+		Describe el uso de objetos que contienen los datos y el comportamiento para trabajar con esos datos y además tiene un rol o responsabilidad distinta.
+		Hace hincapié en la reutilización a traves de la encapsulación, la modularidad, el polimorfismo y la herencia.
+		Contrasta con el acercamiento procedimental donde hay una secuencia predefinida de tareas y accciones.
+		El enfoque orientado a objetos emplea el concepto de objetos interactuando unos con otros para realizar las tareas.
+		
+	Principio clave:
+		permite reducir una operación compleja mediante generalizaciones que mantiene las caracteristicas de la operación.
+		Los objetos se componen de otros objetos y eligen esconder estos objetos internos de otras clases o exponerlos como simples interfaces.
+		Los objetos heredan de otros objetos y usan la funcionalidad para implementar un nuevo comportamiento, la herencia facilita el mantenimiento y la actualización
+		ya que los cambios se propagan del objeto base a los heraderos automáticamente.
+		Los objetos exponen la funcionalidad solo a través de métodos, propiedades y eventos y ocultan los detalles internos como el estado o las referencias a otros objetos.
+		Esto facilita la actualización y el reemplazo de objetos asumiendo que sus interfaces son compatibles sin afectar el resto de objetos.
+		Los objetos son polimórficos:
+			es decir, en cualquier punto donde se espere un objeto base se puede poner un objeto heredero.
+		Los objetos se desacolan de los objetos que los usan implementando una interfaz que los objetos que los usan conocen. esto permite proporcionar otras implementaciones sin
+		afectar a los objetos comsumidores de la interfaz.
+		
+	Beneficios:
+		Comprensión ya que el diseño orientado a objetos define una serie de componentes mucho más cercanos a los objetos del mundo real.
+		Reusabilidad ya que el polimorfismo y la abstracción permite definir contratos en interfaces y cambiar las implementaciones de forma transparente.
+		Testeabilidad gracias a la encapsulación de los objetos.
+		Extensibilidad gracias a la encapsulación, el polimorfismo y la abstracción.
+		
+	Cuando Usarlo:
+		Quieres modelar la aplicación basándte en objetos reales y sus acciones.
+		Ya tienes objetos que encajan en el diseño y con los requisitos operacionales.
+		Necesitas encapsular la lógica y los datos juntos de forma transparente.
+		

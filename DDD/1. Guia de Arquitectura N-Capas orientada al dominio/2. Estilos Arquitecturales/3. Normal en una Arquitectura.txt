@@ -1,0 +1,6 @@
+Lo normal en una arquitectura:
+	es que no se base en un solo estilo arquitectural, sino que combine varios de dichos estilos arquitecturales para obtener las ventajas de cada uno.
+	Es importate:
+		entender que los estilos arquitecturales son indicaciones abstractas de como dividir en parte el sistema y de cómo estas partes deben interactura.
+		en las aplicaciones reales los estilos arquitecturales se instancian en una serie de componentes e interacciones concretas. esta es la principal
+		diferencia existente entre un estilo arquitectural y un patron de diseño.

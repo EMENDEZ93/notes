@@ -1,0 +1,29 @@
+Basado en componentes:
+	el estilo de arquitectura basada en componentes describe un acercamiento al diseño de sistema como un conjunto de componentes que exponen interfaces bien definidas
+	y que colaboran entre si para resolver el problema.
+	
+	Características:
+		Es un estilo para diseñar aplicaciones a partir de componentes individuales.
+		Enfatiza la descomposición del sistema en componentes con interfaces muy bien definidas.
+		Definen una aproximación al diseño a traves de componentes que se comunican mediante interfaces que exponen métodos, eventos y propiedades.
+		
+	Principios Clave:
+		Los componentes son diseñados de forma que puedan ser reutilizados en distintos escenarios en distintas aplicaciónes aunque algunos componentes son diseñados para
+		una tarea específica.
+		Los componentes son diseñados para operar en diferentes entornos y contextos. toda la información debe ser pasada al componente en lugar de incluirla en él o que
+		este acceda a ella.
+		Los componentes pueden ser extendidos a partir de otros componentes para ofrecer nuevos comportamientos.
+		Los componentes exponen interfaces que permiten al código usar su funcionalidad y no revelan detalles internos de los procesos que realizan o de su estado.
+		Los componentes están diseñados para ser lo más independientes posible de otros componentes, por lo que pueden ser desplegados sin afectar a otros componentes o sistemas.
+		
+	Beneficios:
+		Facil despliegue ya que se puede sustituir un componente por su nueva version sin afectar a otros componentes o al sistema.
+		Reducción de costes ya que se pueden usar componentes de terceros para abaratar los costes de desarrollo y mantenimiento.
+		Reusables ya que son independientes del contexto se pueden emplear en otras aplicaciones y sistemas.
+		Reducción de la complejidad gracias al uso de contenedores de componentes que realizan la activación, gestion del ciclo de vida, etc.
+		
+	Cuando Usarlo:
+		Tienes componentes que sirvan a tu sistema o los puedes conseguir.
+		La aplicación ejecutara generalmente procedimientos con pocos o ningún dato de entrada.
+		Quieres poder combinar componentes escritos en diferentes lenguajes.
+		Quieres crear una arquitectura que permite reemplazar o actualizar uno de sus componentes de forma sencilla.

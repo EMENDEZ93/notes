@@ -1,0 +1,5 @@
+Diferencia Estilo Arquitectural y Patrones Diseño:
+	Los Patrones de diseño:
+		son descripciones estructurales y funcionales de cómo resolver de forma concreta un determinado problema mediante orientacion a objetos, mientras que.
+	Los Estilos Arquitecturales:
+		son descripciones abstractas y no están atados a ningún paradigma de programación especifico.

@@ -1,0 +1,6 @@
+Los principales aspectos son:
+	comunicaciones.
+	despliegue.
+	dominio.
+	interacción.
+	estructura.

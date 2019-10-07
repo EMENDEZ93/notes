@@ -1,0 +1,8 @@
+Crear la arquitectrua de forma iterativa e incremental:
+	a la hora de crear la arquitectura de nuestro sistema de forma iterativa e incremental.
+	Las principales preguntas a responder son:
+		¿Qué parte clave de la arquitectura representa el mayor riesgo si las diseño mal?
+		¿Qué partes de la arquitectura son más susceptibles de cambiar?
+		¿Qué partes de la arquitectura puede dejar para el final sin que ello impacte en el desarrollo del sistema?
+		¿Cuáles son las principales suposiciones que hago sobre la arquitectura y como las verifico?
+		¿Qué condiciones pueden provocar que tenga que cambiar el diseño?

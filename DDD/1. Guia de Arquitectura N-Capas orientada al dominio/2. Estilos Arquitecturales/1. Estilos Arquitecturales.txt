@@ -1,0 +1,10 @@
+Estilos Arquitecturales>
+	los estilos arquitecturales son la herramienta básica de un arquitecto a la hora de dar forma a la arquitectura de una aplicación.
+	
+	Un estilo arquitectural:
+		se puede entender como un conjunto de principios que definen a alto nivel un aspecto de la aplicación.
+	
+	un estilo arquitectural viene definido por un conjunto de componentes, un conjunto de conexiones entre dichos componentes y un conjunto de restricciones sobre
+	como se comunican dos componentes cualesquiera conectados.
+	
+	Los estilos arquitecturales pueden organizarse en torno al aspecto de la aplicación sobre el que se centran.

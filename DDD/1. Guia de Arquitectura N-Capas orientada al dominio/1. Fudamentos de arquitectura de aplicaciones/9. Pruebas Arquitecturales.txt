@@ -1,0 +1,4 @@
+Pruebas Arquitecturales:
+	Estas pruebas son pequños desarrollos de parte de la aplicación (Pruebas de Concept) que se usan para mitiga riestgos rápidamente o probrar posibles
+	vias de maduración de la arquitectura. una prueba arquitectural se convierte en una arquitectura candidata que se evalúa contra la line base frente a la cual
+	crear y evaluar las nuevar arquitecturas candidatas.

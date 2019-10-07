@@ -1,0 +1,34 @@
+Cliente/Servidor:
+	el estilo cliente/servidor define una relación entre dos aplicaciones en las cuales una de ellas (cliente) envia peticiones a la otra (servidor fuente de datos)
+	
+	Cliente:
+		Peticion ->:
+			Servidor:
+		<- Respuesta:
+	
+	Caracteristicas:
+		Es un estilo para sistemas distribuidos.
+		Divide el sistema en una aplicación cliente, una aplicación servidora y una red que las conecta.
+		Describe una relación entre el cliente y el servidor en la cual el primero realiza peticiones y el segundo envia respuestas.
+		Puede usar un amplio rango de protocolos y formatos de datos para comunicar la información.
+		
+	Principios Clave:
+		El cliente realiza una o más peticiones, esperar por las respuesta y las procesa a su llegada.
+		El cliente normalmente se conecta solo a uno o a un número reducido de servidores al mismo tiempo.
+		El cliente interactúa directamente con el usuario, por ejemplo a través de una interfaz gráfica.
+		El servidor no realiza ninguna petición al cliente.
+		El servidor envia los datos en respuesta a las peticiones realizadas por los clientes conectados.
+		El servidor normalmente autentifica y verifica primero al usuario y después procesa la petición y envia los resultados.
+	
+	Beneficios:
+		Más seguridad ya que los datos se almacenan en el servidor que generalmente ofrece más control sobre la seguridad.
+		Acceso centralizado a los datos que están almacenados en el servidor lo que facilita su acceso y actualización.
+		Facilidad de mantenimiento ya que los roles y las responsabilidades se distribuyen entre los distintos servidores a traves de la red lo que permite
+		que un cliente no se vea afectado por un error en un servidor particular.
+		
+	Cuando Usarlo:
+		La aplicación se basa en un servidor y soportará múltiples clientes.
+		La aplicación está normalmente limitada a un uso local y área LAN controlada.
+		Estás implementando procesos de negocio que se usaran a lo largo de toda tu organización.
+		Quieres Centralizar el almacenamiento, backup y mantenimiento de la aplicación.
+		La aplicación debe soportar distintos tipos de clientes y distintos dispositivos.

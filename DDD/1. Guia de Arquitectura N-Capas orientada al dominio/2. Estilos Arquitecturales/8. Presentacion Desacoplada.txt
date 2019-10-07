@@ -1,0 +1,24 @@
+Presentación Desacoplada:
+	El estilo de presentación separada indica cómo debe realizarse el manejo de las acciones del usuario, la manipulación de la interfaz y los datos de la aplicación.
+	Este estilo separa los componentes de las interfaz del flujo de datos y de la manipulación.
+	
+	Características:
+		Es un estiolo, para diseñar aplicaciones, basado en patrones de diseño conocidos.
+		Separa la lógica para el manejo de la interacción de la representación de los datos con que trabaja el usuario.
+		Permite a los diseñadores crear una interfaz gráfica mientras los desarrolladores escriben el código para su funcionamiento.
+		Ofrece un mejor soporte para el testeo ya que se pueden testear los comportamientos individuales.
+		
+	Principios Clave:
+		El estilo de presentación desacoplada separa el procesamiento de la interfaz en distintos roles.
+		Permite construir mocks que replican el comportamiento de otros objetos durante el testeo.
+		Usa eventos para notificar a la vista cuando hay datos del model que ha sido modificado.
+	
+	Beneficios:
+		Testeabilidad ya que en las implementaciones comunes los roles son simplemente clases que pueden ser testeadas y reemplazadas por mocks que simulen su comportamiento.
+		Reusabilidad ya que los controladores pueden ser aprovechados en otras vistas compatibles y las vista pueden ser aprovechadas en otros controladores compatibles.
+		
+	Cuando usarlo:
+		Quieres mejorar el testeo y el mantenimiento de la funcionalidad de la interfaz.
+		Quieres separar la tarea de crear la interfaz de la lógica que la maneja.
+		No quieres que la interfaz contenga ningún código de procesamineto de eventos.
+		El código de procesamiento de la interfaz no implementa ninguna lógica de negocio.

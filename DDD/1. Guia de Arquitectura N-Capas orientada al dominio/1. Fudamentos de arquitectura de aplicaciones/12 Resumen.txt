@@ -1,0 +1,9 @@
+En resumen:
+	El proceso de diseño de arquitectura tiene que decidir qué funcionalidad es la mas importante a desarrollar.
+	
+	A partir de esta decisión tiene que decidir el tipo de aplicación y el estilo arquitectural, y tomar las decisión tiene que decidir el tipo de aplicación y el estilo
+	arquitectural, y tomar las decisiones importantes sobre seguridad, redimiento... que afectan al conjunto del sistema.
+	
+	El diseño de la arquitectura decide sules con los componentes más basicos del sistema y como se relacionan entre ellos, para implementar la funcionalidad. Todo
+	este proceso debe hacerse paso a paso, tomando solo las decisiones que se puedan comprobar y dejando abietas las que no. esto significa mitigar los riesgos rápidamente
+	y explorar la implementación de casos de uso de definan la arquitectura.

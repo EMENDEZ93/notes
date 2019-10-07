@@ -1,0 +1,7 @@
+Las preguntas que debeos hacerle a una arquitectura candidata que surge como resultado de desarrollar una prueba arquitectural son:
+	¿Introduce nuevos riesgos?
+	¿Soluciona algún riesgo conocido esta arquitectura?
+	¿Cumple con nuevos requisitos del sistema?
+	¿Realiza casos de uso arquitecturalmente significativos?
+	¿Se encarga de implementar algún requisito de calidad?
+	¿Se encarga de implementar alguna parte del sistema transversal?

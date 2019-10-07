@@ -1,0 +1,30 @@
+Bus de Servicios:
+	el estilo de arquitectural de bus de mensajes define un sistema software que puede enviar y recibir mensajes usando uno o más canales de forma que las aplicaciones pueden
+	interactuar sin conocer detalles especificos la una de la otra.
+	
+	Características:
+		Es una estilo para diseñar aplicaciones donde la interacción entre las mismas se realiza a través del paso de mensajes por un canal de comunicación común.
+		Las comunicaciones entre aplicaciones suelen ser asincronas.
+		Se implementan a menudo usnado un sistema de mensajes como MSMQ.
+		Muchas implementaciones consisten en aplicaciones individuales que se comunican usando esquemas comunes y una infraestructura compartida para el envio y
+		recepción de mensajes.
+		
+	Principios Clave:
+		Toda la comunicación entre aplicaciones se basa en mensajes que usan esquemas comunes.
+		Las operaciones complejas pueden ser creadas combinando un conjunto de operaciones más simples que ealizan determinadas tareas.
+		Como la interacción con el bus se basa en esquemas comunes y mensajes se pueden añadir o eliminar aplicaciones del bus para cambiar la lógica usada para
+		procesar los mensajes.
+		Al usar un modelo de comunicación con menjes basado en estándares se pueden interactuar con aplicaciones desarrolladas para distintas plataformas.
+		
+	Beneficios:
+		Expansión ya que las aplicaciones pueden ser añadodas o eliminada el bus sin afectar al resto de aplicaciones existentes.
+		Baja complejidad, la complejidad de la aplicación se reduce dado que cada aplicación solo necesito conocer cómo comunicarse con el bus.
+		Mejor rendimiento ya que no hay intermediarios en la comunicación entre dos aplicaciones, solo la limitación de lo rápido que entregue el bus los mensajes.
+		Escalable ya que muchas instancias de la misma aplicación puede ser asociadas al bus para dar servicio a varias peticiones al mismo tiempo.
+		Simplicidad ya que cada aplicación solo tiene que soportar una conexión con el bus en lugar de varias conexiones con el resto de aplicaciones.
+		
+	Cuando usarlo:
+		Tienes aplicaciones que interactúan unas con otras para realizar tareas.
+		Estas implementando una tarea que requiere interacción con aplicaciones externas.
+		Estas implementando una tarea que requiere interacción con otras aplicaciones desplegadas en entornos distintos.
+		Tienes aplicaciones que realizan tareas separads y quieres combinar esas tareas en una sola operación.

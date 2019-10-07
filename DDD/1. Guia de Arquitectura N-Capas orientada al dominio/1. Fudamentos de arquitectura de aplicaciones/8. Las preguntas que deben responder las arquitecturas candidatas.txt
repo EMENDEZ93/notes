@@ -1,0 +1,7 @@
+Las preguntas que deben responder las arquitecturas candidatas son:
+	¿Qué suposiciones he realizado en esta arquitectura?
+	¿Qué requisitos explicitos o implicitos cumple esta arquitectura?
+	¿Cuales son los riesgos tomados con esta evolución de la arquitecttura?
+	¿Qué medidas puedo tomar para mitigar esos riesgos?
+	¿Qué medida puedo tomar para mitigar esos riesgos?
+	¿En qué medida esta arquitectura es una mejora sobre la linea base o las otras arquitecturas candidatas?

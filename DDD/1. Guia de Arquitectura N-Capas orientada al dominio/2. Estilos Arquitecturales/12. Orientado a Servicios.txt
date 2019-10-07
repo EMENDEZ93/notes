@@ -1,0 +1,34 @@
+Orientado a Servicios SOA:
+	El estilo orientado a servicios permite a una aplicación ofrecer su funcionalidad como un conjunto de servicios para que sean consumidos.
+	Los servicios usan interfaces estándares que pueden ser invocadas, publicadas y descubiertas. se centran en proporcionar un esquema basado en mensajes con operaciones
+	de nivel de aplicación y no de componente o de objeto.
+	
+	Caracteristicas:	
+		la interacción con el servicio está muy desacoplada.
+		Puede empaquetar procesos de negocio como servicios.
+		Los clientes y otros servicios pueden acceder a servicios locales corriendo en el mismo nivel.
+		Los clientes y otros servicios acceden a los servicios remotos a través de la red.
+		Pueden uar un amplio rango de protocolos y formatos de datos.
+		
+	Principios Clave:
+		Los servicios son autonomos, es decir cada servicios se mantiene, se desarrolla, se despliega y se versiona independientemente.
+		Los servicios pueden estar situados en cualquier nodo de una red local o remota mientras esta soporte los protocolos de comunicación necesarios.
+		Cada servicio es independiente del resto de servicios y puede ser reemplazado o actualizado sin afectar a las aplicaciones que lo usan mientras la interfaz
+		sea compatible.
+		Los servicos comparten esquemas y contratos para comunicarse, no clases.
+		La compatibilidad se basa en polítticas que definen funcionalidades como el mecanismo de transporte, el protocolo y la seguridad.
+	
+	Beneficios:
+		Alineamiento con el dominio ya que la reutilización de servicios comunes con interfaces estándar aumenta las oportunidades tecnológicas y de negocio y reduce costes.
+		Abstracción ya que los servicios son autónomos y se accede a ellos a través de un contrato formal que proporciona bajo acoplamiento y abstracción.
+		Descubrimiento ya que los servicios exponen descripciones que permiten a otras aplicaciones y servicios encontrarlos y determinar su interfaz automaticamente.
+		
+	Cuando Usarlo:
+		Tienes acceso a servicios adecuados o puedes comprarlos a una empresa.
+		Quieres construir aplicaciones que compongan múltiples servicios en una interfaz única.
+		Estas creando S+S, SaaS o una aplicación en la nube.
+		Necesitas soportar comunicación basada en mensajes para segmentos de la aplicación.
+		Necesitas exponer funcionalidad de forma independiente de la plataforma.
+		Necesitas utilizar servicios federedos como servicios de autenticación.
+		Quieres exponer servicios que puedan ser descubiertos y usados por clientes que no tuviesen conocimiento previo de sus interfaces.
+		Quieres soportar escenarios de interoperabilidad e integración.

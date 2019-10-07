@@ -1,0 +1,3 @@
+Los casos de uso importantes son:
+	aquellos que son críticos para la aceptación de la aplicación o que desarrollan el diseño lo suficiente como para ser útiles en la evaluación
+	de la arquitectura.

@@ -1,0 +1,12 @@
+En el plano del diseño de la arquitectura:
+	esti se traduce en que vamos a ir definiendo la arquitectura del sistema final poco a poco.
+	podemos entenderlo como un proceso de maduración, como el de un ser vivo.
+	Primero tendremos una arquitectura a la que llamaremos linea base y que es una visión del sisteme en el momento actual del proceso.
+	Junto a esta linea base tendremos una serie de arquitecturas candidatas que serán el siguiente paso en la maduración de la arquitectura.
+	Cada Arquitectura candidata incluye:
+		El tipo de aplicación.
+		La arquitectura de despliegue.
+		El estilo arquitectural.
+		Ls Tecnologías seleccionadas.
+		Los requisitos de calidad.
+		Desiciones transversales.

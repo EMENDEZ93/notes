@@ -1,0 +1,58 @@
+Arquitectura Orientada al Dominio:
+	DDD (Domain Driven Desing) no es solo un estilo arquitectural, es tambine una forma de afrontar los proyectos a nivel de trabajo del equipo de desarrollo, ciclo de vida
+	del proyecto, identificación del lenguaje ubicuo a utilizar con los expertos en el negocio. etc.
+	Sin embargo, DDD tambíen identifica una seria de patrones de diseño  y estilo de arquitectura concreto.
+	
+	DDD:
+		es tambien, por lo tanto, una aproximación concreta para diseñar software basándonos sobre todo en la importancia del Dominio Del Negocio, sus
+		Elementos y comportamientos y las relaciones entre ellos. está muy indicado para diseñar e implementar aplicaciones empresariales complejas donde es fundamental 
+		definir un Modelo de Dominio del negocio real (el llamado Lenguaje Ubicuo). 
+		
+	El modelo de dominio:
+		puede verse como un marco dentro del cual se debe diseñar la aplicación.
+		
+	
+	DDD identifica una seria de patrones de arquitectura importantes a tener en cuenta en el diseño de una aplicación, como son:
+		Arquitectura N-Capas (Capas especificas tendencias arquitectura DDD)
+		
+		Patrones De Diseño:
+			Repository.
+			Entity.
+			Aggregate.
+			Value Object.
+			Unit Of Work.
+			Service.
+		En DDD tambien es fundamental el desacoplamiento entre componentes.
+		
+	Principios Clave:
+		Para aplicar DDD se debe de tener un buen entendimiento del Dominio de Negocio que se quiere modelar, o conseguir ese conocimiento adquiriendolo a partir de los
+		expertos del Dominio real. 
+		Todo el equipo de desarrollo debe de tener contacto con los expertor del dominio (expertos funcionales) para modelar correctamente el Dominio. 
+		En DDD, los arquitectos, desarrolladores, jefe de proyecto y tester (Todo el equipo) debe acordar hacer uso de un unico lenguaje sobre el domino del negocio
+		que esté centrado en cómo los expertos de dicho dominio articulan su trabajo. No debemos implementar nuestro propio lenguaje/Terminos internos de aplicación.
+		El corazón del software es el modelo de dominio el cual es una proyección directa de dicho lenguaje acordado (lenguaje ubicuo) y permite al equipo de desarrollo
+		el encontrar rápidamente área incorrectas en el software al analizar el lenguaje que lo rodea. la creación de dicho lenguaje común no es simplemente un ejercicio de
+		aceptar información de los expertor del dominio y aplicarlo.
+		A menudo, los problemas en las comunicación de requerimientos funcionales no es solo por mal entendidos del lenguaje de dominio. tambien deriva del hecho de que dicho
+		lenguaje sea ambiguo.
+		
+		Es importante destacar que aunque DDD proporciona muchos beneficios técnicos, como mantenibilidad, debe aplicarse solamente en dominios complejos donde el modelo y los procesos
+		linguisticos proporcionan claros beneficios en la comunicación de información compleja y en la formulación de un entendimiento común del dominio.
+		Asi mismo, la complejidad arquitectural es tambien mayor que una aplicación orientada a datos, si bien ofrece una mantenibilidad y desacoplamiento entre componentes mucho mayor.
+		
+	Beneficios:
+		DDD ofrece los siguientes beneficios:
+			Comunicación:
+				todas las partes de un equipo de desarrollo pueden usar el modelo de dominio y las enridades que define para comunicar conocimiento del negocio y requerimientos,
+				haciendo uso de un lenguaje común.
+			Extensibilidad:
+				La capa de dominoi es el corazón del software y por lo tanto estará completamente desacoplada de las capas de infraestructura, siendo más facil asi extender/evolucionar
+				la tecnologia del software.
+			Mejor Testing:
+				La arquitectura DDD tambien facilita el testing y mocking, debido a que la tendencia de diseño es a desacoplar los objetos de las diferentes capa de la arquitectura
+				lo cual facilita el mocking y testing correctos.
+				
+	Cuando Usarlo:
+		Condiderar DDD en aplicaciones complejas con mucha logica de negocio, con Dominios Complejos y donde se desea mejorar la comunicación y minimizar los malos entendidos
+		en la comunicación del equipo de desarrollo.
+		DDD es también una aproximación ideal en escenarios empresariales grander y complejos que son dificiles de manejar con otras técnicas.

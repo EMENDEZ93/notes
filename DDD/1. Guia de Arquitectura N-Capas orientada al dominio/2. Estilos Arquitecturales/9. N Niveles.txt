@@ -1,0 +1,27 @@
+N-Niveles:
+	el estilo arquitectural de N-Niveles define la separación de la funcionalidad en segmentos/niveles fisicos separados, similar que el estilo en N-Capas
+	Pero sitúa cada segmento en una máquina distinta. en este caso hablamos de niveles fisicos (Tiers).
+	
+	Caracteristicas:
+		separación de niveles fisicos (Servidores normalmente) por razones de escalabilidad, seguridad, o simplemente necesidad.
+		Ejemplo:
+			si la aplicación cliente se ejecuta en máquinas remotas, la capa de presentación necesariamente se ejecutará en un nivel fisico separado).
+			
+	Principios Clave:
+		es un estiolo para definir el despliegue de las capas de aplicación.
+		Se caracteriza por la descomposición funcional de las aplicaciones, componentes de servicio y su despliegue distribuido, que ofrece mejor escalabilidad, disponibilidad
+		Rendimineto, manejabilidad y uso de recursos.
+		Cada nivel es completamente independiente de los otros niveles excepto del inmediatemente inferior.
+		Este estilo tiene al menos 3 niveles logicos o capas separados. Cada capa implementa funcionalidad específica y está fisicamente separada en distintos servidores.
+		Una capa es desplegada en un nivel si uno o más servicios o aplicaciones dependen de la funcionalidad expuesta por dicha capa.
+		
+	Beneficios:
+		Mantenibilidad ya que cada nivel es independiente de los otros, las actualizaciones y los cambios pueden ser llevados a cabo sin afectar a la aplicación como un todo.
+		Escalabilidad porque los niveles están basado en el despliegue de capas realizar el escalado de la aplicación es bastante directo.
+		Disponibilidad ya que las aplicaciones pueden redundar cualquiera de los niveles y ofrecer asi tolerancia a fallos.
+		
+	Cuando Usarlo:
+		Los requisitos de procesamiento de las capas de la aplicación difieren.
+		Los requisitos de seguridad de las capas de la aplicación difieren.
+		Quieres compartir la lógica de negocio entre varias aplicaciones.
+		Tienes el suficiente hardware para desplegar el número necesario de servidores en cada nivel.
