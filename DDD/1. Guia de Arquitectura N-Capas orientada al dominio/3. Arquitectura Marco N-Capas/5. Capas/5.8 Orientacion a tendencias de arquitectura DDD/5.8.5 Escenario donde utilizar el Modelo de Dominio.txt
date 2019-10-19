@@ -1,0 +1,15 @@
+Escenarios donde utilizar el modelo de dominio:
+	Las reglas de negocio que indican cuando se permiten ciertas acciones, son precisamente buenas candidatas a ser implementadas en el modelo de dominio.
+	Por ejemplo:
+		En un sistema comemrcial, una regla que especifica que un cliente no puede tener pendiente de pago más de 2000$, probablemente debería pertenecer al
+		modelo de dominio. Hay que tener en cuenta que reglas como la anterior involucran a diferentes entidades y tiene que evaluarse en diferentes casos de uso.
+	Asi pues, en un modelo de dominio tendremos muchas de estas reglas de negocio, incluyendo casos donde unas reglas sustituyen a otras, por ejemplo, sobre
+	la regla anterior, si el cliente es una cuenta estrategica o con un volumen de negocio muy grande, dicha cantidad podria ser muy superior, etc.
+	
+	En definitiva, la importancia que tenga en una aplicación las reglas de negocio y los casos de uso, es precisamente la razón por la que orientar la arquitectura
+	hacia el Dominio y no simplemente definir entidades, relaciones entre ellas y una aplicación orientada a datos.
+	
+	Finalmente para persistir la información y convertir colecciones de objetos en memoria (grafos de objetos/entidades) a una base de datos relacional, necesitaremos 
+	finalmente alguna tecnología de persistencia de datos de tipo ORM como Hibernate o Entity Framework, normalmente. Sin embargo, es muy importante que queden	
+	muy diferentes y separadas estas tecnologías concretas de persistencia de datos (tecnologias de infraestructura) del comportamiento de negocio de la aplicación en
+	Capas (N-Layers) que estén integradas de una forma desacoplada.

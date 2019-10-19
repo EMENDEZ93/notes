@@ -1,0 +1,2 @@
+Principio Abierto Cerrado (Open Close Principle):
+	las clases deben ser extensibles sin requerir modificación en la implementación interna de sus métodos.

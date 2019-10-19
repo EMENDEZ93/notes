@@ -1,0 +1,2 @@
+Minimizar el diseño de arriba abajo (UoFront Design):
+	Diseñar solamente lo que es necesario, no realizar Sobre-Ingenieria y evitar el efecto YAGNI

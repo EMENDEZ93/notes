@@ -1,0 +1,6 @@
+Evento:
+	un evento puede definirse como un cambio significativo de estado.
+	Por ejemplo:
+		una petición de vacaciones puede estar en estado de en espera o de aprobado.
+		Un sistema que implemente esta lógica podría tratar este cambio de estado como un evento que se pueda producir, detectar y consumir por varios componentes
+		dentro de la arquitectura.

@@ -1,0 +1,10 @@
+Beneficios de uso de capas:
+	El mantenimiento de mejoras en una solución será mucho más fácil porque las funciones están localizadas y además las capas deben estar débilmente acopladas entre
+	ellas y con alta cohesión internamente, lo cual posibilita variar de una forma sencialla diferente implementaciones/combinaciones de capas.
+	
+	Otra soluciones deberían poder reutilizar funcionalidad expuesta por las diferentes capas, especialmente si se han diseñado para ello.
+	
+	Los desarrollos distribuidos son mucho más sencillos de implementar si el trabajo se ha distribuido previamente en diferentes capas lógicas.
+	
+	La distribución de capas (Layers) en diferentes niveles fisicos (tiers) pueden, en algunos casos mejorar la escalabilidad. Aunque este punto hay que evaluarlo con
+	cuidado, pues pueden impactar negativamente en el rendimiento.

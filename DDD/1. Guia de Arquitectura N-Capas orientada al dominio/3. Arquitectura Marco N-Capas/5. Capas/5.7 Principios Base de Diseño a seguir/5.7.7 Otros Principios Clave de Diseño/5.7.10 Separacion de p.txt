@@ -1,0 +1,4 @@
+Separación de Preocupaciones/Responsabilidades (Separation of concerns):
+	Dividir la aplicación en distintas partes minimizando las funcionalidades superpuestas entre dichas partes.
+	El factor fundamental es minimizar los puntos de interacción para conseguir una alta cohesión y un bajo acoplamiento. sin embargo, separar la funcionalidad en
+	las fronteras equivocadas, puede resultar en un grado de acoplamiento alto y complejidad entre las caracteristicas del sistema.

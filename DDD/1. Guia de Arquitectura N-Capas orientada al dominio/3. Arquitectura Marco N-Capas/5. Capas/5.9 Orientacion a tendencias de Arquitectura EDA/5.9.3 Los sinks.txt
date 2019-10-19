@@ -1,0 +1,6 @@
+Los Sinks:
+	tiene la responsabilidad de aplicar una reacción tan pronto como se presente un evento. esta reacción puede o no ser proporcionada completamente por el
+	propio sink.
+	Por ejemplo:
+		el sink puede tener la responsabilidad de filtrar, transformar y mandar el evento a otro componente o el mismo puede proporcionar una reacción propia a
+		dicho evento.

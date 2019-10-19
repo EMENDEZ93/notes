@@ -1,0 +1,2 @@
+Problema:
+	como estructura una aplicación para soportar requerimientos complejos operacionales y disponer de una buena mantenibilidad, reusabilidad, escalabilidad, robustez y seguridad

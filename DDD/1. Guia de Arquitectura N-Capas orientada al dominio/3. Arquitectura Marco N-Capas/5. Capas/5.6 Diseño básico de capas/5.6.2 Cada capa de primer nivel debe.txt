@@ -1,0 +1,6 @@
+Cada capa de primer nivel debe:
+	de estar débilmente acoplada con el resto de capas de primer nivel.
+	El proceso es como sigue:
+		comenzar en el nivel más bajo de abstracción:
+		Por ejemplo:
+			Layer 1. este es la base del sistema. se continúa esta escalera abstracta con otras capas (Layer J, Layer J-1) hasta el último nivel (Layer-N)

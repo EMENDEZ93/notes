@@ -1,0 +1,12 @@
+En soluciones grandes que involucran a muchos componentes de software:
+	es habitual tener un gran número de componentes en el mismo nivel de abstracción (capas) pero que sin embargo no son cohesivos. 
+	En esos casos, cada capa debería descomponerse en dos o más subsistemas cohesivos, llamados tambien modulos (parte de un módulo vertical en cada capa horizontal)
+	
+	Capas compuestas a su vez por múltiples subsistemas:
+		Layer 2:
+			Module 1
+			Module 2
+		
+		Layer:
+			Module 1
+			Module 2

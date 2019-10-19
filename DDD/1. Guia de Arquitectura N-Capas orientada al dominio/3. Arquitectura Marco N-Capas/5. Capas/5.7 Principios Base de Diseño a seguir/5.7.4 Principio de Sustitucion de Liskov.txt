@@ -1,0 +1,2 @@
+Principio de sustitución de Liskov (Liskov Subtitution Principle):
+	Los sub-tipo o clases hijas deber ser sustituibles por sus propios tipos de base relacionados (Clases Base).

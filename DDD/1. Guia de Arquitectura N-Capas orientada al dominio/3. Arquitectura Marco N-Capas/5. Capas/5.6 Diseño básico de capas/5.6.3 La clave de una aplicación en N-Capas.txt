@@ -1,0 +1,6 @@
+La clave de una aplicación en N-Capas:
+	está en la gestión de dependencias. en una arquitectura en N-Capas tradicional, los componentes de una capa pueden interactura solo con componentes
+	de la misma capa o bien con otros componentes de capas inferiores.
+	Esto ayuda a reducir las dependencias entre componentes de diferentes niveles. 
+	
+	

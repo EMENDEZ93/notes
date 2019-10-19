@@ -1,0 +1,3 @@
+Principio de inversion de dependencias (Dependency Inversion Principle):
+	las dependencias directas entre clases deber ser reemplazadas por abstracciones (interfaces) para permitir diseños top-down sin requerir primero el diseño de los
+	nivels inferios. las abstracciones no deben depender de los detalles - los detalles deben depender de las abstracciones.

@@ -1,0 +1,10 @@
+Capas vs Niveles:
+	Teniendo en cuenta topología de redes y localizacion remotas.
+	Aunque tanto las capas (layers) como los niveles (tiers) usan conjuntos similares de nombres:
+		Presentación.
+		Servicios.
+		Negocio.
+		Datos.
+	es importante no confundirlos y recordar que solo los Niveles (Tiers) implican una separación fisica.
+	Se suele utilizar el término Tier refiriendonos a patrones de distribución fisica como 2 Tier, 3 Tier y N Tier.
+	

@@ -1,0 +1,21 @@
+Aspectos Relacionados
+	Al estructurar una aplicación, se debe reconciliar las siguientes fuerzas dentro del contexto del entorno de la aplicación:
+		Localizar los cambios de un tipo:
+			en una parte de la solución minimiza el impacto en otras parte el trabajo requerido en arreglar defectos, facilita el mantenimientos
+			de la aplicación y mejora la flexibilidad general de la aplicación.
+		Separación de responsabilidades entre componentes:
+			Por ejemplo:
+				separar el interfaz de usuario de la lógica de negocio, y la lógica de negocio del acceso a la base de datos.
+			Aumenta la flexibilidad, mantenibilidad y escalabilidad.
+		Ciertos componentes deber ser reutilizables:
+			entre diferentes módulos de una aplicación.
+		Equipos diferentes deben poder trabajar en partes de la solución:
+			con minimas dependencias entre diferentes equipos y deben poder desarrollar contra interfaces bien definidos.
+		Los componentes individuales:
+			deben ser cohesivos.
+		Los componentes no relacionados directamente:
+			deben estar débilmente acoplados.
+		Los diferentes componentes de una solución:
+			deben de poder ser desplegados de una forma independiente, e incluso mantenidos y actualizados en diferentes momentos.
+		Para asegurar una estabilidad:
+			la solución debe poder probarse de forma autónoma cada capa.

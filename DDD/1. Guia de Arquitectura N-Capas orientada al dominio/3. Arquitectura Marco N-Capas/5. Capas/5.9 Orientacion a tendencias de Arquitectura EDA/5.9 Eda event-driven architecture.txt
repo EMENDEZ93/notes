@@ -1,0 +1,6 @@
+EDA Event Driven Architecture:
+	es un patrón de arquitectura de software que promociona fundamentalmente el uso de eventos (generación, detección, consumo y reacción a eventos) como hilo
+	conductor principal de ejecución de cierta lógica del dominio. 
+	Es un tipo de arquitectura genérica orientada a eventos, por lo que puede ser implementada con lenguajes de desarrollo multidisciplinar y no es necesario/obligatorio
+	hacer el uso de tecnologias especiale (Si bien, las tecnologias especialmente diseñadas para implementar WorkFlows y orquestaciones de procesos de negocio, pueden
+	ayudar mucho a esta tendencia de arquitectura).

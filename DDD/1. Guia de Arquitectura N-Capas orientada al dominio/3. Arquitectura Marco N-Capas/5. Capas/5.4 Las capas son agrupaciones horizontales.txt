@@ -1,0 +1,10 @@
+Las capas son agrupaciones:
+	horizontales lógicas de componentes de software que forman la aplicación o el servicio.
+	Nos ayudan a diferencias entre los diferentes tipos de tareas a ser realizadas por los componentes, ofreciendo un diseño que maximiza la reutilización y
+	especialmente la mantenibilidad.
+	
+	En definitiva se trata de aplicar el principio de separación de responsabilidades (SoC separation of concerns principle) dentro de una arquitectura.
+	Cada capa lógica de primer nivel puede tener un número concreto de componentes agrupados en sub-capas.
+	Dichas sub-capas realizan a su vez un tipo especifico de tareas.
+	Al identificar tipos genéricos de componentes que existen en la mayoría de las soluciones, podemos construir un patrón o mapa de una aplicación o servicio
+	y usar dicho mapa como modelo de nuestro diseño.

@@ -1,2 +1,4 @@
 anemicDomainModel martin fowler
 patron entidad.
+Patrón Layered Supertypr
+Patron Abstract Interface

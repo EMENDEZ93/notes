@@ -1,0 +1,4 @@
+Principios Base de Diseño a Seguir:
+	A la hora de diseñar un sistema, es importante tener presente una serie de principios de diseño fundamentales que nos ayudaran a crear una arquitectura que
+	se ajuste a prácticas demostradas, que minimicen los costes de mantenimiento y mazimicen la usabilidad y la extensibilidad. Estos principos clave seleccionados
+	y muy reconocidos por la industria del software son -> solid

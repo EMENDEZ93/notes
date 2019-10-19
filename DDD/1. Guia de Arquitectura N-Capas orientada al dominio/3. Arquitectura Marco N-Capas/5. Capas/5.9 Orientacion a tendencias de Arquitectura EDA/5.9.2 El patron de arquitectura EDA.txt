@@ -1,0 +1,21 @@
+El patrón de arquitectura EDA:	
+	puede aplicarse en el diseño y la implementación de aplicaciones que trasmitan eventos a lo largo de diferentes objetos (Componentes y seervicios débilmente
+	acoplados, a ser posible).
+	
+	Un sistema dirigido por eventos normalmente dispondrá de emisores de eventos (denominados tambien como agentes) y consumidores de eventos (denominados tambien
+	como sumidero o sink).
+	
+	el contruir aplicaciones y sistemas alrededor del concepto de una orientación a eventos permite a dichas aplicaciones reaccionar de una forma mucho más natural
+	y cercana al mundo real, porque los sistemas orientados a eventos son, por diseño, más orientado a entornos asíncronos y no predecible (el ejemplo típico seria
+	los workflows, pero no solamente debemos encasillar EDA en workflows).
+	
+	EDA  puede complementar perfectamente a una arquitectura N-Layer DDD y a arquitectura orientadas a servicio SOA por que la lógica del dominio y los servicios
+	web pueden activarse por disparadores relacionados con eventos de entrada. Este paradigma es lógicamente especialmente útil cuando sink no proporciona el mismo
+	la reacción/ejecución esperada.
+	
+	Esta inteligencia basada en eventos facilita el diseño e implementación de procesos automatizados de negocio asi como flujos de trabajo orientados al usuario
+	(Human Workflows) e incluso es también muy útil para maquinaria de procesos, dispositivos como sensores, actuadores, controladores, etc. que pueden detectar
+	cambios en objetos o condiciones para crear eventos que puedan entonces ser procesados por un servicio o sistema.
+	
+	Por lo tanto, se puede llegar a implementar EDA en cualquier área orientada a eventos, bien sea workflows, proceso de reglas del domino, o capas de presentación
+	basadas en eventos (Como MVP y MVVM) etc.

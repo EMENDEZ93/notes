@@ -1,0 +1,11 @@
+Razones por las que si se deben orientar a Arquitectura N-Capas Orientada al Dominio:
+	Es realmente volver hacer hincapié sobre lo mismo, pero es muy importante dejar este aspecto claro.
+	Asi pues, la razones por las que es importante hacer uso de una arquitectura N Capas Orientada al Dominio es especialmente en los casos donde el comportamiento
+	del negocio a automatizar (lógica de dominio) está sujeto a muchos cmabios y evoluciones. En este caso especifico, disponer de un Modelo de Dominio disminuira
+	el coste total de dichos cambios y a medio plazo, el TCO (Coste Total de la propiedad) será mucho menor que si la aplicación hubiera sido desarrollada de una forma más
+	acoplada, por que los cmabios no tendrán tanto impacto. En definitiva, el tener todo el comportamiento del negocio que puede estar cambiando encapsulado en una 
+	unica área de nuestro software, disminuye drásticamente la cantidad de tiempo que se necesita para realizar un cambio, por que será realizado en un solo sitio y
+	podrá ser conveniente probado de forma aislada, aunque esto, por supuesto, dependera de cómo se haya desarrollado. El poder aislar tanto como sea posible dicho 
+	codigo del modelo de dominio disminuye las posibilidades de tener que realizar cambios en otras áreas de la aplicación (lo cual siempre puede afectar con nuevos
+	Problemas regresiones, etc.
+	Esto es de vital importancia si se desea reducir y mejorar los cilos de estabilización y puesta en producción de las soluciones.

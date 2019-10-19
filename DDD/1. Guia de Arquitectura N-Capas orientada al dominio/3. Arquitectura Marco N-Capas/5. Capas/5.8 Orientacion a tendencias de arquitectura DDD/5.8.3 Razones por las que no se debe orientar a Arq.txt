@@ -1,0 +1,7 @@
+Razones por las que no se debe orientar a Arquitecturas N-Capas Orientadas al Dominio:
+	Debido a las premisas anteriores, se desprende que si la aplicación a realizar es relativamente sencilla y sobre todo, las reglas de negocio a automatizar en
+	la aplicación cambiaran muy poco y no se prevén necesidades de cambios de tecnologia de infraestructura durante la vida de dicha aplicación, entonces probablemente
+	la solución no deberia seguir el tipo de arquitectura presentado en esta guía y más bien se debería de seleccionar un tipo de desarrollo/tecnologia RAD (Rapid Aplication 
+	Development) como puede ser Microsoft RIA Service, Etc. que son tecnologia RAD para aplicaciones donde el desacoplamiento entre todas sus capas no es especialmente
+	relevante, pero si lo es facilidad y productividad en el desarrollo y el time to marker de forma generalista se suele decir que son aplicaciones centradas en datos
+	y no tanto en un modelo de dominio.

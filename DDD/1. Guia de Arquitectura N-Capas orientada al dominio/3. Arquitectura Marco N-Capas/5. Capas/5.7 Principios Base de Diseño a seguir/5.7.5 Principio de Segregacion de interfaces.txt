@@ -1,0 +1,4 @@
+Principio de Segregación de interfaces (Interface Segregation Principle):
+	Los consumidores de interfaces de clases no deben estar obligados a implementar interfaces que no usan, es decir, los interfaces de clases deber ser especificos
+	dependiendo de quién los consume y por lo tanto tiene que estar granularizados/segregados en diferentes interfaces y no debemos crear grandes interfaces.
+	Las clases deben exponer interfaces separados para diferentes clientes/consumidores que difieren en los requerimientos de interfaces.

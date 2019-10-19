@@ -1,0 +1,3 @@
+Todas las aplicaciones con cierta complejidad:
+	deberían implementar una arquitectura lógica de tipo N-Capas (Estructuración Lógica Correcta), sin embargo, no todas la aplicaciones tienen por qué implementar en
+	modo N-Tier, puesto que hay aplicaciones que no requieren de una separación fisica de sus niveles (tiers), como pueden ser muchas aplicaciones web.

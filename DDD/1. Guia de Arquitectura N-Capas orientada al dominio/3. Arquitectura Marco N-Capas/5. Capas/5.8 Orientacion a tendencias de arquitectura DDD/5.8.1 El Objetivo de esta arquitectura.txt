@@ -1,0 +1,10 @@
+El Objetivo de esta arquitectura marco:
+	es proporcionar una base consolidada y guías de arquitectura par un tipo concreto de aplicaciones: 
+		Aplicaciones Empresariales Complejas.
+	Con una vida relativamente larga y normalmente con un volumen de cambios evolutivos considerables. Por lo tanto, en estar aplicaciones es muy importante todo
+	Lo relativo al mantenimiento de la aplicación, facilidad de actualización ó sustitución de tecnologías y frameworks/ORMs (Object Relational Mapping) por otras
+	Versiones más modernas o incluso por otros diferentes, etc. uy que todo esto se pueda realizar con el menor impacto posible sobre el resto de la aplicación.
+	
+	En definitiva, que los cambios de tecnologías de infraestrucutra de una aplicación no afecten a capas de alto nivel de la aplicación, especialmente que afecten
+	el mínimo posible a la capa del Dominio de la aplicación.
+	

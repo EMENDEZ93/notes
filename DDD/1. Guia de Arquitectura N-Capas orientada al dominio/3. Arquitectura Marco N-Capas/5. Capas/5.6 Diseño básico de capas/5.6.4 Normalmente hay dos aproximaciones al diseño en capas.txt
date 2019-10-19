@@ -1,0 +1,20 @@
+Figura 3 [Diseño básico de capas]:
+	Capa N
+	Capa N-1
+	Capa 2
+	Capa 1
+
+Normalmente hay dos aproximaciones al diseño en capas:
+	Un diseño en pacas estricto:
+		limita a los componentes de una capa a comunicarse solo con los componentes de su misma capa o con la capa inmediatamente inferior.
+		Por ejemplo:
+			en la figura anterior si utilizamos el sistema estricto, la capa N solo podria interactuar con los componentes de la capa N-1, y la capa N-1
+			solo con los componentes de la capa N-2, y asi sucesivamente.
+			
+	Un diseño en capas Laxo:
+		permite que los componentes de una capa interactúen con cualquier otra capa de nivel inferior.
+		Por ejemplo:
+			en la figura anterior si utilizamos esta aproximación, la capa N podria interactuar con la capa N-1, N-2, N-3.
+		El uso de la aproximación laxa puede mejorar el rendimiento porque el sistema no tiene que realizar redundancia de llamadas de unas capas a otras.
+		Por el contratior, el uso de la aproximación laxa no proporciona el mismo nivel de aislamiento entre las diferentes capas y hace más dificil el
+		sustituir una capa de más bajo nivel sin afectar a muchas más capas de nivel superior (y no solo a una).

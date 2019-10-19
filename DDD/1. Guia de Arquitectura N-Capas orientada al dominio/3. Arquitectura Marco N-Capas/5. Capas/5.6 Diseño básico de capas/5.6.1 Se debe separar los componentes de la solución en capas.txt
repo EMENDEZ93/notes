@@ -1,0 +1,2 @@
+Se deben separar los componentes de la solución en capas:	
+	los componentes de cada capa deben ser cohesivos y aproximadamente el mismo nivel de abstracción.

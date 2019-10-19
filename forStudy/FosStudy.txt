@@ -25,3 +25,4 @@ cache
 varnish
 servicelocator
 jhon papa
+GraalVM

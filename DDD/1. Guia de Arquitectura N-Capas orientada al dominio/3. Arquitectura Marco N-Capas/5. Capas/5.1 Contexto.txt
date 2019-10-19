@@ -1,0 +1,2 @@
+Contexto:
+	se quiere diseñar una aplicación empresarial compleja compuesta por un número considerable de diferentes niveles de abstracción.

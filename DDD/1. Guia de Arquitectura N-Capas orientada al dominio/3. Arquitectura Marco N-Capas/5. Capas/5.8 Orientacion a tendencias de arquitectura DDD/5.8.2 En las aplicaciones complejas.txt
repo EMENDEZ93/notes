@@ -1,0 +1,13 @@
+En las aplicaciones complejas:
+	el comportamiento de la reglas de negocio (Logica de Dominio) está sujeto a muchos cambios y es muy importante poder modificar, contruir y realizar
+	pruebas sobre dichas capas de lógicas del dominio de una forma fácil e independiente. Debido a esto, un objetivo importante es tener el minimo acoplamiento
+	entre el modelo del dominio (logica y reglas de negocio) y el resto de capas del sistema (Capas de presentación, capas de infraestructura, persistencia de datos
+	, etc).
+	
+	Debido a las premisas anteriores, las tendencias de arquitectura de aplicaciones que están más orientadas a conseguir este desacoplamiento entre capas, especialmente
+	la independencia y foco preponderante sobre la capa de modelo de dominio, son precisamente las arquitecturas N-Capas Orientadas al Dominio, como parte de DDD
+	
+	DDD Domain Driven Design:
+		es, sin embargo, mucho más que simplemente una arquitectura propouesta, es también una forma de afrontar los proyectos, una forma de trabajar por parte
+		del equipo de desarrollo, la importancia de identificar un Lenguaje Ubicuo proyectado a partir del conocimiento de los expertos en el dominio (expertos en el negocio)
+		sin embargo.

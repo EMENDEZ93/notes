@@ -1,0 +1,15 @@
+Las Capas (Layers):
+	Se ocupan de la división lógica de componentes y funcionalidad y no tiene en cuenta la localización fisica de componentes en diferentes servidores o en diferentes lugares.
+	
+	Arquitectura tradicional N-Capas (Lógica):
+		Capa de presentación.
+		Capa de negocio.
+		Capa de acceso a datos:
+			Servidores Externos.
+			Fuentes de datos.
+		
+		Capas Infraestructura transversal:
+			Seguridad.
+			Operaciones.
+			etc.
+		

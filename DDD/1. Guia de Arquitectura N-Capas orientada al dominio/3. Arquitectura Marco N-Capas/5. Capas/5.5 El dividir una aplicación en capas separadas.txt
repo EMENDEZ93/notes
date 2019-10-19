@@ -1,0 +1,3 @@
+El dividir una aplicación en capas separadas;
+	Que desempeñan diferentes roles funcionalidades, nos ayuda a mejorar el mantenimiento del código, nor permite tambien diferentes tipos de despliegue y
+	sobre todo nos proporciona una clara delimitación y situación de donde debe estar cada tipo de componente funcional e incluso cada tipo de tecnologia.

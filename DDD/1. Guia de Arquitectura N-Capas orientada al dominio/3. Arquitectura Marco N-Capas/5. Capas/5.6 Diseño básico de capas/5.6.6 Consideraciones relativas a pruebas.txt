@@ -1,0 +1,14 @@
+Consideraciones Relativas a Pruebas:
+	Una aplicación en N-Capas mejora considerablemente la capacidad de implementar pruebas de una forma apropiada:
+		Debido a que cada capa interactúa con otras capas solo mediante interfaces bien definidos, es fácil añadir implementaciones alternativas a cada capa
+		(Mock y Stubs. esto permite realizar pruebas unitarias de una capa incluso cuando las capas de las que dependen no están finalizadas o incluso porque se
+		se quiera poder ejecutar mucho más rápido un conjunto muy grande de pruebas unitarias que al acceder a las capas de las que depende se ejecutan mucho mas
+		lentamentes.
+		Esta capacidad se ve muy mejorada si se hace uso de clases base (Patrón Layered Supertypr), interfaces (Patron Abstract Interface), porque limitan aún
+		más las dependencias entre las capas. Especialmente es importante el uso de interfaces pues no dará la posibilidad de utilizar incluso técnicas más
+		avanzadas de desacoplamiento.
+		
+		Es más fácil realizar pruebas sobre componentes individuales porque las dependencias entre componentes están limitadas de forma que los componentes de
+		capas de alto nivel solo pueden interaccionar con componentes en niveles inferiores. Esto ayuda a aislar componentes individuales para poder probarlos
+		adecuadamente y nos facilita el poder cambiar unos componentes de capas inferiores por otros diferentes con un impacto muy pequeño en la aplicación (
+		simepre y cuando cumplan los mismos interfaces)

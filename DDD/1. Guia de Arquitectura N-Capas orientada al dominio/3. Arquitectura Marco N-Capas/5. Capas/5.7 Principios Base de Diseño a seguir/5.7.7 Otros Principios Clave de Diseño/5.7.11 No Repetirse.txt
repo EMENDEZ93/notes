@@ -1,0 +1,5 @@
+No repetirse DRY:
+	Se debe especificar la intención en un único sitio en el sistema.
+	Por ejemplo:
+		En términos del diseño de una aplicación, una funcionalidad especifica se debe implementar en un único componente; esta misma funcionalidad no debe estar
+		implementada en otros componentes.

@@ -1,0 +1,16 @@
+Los niveles (Tiers):
+	se ocupan de la distribución fisica de componentes y funcionalidad en servidores separados, teniendo en cuenta topología de redes y localizaciones remotas.
+	
+	Arquitectura 3-Tier (Fisica):
+		System Services - Tools
+			Presentación:
+				Cliente Web:
+					Pc.
+			Logica De Negocio:
+				Firewall
+				Instancias Aplicacion:
+					docker.
+					kubernetes.
+			Data:
+				Sistemas Heredados.
+				Aplicaciones Externas.

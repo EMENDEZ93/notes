@@ -1,0 +1,8 @@
+El Diseño de Componentes debe ser altamente cohesivo:
+	No sobrecargar los componentes añadiendo funcionalidad mezclada o no relacionada. 
+	Por Ejemplo:
+		Evitar mezclar lógica de acceso a datos con lógica de negocio perteneciente al Modelo del Dominio.
+		Cuando la funcionalidad es cohesiva, entonces podemos crear ensamblador/assemblies que contengan más de un componente y situar los componentes en las 
+		capas apropiadas de la aplicación.
+		Este principio está por lo tanto muy relacionado con el patron N-Capas y con el principio Single Responsability Principle.
+		

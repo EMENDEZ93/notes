@@ -1,0 +1,8 @@
+Principios de diseño Solid:
+	El acrónimo SOLID deriva de las siguientes frases/principios en inglés:
+		Principios SOLID en diseño:
+			Single Responsability Principle.
+			Open Close Principle.
+			Liskov Substitution Principle.
+			Interface Segragation Principle.
+			Dependency Inversion Principle.

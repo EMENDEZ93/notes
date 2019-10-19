@@ -1,0 +1,4 @@
+Principio de Unica Responsabilidad (Single Respinsability Principle):
+	Una clade debe tener una única responsabilidad ó caracteristica.
+	Dicho de otra manera, una clase debe de tener una única razón por la que tener que realizar cambios de código fuente a dicha clase. 
+	Una consecuencia de este principio es que, de forma general, las clases deberían de tener pocas dependencias con otras clases/tipos.

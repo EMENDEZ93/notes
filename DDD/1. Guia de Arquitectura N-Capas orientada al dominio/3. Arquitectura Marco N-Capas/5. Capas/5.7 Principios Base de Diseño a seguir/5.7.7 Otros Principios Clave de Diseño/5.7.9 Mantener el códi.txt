@@ -1,0 +1,10 @@
+Mantener el código transversal abstraido de la lógica especifica de la aplicación:
+	El código transveral se refiere a código de aspectos horizontales,
+	Cosas como:
+		La seguridad.
+		Gestión de operaciones.
+		Logging.
+		Instrumentalización.
+	La mezcla de este tipo de código con la implementación específica de la aplicación puede dar lugar a diseños que sean en el futuro muy dificiles de extender
+	y mantener.
+	Relacionado con este principio esta AOP - Aspect Oriented Programming.
