@@ -1,0 +1,84 @@
+Añadir contexto con sentido:
+	Algunos nombres tiene significado por si mismo, pero la mayoria no. Por ello debe incluirse en un contexto, en clase, funciones y espacios de nombres con
+	nombres adecuados.
+	Cuando todo lo demás falle:
+		puede usarse prefijos como último recurso.
+	
+	Imagine que tiene las variables:
+		firsName.
+		lastName.
+		street.
+		houseNumber.
+		city.
+		state.
+		zipcode.
+	si la combina, es evidente que forman una dirección. pero si la variable state se usa de forma aislada en un método.
+	¿Sabría que forma parte de una dirección? puede añadir contexto por medio de prefijos. addrFirstNAme, addrLastName,addrState, etc. al menos los lectores 
+	comprenderán que estas variables forman parte de una estrucutur mayor. Evidentemente, es mejor crear la clase address. de ese modeo incluso el compilador 
+	sabrá que las variable pertenecen a un concepto más amplio.
+	Fijese en el método del listado 2.1 ¿Las variables necesitan un contexto con más sentido? el nombre de la función solo ofrece parte del contexto, el resto
+	se obtiene del algoritmo. Tras leer la función, verá que las tres variable number, verb y pluralModifier forman parte del mensaje guess statistics. 
+	Desafortunadamente, es necesario inferir el contexto. al leer el método, el significado de las variables no es evidente.
+	
+	Listado 2.1 variables en un contexto ambiguo:
+		
+		private void printGuessStaticstics(String candidate, int count):
+			String number
+			String verb
+			String pluralModifier
+			
+			if count == 0:
+				number = "no"
+				
+			else if count == 1:
+				number = "1"
+				verb = "is"
+				pluralModifier = ""
+			else:
+				number = integer.toString(count)
+				verb = "are"
+				pluralModifier = "S"
+
+			String guessMessage = String.format (
+				"There %s %s %s%s", verb, number, candidate, pluralModifier
+			)
+				
+			print guessMessage
+	
+	la función es demasiado extensa y las variable aparecen por todas partes.
+	Para dividir la función en fragmentos más reducidos necesitamos crear una clase GuessStaticticsMessage y convertir a las tres vairable en campos de la misma.
+	De este modo contamos con un contexto más obvio para las tres variables.
+	Forman parte sin duda de GuessStaticticsMessage. La mejora del contexto también permite que el algoritmo sea más limpio y se divida en funciones más reducidas
+
+	Listado 2.2 Variables con un contexto:
+		public class GuessStaticticsMessage:
+			private String number
+			private String verb
+			private String pluralModifier
+			
+			public String make(String candidate, int count):
+				createPluralDependenMessagePart(count)
+				return String.format:
+					"There %s %s %s%s", verb, number, candidate, pluralModifier.
+					
+			public void createPluralDependentMessageParts(int count):
+				if count == 0:
+					thereAreNoLetters()
+				else if count == 1:
+					thereIsOneLetter()
+				else:
+					thereAreManyLetters(count)
+					
+			private void thereAreManyLetters(int count):
+				number = Integer.toString(count)
+				verb = "are"
+				pluralModifier = "s"
+				
+				
+				
+				
+				
+				
+				
+				
+				
