@@ -1,0 +1,7 @@
+Paso N° 3:
+    Existirá capas transversales de patrones y tecnologías a ser utilizados a lo largo de toda la aplicación, como la implementación
+    de la tecnología escogida para IoC, o aspectos de seguridad, etc.
+
+    Esta capas trnasversales (Infraestructura transversal de DDD) será capas bastantes reutilizables en diferentes proyectos que 
+    se realicen en el futuro. es un miniframework, o mejor llamado seddwork, en definitiva, un codigo fuente que será reutilizado
+    tambíen en otros proyectos futuros, asi como ciertas clases base (core) de las capas del dominio y persistencia de datos.

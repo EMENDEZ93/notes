@@ -1,0 +1,4 @@
+Versionado:
+	Estrategia.
+	Lineal (mainline)
+	Paralelo.

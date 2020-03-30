@@ -1,0 +1,14 @@
+Contenido de un chart:
+	Templates
+	chart.yaml
+	values.yaml
+	README.md
+	.helmignore
+	
+	un char básico como minico contiene:
+		Uno o varios templates YAML que define los recursos que se van a crear en kubernetes.
+		Un archivo chart.yaml con el metada (información) sobre ese chart o paquete.
+		Un archivo values.yml con las variables que se utilizan por defecto, en caso de que no se quieran personalizar.
+		Un archivo README.md con instrucciones para instalarlo e información sobre las vairables.
+	
+	

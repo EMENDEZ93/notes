@@ -1,0 +1,6 @@
+En general, este desacomplamiente:
+    deberia realizarse entre todos los objetos (con lógica de ejecución y dependencias) pertenecientes a las diferentes capas, pues existen
+    ciertas capas las cuales nos pueden interesar mucho el que se integren en la aplicación de un forma desacoplada.
+    
+    Este es el caso de la mayoria de capas de persistencia de datos, que podemos haberlo ligado a una tecnología concreta de ORM o incluso a un 
+    acceso a backend externo concreto (p.e ligado a accesos a un host, erp o cualquier otro backend empresarial).

@@ -1,0 +1,38 @@
+Capa de servicios distribuidos:
+    Esta capa es donde implementaremos los servicios WCF:
+        normalmente servicios-web.
+    para poder acceder remotamenta a los componentes del servidor de aplicaciones. 
+
+    Es importante destacar que esta capa de servicios distribuidos es opcional, pues que en algunos casos (como capa de presentación
+    web asp.net), es posible que se acceda directamente a los componentes de application y domain, si el servidor web de asp.net esta
+    en el mismo nivel de servidores que los componentes de negocio.
+
+    En el caso de hacer uso de servicios distribuidos para acceso remotor, la estructura puede ser algo similar a la siguiente:
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+            Core:
+                DistributedSerivces.Core
+            MainModule:
+                DistributedSerivces.MainModule
+            DistributedService.Deployment
+        Application:
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:
+
+    Un proyecto para el hoster del servidor WCF, es decir, el proceso donde se ejecuta y publica el servicio WCF. este proyecto
+    /proceso puede ser de tipo webSite de IIS (o Casini para desarrollo), un servicio windows, o realmente, cualquier tipo de
+    proceso.
+
+    y adicionalmente, dispondremos de un proyecto de servicio WCF (.DLL) por cada modulo funcional de la aplicación. en este caso del
+    ejemplo, tenemos solo un módulo llamado MainModule.
+
+    Para un servicio WCF en producción, se recomienda que para el proyecto sea de tipo website desplegado en ISS a ser posible
+    para utilizar binging NetTCP y no solamente binding basados en http). en el caso de hostinnng de servidor web, 
+    internamente se añadira un -SVC por cada modulo de la aplicación.
+
+    Por cada modulo, deberá haber tambien un proyecto de clases de testing (pruebas unitarias), dentro de esta capa.

@@ -1,0 +1,3 @@
+helm rollback:	
+ helm rollback name_app number_revision:
+	permite volver a una versión anterior de la release.

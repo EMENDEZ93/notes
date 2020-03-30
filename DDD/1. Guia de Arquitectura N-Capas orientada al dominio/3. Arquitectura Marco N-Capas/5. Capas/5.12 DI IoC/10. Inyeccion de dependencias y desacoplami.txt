@@ -1,0 +1,23 @@
+Inyeccion de dependencias y desacoplamiento:
+    entre objetos como mejor practica.
+
+    El principio de unica responsabilidad (Single Responsability Principle) establece que cada objeto debe tener una única
+    responsabilidad.
+
+    El concepto fue introducido por Robert C Martin se establece que una responsabilidad es una razón para cambiar y concluye diciendo
+    que una clase debe tener una y solo una razón para cambiar.
+
+    Este principio está ampliamente aceptado por la industria del desarrollo y en definitiva favorece a diseñar y desarrollar clases
+    pequeñas con una única responsabilidad.
+
+    Esto está directamente relacionado con el número de dependencias (objetos de los que dependen) cada clase. si una clase tiene
+    una única responsabilidad, sus métodos en su ejecución normalmente deberá tener pocas dependencias con otros objetos.
+    si hay una clase con muchisimas dependencias (por ejemplo 15 dependencias), esto no estaría indicando lo que tipicamente se
+    dice como un mal olor de código.
+
+    Precisamente, haciendo uso de inyección de dependencias de objetos en el constructor y en dicho ejemplo veriamos muy claramente que 
+    esta clase en concreto parece que no sigue el principio de single responsability, pues es bastante raro que la clase tenga
+    una única responsabilidad y sin embargo en su contructor veamos declaradas 15 dependencias.
+
+    Asi pues, DI es también una forma de guia que nos conduce a realizar buenos diseños e implementaciónes en desarrollo además de
+    ofrecemos un desacoplamiento que podemos utilizar par inyectar diferentes ejecuciones de forma transparente.

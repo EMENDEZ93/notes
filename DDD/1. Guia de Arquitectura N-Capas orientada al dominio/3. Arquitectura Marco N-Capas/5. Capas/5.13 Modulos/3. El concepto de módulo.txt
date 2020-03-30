@@ -1,0 +1,13 @@
+El concepto de módulo:
+    es realmente algo utilizado en el desarrollo de software desde sus origenes. 
+    Es más fácil ver la foto global de un sistema completo si lo subdividimos en diferentes módulos verticales y despues en las 
+    relaciones entre dichos módulos. una vez que se entienden las interacciones entre dichos módulos, es mas
+    sencillo focalizarse en más detalle de cada uno de ellos. es una forma simple y eficiente de gestionar la complejidad.
+    
+    El lema divide y vencerás es la frase que mejor lo define:
+
+    Un buen ejemplo de división de módulos:
+        son la mayoria de los ERPS. normalmente están divididos en módulos verticales, cada uno de ellos son responsable de un aréa
+        de negocio especifico.
+        Ejemplos de módulos de un ERP podrian ser:
+            Nómina, gestión de recursos humanos, facturación, almacen, etc.

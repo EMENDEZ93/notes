@@ -1,0 +1,6 @@
+Habitualmente los módulos se dividirán:
+    y repartirán las diferentes áreas funcionales diferenciads y que no tiene una relación/dependencia muy fuerte entre ellas.
+    sin embargo, normalmente tendra que existir algún tipo de comunicación entre los diferentes módulos, de forma que deberemos
+    definir también interfaces para poder comunicar unos módulos con otros.
+    probablemente es mejor llamar a un intefaz (p.e un servicio ddd) deñ ptrp módulo que agrega/agrupa un conjunto de funcionalidad
+    esto reduce tambien el acoplamiento.

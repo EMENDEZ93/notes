@@ -1,0 +1,18 @@
+Servicios del Dominio:
+	En las capas del dominio, los servicios son básicamente clases agrupadoras del comportamientos y/o métodos con ejecución de lógica del dominio.
+	Estas clases normalmente no deben contener estados relativos al dominio (deben ser clases stateless) serán las clases que coordinen e inicien operaciones
+	compuesas que a su vez invoquen a objetos de capas inferiores (Como persitencia de datos).
+	
+	El caso más normal de un Servicio Del Dominio es que este relacionado con varias entidades al mismo tiempo.
+	Por ejemplo:
+		un inicio y coordinación de transacción de lógica del dominio implica a varias entidades del dominio.
+	Pero tambien podemos tener un servicio que esté encargado de interacturar (Obtener, Actualizar, etc) Contro una única entidad raiz (la cual si puede englobar a otros
+	datos relacionados siguiendo el patrón aggretate).
+	
+	En el Caso de definir un servicio relacionado con una única entidad, el tipo de lógica de dominio que se suele implementar es, además de las reglas de negocio propias
+	de dicha entidad del dominio, tambien aspectos de gestión de excepciones, generación de excepciones de negocio, validaciones de datos, transaccionalidad y aspectos
+	de seguridad como requisitos de autenticación y autorización para ejecutar componentes concretos del dominio.
+	
+	A un nivel más alto, los servicios en las capas del dominio normalmente serán responsable de interacturar con los objetos necesarios de lógica de entidades para ejecutar
+	procesos de negocio. Normalmente estos servicios son los que rigen o guian la lógica de negocio de la aplicación, siendo la espina dorsal de dicha lógica, son quienes
+	unen los puntos para formar una linea, sin estos servicios, los componentes de infraestructura en inclusio las entidades del dominio, serian entes aislados.

@@ -1,0 +1,4 @@
+SubCapa de Repositorio:
+	A nivel generica, un Repositorio Representa todos los objetos de un cierto tipo como un conjunto conceptual
+	(Definición de Eric Evans).
+	

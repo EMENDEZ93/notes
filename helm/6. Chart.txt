@@ -1,0 +1,4 @@
+Chart:
+	Es como se llama a una aplicación en Helm.
+	Es sinónimo de parquete. 
+	Un Chart define cómo es esa aplicación y es la pieza que se distribuye en los repositorios.

@@ -1,0 +1,6 @@
+Gestor del Cluster:
+	Comunica nodo maestro con nodos trabajadores.
+	Spark soporta modo ejecución local (en un único nodo), y 3 programas administración de clúster:
+		Hadoop YARN.
+		Apache Mesos
+		Kubernetes.

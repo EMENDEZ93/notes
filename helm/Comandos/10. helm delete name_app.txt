@@ -1,0 +1,6 @@
+helm delete namne_app:
+	elimina una release del cluster dejando todos los estados de los contenedores.
+	Ejemplo:
+		la información de las bases de datos.
+		
+helm delete --purge name_ap:

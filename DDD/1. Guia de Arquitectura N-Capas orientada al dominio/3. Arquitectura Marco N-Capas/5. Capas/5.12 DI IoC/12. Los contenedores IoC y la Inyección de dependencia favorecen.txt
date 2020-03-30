@@ -1,0 +1,6 @@
+Los contenedores IoC y la Inyección de dependencias favorecen:  
+    y facilitan mucho el realizar correctamente pruebas unitarias y mocking. y el diseñar una aplicación de forma que pueda ser probada de forma
+    efectiva con pruebas unitarias nos fuerza a realizar 'un buen trabajo de diseño' que deberiamos de estar haciendo sin realmente sabemos
+    que estamos haciendo en nuestra profesión.
+
+    

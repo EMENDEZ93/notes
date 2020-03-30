@@ -1,0 +1,11 @@
+1. Subcapas de servicios de infraestructura:
+    En las capas de infraestructura transversal también existen concepto de servicios.
+    Se encargarán de agrupar acciones de infraestructura, como:
+        Enviar E-mail.
+        Controlar aspectos de seguridad.
+        Gestión de operaciones.
+        Logging.
+        Etc.
+    Asi pues, estos servicios agrupan cualquier tipo de actividad de infraestructura transversal ligada a tecnologias
+    especificas.
+    

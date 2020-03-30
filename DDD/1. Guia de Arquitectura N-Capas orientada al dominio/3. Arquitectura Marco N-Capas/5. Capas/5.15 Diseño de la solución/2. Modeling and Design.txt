@@ -1,0 +1,15 @@
+Modeling and Design:
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:
+
+    la primera carpeta (modeling and desing) contendra los diferentes diagramas de arquitectura y diseño realizados, como diagramas 
+    layer de la arquitectura, y diferentes diagramas UML de diseño interno. estos diagramas los iremos utilizando para representar
+    la implementación que hagamos.

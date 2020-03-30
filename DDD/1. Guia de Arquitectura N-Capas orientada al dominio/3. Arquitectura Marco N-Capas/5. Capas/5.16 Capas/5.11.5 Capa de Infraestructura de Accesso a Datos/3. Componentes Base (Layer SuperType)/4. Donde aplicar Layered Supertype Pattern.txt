@@ -1,0 +1,2 @@
+4. Donde aplicar Layered Supertype Pattern:
+    se puede aplicar a cualquier tipo de capa (Dominios, Infraestructura, Etc), no solamente a los repositorios.

@@ -1,0 +1,7 @@
+1. Capas de infraestructura Transveral/Horizontal:
+    Proporcionan capacidades técnicas genericas que dan soporte a capas superiores. En definitiva, son bloques
+    de construcción ligados a una tecnologia concreta para desempeñar sus funciones.
+
+    Existen muchas tareas implementadas en el código de una aplicación que se deben aplicar en diferentes capas.
+    Estas tareas o aspectos horizontales (Transverales) implementan por lo tanto tipos especificos de funcionalidad
+    que pueden ser accedidos/utilizados desde componentes de cualquier capa.

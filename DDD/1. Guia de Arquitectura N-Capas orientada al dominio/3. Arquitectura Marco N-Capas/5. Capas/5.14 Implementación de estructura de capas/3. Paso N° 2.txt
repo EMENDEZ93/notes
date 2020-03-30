@@ -1,0 +1,2 @@
+Paso N° 2:
+    cada capa tiene que estar correctamente diseñada y necesita incluir los patrones de diseño y tecnologías de cada capa.

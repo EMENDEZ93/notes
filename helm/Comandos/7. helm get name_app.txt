@@ -1,0 +1,3 @@
+helm get:
+helm get name_app:
+	información sobre una release existente.

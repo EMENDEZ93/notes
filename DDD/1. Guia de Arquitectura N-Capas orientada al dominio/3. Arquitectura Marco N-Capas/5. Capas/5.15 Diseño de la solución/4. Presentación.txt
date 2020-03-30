@@ -1,0 +1,30 @@
+Presentación:
+    contendra los diferentes tipo de proyectos que pudiera haber, es decir, proyectos:
+        Windows-Rich:
+            wpf.
+            winforms.
+            oba
+            ria
+            web -> asp.net, spring boot
+
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+            Agents:
+            Ria:
+                silverlight:
+                silverligh mobile:
+            Web:
+                asp.net
+                asp.net mvc
+            windows:
+                oba
+                winforms
+                wpf
+        Distributed Services:
+        Application:
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:            

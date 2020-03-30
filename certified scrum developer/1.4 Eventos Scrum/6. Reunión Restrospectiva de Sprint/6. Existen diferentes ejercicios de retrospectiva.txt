@@ -1,0 +1,10 @@
+Existen diferentes ejercicios de retrospectiva que se pueden aplicar:
+	dependiendo del objetivo que se quiera lograr.
+	Por ejemplo:
+		se puede tener una retro en la que se le pida a los asistentes que opinen sobre:
+			Lo que se hizo bien.
+			Lo que se hizo mal.
+			Lo que se quiere experimentar.
+			Agradecimientos a los que apoyaron el desarrollo del sprnt.
+			Planes de acción.
+	A los planes de acción identificados debe hacérsele seguimiento y asignar un responsable, de modo que se puedan ver resultados de las mejoras planeadas.

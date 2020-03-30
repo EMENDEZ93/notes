@@ -1,0 +1,2 @@
+El uso correcto de estas técnicas:
+    es gracias al desacoplamiento que aportan, potencian los siguientes puntos

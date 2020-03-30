@@ -1,0 +1,50 @@
+Patron N-Capas:
+	distingue diferentes capas y sub-capas internas en una aplicación, delimitando la situación de los diferentes componentes por su tipologia.
+	Por spuesto, esta arquitectura concreta n-layer es personalizable según las necesidades de cada proyecto y/o preferencia de arquitectura, simplemente modificada o adaptada
+	por arquitectos, según sus necesidades y requisitos.
+	
+	En concreto las capas y subcapas propuestas para aplicaciones N-Layered con orientación al dominio son:
+		
+		Arquitectura N-Capas Con Orienteción al Dominio:
+			Presentación:
+				Pc Cliente:
+					Cliente Rico / Ria:
+						Vistas IU:
+							Controladores.
+							Agentes Servicios.
+							
+			
+			Componenetes Servidor de aplicación:
+				Capa Servicios Distribuidos:
+					Servicios-Web.
+				Capa de aplicación:
+					Tareas.
+					Servicios de App.
+					Driver Casos Uso.
+				Capa de Domino:
+					Entidades del Domino.
+					Servicios del Domino.
+					Workflows.
+					Especificaciones Consultas.
+					Contratos de Repositorios.
+					Bases (SuperTypes)
+				Capa de infraestructura de persistencia de Datos:
+					Repositorio:
+						Implementación.
+					Persistencia:
+						ORM'según
+						EF.
+						Hibernate:
+							Fuentes Datos.
+					Base SuperTypes
+					Modelo de datos.
+					Agentes Servicio:
+						Servicios Externos.
+						
+			Capa Infraestrucutura Transversal:	
+				Seguridad.
+				Operaciones:
+					Logging.
+					Monitorización.
+					Etc.
+				Gestión de Excepciones.

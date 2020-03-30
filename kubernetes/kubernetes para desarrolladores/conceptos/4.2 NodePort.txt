@@ -1,0 +1,3 @@
+NodePort:
+	Expone un el servicio en un puerto de todas las maquinas del cluster.
+		website port 3000 que corre en cada maquina del cluster, el servicio va a redireccionar a cualquiera de las maquinas del cluster.

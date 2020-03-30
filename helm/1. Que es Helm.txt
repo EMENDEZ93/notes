@@ -1,0 +1,14 @@
+Que es Helm:
+	helm es un gestor de parquetes. Esto es, una Herramienta que permite crear, distribuir e instalar aplicaciones en una plataforma, de una manera mas sencilla y estándar.
+	Toma por ejemplo:
+		Npm para Nodejs
+		Pip para Python.
+		
+	En este caso, Helm es un gestor para kubernetes. veras que existen cientos de aplicaciones listas para instalar en tu clúster.
+	Que puedes crear y distribuir las tuyas propias de manera sencilla. apartir de los YAML con los que despliegas en Kubernetes.
+	
+	Es un proyecto mantenido por la Cloud Native Computing Foundation (CNCF).
+	
+	Como curiosidad, helm significa timón en ingles, esto tiene que ver con el significado de kubernetes, que en griego antiguo era el capitán. simboliza que helm es una herramiente
+	para controlar mejor la plataforma de kubernetes.
+	

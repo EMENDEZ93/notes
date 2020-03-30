@@ -1,0 +1,16 @@
+Teniendo una solution:
+    inicialmente crearemos la estructura de carpetas lógicas para los diferentes proyectos.
+
+    En la mayoria de los casos crearemos un proyecto (.DLL) por cada capa o sub capa, para disponer asi de una mayor flexibilidad
+    y nos facilite mejor los posible desacoplamientos. sin embargo, esto ocasiona un número de proyectos considerable, por lo que es
+    realmente imprescindible ordenarlos/jerarquizarlos mediante carpetas lógicas.
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:

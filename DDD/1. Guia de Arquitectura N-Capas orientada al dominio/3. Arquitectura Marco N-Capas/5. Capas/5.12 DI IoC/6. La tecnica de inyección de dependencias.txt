@@ -1,0 +1,4 @@
+La tecnica de inyección de instancias:
+    de objetos son inyección de interfaz, inyección de constructor, inyección de propiedad (setter), e inyección de llamada a método.
+    Cuando la tectica de inyección de dependencias se utiliza para desacoplar objetos de nuestras capas, el diseño resultante aplicará por lo tanto el 
+    principio de inversión de dependencias.

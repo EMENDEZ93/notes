@@ -1,0 +1,2 @@
+helm history:
+	muestra las versiones de una release.

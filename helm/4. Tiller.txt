@@ -1,0 +1,4 @@
+Tiller:	
+	Es un agente que está desplegado en el cluster de kubernetes.
+	En ningún momento se interactúa directamente con él, el cli es el único punto de interacción con el usuario.
+	El Tiller simplemente recibe acciones de cli y aplica los cambios conectándose con kubernetes.

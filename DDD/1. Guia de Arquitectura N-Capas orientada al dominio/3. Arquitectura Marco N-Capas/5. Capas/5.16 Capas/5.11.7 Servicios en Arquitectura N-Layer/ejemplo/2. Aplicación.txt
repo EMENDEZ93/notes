@@ -1,0 +1,12 @@
+Aplicación:
+    servicio de aplicación de transferencia bancaria
+    (Verbo transferir fondos)
+
+    Asimila y convierte formatos de datos de entrada:
+        como converiones de datos xml.
+    
+    Proporciona datos de la transferencia a la capa de dominio para que sea alli realmente procesada la lógica de negocio.
+
+    Espera confirmación.
+
+    Decide si se envia notificación (e-mail al usuario) utilizando servicios de infraestructura transversal.

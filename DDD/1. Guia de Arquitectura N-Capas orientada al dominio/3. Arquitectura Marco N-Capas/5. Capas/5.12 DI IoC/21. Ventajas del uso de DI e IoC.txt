@@ -1,0 +1,5 @@
+Ventajas del uso de DI e IoC:
+    Posibilidad de sustitución de capas/bloques, en tiempo de ejecución.
+    Facilidad de uso de STUBS/MOCKS/MOLES para el testing de la aplicación.
+    Añaden flexibilidad y conllevan a tocar el menor codigo posible según avanza el proyecto.
+    Añaden compresión y mantenibilidad al proyecto.

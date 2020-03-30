@@ -1,0 +1,11 @@
+Existen varias tecnicas y patrones:
+    que se utilizan para facilitar el aprovisionamiento de la implementación elegida de las capas/componentes de bajo nivel
+    como son:
+        plugin.
+        service locator.
+        dependency injection
+        Ioc inversion of control
+    basicamente, las técnicas principales que propone utilizar para habilitar el desacoplamiento entre capas son:
+        Inversión de contro (IoC)
+        Inyección de dependencias (DI)
+        Interfaces de servicios distribuido (para consumo/acceso remoto a capas)

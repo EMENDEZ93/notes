@@ -1,0 +1,6 @@
+Capa de servicios distribuidos (Servicios-Web) opcional:
+	Cuando una aplicación actúa como proveedor de servicios para otras aplicaciones o incluso si la capa de presentación estará tambíen localizada fisicamente en situaciones
+	remotas (aplicaciones Rich-Client, Ria, Oba, etc), normalmente se publica la lógica de negocio (capas de negocio internas) mediante una capa de servicios, esta capa de
+	servicios (habitualmente servicios web) proporciona un medio de acceso remoto basado en canales de comunicación y mensajes de datos. es importante destacar que esta
+	capa debe ser lo más ligera posible y que no debe incluir nunca lógica de negocio. hoy por hoy, con las tecnologias actuales hay muchos elementos de una arquitectura que
+	son muy simples de realizar en esta capa y en muchas ocasiones se tiende a incluir en ella propósitos que no le competen.

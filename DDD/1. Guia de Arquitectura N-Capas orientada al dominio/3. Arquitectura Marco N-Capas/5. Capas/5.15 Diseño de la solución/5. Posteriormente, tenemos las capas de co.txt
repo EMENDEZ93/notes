@@ -1,0 +1,24 @@
+Posteriormente, tenemos las capas de componentes:
+    que normalmente están situadas en un servidor de aplicaciones (aunque ahi estariamos hablando de despliegues, y eso 
+    puede variar, por lo que a nivel de organización no especificamos detalles de despliegue). 
+
+    En definitiva, dispondremos de las diferentes capas principales de una arquitectura n-layered orientada al dominio.
+    con diferentes proyectos para cada subcapa.
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+            core:
+            MainModule
+        Infrastructure:
+            Data:
+            Cross Cutting:
+    Database:
+    Solution items:
+
+    dentro de cada una de dichas carpetas, añadiremos los proyectos necesarios según las sub-capas y elementos típicos de cada capa.
+    esto tambien viene determinado dependiendo de los patrones a implementar (explicados posteriormente a nivel lógico e implementación
+    de la presenta guia)

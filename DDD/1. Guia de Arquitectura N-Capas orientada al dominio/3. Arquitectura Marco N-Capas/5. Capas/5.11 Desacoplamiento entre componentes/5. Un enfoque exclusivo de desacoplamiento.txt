@@ -1,0 +1,8 @@
+Un enfoque exclusivo de desacoplamiento entre capas:
+    probablemente no es el más correcto.
+    el ejemplo de conjuntos de objetos diferemntes a inyectar dentro del propio dominio, que es una única capa.
+    por ejemplo:
+        para un pais, cliente o tipología concreta, un módulo incluso vertical/funcional, clarifica bastante.
+    
+    En la aplicación ejemplo anexa a esta guia de arquitectura hemos optado por realizar desacoplamiento entre todos los objetos de las capas internas de la aplicación
+    porque ofrece muchas ventajas y asi mostramos la mecánica completa.

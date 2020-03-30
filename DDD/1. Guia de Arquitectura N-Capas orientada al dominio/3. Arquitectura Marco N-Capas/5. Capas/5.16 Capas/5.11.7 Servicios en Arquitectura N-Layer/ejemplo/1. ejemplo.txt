@@ -1,0 +1,2 @@
+A modo de aclaración:
+    mostramos como particionar diferentes servicios en diferentes capas en un escenarios bancarios simplicficado.

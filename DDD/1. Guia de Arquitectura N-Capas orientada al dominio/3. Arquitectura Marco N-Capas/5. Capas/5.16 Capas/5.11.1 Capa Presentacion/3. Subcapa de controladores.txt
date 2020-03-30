@@ -1,0 +1,5 @@
+Subcapa de controladores:
+	Para ayudar a sincronizar y orquestar las interacciones del usuario, puede ser útil conducir el proceso utilizando componentes separados de los componentes propiamente 
+	graficos. esto impide que el flujo de proceso y lógica de gestión de estados esté programada dentro de los propios controles y formularios visuales y permite reutilizar
+	dicha lógica y patrones desde otros interfaces o vistas. tambien es muy útil para poder realizar pruebas unitarias de la lógica de presentación. estos controller son
+	tipicos de los patrones MVC y derivados.

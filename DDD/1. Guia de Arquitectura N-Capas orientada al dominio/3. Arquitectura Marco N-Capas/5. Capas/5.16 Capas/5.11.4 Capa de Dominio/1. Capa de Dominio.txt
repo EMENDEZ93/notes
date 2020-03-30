@@ -1,0 +1,4 @@
+Capa de dominio:
+	esta capa debe ser responsable de representar conceptos de negocio, información sobre la situación de los procesos de negocio e implementación
+	de kas reglas de dominio. Tambien debe contener los estados que reflejan la situación de los procesos de negocio, aun cuando los detalles 
+	técnicos de persistencia se delegan a las capas de infraestructura (Repositorios, Etc).

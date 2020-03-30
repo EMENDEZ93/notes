@@ -1,0 +1,9 @@
+Spark:
+	Framework de computación en cluster.
+	Diseñado para procesamiento de datos a alta velocidad con paralelismo de datos.
+	Desarrollado por Matei Zaharia (Un. Berkely) el 2009.
+	
+	Surgimiento:
+		problemas velocidad - paradigma MapReduce
+		
+	Casos con muchas operaciones de escritura y lectura de datos en disco.

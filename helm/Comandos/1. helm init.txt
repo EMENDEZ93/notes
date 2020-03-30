@@ -1,0 +1,2 @@
+helm init:
+	inicializa el entorno para que helm en tu local (configuraciones, Etc) y crea el agente Tiller en tu clúster.

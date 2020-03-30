@@ -14,6 +14,7 @@ kubectl port-forward:
 
 kubectl exec:
     kubectl exec -it pod/pod-volumes -c "present-verb-english-comando" -- /bin/sh 
+    kubectl exec -it pod-em -c em-nginx -- /bin/bash
     entrar dentro de un contenedor.
 
 kubectl delete:

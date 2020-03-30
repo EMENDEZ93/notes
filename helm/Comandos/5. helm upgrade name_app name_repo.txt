@@ -1,0 +1,3 @@
+helm upgrade:
+helm upgrade name_app name_repo
+	actualiza una realise.

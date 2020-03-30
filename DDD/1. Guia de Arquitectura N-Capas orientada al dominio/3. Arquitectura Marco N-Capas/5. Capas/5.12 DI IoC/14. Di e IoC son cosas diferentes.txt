@@ -1,0 +1,5 @@
+Di e IoC son cosas diferentes:
+    Hay que tener presente que DI o IoC son cosas diferentes, DI (Inyección de dependencias mediante constructuores o propiedades)
+    puede sin duda ayudar el testing pero el aspecto útil principal de ello es que guia a la aplicación hacia el principio de única responsabilidad
+    y tambien normalmente hacia el principio de sepraración de preocupaciónes/responsabilidad (Separation of concerns principle). por ese, DI es una
+    técnica muy recomendada, una mejor práctica en el diseño y desarrollo de  software.

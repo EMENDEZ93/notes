@@ -1,0 +1,2 @@
+Las entidades Raiz:
+	Podrán ser a veces aisladas y otras veces la raiz de un Aggregate que es un conjunto de Object Values mas la entidad raiz.

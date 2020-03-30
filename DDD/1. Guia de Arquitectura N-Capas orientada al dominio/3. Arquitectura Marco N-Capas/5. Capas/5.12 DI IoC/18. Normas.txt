@@ -1,0 +1,5 @@
+Normas:
+    por regla general, esta regla deberá aplicarse en todas las arquitecturas n-capas de aplicaciones medianas/grandes.
+    por supuesto, debe de realizarse entre los objetos cuya función mayoritaria es la lógica de ejecución (de cualquier tipo)
+    y que tiene dependencias con otros objetos. un ejemplo claro son los servicios, repositorios, etc.
+    No tiene mucho sentido hacerlo con las propias clases de entidades.

@@ -1,0 +1,4 @@
+Subcapa de componentes visuales (Vistas):
+	estos componentes proporcionan el mecanismo base para que el usuario utilice la aplicación.
+	Por lo tanto, son componentes que formatean datos en cuanto a tipos de letras y controles visuales, y también reciben datos proporcionados por el usuario.
+	

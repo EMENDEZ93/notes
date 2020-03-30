@@ -1,0 +1,9 @@
+El separar la capa de dominio del resto de capas:
+	permite un diseño mucho más limpio de cada capa. las capas aisladas son mucho menos costosas de mantener por que tienden a evolucionar a diferentes ritmos
+	y responder a diferentes necesidades.
+	Por Ejemplo:
+		las capas de infraestructura  evolucionarán cuando evolucionan las tecnologias sobre las que están basados. Por el contrario, la capa de dominio,
+		evolucion cuando se quieren realizar cambios en la lógica de negocio de dominio concreto.
+	Adicionalmente:
+		la separación de capas ayuda en el despliegue de una sistema distribuido, permitiendo que diferentes capas sean situadas de forma flexible en 
+		diferentes servidores o clientes, de manera que se minimice el exceso de comunicación y se mejore el rendimiento.

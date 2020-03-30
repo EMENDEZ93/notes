@@ -1,0 +1,7 @@
+Primeramente:
+    es importante aclarar, para no confundir conceptos, que los servicios en DDD no son los servicios-web utilizados para 
+    invocaciones remotas. 
+
+    Estos otros servicios web estarán en una posible capa superior de 'Capa de servicios Distribuidos' y podrían a su vez
+    publicar las capas inferiores permitiendo acceso remoto a los servicios-DDD y tambien a otros objetos de la capa aplicación
+    y dominio.

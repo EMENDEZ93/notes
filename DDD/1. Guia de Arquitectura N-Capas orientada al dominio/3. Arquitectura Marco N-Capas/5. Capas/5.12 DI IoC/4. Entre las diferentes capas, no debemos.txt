@@ -1,0 +1,8 @@
+Entre las diferentes capas, no debemos de instanciar:
+    de forma explicita las dependencias. para conseguir esto, se puede hacer uso de una clase base o un interfaz (no pearece más claro el uso de interfaces) 
+    que defina una abstracción común que pueda ser utilizada para inyectar instancias de objetos en componentes que interactúen con dicho interfaz abstracto compartido.
+
+    Para dicha inyección de objetos, inicialmente se podria hacer uso de constructor de objetos (Patron Factory) que crea instancias de nuestras dependencias y
+    nos las proporciona a nuestro objeto origen, durante la creación del objeto y/o inicialización. pero la forma más potente de implementar este patrón este
+    mediante un contenedor DI (en lugar de un constructor de objetos creado por nosotros). el contenedor DI inyecta a cada objeto las dependencias/objetos necesarios
+    según la relaciones o registro plasmado bien por código o en ficheros xml de configuración del contenedor DI.

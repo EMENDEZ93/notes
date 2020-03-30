@@ -1,0 +1,3 @@
+helm install nombre_repositorio:
+    helm install nombre_repositorio -- name my-application:
+	instala un chart en tu clúster. esto es, crear una nueva release a partir de un chart.

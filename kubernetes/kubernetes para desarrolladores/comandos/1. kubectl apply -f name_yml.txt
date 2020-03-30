@@ -1,0 +1,2 @@
+kubectl apply -f name_pod:
+	ejecutar cualquier archivo yml en kubernetes.

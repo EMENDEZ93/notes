@@ -1,0 +1,2 @@
+helm repo update:
+	descarga la información actualizada de los repositorios de helm.

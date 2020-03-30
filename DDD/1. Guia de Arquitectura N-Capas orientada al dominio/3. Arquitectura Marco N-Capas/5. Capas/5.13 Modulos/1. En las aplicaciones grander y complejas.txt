@@ -1,0 +1,5 @@
+En las aplicaciones grander y complejas:
+    el modelo de dominio tiende a crecer extraordinariamente. 
+    el modelo llega a un punto donde es complicado hablar sobre ello como un todo y el puede costar bastante entender bien todas
+    su relaciones e interaciones entre todas sus areas. por esa razón, se hace necesario organizar y particionar el modelo en 
+    diferentes módulos.

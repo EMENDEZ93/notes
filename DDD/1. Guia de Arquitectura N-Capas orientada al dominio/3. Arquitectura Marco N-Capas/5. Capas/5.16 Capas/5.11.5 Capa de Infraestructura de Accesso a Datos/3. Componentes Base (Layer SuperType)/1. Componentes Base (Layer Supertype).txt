@@ -1,0 +1,4 @@
+1. Componentes Base (Layer Supertype):
+    la mayoría de las tareas de acceso a datos requieren cierta lógica común que puede ser extraída e implementada
+    un componente separado reutilizable. Esto ayuda a simplificar la complejidad de los componentes de acceso a datos 
+    y sobre todo minimiza el volumen del código a mantener.

@@ -1,0 +1,3 @@
+Cuando no diseñar e implementar módulos:
+    en aplicaciones donde se disponga de una única area funcional muy cohesionada entre ella y sea muy complicado separarlo en 
+    módulos funcionales independientes y desacoplados a nivel funcional.

@@ -1,0 +1,7 @@
+Los contratos o interfaces definen:
+    el comportamiento requerido a los componentes de bajo nivel por los que componentes de alto nivel y además dichos contratos/interfaces deben
+    existir en los assemblies de alto nivel.
+
+    Cuano los componentes de bajo nivel implementan los interfaces/contratos a cumplir (que se encuentran en las capas de alto nivel), eso significa que los 
+    componentes/capas de bajo nivel son las que dependen, a la hora de compilar, de los componenetes de alto nivel y por lo tatno, invirtiendo la tradicional relación
+    de dependencia, por eso se llama inversión de dependencias.

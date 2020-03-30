@@ -1,0 +1,8 @@
+Ventajs del uso de Arquitectura N-Capas:
+    Desarrollo estructurado, homogéneo y similar de las diferentes aplicaciones de una organización.
+
+    Facilidad de mantenimiento de las aplicaciones pues los diferentes tipos de tareas están siempre situados en las mismas áreas
+    de la arquitectura.
+
+    Facil cambio de tipología en el despligegue fisico de una aplicación (2-Tier, 3-Tier, etc), pues las diferentes capas separarse
+    fisicamente de dorma fácil.

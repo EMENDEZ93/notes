@@ -1,0 +1,5 @@
+A nivel práctico:
+	un repositorio será normalmente una clase encargada de realizar las operaciones de persistencia y acceso a datos, estando ligado por lo
+	tanto a una tecnologia concreta:
+		P.E ligado a un ORM como Entity Framework NHibernate o incluso simplemente ADO.NET para un gestor de base de datos concreto).
+	Haciendo esto centralizamos funcionalidad de acceso a datos lo cual hace más directo y sencillo el mantenimiento y configuración de la aplicación.

@@ -1,0 +1,2 @@
+kubectl delete pod/name_pod:
+	eliminar un pod en especifico.

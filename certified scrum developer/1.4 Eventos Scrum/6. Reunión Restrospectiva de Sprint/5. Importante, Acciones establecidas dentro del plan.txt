@@ -1,0 +1,4 @@
+Importante:
+	Las acciones establecidas dentro del plan de mejora toma tiempo, y esos tiempos deben tenerse en cuenta durante la planeación del siguiente spring:
+	Si no se hace, no se lleva a cabo los ajustes necesarios o ajustes experimentales, y por lo tanto no hay adaptabilidad. En este sentido, algunos equipos
+	hablan de tener una lista de mejoras priorizadas que van abordando cada sprint y actualizando permanentemente.

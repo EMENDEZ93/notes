@@ -1,0 +1,2 @@
+Patron de inversion de control:
+    delegamos a un componente o fuente externa, la función de seleccionar un tipo de implementación concreta de las dependencias de nuestra clases.

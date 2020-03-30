@@ -1,0 +1,5 @@
+Sub-Capa de WorkFlows de Negocio (Opcional):
+	Algunos procesos de negocio están formados por un cierto número de pasos que deben ejecutarse de acuerdo a unas reglas concretas dependiendo de eventos que se puedan
+	Producir en el sistema y normalmente con un tiempo de ejecución total de larga duración (indeterminado, en cualquier caso), interactuando unos pasos con otros
+	mediante una orquestación dependiente de dichos eventos. este tipo de procesos de negocio se implementan de forma natural como flujos  de trabajo (workflows) y 
+	mediante tecgnologías concretas y herramientas de gestión de procesos de negocio, especial mente diseñada para ello.

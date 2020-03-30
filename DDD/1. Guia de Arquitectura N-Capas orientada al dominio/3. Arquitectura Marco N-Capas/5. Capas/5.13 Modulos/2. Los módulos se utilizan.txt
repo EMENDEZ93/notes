@@ -1,0 +1,3 @@
+Los módulos se utilizan:
+    como un método de organización de conceptos y tareas relacionadas (normalmente bloques de negocio diferenciados) y poder asi
+    reducir la complejidad desde un punto de vista externo.

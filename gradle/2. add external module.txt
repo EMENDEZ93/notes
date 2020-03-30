@@ -1,0 +1,3 @@
+bootProject:
+	settings.gradle:
+		include(':comun')

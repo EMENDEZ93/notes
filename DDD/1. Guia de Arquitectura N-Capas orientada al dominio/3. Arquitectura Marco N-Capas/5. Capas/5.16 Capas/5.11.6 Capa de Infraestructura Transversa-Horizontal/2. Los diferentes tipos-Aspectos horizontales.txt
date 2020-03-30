@@ -1,0 +1,11 @@
+2. Los diferentes tipos-Aspectos horizontales:
+    más típicos, son:
+        Seguridad (Autenticación, Autorización y Validación).
+        Tareas de gestión de operaciones:
+            Politicas.
+            Logging.
+            Trazas.
+            Monitorización.
+            Configuración.
+            Etc.
+    

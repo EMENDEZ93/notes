@@ -1,0 +1,30 @@
+Entidades Del Domino:
+	Estos objetos son entidades de datos desconectados y se utilizan para obtener y transferir datos de entidades entre las diferentes capas.
+	Adicionalmente es recomendable que contengan tambien en las mismas clases lógica del dominio relativo al contenido de entidad,
+	Por ejemplo:
+		validaciones de datos.
+		Campos pre-calculados.
+		Relaciones con otras subentidades.
+		Etc.
+	Estos datos presentan al fin y al cabo entidades de negocio del mundo real, como productos o pedidos. 
+	
+	Las entidades de datos que la aplicación utilizan internamente, son en cambio, objetos en memoria con datos y cierta lógica relacionada, 
+	como puedan ser clases propias, clases del framework o simplemente streams XML (aunque este último caso o clase son solo datos no dispondran
+	de lógica propia de la entidad y estaríamos cayendo en el llamado anemic domain model. Siguiendo los patrones y principios recomendados, es
+	Bueno por ejemplo:
+		hacer uso de objetos Pojo, Es decir, de clases independientes con código completamente bajo nuestro control y situando estas entidades 
+		dentro del dominio, puesto que son entes del dominio e independiente de cualquier tecnologia de infraestructura (Persistencia de datos ORM), etc.
+		En cualquier caso, las entidades serán objetos flotantes a lo largo de toda o casi toda la arquitectura.
+		
+	Relativo a DDD:
+		y de acuerdo con la definición de Eric Evans, Un objeto primariamente definido por su identidad se le denomina Entidad. 
+	
+	Las entidades son fundamentales en el modelo del dominio y tiene que ser identificadas y diseñadas cuidadosamente. Lo que en algunas
+	Aplicaciones pueden ser una entidad, en otras aplicaciones no deben serlo.
+	Por ejemplo:
+		Direccion en algunos sistemas puede no tener una identidad en absoluto, pues puede estar representado solo atributos de una persona
+		o compañia. 
+		En otros sistemas, sin embargo, como en una aplicación para una empresa de Electricidad, la dirección de los clientes puede ser muy
+		Importante y debe ser una identidad porque la factura puede estar ligada directamente con la dirección, en este caso, como en una
+		Comercio electronico, la dirección puede ser simplemente atributo del perfil de una persona. en este otro casp la dirección
+		no es tan importante y deberia clasificarse como un objeto valor en DDD denominado ValueObject.

@@ -1,0 +1,3 @@
+Cuando Si implementar una arquitectura N-Capas:
+    Deberá implementar en las aplicaciones empresariales complejas cuya lógica de negocio cambie bastante y la aplicación vaya a sufrit
+    cambios y mantenimiento posteriores durante una vida de aplicación como minimo, relativamente larga.

@@ -1,0 +1,2 @@
+Definir y Diseñar Modulos:
+    de aplicación de engloben áreas funcionales diferenciadas.

@@ -1,0 +1,7 @@
+Ventajas:
+	Cientos de aplicaciones disponibles.
+	Personalizables.
+	Facilidad para gestionar tu propia aplicación (Dependencias, Entornos, Herramientas, etc).
+	Actualizaciones simples.
+	Despliegues y versionado incluido.
+	

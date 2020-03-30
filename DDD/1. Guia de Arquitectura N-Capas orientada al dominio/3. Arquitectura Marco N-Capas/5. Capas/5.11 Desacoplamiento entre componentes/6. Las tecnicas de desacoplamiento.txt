@@ -1,0 +1,6 @@
+Las tecnicas de desacoplamiento:
+    están basadas en el principio de inversión de dependencias, el cual establece una forma especial de desacoplamiento donde se invierte la típica relación de
+    dependencia que suele hacer en orientación a objetos la cual decia que las capas de alto nivel deben depender de las capas de más bajo nivel.
+
+    El propósito es conseguir disponer de caps de alto nivel que sean independientes de la implementación y detalle concreto de las capas de más bajo nivel, y por lo
+    tanto también, independientes de las tecnologias subyacentes.

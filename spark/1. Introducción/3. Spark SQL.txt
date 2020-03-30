@@ -1,0 +1,16 @@
+Spark SQL:
+	etapa de ingesta, tipo batch.
+	Flujo tratamiento Bug data habitualmente 4 etapas.
+	
+	Ingesta;
+		filtrar información relevante de origenes de datos.
+		
+	Almacenamiento:
+		Guarda datos de forma ordenada y accesible para consulta.
+		
+	Procesamiento - cálculos a realizar:
+		En tiempo real - respuesta inmediata a nuevos datos.
+		Batch - no requiere inmediatez.
+		
+	Visualización:
+		Presentar resultados de análisis a usuarios.

@@ -1,0 +1,3 @@
+Opción mas potente al desacoplamiento:
+    es hacer uso de IoC y DI entre prácticamente todos los objetos pertenecientes las capas de la arquitectura, esto nos permitirá en cualquier momento inyecctar 
+    simulaciones de comportamiento o diferentes ejecuciones reales cambiando en tipo de ejecución y/o configuración.

@@ -1,0 +1,5 @@
+Capa de infraestructura de acceso a Datos:
+	Sub capa de repositorios.
+	Modelo lógico de datos.
+	Clases Base (Patron Layer-SuperType)
+	Infraestructura Tecnologia ORM.

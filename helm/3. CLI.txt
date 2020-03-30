@@ -1,0 +1,4 @@
+CLI:
+	es la aplicación para el usuario de Helm. Desde ahí puedes realizar todas las funciones.
+	Internamente y de forma transparente se comunica con el Tiller.
+	Disponible para todos los SOs.

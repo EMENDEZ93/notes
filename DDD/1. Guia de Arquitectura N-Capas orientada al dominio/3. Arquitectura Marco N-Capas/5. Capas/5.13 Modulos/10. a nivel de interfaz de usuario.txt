@@ -1,0 +1,12 @@
+a nivel de interfaz de usuario:
+    el problema que surge cuando hay diferentes grupos de desarrollo trabajando en los diferentes módulos es que al final, la capa de
+    presentación, la aplicación cliente es normalmente solo una y en cambio podemos tener diferentes módulos verticales muy
+    diferenciados y cada grupo de desarrollo trabajando en uno de ellos.
+
+    debido a esto, los módulos tiene mucho que ver con el concepto de aplicaciones compuestas (composite applications)
+    donde diferentes grupos de desarrollo pueden estar trabajando sobre la misma aplicación pero de una forma independiente, cada
+    equipo de desarrollo en un módulo diferente. Pero finalmente todo se tiene que integrar en el mismo interfaz de usuario.
+    para que esa integración visual sea mucho menos traumática, es deseable hacer uso de conceptos composite applications, es decir
+    definir interfaces concretos que cada módulo visual debe cumplir (áreas de menús, areas y contenido, carga/descarga de módulos
+    visuales a partir de un punto configurable de la aplicación, etc), de forma que sea una integración muy automatizada y reglada
+    y no algo traumático al hacer la integración de los diferentes módulos en una única aplicación cliente. 

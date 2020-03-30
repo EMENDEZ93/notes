@@ -1,0 +1,17 @@
+Subcapa de servicios de aplicación:
+	es importante destacar que el concepto de servicios en una arquitectura N-Layer con orientación al dominio, no tiene nada que ver con
+	los servicios-web para accesos remotos.
+	
+	Primeramente, el concepto de servicio DDD existe en las capas de aplicación, de dominio e incluso en la de infraestructura. 
+	El concepto de servicios es simplemente un conjunto de clases donde agrupar comportamientos y métodos de acciones que no pertnecen a una
+	clase de bajo nivel concreta (Como entidades, u otro tipo de clase con identidad propia). Asi pues, los servicios normalmente coordinanran
+	Objetos de capas inferiores.
+	
+	En cuanto a los servicios de aplicación, que es el punto actual, estos servicios normalmente coordinan el trabajo de otros servicios de capas
+	inferiores (Servicios de capas de dominio o incluso servicios de capas de infraestructura transversal).
+	Por ejemplo:
+		un servicio de la capa de aplicación puede llamar a otro servicio de la capa de dominio para que procese un pedido.
+		Una vez procesado y obtenidos los resultados, puede llamar a otros servicio de infraestructura delegando en él para que se encargue de
+		mandar un correo al usuario pertinente. esto es un ejemplo coordinación de servicios de capas inferiores.
+		
+	Tambien esta capa de aplicación puede ser publicada mediante la capa superior de servicios web, de forma que pueda ser invocada remotamente.

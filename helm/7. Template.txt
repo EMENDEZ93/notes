@@ -1,0 +1,4 @@
+Template:
+	Los Chart se componen básicamente de templates.
+	Un templates es simplemente im archivo YAML de kubernetes, que se ha modificado (o no) para que se pueda personalizar. Estos templates al instalar la aplicación se convierte
+	en los YAML qie se depliegan en kubernetes.

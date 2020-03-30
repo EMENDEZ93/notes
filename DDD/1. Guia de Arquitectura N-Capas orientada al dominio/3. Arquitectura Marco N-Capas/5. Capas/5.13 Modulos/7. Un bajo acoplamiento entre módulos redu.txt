@@ -1,0 +1,5 @@
+Un bajo acoplamiento entre módulos reduce:
+    la complejidad y mejora sustancialmente la mantenibilidad de la aplicación. es mucho más sencillo tambien entender cómo funciona
+    un sistema completo, cuando tenemos pocas conexiones entre módulos que realizan tareas bien definidas. en cambio, sistema
+    tenemos muchas conexiones de unos módulos a otros es mucho más complicado entenderlo y si es necesrio tenerlo asi, probable
+    mente deberia ser un único módulo.

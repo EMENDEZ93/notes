@@ -1,0 +1,6 @@
+¿Como Saber si un plan funciono?:
+	los resultados de los planes puestos en acción deben ser revisados.
+	Si la situación a cambiar es compleja, el método cientifico funcionará:
+		Se plantean hipotesis.
+		Se experimenta en el sprint.
+		Se validad las hipotesis con resultados concretos.

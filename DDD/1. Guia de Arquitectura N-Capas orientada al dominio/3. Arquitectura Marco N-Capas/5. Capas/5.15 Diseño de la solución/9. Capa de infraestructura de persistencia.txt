@@ -1,0 +1,51 @@
+Capa de infraestructura de persistencia de datos:
+    La parte más característica de esta capa es la implementación de repositorios
+    para realizar la peristencia y acceso a datos. este módulo es tambien donde por lo tanto implementamos todo lo relacionado con el 
+    modelo y conexiones/acciones a la base de datos.
+
+        Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+        Infrastructure:
+            Data:
+                Core:
+                    Tests
+                MainModule:
+                    Properties:
+                    References:
+                    Context:
+                        IMainModuleContext.cs
+                        MainModuleContext:
+                            Context.tt
+                    Model:
+                        MainModuleDataModel.edmx
+                    Repositories:
+                        BankAccountRepository.cs
+                        CustomerRepository.cs
+                        OrderRepository.cs
+                        ProductRepository.cs
+                    Resource
+                    Tests:
+    Database:
+    Solution items:
+
+    A nivel de cada modulo funcional (en este caso, mainModule) dispondremos de un único proyecto con los siguientes elementos:
+        DataModel:
+            contendra el modelo de EntityFramework. si bien, las clases que genera entity framework (container y entidades POJO/IPOJO)
+            las extraeremos a otros proyectos para poder desacoplarlo según el diseño del dominio en DDD. aqui solo estará el modelo
+            de datos en nuestro caso MainModuleDataModel.edmx
+
+        Context:
+            implementa una abstracción del contexto/contenedor de entityFramework, para poder sustituirlo por un fake/mock y realizar pruebas 
+            unitarias.
+
+        Respositorios:
+            cñases encargadas de la lógica de persistencia de datos.
+
+    Tambien dispondremos de otro proyecto para los test de todo el modulo.
+    Los proyctos de tipo core son proyectos a utilizar para implementar clases base y extensiones que son válidos para reutilizar
+    de forma horizontal en la implementación de capa de persistencia de todos los módulos funcionales de la aplicación.
+    

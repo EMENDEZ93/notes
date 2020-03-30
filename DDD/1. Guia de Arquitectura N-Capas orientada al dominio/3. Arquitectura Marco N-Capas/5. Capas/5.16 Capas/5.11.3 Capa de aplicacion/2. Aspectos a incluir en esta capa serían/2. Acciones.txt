@@ -1,0 +1,2 @@
+Acciones:
+	que consolidan o agrupan operaciones del dominio dependiendo de las acciones mostradas en el interfaz mostrado al usuario.

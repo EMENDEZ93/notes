@@ -1,0 +1,11 @@
+Un servicio:
+    es una operación conjunto de operaciones ofrecidas como una interfaz que simplemente está disponible en el modelo sin
+    encapsular estado.
+
+    La palabra servicio del patron servicio precisamente hace hincapie en lo que ofrece: que puede hacer y qué acciones ofrece
+    al cliente que lo consuma y enfatiza la relacion con otros objetos de cada capa.
+
+    Al gunos servicios (Sobre todo los de más alto nivel, coordinadores de lógica de negocios) se les suele nombrar
+    con nombres de actividades, no con nombre de objetos. están por lo tanto relacionados con verbos de los casos de uso
+    del analisis, no con sustantivos (Objetos), aun cuando puede tener una definición abstracta de una operación concreta
+    (Por ejemplo, un servicio-transferencia relacionado con la acción/verbo Transferir dinero de una cuanta bancaria a otra).

@@ -1,0 +1,8 @@
+Queremos resaltar:
+	que la implementación y uso de todas estas capas debe ser algo flexible. Relativo al diagrama probablemente deberian existir mas combinaciones de flechas (accesos).
+	y sobre todo, no tiene por qué ser utilizado de forma exaxtamente igual en todas las aplicaciones.
+	
+	En una aplicación mediana:
+		el uso podria ser como el comentado anterior (cierta libertad de acceso directo a diferentes capas), pero en una aplicación muy voluminosa y/o muy orientada a SOA y 
+		a una publicación a otros sistemas externos, puede interesarnos el obligar a pasar siempre por la capa de aplicación, utilizando esta capa de aplicación como una fachada
+		de la aplicación (Facade Pattern)

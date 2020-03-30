@@ -1,0 +1,6 @@
+Apli de Kubernetes:
+	Al final, Helm es solo una capa por encima de kubernetes. Todo lo que haces con Helm se traduce en comandos de Helm envia automaticamente a la API de Kubernetes, como
+	cuando utilizas kubectl.
+	
+	De nuevo, la comunicación de kubernetes se realiza de forma transparente para el usuario, que solo utiliza el Cli
+	

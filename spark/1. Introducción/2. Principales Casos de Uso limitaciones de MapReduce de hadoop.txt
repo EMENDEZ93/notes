@@ -1,0 +1,4 @@
+Principales casos de uso con limitaciones de MapReduce de Hadoop:
+	Procesos iterativos:
+		requieren almacenamiento tras cada iteración.
+	Procesos intensivos en consultas, con varios paros intermedios en memoria, operaciones sucesivas sobre ellos más rápidamente.

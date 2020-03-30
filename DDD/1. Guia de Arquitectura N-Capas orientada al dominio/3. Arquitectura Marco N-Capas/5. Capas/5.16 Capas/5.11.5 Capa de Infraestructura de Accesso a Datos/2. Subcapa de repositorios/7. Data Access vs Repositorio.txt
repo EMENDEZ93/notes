@@ -1,0 +1,10 @@
+Por ultimo:
+    Es fundamental diferenciar entre un objeto Data Access (utilizados en muchas arquitecturas tradicionales N-Layers) y un repositorio.
+    La principal diferencia radica en que un objeto Data Access realiza directamente las operaciones de persistencia y acceso a datos contra
+    el almacen (Normalmente una base de datos). sin embargo, un repositorio registra en memoria (un contexto) las operaciones que se quieren
+    hacer, pero estas no se realizarán hasta que desde la capa del dominio se quiera efectuar esas n operaciones de persistencia/acceso
+    en una misma acción, todas a la vez esto esta basado normalmente en el patron UNIDAD DE TRABAJO O UNIT OF WORK, que se explicará en 
+    detalle en el capitulo de capa de dominio.
+    Este patron o forma de aplicar/efectuar operaciones contra los almacenes, en muchos casos puede aumentar el rendimiento de las aplicaciones
+    y en cualquier caso reducen las posibilidades de que se produzcan incosistencias. tambien reduce los tiempos de bloqueos en tablas 
+    debido a transacciones.

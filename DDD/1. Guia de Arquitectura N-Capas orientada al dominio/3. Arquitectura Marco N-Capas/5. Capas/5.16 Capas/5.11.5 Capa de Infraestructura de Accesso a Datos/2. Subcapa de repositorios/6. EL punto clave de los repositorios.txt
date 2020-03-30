@@ -1,0 +1,5 @@
+El punto clave de los repositorios:
+	es que deben facilitar al desarrollador el mantenerse centrado en la lógica del modelo del dominio y esconder por lo tanto la fontaneria
+	del acceso a los datos mediantes dichos contratos de repositorios.a este concepto se le conoce también como PERSISTENCE IGNORANCE, lo cual
+	significa que el modelo del domino ignora completamente como se persisten o consultan los datos contra las fuentes de datos de cada caso
+	(Base de datos u otro tipo de almacén).

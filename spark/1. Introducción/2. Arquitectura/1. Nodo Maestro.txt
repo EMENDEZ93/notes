@@ -1,0 +1,4 @@
+Nodo Maestro:
+	se ejecuta el programa principal.
+	objeto SparkContext coordina los distintos procesos.
+	

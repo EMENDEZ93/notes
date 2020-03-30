@@ -1,0 +1,3 @@
+El diseño de arquitectura lógica interna de una aplicación:
+    se realizará siguiendo el modelo de arquitectura de aplicación en N-Capas (N-Layeres) con Orientación al 
+    dominio y tendencias y patrosnes DDD (Domain Driver Design)

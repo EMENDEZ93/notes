@@ -1,0 +1,7 @@
+Posibilidad de sustitución:
+    en tiempo de ejecución , de capas/modulos actuales por otro diferentes (con mismo interfaces y similar comportamiento), sin que impacte a la aplicación.
+    por ejemplo:
+        puede llegar a sustituirse en tiempo de ejecución un módulo que accede a una base de datos por otro que accede a un sistema externo tipo host o cualquier
+        otro tipo de sistema, siempre y cuando cumplan unos mismo interfaces. 
+
+    No seria necesario el añadir el nuevo módulo, especificar referencias directas y recompilar nuevamente la capa que lo consume.

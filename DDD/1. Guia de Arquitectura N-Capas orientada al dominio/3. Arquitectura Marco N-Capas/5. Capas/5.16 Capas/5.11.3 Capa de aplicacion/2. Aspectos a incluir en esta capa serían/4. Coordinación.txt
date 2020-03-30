@@ -1,0 +1,8 @@
+Coordinación de acciones:
+	entre el dominio y algunos aspectos de infraestructura, como por ejemplo, la acción de realizar una transferencia bancaria y que al mismo
+	tiempo mande un e-mail a las partes interesadas (siempre y cuando dicho envio de mail se considere una acción de la aplicación y no 
+	logica intriseca del dominio). en cualquier caso, dicha agrupación de diferentes acciones es lo que hariamos en la capa de aplicación.
+	Ejemplo:
+		Agrupariamos persistencia de datos pasando por el dominio y el envio de un email realizado por la infraestructura. pero solo se 
+		realizaría aqui la agrupación de dichas acciones. la realización de las acciones en si (persistencia y/o envio de email del ejemplo)
+		se realizarán en las capas inferiores.

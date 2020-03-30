@@ -1,0 +1,4 @@
+Cuando si implementar DI e IoC:
+    deberá implementarse en prácticamente la totalidad de las aplicaciones N-Capas que tengan un volumen mediano/grande.
+    es especialmente útil entre las capas de dominio y las de infraestructura asi como en la capa de presentación junto con patrones
+    mvc y mvvm.

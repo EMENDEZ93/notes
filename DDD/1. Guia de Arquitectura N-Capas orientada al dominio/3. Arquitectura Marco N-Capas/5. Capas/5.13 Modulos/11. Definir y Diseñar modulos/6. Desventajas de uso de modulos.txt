@@ -1,0 +1,4 @@
+Desventajas de uso de modulos:
+    ciertas inversión en tiempo inicial añadido de diseño que obliga a definir interfaces de comunicación entre unos módulos y otros
+    sin embargo, siempre que engaje bien la definición y separación de módulos (existen áreas funcionales diferenciadas),
+    será muy beneficioso para el proyecto.

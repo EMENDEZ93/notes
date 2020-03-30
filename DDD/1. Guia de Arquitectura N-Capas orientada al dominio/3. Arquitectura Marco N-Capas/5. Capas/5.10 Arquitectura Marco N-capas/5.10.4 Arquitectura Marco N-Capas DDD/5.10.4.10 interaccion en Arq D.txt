@@ -1,0 +1,10 @@
+Interacción en arquitectura DDD:
+	Primeramente, podemos observar que la capa de infraestructura que presenta una arquitectura con tendencia DDD, es algo muy amplio y para muchos contextos muy diferentes
+	(Contextos de Servidores y de cliente). 
+	
+	La capa de infraestructura:
+		contendra todo lo ligado a tecnologia/infraestructura. Ahi se incluyen conceptos fundamentales como persistencia de datos, repositorios, etc.
+		Pasando por aspectos transversales como seguridad, logging, operaciones, etc. e incluso podría llegar a incluirse librerías especificas de capacidades gráficas
+		para UX (librerias 3D, librerias de controles específicos para una tecnologia concreta de presentación, etc.) Debido a estas grandes diferencias de contexto y la
+		importancia del acceso a datos, en nuestra arquitectura propuesta, hemos seperado explicitamente la capa de infraestructura de persistencia de datos del resto de capas
+		de inraestructura transversales, que puede ser utilizadas de forma horizontal/transversales por cualquier capa.

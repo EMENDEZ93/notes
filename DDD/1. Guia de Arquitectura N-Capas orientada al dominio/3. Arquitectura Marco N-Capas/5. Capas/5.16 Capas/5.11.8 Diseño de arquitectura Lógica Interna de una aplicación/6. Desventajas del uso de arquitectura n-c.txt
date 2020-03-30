@@ -1,0 +1,3 @@
+Desventajas del uso de arquitectura n-capas:
+    En el caso de aplicaciones muy pequeñas, estamos añadiendo una complejidad y estructura excesiva (Capas, Desacoplamiento, etc)
+    pero este caso es muy poco probable en aplicaciones empresariales con cierto nivel.

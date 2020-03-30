@@ -1,0 +1,22 @@
+Capas de presentación, aplicación, dominio e infraestructura:
+	en el nivel mas alto y abstracto, la vista de arquitectura lógica de un sistema puede considerarse como un conjunto de servicios relacionados agrupados 
+	en diversas capas similar al siguiente esquema (siguiendo las tendencias de arquitectura DDD).
+	
+	Vista de arquitectura lógica simplificada de un sistema N-Capas DDD:
+		Capas de presentación.
+		Capa de aplicación.
+		Capa de Modelo de Dominio/Negocio.
+		Capa de infraestructura de persistencia de datos, etc..
+		[Capas de infraestructura transversal (Seguridad, operaciones, etc)]
+	
+	En arquitecturas orientadas al dominio, es crucial la clase delimitación y separación de la capa del domino del resto de capas. Es realmente un pre-requisito
+	para DDD. Todo debe girar alrededor del Dominio.
+	
+	Asi pues, se debe particionar una aplicación compleja en capas. Desarrollar un diseño dentro de cada capa que sea cohesivo, pero delimitando claramente lass
+	diferentes capas entre ellas, aplicando patrones estándar de arquitectura para que dichas dependencias sean en algunas ocasiones basadas en abstracciones y 
+	no dependiendo una capa directamente de la otra. Concentrar todo el código relacionado con el modelo de domino en una capa y aislarlo del resto de codigo de 
+	otras capas (Presentación, aplicación, infraestructura, etc.). los objetos del dominio, al estar libres de tener que mostrarse ellos mismo, persistirse/guardarse
+	ellos mismo, gestionar tareas de aplicación, etc., pueden entonces centrarse exclusivamente en expresar el modelo de dominio. Esto permite que un modelo de
+	dominio pueda evolucionar y llegar a ser lo suficientemente rico y claro para representar el conocimiento de negocio esencial y ponerlo realmente en ejecució
+	dentro de la aplicación.
+	

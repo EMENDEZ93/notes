@@ -1,0 +1,13 @@
+Layers:
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:
+
+    contendra las diferentes capas de la arquitectura N-Layers, como se observa en la jerarquía anterior.

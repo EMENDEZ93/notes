@@ -1,0 +1,5 @@
+Capa de Infraestructura de Acceso a Datos:
+	Esta capa proporciona la capacidad de persistir datos asi como lógicamente acceder a ellos. 
+	pueden ser datos propios del sistema o incluso acceder a datos expuestos por sistema externos (Servicios Web Externes, etc).
+	Asi pues, esta capa de persistencia de datos expone el acceso a datos a las capas superiores, normalmente las capas del dominio.
+	Esta exposición deberá realizarse de una forma desacoplada.

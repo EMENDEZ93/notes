@@ -1,0 +1,3 @@
+Normalmente debemos crear un repositorio:
+	Por cada Entidad de Dominio (entidad raiz, que si puede estar compuesta en el almacén de base de datos por diferentes tablas relacionadas).
+	Es casi lo mismo que decir que la realción entre un repositorio y una entidad raiz es una relación 1:1

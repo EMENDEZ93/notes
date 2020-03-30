@@ -1,0 +1,4 @@
+Infraestructura Transversal:    
+    Servicio de infraestructura transversal de envio notificaciones (Verbo enviar/notificar)
+
+    Envia un correo electrónico, mensaje sms u otro tipo de comunicación requerido por la aplicación.

@@ -1,0 +1,4 @@
+1. Modelo de Datos:
+    Normalmente los sistemas ORM (como Entity Framework) disponen de técnicas de definición del modelo de datos a nivel
+    de diagramas 'Entidad-Relación', incluso a nivel visual. esta subcapa deberá contener dichos modelos entidad Relación
+    a ser posible, de forma visual con diagramas.

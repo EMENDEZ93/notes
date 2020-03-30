@@ -1,0 +1,9 @@
+Agregar DockerHub:
+	Manage Jenkins:
+		Configure System:
+			Cloud:
+				Add a new cloud:
+					Docker:
+						Docker Host URI:
+							unix:///var/run/docker.sock
+						Save

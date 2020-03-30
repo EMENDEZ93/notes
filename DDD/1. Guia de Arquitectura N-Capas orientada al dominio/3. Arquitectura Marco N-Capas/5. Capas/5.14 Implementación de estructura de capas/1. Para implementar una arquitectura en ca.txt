@@ -1,0 +1,2 @@
+Para implementar una arquitectura en capas:
+    (segun nuestro modelo lógico definido, orientado a arquitectura n-capas ddd), hay una seria de pasos que debemos realizar:

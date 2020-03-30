@@ -1,0 +1,4 @@
+en definitiva:
+    esta patrón describe técnicas para soportar una arquitectura tipo Plugin-In donde los objetos pueden buscar instancias de otros objetos
+    que requieren y de los cuales dependen.
+    

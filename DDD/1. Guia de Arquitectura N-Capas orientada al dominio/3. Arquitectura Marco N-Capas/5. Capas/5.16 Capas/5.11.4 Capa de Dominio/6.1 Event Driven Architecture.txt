@@ -1,0 +1,8 @@
+EDA Event Driven Architecture:
+	Relativo a los eventos de un flujo de trabajo, lógicamente está relacionado con EDA, es un patron de arquitectura de software que promociona fundamentalmente el uso de 
+	eventos (generación, detección, consumo y reacción a eventos) como hilo conductor principal de ejecución de la lógica del dominio. Ademas, este tipo de arquitectura
+	puede ser implementada con lenguajes de desarrollo múltidisciplinares, no es necesario hacer uso de tecnologias especialmente diseñadas para implementar flujos de 
+	trabajo.
+	Por esta razón, tambien puede llegar a implementarse técnicas EDA en otras áreas/Capas del Dominio e incluso de la capa de presentación, en patrones MVP
+	y M-V-VM que hace uso de eventos. Pero lógicamente, cualquier tecnologia orientada a implementar flujos de trabajo y orquestaciones estará basado en eventos y por lo tanto
+	facilitará muchos la gestión e implementación de dichos eventos.

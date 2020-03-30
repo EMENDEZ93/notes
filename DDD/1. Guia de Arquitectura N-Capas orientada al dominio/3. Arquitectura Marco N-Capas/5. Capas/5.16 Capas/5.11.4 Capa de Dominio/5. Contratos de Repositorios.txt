@@ -1,0 +1,12 @@
+Contrato de Repositorios:
+	Aun cuando la implementación de los repositorios no es parte del domino sino parte de las capas de infraestructura (Puesto que los repositorios estan ligados a
+	a una tecnología de persistencia de datos, como un ORM), sin embargo, el contrato Interfaz de como deben estar construidos dichos repositorios, es decir, los
+	interfaces de los repositorios, estos si debe formar parte del dominio, puesto que dicho contrato especifica que debe ofrecer el repositorio para que funcione y se
+	integre dentro. Dichos interfaces si son agnosticos a la tecnología. Asi pues, los interfaces de los repositorios es importante que esten definidos dentro de las
+	caas del dominio y está basado en el patron "separated interface pattern" definido por Martin Fowler.
+	Logicamente, para poder cumplir este punto, es necesario que las entidades del domino y los ValueObjects sean Pojo, es decir, tambien completamente agnosticos
+	a la tecnologia de acceso a datos. Hay que tener en cuenta que las entidades del domino son, al final, los tipos de los parámetros enviados y devueltos por y 
+	hacia los repositorios.
+	
+	En Definitiva, con este diseño (Persistence Ignorance)  lo que buscamos es que las clases de domino no sepan nada directamente de los repositorios. Cuando se trabaja
+	en las capas del domino, se debe ignorar como están implementados los repositorios.

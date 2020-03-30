@@ -1,0 +1,4 @@
+En definitiva:
+    es conseguir un state of the art del diseño interno de nuestra aplicación:
+        tener preparada toda la estructura de tu arquitectura de la aplicación de forma desacoplada y en cualquier momento poder inyectar funcionalidad para 
+        cualquier área o grupo de objetos, no tiene por qué ser solo entre capas diferentes.

@@ -1,0 +1,3 @@
+Ventajas de uso de modulos:
+    el uso de módulos en un diseño es una buena forma de aumentar la cohesión y disminuir el acoplamiento.
+    un bajo acoplamiento entre módulo reduce la complejidad y mejora sustancialmente la mantenibilidad de la aplicación.

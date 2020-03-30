@@ -1,0 +1,4 @@
+Integración y desacoplamiento entre las diferentes capas de alto nivel:
+	cada capa de la aplicación contendrá una serie de componentes que implementa la funcionalidad de dicha capa. estos componentes deber ser cohesivos internamente
+	(dentro de la misma capa de primer nivel), pero algunas capas (como las capas de infraestructura/tecnologia) deben de estar débilmente acopladas con el resto
+	de capas para poder menos al mantenimiento.

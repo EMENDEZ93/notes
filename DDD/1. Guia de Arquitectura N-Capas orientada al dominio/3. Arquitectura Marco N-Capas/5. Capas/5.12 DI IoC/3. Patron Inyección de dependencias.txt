@@ -1,0 +1,6 @@
+Patron Inyección de dependencias:
+    es realmente especial de IoC. 
+    Es un patrón en el que se suplen objetos/dependencias a una clase en lugar de ser la propia clase quien cree los objetos/dependencias que necesita.
+
+    El termino fue acuñado por primera vez por Martin Fowler.
+    

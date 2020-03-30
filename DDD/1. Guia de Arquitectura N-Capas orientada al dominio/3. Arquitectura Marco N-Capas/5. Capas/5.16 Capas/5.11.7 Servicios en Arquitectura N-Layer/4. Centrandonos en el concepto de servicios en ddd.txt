@@ -1,0 +1,9 @@
+Centrándonos en el concepto de servicios en DDD:
+    en algunos casos, los diseños más claros y pragmaticos incluyen operaciones que no pertenecen conceptualmente a objetos
+    específicos de cada capa. En estos casos podemos incluir/agrupar dichas operaciones en servicios explicitos.
+
+    Dichas operaciones son intrinsecamente actividades u operaciones, no características de cosas u objetos especificos de cada
+    capa por ejemplo:
+        dichas operaciones no son características internas de una entidad.
+    pero debido a que nuestro modelo de programación es orientado a objetos, debemos agruparlos tambíen en objetos. a estos
+    objetos les llamamos servicios.

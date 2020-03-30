@@ -1,0 +1,7 @@
+Cuando No Implementar DI e IoC:
+    a nivel de proyecto, normalmente, no se podra hacer uso de DI e IoC en aplicaciones desarrolladas con tecnologias RAP
+    (Rapid application development) que no llegan a implementar realmente una aplicación N-Capas flexible y no hay posibilidad de
+    introducir este tipo de desacoplamiento. esto pasa habitualmente en aplicaciones pequeñas.
+
+    a nivel de objetos, en las clases que son finales o no tiene dependencias (como las entidades), no tiene sentido hacer uso 
+    de IoC.

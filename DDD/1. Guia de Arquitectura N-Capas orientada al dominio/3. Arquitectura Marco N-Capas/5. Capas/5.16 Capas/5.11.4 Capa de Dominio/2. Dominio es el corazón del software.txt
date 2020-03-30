@@ -1,0 +1,10 @@
+Esta capa, Dominio, es el corazón del software:
+	Asi pues, estos componentes implementan la funcionalidad principal del sistema y encapsulan toda la lógica de negocio relevante
+	(Genéricamente llamado logica del dominio segun nomenclatura DDD). Basicamente suelen ser clases en el lenguaje seleccionado que
+	implementan la lógica de dominio dentro de sus métodos, aunque tambien puede ser de naturaleza diferente, como flujos de trabajo con
+	tecnología especialmente diseñada para implementar workflows, sistemas dinámicos de reglas de negocio, etc.
+	
+	Siguieno los patrones de Arquitectura N-Layer con orientación al dominio, esta capa tiene que ignorar completamente los detalles de persistencia
+	de datos.
+	Estas tareas de persistencia deben ser realizadas por las capas de infraestructura.
+	Normalmente podemos definir los siguientes elementos dentro de la caá de dominio.

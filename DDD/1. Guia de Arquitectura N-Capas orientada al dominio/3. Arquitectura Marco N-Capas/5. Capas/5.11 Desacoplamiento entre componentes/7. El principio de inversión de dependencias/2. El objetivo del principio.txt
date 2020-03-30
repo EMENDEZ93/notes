@@ -1,0 +1,7 @@
+El objetivo del principio de inversión de dependencias: 
+    es desacoplar los componentes de alto nivel de los componentes de bajo nivel de forma que sea posible llegar a reutilizar los mismo componentes de 
+    alto nivel con diferentes implementaciones de componentes de bajo nivel.
+
+    Por ejemplo:
+        poder reutilizar la misma capa de domino con diferentes capas de infraestructura que implementen diferentes tecnologias (Diferente detalles) pero
+        cumpliento  los mismo interfaces (Abstracciones) de cara a la capa de dominoi.

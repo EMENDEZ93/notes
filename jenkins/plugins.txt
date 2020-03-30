@@ -1,0 +1,8 @@
+Docker
+DockerHud
+Blue ocean:
+	Integración nativa con github y bitbucket.
+	Integración más intuitivas (Credenciales).
+	Crear Pipeline de forma gráfica (Editor).
+	Visualización de Pipeline mejorada.
+	Personalización de UI.

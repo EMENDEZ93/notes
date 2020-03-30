@@ -1,0 +1,6 @@
+Arquitectura Marco N-Caps Con Orientación Al Dominio:
+	recalcar que hablamos de arquitectura con Orientación al Dominio, no hablamos de DDD (Domain Drive Desing).
+	Para hablar de DDD deberíamos centranos realmente no tanto en el arquitectura (objetivo de esta guia), sino más bien en el proceso de diseño, forma de trabajar
+	los equipos de desarrollo, el lenguaje ubicuo, etc. Estos arpectos de DDD los tocaremos en la presente guia, pero de forma leve. el objetivo es centranos
+	exclusivamente en una arquitectura N-Layer qye ebcahe cib DDD y como mapearlo posteriormente a las tecnologías. No pretendemos exponer y explicar DDD.
+	Esta sección define de forma global la arquitectura marco en N-Capas asi como ciertos patrones y técnicas a tener en cuenta para la integración de dichas capas.

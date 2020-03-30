@@ -1,0 +1,9 @@
+Hay varios tipos de cohesión:
+    dos de las más utilizadas son:
+        Cohesión de comunicaciones:
+            tiene que ver con partes de un módulo que operan sobre los mismo conjuntos de datos.
+            tiene todo el sentido agruparlo por que hay una fuerte relación entre esas partes de código.
+        Cohesión de funcional:
+            la cohesión funcional se consigue cuando todas las partes de un módulo realizan una tarea o conjunto de tares
+            funcionales bien definidas. esta cohesión es el mejor tipo.
+    asi pues, el uso de modulos en un diseño es una buena forma de aumentar la cohesión y disminuir el acoplamiento.

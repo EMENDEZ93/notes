@@ -5,4 +5,6 @@ Deployments:
 
 Los deployments son una abstracción muy util sobre el concepto de replica controllers, y es el objeto que se utiliza como norma general para desplegar nuestra aplicaciones.
 
-sobre la abstracción del replica controller ofrece rolling updates. de esta manera, si tenemos 4 instancias de un pod y queremos desplegar una nueva versión de nuestra aplicación, el deployment se encarga de ir sustituyendo uno a uno los pods antiguos por los nuevos, de tal manera que no nos veamos afectados por un downtime. además, el deployment mantiene un historico de versiones de los pods que ha ejecutado, permitiendo hacer rollbacks a versiones pasadas si detectamos un problema en producción.
+sobre la abstracción del replica controller ofrece rolling updates. de esta manera, si tenemos 4 instancias de un pod y queremos desplegar una nueva versión de nuestra aplicación,
+el deployment se encarga de ir sustituyendo uno a uno los pods antiguos por los nuevos, de tal manera que no nos veamos afectados por un downtime. además, el deployment mantiene un
+historico de versiones de los pods que ha ejecutado, permitiendo hacer rollbacks a versiones pasadas si detectamos un problema en producción.

@@ -1,0 +1,4 @@
+Un escenario interesante de desacoplamiento:
+    con IoC es internamente dentro de la capa de presentación, para poder realizar un mocking o stubs de una forma aislada y configurable de los componentes
+    en arquitectura de presentación MVC y MVVM donde para una ejecución rápida de pruebas unitarias podemos quere simular un consumo de servicios web
+    cuando realmente no lo estamos consumiendo, sino simulando

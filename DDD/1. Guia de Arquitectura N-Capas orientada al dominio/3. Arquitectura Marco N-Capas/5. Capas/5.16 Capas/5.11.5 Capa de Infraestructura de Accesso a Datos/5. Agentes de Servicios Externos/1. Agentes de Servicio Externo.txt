@@ -1,0 +1,7 @@
+1. Agentes de Servicio Externo:
+    Cuando un componente de negocio debe utilizar funcionalidad proporcionada por servicios externos, se debe implementar
+    código que gestione la semántica de comunicaciones con dichos servicios particulares o incluso tareas adicionales
+    como mapeos entre diferentes formatos de datos.
+
+    Los agentes de servicios aislan dicha idiosincrasia de forma que, manteniendo ciertos interfaces, sería posible
+    sustituir el servicio externo original por un segundo servicio diferente, sin que nuestro sistema se vea afectado.

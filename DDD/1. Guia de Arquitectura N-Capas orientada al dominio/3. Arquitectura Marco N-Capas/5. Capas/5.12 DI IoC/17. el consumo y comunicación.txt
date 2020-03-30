@@ -1,0 +1,3 @@
+el consumo y comunicación:
+    entre los diferentes objetos pertenecientes a las capas de la arquitectura deberá ser desacoplado, implementando los patrones
+    de inyección de dependencias (DI) e Inversión de control (IoC)

@@ -1,0 +1,4 @@
+Desventajas del uso DI e IoC:
+    si no se conocen las técnicas IoC y DI, se añade cierta complejidad inicial en el desarrollo de la aplicación, pero una vez
+    comprendidos los conceptos, relamente merece la pena en la mayoria de las aplicaciones, añade mucha flexibilidad y finalmente
+    calidad de software.

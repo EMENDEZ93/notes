@@ -1,0 +1,2 @@
+oc project name_project:
+	seleccionar el proyecto en el que deseamos trabajar.

@@ -1,0 +1,27 @@
+¿Que dice la guia oficial de scrum sobre la reunión de retrospectiva?:
+	Es una oportunidad para el Equipo Scrum de inspeccionarse a si mismo y crear un plan de mejorar que sean abordados durante el siguiente spring.
+	La retrospectiva de sprint tiene lugar después de la revisión de sprint y antes de la siguiente reunión de planificación de sprint.
+	Se trata de una reunión:
+		a un bloque de teimpo de tres horar para sprint de un mes. para sprints más cortos se reserva un tiempo proporcionalmente menor.
+	
+	El Scrum master:
+		Se asegura de que el evento se lleva acabo y que los asistentes entiendan su propósito.
+		Enseña a tpdps a mantener el evento dentro del bloque de tiempo fijado.
+		Participa en la reunión como un miembro del equipo ya que la responsabilidad del proceso scrum recae sobre él.
+	
+	El proposito de la retrospectiva es:
+		identificar y ordenar los elementos más importantes que salieron bien y las posibles mejoras; y crear un plan para implementar las mejoras a la 
+		forma en la que el equipo scrum desempeña su trabajo.
+		El scrum mater:
+			Alienta al equipo para que mejore, dentro del marco de proceso scrum, su proceso de desarrollo y sus prácticas para hacerlos más efectivos y amenos
+			para el siguiente sprint.
+		
+		Durante cada retrospectiva de sprint, el equipo scrum planifica formas de aumentar la calidad del producto mediante la adaptación de la definición de terminado
+		(Definitión of Done) según sea conveniente.
+		
+	Para el final de la retrospectiva de sprint:
+		El Equipo Scrum:
+			deberia haber identificados mejoras que implementará en el próximo sprint.
+			El hecho de implementar estas mejoras en el siguiente spring. constituye la adaptación subsecuente a la inspección del equipo de desarrollo asi mismo.
+			Aun que las mejoras pueden implementarse en cualquier momento, la retrospectiva de sprint ofrece un evento deficado para este fin, enfocado en la inspección y 
+			la adaptación.

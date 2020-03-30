@@ -1,0 +1,2 @@
+Mantenimientos:
+	de estados relativos a la aplicación (no estados internos del dominio).

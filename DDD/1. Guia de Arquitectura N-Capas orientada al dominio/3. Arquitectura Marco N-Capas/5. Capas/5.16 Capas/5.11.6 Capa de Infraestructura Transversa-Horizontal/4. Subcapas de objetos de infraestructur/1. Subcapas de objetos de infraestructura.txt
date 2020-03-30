@@ -1,0 +1,4 @@
+1. Subcapas de objetos de infraestructura:
+    dependiendo del tipo de aspecto de infraestructura transversal, necesitaremos los objetos necesarios para implementarlos,
+    bien sean aspectos de seguridad, trazas, monitorización, envio de email, etc.
+    

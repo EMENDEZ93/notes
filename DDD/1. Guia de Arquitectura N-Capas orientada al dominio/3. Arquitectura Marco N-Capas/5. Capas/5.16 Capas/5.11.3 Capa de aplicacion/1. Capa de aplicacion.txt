@@ -1,0 +1,13 @@
+Capa de aplicación:
+	esta capa forma parte de la propuesta de arquitecturas orientadas al dominio.
+	Define los trabajos que la aplicación como tal debe de realizar y redirige a los objetos del domino que son los que internamente deben de resolver los problemas.
+	
+	Esta capa debe ser una capa delgada, no debe contener realmente reglas del dominio o conocimiento de la logica de negocio, simplemente debe coornidar tareas necesarias para
+	la aplicación (software o aplicacion como tal), aspectos necesarios para optimizaciones de la aplicación o tareas de la aplicación, no logica de negocio/dominio
+	y delegar posteriormente trabajo a los objetos de domino (siguiente capa).
+	
+	Tampoco debe contener estados que reflejen la situación de la lógica de negocio interna pero si puede tener estados que reflejen el progreso de una tarea 
+	de la aplicación a ser mostrada al usuario
+	
+	Es una capa en algunos sentidos parecida a las capas Fachade de negocio, pues en definitiva hará de fachada del modelo de dominio, pero no solamente se encarga de simplificar
+	el acceso al dominio.

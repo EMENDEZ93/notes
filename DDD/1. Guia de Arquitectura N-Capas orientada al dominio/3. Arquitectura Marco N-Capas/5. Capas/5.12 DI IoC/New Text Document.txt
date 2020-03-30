@@ -1,0 +1,10 @@
+Mencionar tambien:
+    que es factible diseñar e implementar una arquitectura orientada al dominio (Siguiendo patrones con tendencia DDD)
+    sin implementar técnicas de desacoplamienteo (Sin IoC ni Di). no es algo obligatorio, pero si que favorece mucho al aislamiento
+    del dominio con respecto al resto de capas, lo cual si es un objetivo primordial en DDD,
+
+    La inversa también es cierta, es por supuesto también factible utilizar técnicas de desacoplamiento (Ioc y dependency Injection) em
+    arquitecturas no orientadas al dominio. 
+
+    En definitiva, si se hace uso de IoC y Di, es una filosofia de diseño y desarrollo que nos ayuda a crear un código mejor diseñado,
+    favorece, como deciamos el principio de single responsability.

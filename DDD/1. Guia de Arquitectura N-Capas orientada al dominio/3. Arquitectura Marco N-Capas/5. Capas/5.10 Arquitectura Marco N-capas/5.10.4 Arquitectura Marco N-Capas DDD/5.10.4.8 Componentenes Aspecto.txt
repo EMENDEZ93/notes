@@ -1,0 +1,6 @@
+Componentes/Aspectos Horizontales de la arquitectura:
+	Aspectos Horizontales de seguridad.
+	Gestión de operaciones.
+	Monitorización.
+	Correo Electrónico Automatizado.
+	Etc...

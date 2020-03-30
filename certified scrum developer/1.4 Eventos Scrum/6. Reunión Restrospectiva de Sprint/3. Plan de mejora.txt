@@ -1,0 +1,5 @@
+De todo lo anterior:
+	deberán salir un plan de mejorar priorizado que apoye la adaptación del proceso.
+	Muchas veces estos planes requieren más de un sprint para que puedan ser llevados a cabo, como es el caso de muchas veces de las prácticas
+	técnicas núevas que se incorporan al trabajo del equipo de desarrollo.
+	

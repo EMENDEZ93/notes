@@ -1,0 +1,6 @@
+3. Layered Supertype Pattern:
+    este concepto es realmente un patrón muy conocido denominado layered supertype pattern definido por Martin Fowler
+    que dice básicamente si los comportamientos y acciones comunes de un tipo de clases se agrupan en una clase base,
+    Esto eliminará muchos duplicados de código y comportamientos. 
+
+    El uso de este patrón es puramente por conveniencia y no distrae de prestar atención al dominio, en absoluto.

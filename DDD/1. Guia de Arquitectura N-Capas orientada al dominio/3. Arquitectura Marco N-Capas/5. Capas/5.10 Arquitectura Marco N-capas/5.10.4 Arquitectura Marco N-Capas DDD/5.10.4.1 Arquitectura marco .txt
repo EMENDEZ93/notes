@@ -1,0 +1,3 @@
+Arquitectura Marco N-Capas con orientación al Dominio:
+	El objetivo de esta arquitectura marco es estructura de una forma limpia y clara la complejidad de una aplicación empresarial basada en las diferentes capas de la arquitectura
+	, siguiendo el patrón N-Layered y la tendencias de arquitecturas en DDD.

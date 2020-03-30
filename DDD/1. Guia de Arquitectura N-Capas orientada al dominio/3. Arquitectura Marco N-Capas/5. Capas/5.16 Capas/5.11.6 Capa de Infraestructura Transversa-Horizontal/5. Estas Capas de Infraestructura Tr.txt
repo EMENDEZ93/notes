@@ -1,0 +1,4 @@
+Estas Capas de infraestructura Transversal:
+    engloban una cantidad muy grande de conceptos diferentes, muchos de ellos ralacionados con calidad de servicio
+    (QoS - Quality of Service) y realmente cualquier implementación ligada a una tecnologia/infraestructura concreta.
+    

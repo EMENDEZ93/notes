@@ -1,0 +1,3 @@
+Cuando Si diseñar e implementar módulos:
+    debera implementarse en practicamente la totalidad de las aplicaciones empresariales que tenga un volumen mediano/grande y 
+    sobre todo donde se pueda diferenciar diferentes áreas funcionales que sean bastantes independientes entre ellas.

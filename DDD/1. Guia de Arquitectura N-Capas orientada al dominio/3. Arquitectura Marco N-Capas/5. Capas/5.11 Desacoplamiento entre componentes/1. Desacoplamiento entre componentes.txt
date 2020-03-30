@@ -1,0 +1,4 @@
+Desacoplamiento entre componentes:
+    es fundamental destacar que no solo se deben de delimitar los componentes de una aplicación entre diferentes capas. 
+    Adicionalmente tambien debemos tener especial atencion en como interaccionan unos componentes/objetos con otros, es decir cómo se consumen y en espcecial
+    como se instancian unos objetos desde otros.

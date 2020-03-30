@@ -1,0 +1,3 @@
+El nombre de cada módulo deberia:
+    formar parte del lenguaje ubicuo de DDD, asi como cualquier nombre de entidades, clases, etc. 
+    

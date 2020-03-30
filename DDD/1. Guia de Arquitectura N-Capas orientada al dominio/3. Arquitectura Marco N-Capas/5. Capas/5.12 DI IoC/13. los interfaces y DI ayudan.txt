@@ -1,0 +1,4 @@
+Los interfaces y la inyeccion de dependencias:
+    ayudan a hacer que una aplicación sea extensible (tipo pluggable) y eso a su vez ayuda tambien al testing.
+    Podriamos decir que esta facilidad hacia el testing es un efecto colateral 'deseado', pero no el mas importante propocionado
+    por IoC y DI no son solo para favorecer las pruebas unitarias.

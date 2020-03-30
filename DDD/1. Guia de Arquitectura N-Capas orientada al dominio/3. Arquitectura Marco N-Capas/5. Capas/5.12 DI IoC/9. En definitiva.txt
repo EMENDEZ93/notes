@@ -1,0 +1,5 @@
+En definitiva:
+    los contenedores IoC y la Inyección de dependencias añaden flexibilidad y convellan a tocar el menor código posible según avanza
+    el proyecto. 
+
+    Añade comprensión y mantenibilidad del proyecto

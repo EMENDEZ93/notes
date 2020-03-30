@@ -1,0 +1,24 @@
+Aplicación:
+    como se ha explicado en la parte de arquitectura lógica de esta guiam esta capa debe ser bastante delgada,
+    simplemente invocar a otros componentes de otras capas teniendo en cuenta que aqui debemos implementar exclusivamente aspectos
+    requeridos por el funcionamiento concreto de la aplicación.
+
+    No debemos incluir aqui lógica de domino/negocio. en algunos proyectos, cabria la posibilidad de no necesitar de esta capa
+    dependen sencillamente de si aparece funcionalidad de servidor que no es lógica de dominio pero tiene que implementarse porque
+    lo requiere nuestra aplicación especifica. por ejemplo, el invocar una exportación de información a ficheros, etc.
+    (aunque la implementación de la acción final sea hecha relamente por clases de la capa de infraestructura).
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+            MainModule:
+                appServices
+            Core
+        Domain:
+        Infrastructure:
+    Database:
+    Solution items:
+
+    Cada capa con clases lógicas tendrá a su vez un proyecto de clases de testing (Pruebas unitarias).

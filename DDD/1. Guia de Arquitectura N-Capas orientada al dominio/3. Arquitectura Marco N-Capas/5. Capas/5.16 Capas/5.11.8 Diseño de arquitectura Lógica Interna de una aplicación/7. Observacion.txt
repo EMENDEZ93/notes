@@ -1,0 +1,7 @@
+Observaciones:
+    Sin embargo, aunque estas son las capas inicialmente propuesta para cubrir un gran porcentaje de aplicaciones N-Layered, la arquitectura base
+    esta abierta a la implementación de nuevas capas y personalizaciones necesarias para una aplicación dada (por ejemplo capa EAI para integración
+    con aplicaciones externas, etc).
+    Asi mismo,tampoco es obligatioa la implementación completa de las capas de componentes propuesta. 
+    Por ejemplo:
+        en algunos casos podria no implementarse la capa de servicios-web por no necesitar implementar accesos remotos, etc.

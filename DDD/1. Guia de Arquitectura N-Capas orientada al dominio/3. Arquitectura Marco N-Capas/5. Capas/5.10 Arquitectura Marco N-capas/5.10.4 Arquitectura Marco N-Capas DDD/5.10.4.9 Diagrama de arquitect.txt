@@ -1,0 +1,8 @@
+Diagrama de arquitectura N-Layer:
+	User interface:
+		Aplication:
+			Domain:	
+				Infraestructure:
+				
+    es importante resaltar que en algunos casos el acceso a las otras capas es directo, es decir, no tiene por qué haber una camino único
+	obligatorio pasando de una capa a otras.

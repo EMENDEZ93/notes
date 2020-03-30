@@ -1,0 +1,6 @@
+Cuando No implementar una arquitectura N-Capas DDD:
+    En aplicaciones pequeñas que una vez finalizadas se prevén pocos cambios, la vida de la aplicación será relativamente corta
+    y donde prima la velocidad en el desarrollo de la aplicación.
+    En estos casos se recomienda implementar la aplicación con tecnologias RAD, aun que tendrá la desventaja de implementar 
+    componentes más fuertemente acoplados y la calidad resultante de la aplicación será peor y el coste futuro de mantenimiento
+    probablemente sera mayor dependiendo de si la aplicación continuara su vida con un volumen grande de cambios o no.

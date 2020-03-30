@@ -1,0 +1,10 @@
+1. Aspectos Interesantes:
+	El otro aspecto interesante que adelantábamos anteriormente, es el hecho de que el acceso a algunas capas no es con un único camino ordenado por
+	diferentes capas, concretamente podremos acceder directamente a las capas de aplicación, de dominio y de infraestructura transversal siempre que lo
+	necesitemos.
+		Por ejemplo:
+			Podriamos acceder desde una capa de presentación web (no necesita interfaces remotos de tipo servicio-web), directamente a las capas inferiores que necesitemos
+			(Aplicación, Dominio, y algunos aspectos de infraestructura transversal). Sin embargo, para llegar a la capa de persistencia de datos (puede recordar en algunos
+			aspectos a la paca de acceso de datos DAL tradicional, pero no es lo mismo), es recomendable que siempre se acceda a través de sus objetos de coordinación del 
+			dominio (simpre se llamará a los repositorios con persistencia de datos, a través de los objetos 'Servicio' del Dominio), para que no se salten aspectos de negocio
+			(validaciones de datos requeridos por la lógica de negocio, seguridad, etc) implementados en la capa de dominio.

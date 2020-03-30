@@ -1,0 +1,8 @@
+Los servicios no deben tener estados (Deben ser stateless):
+    Esto no significa que la clase que lo implementa tenga que ser estática, podrá ser perfectamente una clase instanciable.
+    Que un servicios sea stateless significa que un programa cliente puede hacer uso de cualquier instancia de un servicios
+    sin importar su historia individual como objeto.
+
+    Adicionalmente, la ejecución de un serivicio hará uso de información que es accesible globalmente y puede incluso cambiar dicha 
+    información (Es decir, normalmente provoca cambios globales). pero el servicio no contiene estados que pueda afectar a su
+    propio comportamiento, como si tiene por ejemplo las entidades.

@@ -1,0 +1,16 @@
+Sprint Restrospective:
+	Objetivos:
+		Se revisa el proceso.
+		Se hace reflexión (hansei).
+		Se establecen posibles mejoras (kaizen).
+		Se montan planes de acción priorizados.
+		Se plantean hipótesis.
+		Se preparan experimentos.
+		Se validan hipotesis.
+		
+	Esta Reunión es la última del cicli de spring de scrum, y pretende inspeccionar el proceso para determinar todo aspecto o información que pueda ser útil
+	para mejorarlo.
+	
+	Se recomienda:
+		Que la duración por semana de sprint sea de 45 a 60 minutos.
+	

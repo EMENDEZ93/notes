@@ -1,0 +1,7 @@
+Capa de modelo de Dominio:
+	Entidades del Domino.
+	Subcapas de servicios del Domino.
+	Especificaciones de consultas (opcional)
+	Contratos/interaces de repositorios.
+	Clase base del domino (Patron Leyer-Supertype)
+	Subcapa de WorkFlows (opcional)

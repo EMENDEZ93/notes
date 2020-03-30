@@ -1,0 +1,9 @@
+El forzar a dichas operaciones:
+    (Normalmente operaciones de alto nivel y agrupadoras de otras acciones) a formar parte de objetos naturales de la capa,
+    distorionaria la definición de los objetos reales de la capa.
+    Por ejemplo:
+        La lógica propia de una entidad debe de estar relacionada con su interior, cosas como validaciones con respecto a sus
+        datos en memoria, o campos calculados, etc., pero no el tratamiento de la propia entidad como un todo.
+        un motor realiza acciones relativas al usu del motor, no a como se fabrica dicho motor. asi mismo, la lógica de una entidad
+        no debe encargarse de su propia persistencia y almacenamiento como un todo.
+    estos metodos deberán originarse en un servicio relacionado con dicha entidad.

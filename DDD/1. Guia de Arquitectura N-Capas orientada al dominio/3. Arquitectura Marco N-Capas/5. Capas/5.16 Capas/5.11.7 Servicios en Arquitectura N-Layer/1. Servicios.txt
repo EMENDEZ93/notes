@@ -1,0 +1,5 @@
+Servicios:
+    Como concepto genérico disponible en las diferentes capas.
+
+    Debido a que los servicios están presentes en diferentes capas de una arquitectura DDD,
+    resumimos a continuación en un cuadro especial sobre el concepto de servicio utilizado en DDD.

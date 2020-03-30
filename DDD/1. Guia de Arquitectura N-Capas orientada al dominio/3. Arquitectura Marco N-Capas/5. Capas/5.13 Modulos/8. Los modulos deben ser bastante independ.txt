@@ -1,0 +1,3 @@
+Los modulos deben ser bastante independientes:
+    unos de otros.
+    

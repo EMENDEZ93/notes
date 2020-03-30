@@ -1,0 +1,3 @@
+Normas:
+    Por regla general, esta regla deberá aplicarse en casi el 100% de aplicaciones empresariales compkejas, con un cierto volumen
+    y propietarias de muchas lógica de dominio.

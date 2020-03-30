@@ -1,0 +1,8 @@
+Otra razon por la que hacer uso de modulos:
+    está relacionada con la calidad del código.
+    es un principio aceptado por la industria el hecho de que el código debe tener un alto nivel de cohesión y un bajo nivel de 
+    acoplamiente.
+
+    Mientras que la cohesión empieza en el nivel de las clases y los métodos, tambien puede aplicarse a nivel de módulo.
+    Es recomendable, por lo tanto, agrupar las clases relacionadas en módulos de forma que proporcionemos la maxima cohesión
+    posible

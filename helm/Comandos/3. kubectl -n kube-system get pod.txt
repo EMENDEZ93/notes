@@ -1,0 +1,2 @@
+kubectl -n kube-system get pod:
+	Para ver que se ha creado un pod para el tiller en el namespace kube-system.

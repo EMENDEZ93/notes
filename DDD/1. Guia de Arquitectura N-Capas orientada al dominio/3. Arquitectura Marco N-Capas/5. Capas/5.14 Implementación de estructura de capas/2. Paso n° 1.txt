@@ -1,0 +1,3 @@
+Paso n° 1:
+    La solucion debe estar organizada y mostrar de forma clara y obvia donde está situada la implementación de cada capa y 
+    subcapa.

@@ -1,0 +1,3 @@
+El principio de inversión de dependencias establece:
+    1. Las capas de alto nivel no deben depender de las capas de bajo nivel. Ambas capas deben de depender de abstracciónes (Interfaces).
+    2. Las abstracciones no deben depender de los detalles. son los detalles (implementación) los que deben depender de las abstracciones (Interfaces).

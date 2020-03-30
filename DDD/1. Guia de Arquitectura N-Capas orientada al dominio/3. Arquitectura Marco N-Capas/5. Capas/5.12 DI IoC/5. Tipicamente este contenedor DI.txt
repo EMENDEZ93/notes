@@ -1,0 +1,12 @@
+Tipicamente este contenedor DI:
+    es proporcionado por un framework externo a la aplicación,
+    Como:
+        Unity
+        Clastle-windsor
+        Spring.Net
+        etc.
+    Por lo cual en la aplicación tambien se utilizará inversión de control al ser el contenedor (almacenado en una biblioteca) quien invoque el código de la aplicación.
+    
+    Los desarrolladores codificarán contra una interfaz relacionado con la clase y usarán un contenedor que inyecta instancias de objetjos dependientes en la clase
+    basada en el interfaz o tipo de objeto.
+    

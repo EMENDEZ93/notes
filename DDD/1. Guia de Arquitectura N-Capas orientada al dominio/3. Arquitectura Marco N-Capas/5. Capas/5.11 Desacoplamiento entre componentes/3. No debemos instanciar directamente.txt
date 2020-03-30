@@ -1,0 +1,14 @@
+En difenitiva:
+    para poder integrar esa capa de forma desacoplada, no debemos de instanciar directamente sus objetos.
+    Por ejemplo:
+        no instanciar directamente los objetos repositorio o cualquier otro relacionado con una tecnología concreta, de la infraestructura de nuestra aplicación).
+    Pero la esencia final de este punto, realmente trata del desacoplamiento entre cualquier tipo/conjunto de objetos, bien sea conjuntos de objetos diferentes
+    dentro del propio dominio.
+    Por ejemplo:    
+        para un pais, cliente o tipologia concreta, poder inyectar unas clases especificas de lógica de negocio.
+    o bien, en los componenetes de capa de presentación poder simular la funcionalidad de servicios-web, o en la capa de persistencia poder también simular otros
+    servicios-web externos y en todos esos casos realizarlo de forma sesacoplada para poder cambiar de ejecución real a la simulada o a otra ejecución real diferentes
+    con el menor impacto. en todos esos ejemplos tiene mucho sentido un desacoplamiento de por medio.
+
+    
+        

@@ -1,0 +1,7 @@
+Capa de presentación:
+	Esta capa es responsable de mostrar información al usuario e interpretar sus acciones.
+	Los componentes de las capas de presentación implementan por lo tanto la funcionalidad requerida para que los usuarios interactúen con la aplicación.
+	Normalmente es recomendable subdividir dichos componentes en varias sub-capas y aplicando patrones de tipo:
+		MVC.
+		MVP.
+		M-V-V-M.

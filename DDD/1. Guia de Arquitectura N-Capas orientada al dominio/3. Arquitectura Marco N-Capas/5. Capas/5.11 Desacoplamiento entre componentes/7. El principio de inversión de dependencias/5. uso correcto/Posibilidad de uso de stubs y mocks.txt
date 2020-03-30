@@ -1,0 +1,5 @@
+Posibilidad de uso de stubs y mocks:
+    en pruebas, es realmente un escenario concreto de cambio de un módulo por otro. este caso consiste por ejemplo en sustituir un módulo de acceso a datos reales
+    (a bases de datos o cualquier otra fuente de datos) por un módulo con interfaces similares pero que simplemente simula que accede a las fuentes de datos.
+    Mediante la inyección de dependencias puede realizarse este cambio incluso en tiempo de ejecución, cambiando simplemente una configuración especifica del 
+    xml de configuración, por ejemplo.

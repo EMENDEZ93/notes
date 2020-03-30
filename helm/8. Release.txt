@@ -1,0 +1,3 @@
+Release:
+	es como se llama las instalaciones concretas de una plicación (Chart). En tú clúster puedes tener farias releases del mismo chart, por ejemplo con distintas versions o con
+	distintos parámetros.

@@ -1,0 +1,62 @@
+Capa de dominio:
+    Esta es la capa más importante de nuestra arquitectura n-layer con orientación al dominio, puesto que es aqui donde implementamos
+    toda la lógica del dominio, entidades del dominio, etc.
+    Esta capa tiene internamente varias sub-capas o tipos de elementos.
+    
+    Se recomiendoa consolidad al máximo el número de proyectos requerido dentro de una misma capa. sin embargo, en este caso, es bueno
+    disponer de un ensamblado/proyecto especifico para las entidades.
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+            Core:
+                entities
+                test
+            MainModule:
+                entities
+                test
+        Infrastructure:
+    Database:
+    Solution items:
+
+    a nivel general, podemos disponer de un proyecto core de clases base y otras clases reutilizables de forma horizontal en todos 
+    los módulos funcionales del dominio.
+
+    Por cada modulo funcional de la aplicación:
+        ejemplo:
+            en este caso el llamado MainModule
+    implementaremos toda la lógica del módulo (servicios, especificaciones y contratos de repositorios)
+    dentro de un único proyecto (en este caso mainModule), pero necesitamos un proyecto aislado para las entidades del domino.
+    donde entity-framework nos genere nuestras clases entidad.
+
+    Modeling and Design:
+    Layers:
+        Presentation:
+        Distributed Services:
+        Application:
+        Domain:
+            MainModule:
+                contracts:
+                    BankAccount:
+                    Customer:
+                        CustomerCodeSpecifications.caso
+                        ICustomerRepository.cs                    
+                    Orders:
+                        IOrderRepository.cs
+                        OrderDateSpecification.cs
+                        OrderShippingSpecification.cs
+                Services:
+                    BankAccountService.cs
+                    CustomerService.cs
+                    ProductService.cs
+                Entities:
+                Tests:
+        Infrastructure:
+    Database:
+    Solution items:
+
+    Cada proyecto con clases lógicas tendrá a su vez un proyecto de clases de testing (pruebas unitarias) y pudieramos tener otros
+    proyectos de pruebas de integración y funcionales.

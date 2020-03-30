@@ -1,0 +1,2 @@
+kubectl port-forward name_pod 8080:8081:
+	acceder al pod mapeando el puerto del contenedor a localhost de la maquina host.

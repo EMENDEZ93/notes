@@ -1,0 +1,2 @@
+helm get values name_app:
+	variable personalizadas.

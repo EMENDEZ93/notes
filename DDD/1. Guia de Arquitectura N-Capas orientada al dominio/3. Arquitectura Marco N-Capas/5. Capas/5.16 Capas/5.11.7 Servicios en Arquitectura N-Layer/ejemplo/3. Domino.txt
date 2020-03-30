@@ -1,0 +1,11 @@
+Domino:
+    Servicio de domino de transferencia-bancaria
+    (Verbo transferir fondos)
+
+    coordina el uso de otros servicios de más bajo nivel como CuentraBancarisServicios y los objetos entidad como CuentraBancaria y otros objetos del 
+    dominio bancario.
+
+    Arranca una transacción atómica.
+
+    Proporciona confirmación del resultado asi como aprobaciones iniciales de viabilidad de la transacción.
+    

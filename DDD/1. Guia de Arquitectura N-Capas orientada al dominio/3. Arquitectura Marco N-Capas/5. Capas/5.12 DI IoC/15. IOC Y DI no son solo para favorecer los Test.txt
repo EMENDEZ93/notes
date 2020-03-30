@@ -1,0 +1,9 @@
+IOC Y DI no son solo para favorecer los test:
+    esto es fundamental, la inyiecciión de dependencias y los contenedores de inversión de control no son solo para favorecer el testing
+    de prueba unitarias e integración. Decir eso seria como decir que el propósito principal de los interfaces es facilitar el testing. nada
+    mas lejos de la realidad
+
+    DI e IoC tratan sobre desacoplamiento, mayor flexibilidad y disponer de un punto central donde ir que nos facilite la mantenibilidad  de nuestra
+    aplicaciones. 
+
+    El testing es importante, pero no es la primera razón ni la más importante por la que hacer uso de inyección de dependencias ni IoC.
