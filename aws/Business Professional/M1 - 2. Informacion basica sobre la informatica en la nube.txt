@@ -1,0 +1,31 @@
+Información básica sobre la informática en la nube:
+	para comenzar, en esta sección se repasa cierta información básica sobre la informática en la nube.
+	este repaso garantiza que sus futuras exploraciones a lo largo del curso comience con una base solida
+	
+	Es posible que haya oido que:
+		1. la informatica en la nube presenta un importante cambio en la manera en que se 
+			obtiene usa y administra la tecnologia.
+		2.	o que haya oido cómo la nube afecta los presupuestos de los organizaciones o cambian la manera
+			en la que las empresas pagan por servicios tecnologicos. todo eso sueba bien, pero 
+			que es exactamente la informatica en la nube?:
+				en aws, la frase informatica en la nube se refiere a la entrega bajo demanda de recursos informaticos
+				a través de internet con precios de pago por uso. 
+				En lugar de comprar, posser y mantener sus propios servidores y centro de datos, 
+				las organizaciones pueden adquirir tecnologias, como:
+					potencia de cómputo.
+					opciones de almacenamiento.
+					base de datos,
+					y otros servicios a medida que los necesiten. 
+					
+			¿Que es la informatica en la nube?:
+				Entre bajo demanda.
+				recursos de ti.
+				a travez de internet.
+				precios de pago por uso.
+					
+				en ciertos aspectos, la informatica en la nube es como accionar un interruptor para encender la luz,
+				como en un modelo de empresas de servicios públicos. 
+				el consumidor acciona el interruptor y la empresa de energia elétrica le envia electricidad
+				para satifacer su necesidad, del mismo mode, con la informatica en la nube, los servicios se 
+				entregan en respuesta a la necesidad de cada cliente. 
+				

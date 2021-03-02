@@ -1,0 +1,25 @@
+principios de liderazgo de aws:
+	cuando se determina qué hace que AWS sea único. es posible que le sea de ayuda comprender cuál 
+	es la motivación de aws. en aws, tenemos 14 principios de liderazgo que orientan nuestra decisiones 
+	de negocios.
+
+	1. el principio de liderazgo principal es tener fijación por el cliente, que se resume en el mensaje:
+		si los clientes son exitosos entonces AWS es exitoso. 
+		El exito del cliente se logra mejor con los socios. AWS tiene la meta de habilitar y colaborar con
+		sus socios para brindar una experiencia excepcional que transforme el negocio de nuestros clientes. 
+		
+		Estos son algunos de los principios de liderazgo. 
+		estos impulsan las interacciones con los clientes y diferencian a AWS de otras empresas. 
+		ganarse la confianza del cliente ir más alla de sus preocupaciones, tener iniciativa y obtener
+		resultados son los valores que han otogado a AWS el rol de liderazgo en el espacio que ocupa la nube
+		publica de carácter empresarial. 
+		
+	Principios:
+		pasion por el cliente.
+		aprender y sentir curiosidad.
+		ganarse la confianza.
+		ir más alla.
+		inventar y simplificar.
+		pensar a lo grande.
+		tener iniciativa.
+		obtener resultados. 

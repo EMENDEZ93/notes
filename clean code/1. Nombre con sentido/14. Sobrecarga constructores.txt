@@ -1,0 +1,7 @@
+Sobrecarga constructores:
+	use métodos de factoria estáticos con nombres que describan los argumentos.
+	Por ejemplo:
+		Complex fulcrumpoin = Complex.PromRealNumber(23.0);
+	Es mejor que:
+		Complex fulcrumpoin = new Complex(23.0);
+	Refuerce su uso convirtiendo en privados sus constructores correspondientes.

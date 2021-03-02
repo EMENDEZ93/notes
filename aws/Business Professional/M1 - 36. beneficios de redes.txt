@@ -1,0 +1,40 @@
+Beneficios de redes:
+    aislar la infraestructura de la nube, escalar la capacidad de gestion de solicitudes.
+
+    además de diversas opciones de conectividad, las redes de aws ofrecen muchos beneficios. 
+    a acontinuación, se muestra algunos beneficios clave. 
+
+    Primero:
+        los servicios de redes de aws son elasticos. 
+        Por ejemplo:
+            route 53 esta diseñado para realizar es escalado automatico, para manejar grandes volumenes de consultas.
+            sin nunguna intervencion de sus clientes. 
+
+    segundo:
+        los clientes pueden regitrarse para el servicios de aws direct connect utilizando la consola de adminisración de aws. 
+        la consola proporciona una vista unica para que sus clientes puedan administrar de manera eficiente sus conexiones.
+        en interfaces virtuales. 
+
+    tercero:
+        los servicios de redes de AWS son seguros. Amazon VPC proporciona caracteristicas de seguridad avanzadas, como grupos 
+        de seguirad y listas de control de acceso a la red, para habilitar el filtrado entrante y saliente a nivel de instancias y 
+        a nivel de subred. 
+
+    Por último:
+        los servicios de redes de aws son rentable. 
+        Por ejemplo:
+            no hay cargos adicionales por crear y usar la VPC en si.
+            si conecta su VPC a su centro de datos corporativo mediante la conexión de VPN con hardware opcional, se 
+            cobrara por hora de VPN. 
+
+    Elasticos:
+        escalando para la gestion de solicitudes.
+    
+    Facilidad de uso:
+        ver conexiones en una única vista.
+
+    Seguro:
+        conextar redes virtuales fisicas y privadas. 
+
+    Reducción de los costos:
+        sin cargos adicionales por utilizar una VPC. 

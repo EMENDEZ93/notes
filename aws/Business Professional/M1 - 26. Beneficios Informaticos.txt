@@ -1,0 +1,34 @@
+Beneficios informaticos:
+	a continuación, se muestran los beneficios de los servicios de informatica de aws. 
+	
+	Amazon EC2:
+		Escala la capacidad a medida que cambian los requisitos informaticos. 
+		es elastico y puede aumentar o disminuir la capacidad en minutos. 
+		los clientes pueden comisionar una, cientos o incluso miles de instancias de servidor simultaneamente. 
+		debida a que todo esto se controla con api de servicios web, las aplicaciones pueden escalar en forma 
+		automatica en forma ascendente y descendente segun sus necesidades. 
+		
+	Flexible:
+		Redimensionar la capacidad informática.
+		Amazon EC2 es flexible, sus clientes pueden elegir entre skypes, sistemas operativos y paquetes de software
+		de varuas instancia. 
+		Amazon EC2 permite a los clientes seleccionar la configuración de la memoria CPU, alcemamiento instantáneo 
+		e impulsar el tamaño de partición óptimo para sus sistemas operativos y aplicaciones.
+		Por ejemplo:
+			las elecciones de sistemas operativos incluyen numerosas distribuciones de servidor de linux y de microsft
+			windows server. 
+			
+	Seguro:
+		configurar la seguridad y el acceso a la red.
+		Amazon EC2 trabaja junto con amazon virtual private cloud pare proporcionar una funcionalidad de red 
+		sólida y segura para recursos informáticos. 
+		
+		Los clientes tiene el control absoluto de sus recursos informaticos y pueden configurar el acceso a las redes
+		y seguridad en una instancia de amazon EC2. Sus clientes pueden tambien crear AMI que contengan las configuraciones
+		de seguridad quer se dupliquen cada vez que lancen el mismo tipo de instancia. 
+		el etiquetado realiza un seguimiento del inventario en la nube. 
+		
+	Reducción de los costos:
+		pague solo por la capacidad utilizada. 
+		Amazon EC2 pasa los beneficios financieros de la escala de amazon a sus clientes. 
+		Sus clientes pagan una tarifa baja para la capacidad de cómputo que consumen. 

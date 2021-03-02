@@ -1,0 +1,17 @@
+Aprendizaje del video del cliente:
+    segun el video. ¿Como ayuda cognizant a sus clientes a adoptar la agilidad?:
+        cognizant esta ayudando a sus clientes a reducir la necesidad de infraestrcutura de TI. 
+        al migrar a una infraestrcutura en la nube, se reduce significativamente el tiempo que tardan los desarrolladores 
+        en aprovisionar nuevos recursos. 
+
+        cognizant tambien esta ayudando a los clientes a aprovechar los servicios aws para crear aplicaciones.
+        el uso de los serivioc de aws como bloques de creación aumenta la velocidad de comercialización y coloca la aplicaciones
+        en las manos de los clientes de manera más rapida.
+
+        Por ultimo, cognizant esta ayudando a sus cliente a mejorar la rentabilidad. la experimentación en la reducción 
+        de costos permite a los clientes arriesgarse más con las ideas y a impulsar la innovación. 
+
+    Piense en las forms en que cognizant ayuda a sus clientes a adoptar la agilidad:
+        Reducir la huella de la infraestructura de ti. 
+        Aprovechar los servicios de aws para crear aplicaciones.
+        Mejorar la eficiencia de costos. 

@@ -1,0 +1,25 @@
+Servicios de administración y gobernanza:
+    control total para su entorno en la nube. 
+    aws disponen de varias capacidades de monitorización y auditoria. 
+
+    Amazon CloudWatch:
+        proporciona la monitorización de los recuros de la nube de aws. y las aplicaciones que los clientes
+        ejecutan en aws. 
+
+        Monitoriza la métrica del sistema. como el suso de redes y cpu junto con la metrica personalizada, 
+        como la carga o el tiempo de ejecución de consultas. los clientes pueden crear eventos de escalado 
+        notificaciones y otras respuestas alrededor de esos métricas de operaciones para mantener sus 
+        aplicaciones en funcionamiento sin problemas. 
+
+        amazon cloudwatch puede monitorizar los recursos de aws, como en instancias de amazon EC2, tablas
+        de amazon dynamoDB e instancias de bases de datos de amazon rds, asi como metricas personalizadas 
+        generadas por sus aplicaciones de clientes, servicios y archivos de registros asociados. 
+
+        aws cloudTrail habilida la gobernanza, el cumplimiento y la auditoria operacional y de riesgo de las 
+        cuentas de aws de sus clientes. los clientes pueden utilizar el registro de cloudtrail, monitorizar
+        continuamente y retener la actividad de la cuenta relacionada con las acciones en sus infraestructura
+        aws. esta historia de eventos simplifica el analisis de seguridad. el seguimiento de cambios de 
+        recursos y la solución de problemas. 
+
+        aws systems manager le ofrece a los cliente visibilidad y control de sus infraestructuras en aws. 
+        desde una interfaz de usuario no identificados pueden ver datos operacionales desde varios servicios de aws

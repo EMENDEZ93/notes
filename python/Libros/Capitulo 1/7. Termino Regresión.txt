@@ -1,0 +1,5 @@
+El término regresión fue ideado por Francis Galton en su articulo:
+	regressión towards mediocrity in hereditary stature (regresión hacia la mediocridad en estatura hereditaria)
+	en 1886. Galton describio el fenomeno biologico segun el cual la variación de altura en una población no aumenta
+	con el tiempo- El observo que la altura de los padres no pasa a los hijos, pero que, en cambio, la altura de los 
+	hijos esta retrocediendo hacia la media de la población.

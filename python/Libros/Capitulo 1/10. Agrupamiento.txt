@@ -1,0 +1,7 @@
+el agrupamiento:
+	es una técnica exploratoria de analisis de datos que nos permite organizar un monton de información en subgrupos significativos (Cluster)
+	sin tener ningun conocimiento previo de los miembros del grupo .
+	
+	Cada cluster que surge durante el analisis define un grupo de objetos que comparten un cierto grado de semejanza
+	pero difiere de los objetos de otros clusters. razon por la cual el agrupamiento tambien se denomina a veces 
+	clasificación sin supervisión

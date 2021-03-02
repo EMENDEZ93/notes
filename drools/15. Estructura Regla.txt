@@ -1,0 +1,28 @@
+Functions in DRL:
+    Documentation:
+        Function -> Return-Type:
+            name -> "(" -> params -> ")" -> "{":
+                -> code ->
+                    "}"
+
+    Example function declaration with a rule (option 1)
+    function String hello(String applicantName) {
+        return "Hello " + applicantName + "!";
+    }
+
+    rule "Using a function"
+      when
+        // Empty
+      then
+        System.out.println( hello( "James" ) );
+    end
+
+    Example function import with a rule (option 2)
+    import function my.package.applicant.hello;
+    
+    rule "Using a function"
+      when
+        // Empty
+      then
+        System.out.println( hello( "James" ) );
+    end    

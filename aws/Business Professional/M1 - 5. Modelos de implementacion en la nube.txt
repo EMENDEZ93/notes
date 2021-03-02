@@ -1,0 +1,24 @@
+Modelos de implementación en la nube:
+	entonces, en que lugar se encuentran los recursos de TI. 
+	Si analiza los diferentes modelos de implementación en la nube, puede ver las posibilidades. 
+	
+	Los modelos de implementación en la nube vienen en tres plataformas:
+		nube privada.
+		nube publica.
+		nube hidrida.
+		
+	la implementación de recursos locales mediante herramientas de virtualización y de administración de 
+	recursos a veces se denomina nube privada. y la implementación local carece de muchos de los beneficios 
+	de la informática en la nube. aunque a veces se prefiere por su capacidad de proporcionar recursos dedicados.
+	de cierta forma, esto puede estar vinculado con la utilización de una infraestructura de TI heredada con
+	tecnologias nuevas, como la virtualización y la administración de aplicaciones, para imitar un entorno en la nube
+	verdadero. 
+	
+	Una nube publica hace que los recursos esten disponibles para el publico en general en internet. 
+	las aplicaciones basadas en la nube se implementan por completo en la nube y todas las partes de la aplicación
+	se ejecutan en la nube. estas aplicaciones o se crearon en la nube o se migraron desde una infraestructura existente
+	para aprovechar los beneficios de la informatica en la nube.
+	
+	Una implementación de nube hibrida conecta la infraestructura y las aplicaciones entre los recursos basados en la
+	nube y los recursos locales. las organizaciones utilizan esta para ampliar su infraestructura hacia la nube al tiempo
+	que conectan los recursos en la nube a los sistemas internos. 

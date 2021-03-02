@@ -1,0 +1,46 @@
+¿Que hace que aws sea único?:
+	se distinga de otros proveedores de la nube?
+	
+	Liderazgo empresarial:
+		aws ha estado en el negocio desde 2006, y ha estado al servicio de las empresas más pequeñas y
+		las empresas más grandes durante más de 12 años, lo que nos ha convertido en la plataforma en la
+		nube más madura del mercado.
+		
+	Variedad y penetración de servicios:
+		actualmente, aws tiene más de 165 servicios, y continúa ampliando su plataforma a una gran velocidad
+		los servicios cubren todo:
+			informatica básicos.
+			procesos empresariales.
+			bases de datos. 
+			analisis.
+			aprendizaje automatico.
+			IoT.
+				
+	Ritmo de innovación:
+		aws tiene un extremadamente rapido ritmo de innovación, con más de 1927 nuevas caracteristicas impulsadas
+		por los cliente en 2018, una mayor cifra en comparación con 1439 en 2017 y 1017 en 2016.
+		
+	Presencia Mundial:
+		aws cuenta con la mayor presencia global con 61 zonas de disponibilidad en 20 áreas geograficas de todo 
+		el mundo, y ha anunciado que tiene planes para crear otras 12 zonas de disponibilidad y otras cuatro
+		regiones de aws. 
+		
+	Cultura Amazon:
+		la cultura de amazon tiene una visión a largo plazo en cunato a la pasión por los clientes.
+		la pasión por los clientes se muestra en la filosofia de los precios, incluidas 72 reducciones de precios hasta
+		la fecha, y en la forma en que aaw centra sus innovaciones de hoja de ruta en torno a las solicitudes de los clientes
+		
+	La más grande comunidad de socios:
+		la red de socios de aws (apn) ahora tiene decenas de miles de socios consultores y de tecnologia, entre ellos
+		35000 nuevos socios de apn desde 2016. AWS entiende que los servicios y soluciones de los socios ayudan a los
+		clientes a tener exito. 
+		
+	Seguridad:
+		proteger los datos del cliente es la mayor prioridad de aws, y la infraestructura global esta diseñada y
+		administrada siguiendo las practicas recomendadas de la industria de la seguridad y los estándares de 
+		conformidad más exigentes. aws dispone de 58 certificaciones de conformidad. 
+	
+	Nube hibrida:
+		aws ofrece a sus clientes un conjunto más amplio de funciones hibridas que el resto de proveedores de la nube.
+		los clientes pueden elegir ejecutar sus cargas de trabajo en las instalaciones y en la nube; con la combinación 
+		que resulte más apropiada para las necesidades del negocio. 

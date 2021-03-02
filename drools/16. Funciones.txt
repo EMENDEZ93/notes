@@ -1,0 +1,28 @@
+Funciones:
+    Las funciones en los archivos DRL ponen código semántico en su archivo fuente de reglas en lugar de en las clases Java. 
+    Las funciones son especialmente útiles si una parte action ( then) de una regla se usa repetidamente y solo los parámetros 
+    difieren para cada regla. Por encima de las reglas en el archivo DRL, puede declarar la función o importar un método estático
+    desde una clase auxiliar como una función, y luego usar la función por nombre en una acción ( then) parte de la regla.
+
+    Los siguientes ejemplos ilustran una función declarada o importada en un archivo DRL:
+    
+    Ejemplo de declaración de función con una regla (opción 1)
+    function String hello(String applicantName) {
+        return "Hello " + applicantName + "!";
+    }
+    
+    rule "Using a function"
+      when
+        // Empty
+      then
+        System.out.println( hello( "James" ) );
+    end
+    Ejemplo de función de importación con una regla (opción 2)
+    import function my.package.applicant.hello;
+    
+    rule "Using a function"
+      when
+        // Empty
+      then
+        System.out.println( hello( "James" ) );
+    end

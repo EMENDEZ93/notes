@@ -1,0 +1,16 @@
+Evalucación de conocimiento:
+    asocie cada requisito de usuario con el servicio de aws:
+        Amazon EC2:
+            capacidad de computo segura y de tamaño modificable.
+
+        Amazon CloudWatch:
+            Monotización de recursos en la nube de aws. 
+
+        Amazon RDS:
+            copias de seguridad de bases de datos administración de parches y replicación. 
+
+        Amazon Route 53:
+            enrutamiento de usuarios finales a aplicaciones de internet.
+
+        Amazon S3:
+            Almacenamiento en internet para copias de seguidad, video y contenido estatico.

@@ -1,0 +1,12 @@
+Beneficios de la administración y la gobernanza:
+    control total para su entorno en la nube.
+    a continuación, vera algunos de los beneficios de herramientas de gobernanza y administración de aws 
+
+    en primer lugar, los clientes pueden mantener controles de confianza y uniformes sin restringir la velocidad
+    de desarrollo. 
+
+    aws proporciona un a conjunto de herramientas de administración que funcionan juntas y estan integradas con cada parte de la
+    platafoma de aws.
+
+    em segundo lugar, los clientes pueden aprovisionar, monitorizar y automatizar en forma programática, todos los componente en 
+    su entorno en la nube. 

@@ -1,0 +1,15 @@
+No haga juegos de palabras:	
+	evite usar la misma palabr con dos fines distintos:
+		suele hacerse en juegos de palabras.
+	si aplica la regla de una palabra por concepto, acabara con muchas clases que
+	por ejemplo:
+		tengan un método add.
+	mientras las lista de parámetros y los valores devueltos de los distintos métodos add sean semánticamente equivalentes, no hay problema.
+	Sin embargo, alguien puede decidir usar la palabra add por motivos de coherencia, aunque no sea en el mismo sentido.
+	Imagine:
+		que hay varias clase en las que add crea un nuevo valor sumando o concatenando dos valores existentes, imagine ahora que crear una nueva clase
+		con un método que añada su parámetro a una colleción. ¿Este método debe tener el método add? parece coherente ya que hay otros muchos métodos dd, pero
+		en este caso hay una diferencia semántica. de modo que debemos usar un nombre como insert o append.
+	llamar add al nuevo método seria un juego de paabras.
+	nuestro objetivo, como autores, es facilitar la comprensión del codigo. Queremos que el código sea algo rápido, no un estudio exhaustivo. queremos usar un modelo en el que
+	autor sea el reponsable de transmitir el significado, no un modelo academico que exija investigar el significado mostrado.

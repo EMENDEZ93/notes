@@ -1,0 +1,5 @@
+Objetivos:
+    identificar la red de socios de AWS (APN) y sus beneficios.
+    distinguir entre los socios consultores y los tecnológicos.
+    identificar los niveles de socios de apn y los requisitos de dichos nivels. 
+    identificar los programas y los beneficios de apn para los socios tecnologicos y consultores.

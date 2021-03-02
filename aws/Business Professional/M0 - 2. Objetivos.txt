@@ -1,0 +1,19 @@
+Objectivos:
+	Este curso lo guia a travéz del proceso de convertise en un AWS Trusted Advisor
+	
+	1. Comenzará por explorar la tecnología en la nube.
+	1.1 Explorar la tecnologia de la nube de aws y su importancia para los socios. 
+	
+	2. Las herramientas y los recursos para crear y desarrollar sus negocios de amazon web services o aws.
+	2.1 Identificar los productos y servicios de aws, asi como casos prácticos y estrategias.
+		
+	3. Además, obtendrá más información sobre los programas de socios de aws, que están diseñados para respaldar
+		sus objetivos comerciales únicos.
+	3.1 Utilizar la comunidad de socios.
+		
+	4. Podra ver cómo diferenciar sus negocios en aws en función de sus áreas de especialidad y conectarse con clientes
+		actuales y potenciales.
+	4.1 explorar estrategias de comercialización.	
+		
+	5. en el camino, conocerá a Julian un consultor de TI. tambien esta emprendiendo su recorrido como socio y aplicando
+		las lecciones aprendidas en cada módulo a su propio negocio.

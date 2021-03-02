@@ -1,0 +1,36 @@
+Sesiones KIE:
+	En drools, una sesión kie almacena y ejecuta datos de tiempo de ejecución. la sesión kie se crea desde una 
+	base kie o directamente desde un contenedor kie si ha definido la sesión kie en el archivo descriptor del módulo 
+	Kie (kmodule.xml) para su proyecto.
+	
+	Ejemplo de configuración de sesión KIE en un kmodule.xmlarchivo
+		<kmodule>
+			...
+			<kbase>
+				...
+				<ksession name="KSession2_1" type="stateless" default="true" clockType="realtime">
+				...
+			</kbase>
+			...
+		</kmodule>
+	
+	una base KIE es un repositorio que usted define en el archivo descriptor del módulo KIE (kmodule.xml) para su proyecto y 
+	contiene todo en drools, pero no contiene ningun dato de tiempo de ejecución.
+	
+	Ejemplo de configuración base de KIE en un kmodule.xmlarchivo:		
+		<kmodule>
+			...
+			<kbase name="KBase2" default="false" eventProcessingMode="stream" equalsBehavior="equality"
+			declarativeAgenda="enabled" packages="org.domain.pkg2, org.domain.pkg3" includes="KBase1">
+			...
+			</kbase>
+			...
+		</kmodule>		
+		
+		
+	Una sesión kie puede ser sin estado o con estado. en una sesión kie sin estado, los datos de una invocación previa de la sesion
+	kie (el estado de sesión anterior) se descartan entre invocaciones de sesión. En una sesión Kie con estado, esos datos se retiene,
+	tipo de sesión Kie que utliza depende de los requisitos de su proyecto y de como desea que se conserven los datos de diferentes 
+	invocaciones de activos.
+		
+		

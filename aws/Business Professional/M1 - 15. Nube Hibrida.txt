@@ -1,0 +1,24 @@
+Nube Hibrida:
+	la nube hibrida de aws tambien hace que aws sea único. 
+	
+	¿Como ayudan las capacidades hibridas a los socios de apn a hacer la transición de ti tradicional a la nube?
+	casi todos los clinete de aws que tienen una infraestructura local usan una arquitectura hibrida. 
+	Muchos socios de apn ayudan a los clientes a administrar a la perfección una combinación de cargas de trabajo en
+	las nubes locales tradicionales y AWS, lo que los ayuda a aprovechar las inversiones existentes y a obtener los
+	benefinicos de la nube de aws, 
+		por ejemplo:
+			VMware Cloud on aws es una nueva solución que simplifica aun mas la forma en que un cliente puede ejecutar
+			cargas de trabajo hibridas en la nube de aws. 
+	
+	VMware cloud on aws es el unico servicio proporcionado, vendido y compatible con VMware permite a los 
+	clientes utilizar la virtualización y el software de administración de VMware para implementar y adminitrar 
+	cargas de trabajo de VMware en todo los entornos locales y de aws los cliente pueden aprovechar sus inversiones 
+	existentes en los conjuntos de habilidades y las herramientas de VMware sin realizar inversiones adicionales, y 
+	a la vez aprovechar la flexibilidad y rentabilidad de la nube de aws. 
+	
+	Aws ofrece una integración perfecta con los centro de datos locales existentes.
+	
+	Ejecute facilmente las cargas de trabajo de VMware en AWS con una implementación y administración ininterrumpidas. 
+	
+	AWS ofrece el único servicio entregado, vendido y admitido por VMware disponible en una nube public lider.
+ 

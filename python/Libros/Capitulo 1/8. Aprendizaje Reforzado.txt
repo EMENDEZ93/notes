@@ -1,0 +1,11 @@
+Aprendizaje Reforzado:
+	este tipo de aprendizaje, el objetivo es desarrollar un sistema (Agente) que mejore su rendimiento
+	basado en interacciones con el entorno. como la información sobre el estado actual del entorno
+	normalmente tambien incluye una señal de recompensa. podemos pensar en el aprendizaje reforzado como un
+	campo relacionado con el aprendizaje supervisado.
+	
+	Sin embargo, en el aprendizaje forzado este feedback no es el valor o la etiqueta correctos sobre el terreno
+	sino una medida de cómo ha sido medida la acción por parte de una función de recompensa. 
+	
+	Atravez de su interacción con el entorno, un agente puede utilizar el aprendizaje reforzado para aprender una seria de acciones que maximicen
+	esta recompensa mediante un enforque experimental de ensayo-error o una planificacion deliberativa.

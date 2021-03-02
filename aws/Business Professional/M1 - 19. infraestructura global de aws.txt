@@ -1,0 +1,33 @@
+Infraestructura global de aws:
+	otro beneficio de aws es su infraestructura global. 
+	aws creó, mantiene y sigue expandiendo una infraestructura global que ofrece una disponibilidad continua de
+	la nube para sus aplicaciones. sus clientes necesitan este nivel de disponibilidad para seguir ejecutando
+	sus aplicaciones empresariales. 
+	
+	aws consigue una alta desponibilidad al admitir una infraestructura segura, redundante y global 
+	que se divide:
+		regiones.
+		zonas de disponibilidad.
+		ubicaciones de borde.
+		
+	aws disponde de 20 regiones, 61 zonas de disponibilidad y 149 ubicaciones de borde. 
+	
+	Las regiones de aws son el nivel más alto de la infraestructura global de aws.
+	Cada región se localiza en un área geografica diferente que tiene varias ubicaciones aisladas entre si, 
+	que se denominan zonas de disponibilidad. 
+	
+	Las AZ pueden tener varios centro de datos, y a escala completa pueden incluir cientos de miles de servidores. 
+	al aislar las regiones se consigue la mayor tolerancia a errores posible en estabilidad. En una emergencia, la 
+	tolerancia a errores permite que un sistema mantega operaciones continuas cuando algunos de sus componentes 
+	fallan. en los casos en que se consideran los desastres naturales o las lineas de error.
+	AWS aisla su zona para que no puedan quedar facilmente al mismo tiempo. 
+	
+	Por ejemplo:
+		en las areas donde los terremotos son un riesgo, aws no creara dos AZ en la misma linea de error. 
+		cuando lance un servidor virtual en la nube, puede seleccionar una zona o dejar que aws elija una por usted. 
+		si su cliente distribuye instancias en varias zonas, estas pueden diseñar aplicaciones. de mono que si una 
+		instancia falla, una instancia en otra zona puede manejar las solicitudes. 
+		
+	para entregar contenido a los usurios finales, las ubicaciones de borde de aws, que son ubicaciones más pequeñas 
+	en regiones y zonas de disponibilidad, 	ayudan a acelerar el procesamiento de solicitudes al permitir que el codigo
+	se ejecute más cerca de las personas que utilizan las aplicaciones. 

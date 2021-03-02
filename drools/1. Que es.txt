@@ -1,0 +1,5 @@
+Que es Drools:
+	el motor drools es el motor de reglas de Drools.
+	El motor drools almacena, procesa y evalua datos para ejecutar las reglas de negocio o los modelos de decisión que usted defina.
+	La función Básica de motor Drools es hacer coincidir los datos entrantes, o los hechos, con las condiciones de las reglas y 
+	determinar si y como ejecutar las reglas.

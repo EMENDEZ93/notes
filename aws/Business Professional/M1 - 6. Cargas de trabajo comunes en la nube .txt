@@ -1,0 +1,23 @@
+Cargas de trabajo comunes en la nube:
+	como ve, los servicios en la nube pueden utilizarse en una amplia variedad de formas por 
+	una amplia variedad de personas en empresas tomese un momento para pensar algunas formas en las que 
+	los clientes puedan aprovechar la nube para administrar tareas. 
+	
+	Aplicaciones web orientadas al cliente:
+		que impulsen sitios web:
+			ecommers 
+			mobile.
+			gaming
+			social media. 
+			marketing websites. 
+			
+	Aplicaciones empresariales personalizadas:
+		para respaldar necesidades de las funciones internas:
+			RR.
+			HH.
+			Finanzas. 
+			Ventas.
+			
+	Big data e informática de alto rendimiento:
+		
+	Copias de seguridad y recuperación de desastres.

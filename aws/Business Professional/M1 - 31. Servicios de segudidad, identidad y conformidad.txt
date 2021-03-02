@@ -1,0 +1,20 @@
+Servicios de seguridad, identidad y conformidad:
+	cifrado, administración de acceso y cargas de trabajo reguladas y protegidas.
+	habilita a los clientes controlar en forma segura el acceso a los servicios y recursos de aws para sus 
+	clientes. 
+
+	IAM habilita a los negocios a crear y administrar usuarios en aws. 
+	tambien los habilita para gerantizar acceso a los recursos de aws para usuario administrados 
+	fuera de aws. 
+	por ejemplo:
+		el directorio de intercorporaciones.
+		AWS directory service es un servicio administrado que permite a los clientes conectar sus recursos de 
+		aws con una versión local existente de microsoft active directory o establecer un nuevo directorio
+		independiente en la nube de aws. 
+
+	el HSM de la nube de aws ayuda a los cliente a cumplir requisitos de conformidad normativa y contractual
+	y corporativa para la seguridad de los datos.
+
+	al usuar un módulo de seguridad de hardware dedicado y aplicaciones de HSM en la nube de aws. 
+	Con el HSM de la nube, los clientes controlan las claves de cifrado y las operaciones criptográficas
+	realizadas por hsm 

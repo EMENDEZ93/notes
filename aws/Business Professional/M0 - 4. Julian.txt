@@ -1,0 +1,27 @@
+Julian:
+	es el principal representante de ventas en AnyCompany Consulting.
+	
+	AnyCompany:
+		ayuda a organizaciones a crear soluciones de TI locales y tradicionales con centro de 
+		datos que pertenecen a las empresas en función de las tendencias recientes, Julian sabe en qúe áreas 
+		están evolucionando las necesidades empresariales de sus clientes.
+	
+		Ejemplo:
+			se dio cuenta de que sus clientes tiene una necesidad cada vez mayor de ofrecer servicios a mercados
+			internacionales. Además, necesitan aumentar la velocidad y la agilidad para respaldar a sus bases de
+			clientes cada vez mayores y a la vez, reducir los costos de infraestructura relacionados con la ejecución
+			y el mantenimiento de cun centro de datos. 
+			
+		Julian considera que estos desafios pueden resolverse mediante una arquitectura basada en la nube
+		donde sus clientes puedan implementar por completo una aplicación en la nube, o bien migrar desde una 
+		infraestructura existente. Con esta idea en mente Julian se propone encontrar recursos y formación técnica
+		basados en soluciones, de manera que su empresa pueda ofrecer servicio en la nube que aborden las ineficiencias
+		asociadas con la TI tradicional.
+		
+		Durante su investigación, quedó impresionado con la fiabilidad y la amplia variedad de productos y servicios de aws. 
+		con esos beneficios en mente:
+			Reliability.
+			Variety.
+			Security.
+		decidio enfocarse en la nube de aws como una solución para su empresa. 
+			

@@ -1,0 +1,4 @@
+Hacer predicciones sobre el futuro con el aprendizaje supervisado:
+	el objetivo principla del aprendizaje supervisado es aprender un modelo, a partir
+	de datos de entrenamiento etiquetados, que nos permite hacer predicciones sobre
+	datos futuros o no vistos.

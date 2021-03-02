@@ -1,0 +1,20 @@
+Camino al exito de los socios:  
+    Registrados: -> Socios Tecnologicos & Consultores 
+        Selectos: -> Socios Tecnologicos & Consultores
+            Avanzados: -> Socios Tecnologicos & Consultores 
+                preferentes. -> Socios Consultores
+        
+    Aqui, puedes ver el camino al éxito de los socios. en el resto del modulo, se explica de que manera usted y su empresa pueden
+    recorrer este camino para alcanzar sus objetivos.
+
+    Conocera los cuatro niveles:
+        registrado.
+        selecto.
+        Avanzado.
+        Preferente.
+
+    Todos los socios comienzan en el nivel registrado, y usted aprendera cómo se aplican estos niveles a los socios consultores y 
+    a los Tecnologicos. 
+
+    Tambien aprendera sobre los requisitos para cada nivel, independientemente del tipo de socio, asi como los beneficios que se 
+    obtiene en cada uno y los programas de socios en los que puede participar a fin de que su negocio y empresa se destaquen. 

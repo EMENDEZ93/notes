@@ -1,0 +1,38 @@
+Servicio de almacenamiento:
+	aws cuenta con varios servicos de almacenamiento, inclusive el almacenamiento de objetos duradero y 
+	escalable llamado amazon simple storage service (S3). y un almacen de bloques denomidado Eastic block store (EBS)
+	
+	Amazon S3:
+		es un almacenamiento para internet diseñado para brindar a los desarrolladores una informatica en la a 
+		escala web más sencilla. proporciona una interfaz de servicios web simple que puede utilizarse para almacenar
+		y recuperar cualquier volumen de datos en cualquier momento, desde cualquier lugar de la web. 
+		
+		almacena datos de manera fidedigna con una duración de hasta el 99.999 % y una disponibilidad de 99.99 %.
+	
+	Amazon EBS:
+		es como un disco duro; los clientes pueden crearle particione, formatearlo e impulsar desde él sus sistemas 
+		operativos. 
+		ofrece volumenes de almacenamiento a nivel de bloque persistentes para utilizarlos con instancias de amazon 
+		EC2 en la nube de aws. cada volument de amazon EBS se replica automáticamente en su zona de disponiblidad para 
+		progeter los sistemas del cliente de errores de componentes, ofreciendo una alta durabilidad y disponibilidad. 
+		amazon EBS es útil para las cargas de trabajo basadas en archivos, aplicaciones empresariales, bases de datos 
+		relacionales, bases de datos NoSql y aplicaciones en las que se requiere consistencia y rendimiento de baja 
+		latencia. 
+		
+	para un sitio web que contiene numerosas imágener y videos, los clientes pueden usar amazon EBS para su sistema 
+	operativo y archivos del sitio web y amazon S3 para las imágenes estatica y videos, amazon S3 es ideal para añadir
+	y eliminar imagenes y fideos que necesitan cargarse rápidamente en un sitio web sin limites.
+	
+	Amazon S3 Glacier:
+		es un servicio de almacenamiento que proporciona almacenamiento seguro y duradero para el archivado de datos
+		y la copia de seguridad. permite a las organizaciones retener fácilmente y de un modo rentable datos durante 
+		meses, años y decadas. la puerta de enlace de almacenamiento de aws es un servicio que conecta una aplicación
+		de software local con almacenamiento basado en la nube, que proporciona la integración segura y sin errores
+		entre un entorno de TI en las instalaciones de una organización y una infraestructura de almacenamiento de aws
+		de modo que se puedan transferir grandes volúmenes de datos dentro y fuera de la nube de aws. 
+		
+	Amazon Elastic File System (Amazon EFS):
+		es un servicio de almacenamiento de archivos para instancias de amazon EC2, amazon EFS es fácil de usar y ofrece
+		una interfaz sencilla para crear y configurar sistemas de archivos. la capacidad de almacenamiento es elastica
+		y aumenta o disminuye su tamaño automaticamente cuando se agregan o eliminan archivos. 
+		

@@ -1,0 +1,7 @@
+Nombres de métodos:
+	deben tener nombes de verbos como:
+		postPayment.
+		deletePage.
+		save.
+	los métodos de acceso, de modificación y los predicados deben tener como nombre su valor y usar como
+	prefijo get, set e is. de acuerdo al estándar de javabean*.

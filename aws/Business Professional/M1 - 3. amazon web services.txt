@@ -1,0 +1,9 @@
+Amazon Web Services:
+	es un proveedor de servicios en la nube que adminitra y mantine la infraestructura tecnológica 
+	en un entorno seguro de manera que sus clientes puedan acceder a los recursos en la nube los clientes
+	utilizan esta plataforma de autoservicio para crear soluciones más rápidas más resilientes y más seguras.
+	puedes aprovisionar recursos para su aplicación y ejecutarlos de manera confiable segura y a gran escala 
+	con un solo clic.
+	
+	Entonces ¿ Que impacto tiene la informatica en la nube en los negocios?
+	ahora que saben un poco más acerca de la informatica en la nube .

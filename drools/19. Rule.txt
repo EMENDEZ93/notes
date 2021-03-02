@@ -1,0 +1,9 @@
+Rule:
+	indica cuándo se debe aplicar y qué se debe ejecutar.
+	tiene dos partes fundamentales:
+		RHS:
+			Right hand side:
+				donde se definen los criterios que la disparán. 
+		LHS:
+			Left hand side:
+				donde se define las acciones que se ejecutarán.

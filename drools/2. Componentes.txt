@@ -1,0 +1,25 @@
+El motor de Drools funciona con los siguientes componentes Básicos:
+	Rules/Reglas:
+		Reglas de negocios o desiciones DMN que usted defina. todas las reglas deben contener como minimo las 
+		condiciones que desencadenan la regla y las acciones que dicta la regla. 
+		
+	Facts/Hechos:
+		datos que ingresan o cambian en el motor Drools que el motor Drools coincide con las condiciones de la regla para ejecutar 
+		las reglas aplicables. 
+		
+	Production memory/Memoria de producción:
+		Ubicación donde las reglas se almacenan en el motor drools. 
+		
+	Working Memory/Memoria de trabajo:
+		ubicación donde se almacenan los hechos en el motor drools.
+		
+	Agenda:
+		Ubicación donde las reglas activadas se registran y ordenan (si corresponde) en preparación para la ejecución.
+		
+	Cuando un usuario comercial o un sistema automatizado agrega o actualiza información relacionada con reglas en drools,
+	esa información se inserta en la memoria de trabajo del motor Drools en forma de unno o mas hechos. el motor 
+	Drools hace coincidir esos hechos con las condiciones de las reglas que se almacenan en la memoria de producción para determinar
+	ejecuciones de reglas elegibles. (Este proceso de hacer coincidir los hechos con las reglas a menudo se conoce como:
+		pattern matching/coincidencia de patrones.
+	Cuando se cumplen las condiciones de las reglas, el motor Drools activa y registra las reglas en la agenda, donde el motor drools 
+	clasifica las reglas prioritarias o en conflicto en preparación para la ejecución.

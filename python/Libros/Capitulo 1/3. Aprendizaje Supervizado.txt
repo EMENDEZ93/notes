@@ -1,0 +1,7 @@
+Aprendizaje Supervidado:
+	Supervizado:
+		se refiere a un conjunto de datos muestra donde las señales de salida deseadas (etiquetas) ya se conocen.
+		
+	Aprendizaje supervisado con equitetas de clase discretas, como en el eejmplo anterios del filtro de correo
+	no deseado, tambien se conoce como tarea de clasificación.
+	Otra subcategoria del aprendizaje supervisado es la regresión, donde la señal resultante es un valor continuo.

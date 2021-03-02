@@ -1,0 +1,52 @@
+Servicios de informatica:
+	permiten a los clientes:
+		desarrollar.
+		implementar. 
+		ejecutar.
+		escalar cargas de trabajo en la nube de aws.
+	a continuación, puede echar un vistazo a algunos de estos productos. 
+	
+	Amazon EC2:
+		redimensionar la capacidad de cómputo.
+		es un servicio web que proporcina capacidad de cómputo de tamaño modificable en la nube. 
+		Capacidad de cómputo se refiere a la funcionalidad que tradicionalmente proporcionan los servidores
+		virtuales o fisicos en las instalaciones. 
+		
+		los clientes pueden usar plantillas preconfiguradas para sus instancias, conocidas como imagenes de 
+		amazon machine (AMI). que empaquetan los bits que necesita un servidor, inclusive el sistema operativo 
+		y el software adicional. con el escalado automático de amazon EC2, los clientes pueden mantener el estado
+		y la viabilidad de sus aplicaciones. 
+		
+		al establecer desencadenadores que aumentan o reducen automáticamente la cantidad de instancias en sus
+		implementaciones, sus clientes pueden usar un servicio de balanceo de carga llamado elastic load balancing
+		(ELB). que distribuye automaticamente el tráfico entrante de las aplicaciones en varios destinos, como en 
+		instancias de amazon EC2, contenedores, Direcciones IP y funciones de lambda, aws lambda es un servicio de 
+		informatica que ejecutan un codigo en respuesta a eventos y administra automáticamente los recursos informtaticos
+		para sus clientes.
+
+		la ejecución de códigos sin la necesidad de aprovisionar o administrar servidores se denomina 
+		informatica sin servidor.
+		
+		aws lambda comienza a ejecutar el codigo en milisegundos en un evento, como la carga de una imagen, 
+		una actividad en la aplicación, un clic en un sitio web o una respuesta a un dispositivo conectado. 
+		
+		Amazon EC2 container services (ECS):
+			es un servicio de administración de contenedor de alto rendimiento y altamente escalable que soporta
+			contenedores docker y permite a los clientes ejecutar facilmente aplicaciones en un cluster administrado 
+			de instancias de amazon EC2. 
+			
+	
+	Amazon EC2:
+		redimensiona la capacidad de computo.
+		
+	Auto scaling de amazon EC2:
+		aumentar o disminuir el numero de instancias. 
+		
+	Elastic Load Balancing:
+		Distribuir el trafico entrante. 
+		
+	AWS lambda:
+		ejecutar código en respuesta a eventos. 
+		
+	Amazon Elastic Container Service:
+		Ejecutar aplicaciones en un cluster administrado. 

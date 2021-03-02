@@ -1,0 +1,34 @@
+Angular:
+	Testing.
+	
+Bash:
+	crear scripts.
+	
+CSS:
+
+DDD:
+
+Docker:
+	libro y interview.
+	
+Html:
+
+Java:
+
+JavaScript:
+
+Kubernetes:
+
+Openshift:
+
+OOP:
+	
+Patterns:
+
+Python:
+	
+Quarkuz:
+
+React:
+
+TypeScript:

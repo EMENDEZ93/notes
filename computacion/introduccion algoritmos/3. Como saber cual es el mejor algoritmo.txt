@@ -1,0 +1,10 @@
+Como seber cual es el mejor algoritmo:
+	Los métodos o algoritmos de ordenación son numerores, por ello se debe prestar especial atención en su elección.
+	¿Como saber cual es el mejor algoritmo?:
+		la eficiencia es el factor que mide la calidad y el rendimiento de un algoritmo. 
+		en el caso de la operación de ordenación se suelen seguir dos criterios al decidir qué algoritmo
+		de entre los que resuelven la ordenación es el más eficiente:
+			tiempo menor de ejecución.
+			menor numero de instrucciones. 
+		sin embargo, no siempre es fácil efecutrar estas medidas, puede no disponer de instrucciones para la medidas
+		de tiempo, aunque éste no es el caso de java.

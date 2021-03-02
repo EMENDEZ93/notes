@@ -1,0 +1,7 @@
+Ejecución dinamica de reglas:
+	El escáner KIE en Drools monitorea su repositorio Maven para nuevas SNAPSHOTversiones de su proyecto Drools y luego implementa la 
+	última versión del proyecto en un contenedor KIE específico. Puede usar un escáner KIE en un entorno de desarrollo para mantener 
+	las implementaciones de su proyecto Drools de manera más eficiente a medida que estén disponibles nuevas versiones.
+	
+	Para entornos de producción, no use un escáner KIE con SNAPSHOTversiones de proyecto para evitar actualizaciones accidentales 
+	o inesperadas del proyecto. El escáner KIE está destinado a entornos de desarrollo que utilizan SNAPSHOTversiones de proyectos.

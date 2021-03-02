@@ -1,0 +1,14 @@
+Cuando No usar un motor de reglas:
+	Para citar una lista de correo Drools regular:
+		Me parece que en la emoción de trabajar con motores de reglas, la gente olvida que un motor de reglas es solo una pieza de una 
+		aplicación o solución compleja. los motores de reglas no están realmente destinados a manejar el flujo de trabajo o las 
+		ejecuciones de procesos, ni los motores de flujo de trabajo o las herramientas de gestión de procesos estan diseñadps para hacer
+		reglas. use la herramienta adecuada para el trabajo. Claro, un par de alicates se puede usar como una herramienta de martilleo en
+		caso de apuro, pero para eso no esta diseñado. 
+		
+	Como los moteres de reglas son dinámicos (Dinamicos en el sentido de que las reglas pueden almacenarse, administrarse y actualizarse como
+	datos), a menudo se consideran como una solución al problema de implementación de software. (la mayoria de los departamentos de TI 
+	parecen existir con el propósito de evitar la implementación de software). Si esta es la razón por la que desea utilizar un motor de reglas
+	tenga en cuenta que los motores de reglas funcionan mejor que cuando puede escribir reglas declarativas. como alternativa, 
+	puede considerar diseños basados en datos (Tablas de búsqueda) o motores de procesamiento de guiones donde los guionnes se administran
+	en una base de datos y se puede actualizar sobre la marcha. 

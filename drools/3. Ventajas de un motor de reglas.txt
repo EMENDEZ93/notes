@@ -1,0 +1,49 @@
+Ventajas de un motor de reglas:
+	Programación Declarativa:
+		Su prioridad es responder a la siguiente pregunta:
+			¿Qué problema hay que resolver?
+			No se preocupa de:
+				¿Como hay que resolver el problema?
+		
+		
+		los motores de reglas le permiten decir Que hacer, no Como hacerlo.
+		
+		La ventaja Clave de este punto es que el uso de reglas puede facilitar la expresión de soluciones a problemas dificiles y,
+		en consecuencia, verificar esas soluciones. las reglas son mucho más fáciles de leer que el codigo. 
+		
+		Los sistemas de reglas son capaces de resolver problemas, muy, muy dificiles, proporcionando una explicación de como se llego
+		a la solución y por que se tomó cada decisión en el camino (no es tan fácil con otros sistems de IA como las redes neuronales o
+		el cerebro humano) no tengo idea de por que me resque el costado del auto)
+		
+	Logica y separación de datos:
+		sus datos están en sus objetos de dominio, la lógica está en las reglas. esto está rompiento fundamentalmente el acoplamiento
+		OO de datos y lógica, que puede ser una ventaja o una desventaja dependiendo de su punto de vista. el resultado es que la logica
+		puede ser mucho mas fácil de mantener ya que hay cambios en el futuro, ya que la lógica está establecida en reglas, esto puede ser
+		especialmente cierto si la lógica es de dominio cruzado o lógica de dominio múltiple, en lugar de que la lógica se extienda por 
+		muchos objetos de dominio o controladores, todo se puede organizar en uno o más archivos de reglas muy distintos. 
+		
+	Velocidad y escalabilidad:
+		el argoritmo Rete, el algoritmo leaps y sus descendientes, como ReteOO de drools, proporcionan formas muy eficientes de hacer 
+		coincidir patrones de reglas con los datos de objetos de domino. Estos son especialmente eficientes cuando tiene conjunto de datos 
+		que cambian en pequeñas porciones ya que el motor de reglas puede recordad coincidencia pasadas. estos algoritmos están probados en 
+		batalla. 
+		
+	Centralización del conocimiento:
+		Mediante el uso de reglas, crea un depósito de conocimiento (una base de conocimiento) que es ejecutable. Esto significa que es 
+		un punto unico de verdad, por ejemplo, para la politica empresarial, Idealmente, las reglas son tan legibles que tambien pueden
+		servir como documentación.
+		
+	Integración de herramientas:
+		Herramientas como eclipse (y en el futuro, interfaces de usuario basadas en la web) proporcionan formas de editar y administrat reglas
+		y obtener comentarios, validación y asistencia de contenido inmediatos. las herramientas de auditoria y depuración tambien estan
+		disponibles. 
+		
+	Facilidad de Explicación:
+		Los sistemas de reglas proporcionan efectivamente una facilidad de explicación al poder registrar las decisiones tomadas por el 
+		motor de reglas junto con por qué se tomaron las decisiones.
+		
+	Reglas Comprensible:
+		Al crear modelos de objetos y, opcionalmente, lenguajes especificos de dominio que modelen su dominio problemático, puede configurar
+		reglas de escritura muy cernanas al lenguaje natural, se prestan a la lógica que es comprensible para los expertos en dominos, 
+		posiblemente no técnicos, ya que se expresan en su idioma, con toda la plomeria del programa, el conocimiento técnico oculto en 
+		codigo habitual.

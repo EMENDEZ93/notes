@@ -1,0 +1,8 @@
+beneficios de los productos y servicios de aws:
+	aws cuenta con varios servicios de infraestructura de bloques de creación en las categorias de:
+		informática.
+		almacenamiento.
+		base de datos.
+		seguridad.
+		administración y redes. 
+		

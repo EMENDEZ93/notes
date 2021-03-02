@@ -1,0 +1,15 @@
+Julian:
+    identifico los desafios empresariales que enfrentan sus cliente. 
+    Uno de esos desafios es la necesidad de que sus clientes ofrezcan servicios a los mercados internacionales y al mismo 
+    reduzcan los costo de infraestructura.
+
+    relacionados con la ejecución y el mantenimiento de un centro de datos. 
+    otro desario para sus clientes es el aumento de su velocidad y agilidad para respaldar sus propias bases de clientes en 
+    crecimiento. 
+
+    La implementación de aplicaciones a nivel mundial es otro beneficio de la informática en la nube julian puede 
+    ayudar a sus clientes a lograr una mejor experiencia del usuario con alta disponiblidad y baja latencia al implementar
+    aplicaciones en varias regiones del mundo con una invesión minima. 
+
+    Por último, julian puede ayudar a los clientes a escalar con la entrega de recursos bajo de manda, de modo que puedan 
+    dejar de improvisar en la planificación al reducir y aumentar los recursos según la necesidad real. 

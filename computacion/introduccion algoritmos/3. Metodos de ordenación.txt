@@ -1,0 +1,16 @@
+Los metodos de ordenación se dividen en dos grupos:
+	Directos:
+		Burbuja:
+			es el más ineficiente; por esta causa no se recomienda su uso. 
+		Selección.
+		Inserción.
+		
+	Indirectos o avanzados:
+		Shell.
+		Ordenación Rápida.
+		Ordenación por mezcla.
+		Radixsort.
+		
+	En el caso de listas pegueñas, los metodos directos resultan eficientes, sobre todo porque los algoritmos son 
+	sencillo y su uso es frecuente; sin embargo, en listas grandes éstos son ineficaces y es preciso recurrir a los 
+	métodos avanzados. 

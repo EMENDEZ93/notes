@@ -1,0 +1,6 @@
+Clasificación para predecir etiquetas de clase:
+	La clasificación es una subcateria del aprendizaje supervisado cuyo objetivo es predecir las etiquetas de clase categorica
+	de nuevas instancias, basadas en obseervación pasadas.
+	
+	Estas etiquetas de clase son discretas, valores desordenado que se pueden entender como 
+	membresias grupales de las instancias.

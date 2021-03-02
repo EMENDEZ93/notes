@@ -1,0 +1,14 @@
+Segundo tipo de aprendizaje supervizado:
+	es la predicción de resultado continuos, tambien conocida como analisis de regresión.
+	
+	Analisis de regresión:
+		tenemos un numero de variable predictoras (Explicativas) y una variable de  respuesta continua
+		(Resultado o destino), y tenemos que encontrar una relación entre estas variables que nos permita
+		predecir un resultado.
+		
+	Ejemplo:
+		supongamos que queremos predecir los resultados del examen de selectividad de matematicas de nuestros alumnos.
+		si exites una relación entre el tiempo que han pasado estudiando para la prueba y los resultados finales, podrian utilizarla
+		como dato de entrenamiento para aprendeer un modelo que utilice el tiempo de estudio para predecir
+		los resultados de la prueba de fururos estudiantes que deseen pasar este examen.
+		

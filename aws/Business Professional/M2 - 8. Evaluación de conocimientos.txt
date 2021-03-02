@@ -1,0 +1,6 @@
+Evaluación de conocimientos:
+    Historicamente, la empresa de julian ha implementado centros de datos en sus instalaciones. 
+    ¿Que tipo de socio es la empresa de julian?:
+        Socio consultor:
+            la empresa de julian es un ejemplo de un socio consultor de APN, ya que quiere centrarse en la implementación de 
+            AWS para sus clientes. 

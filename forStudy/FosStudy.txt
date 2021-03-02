@@ -1,17 +1,8 @@
-repository pattern
-template method pattern
-saga-microservice
-valid object
-criteria pattern
-Composición sobre herencia
-clean arcuitecture
-capas de layered architecture
 active record
 data mapper
 DAO 
 case sensitive
 jit
-garbage collector
 ada
 Artifactory
 command bus

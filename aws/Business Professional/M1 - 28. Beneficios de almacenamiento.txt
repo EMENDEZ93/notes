@@ -1,0 +1,21 @@
+Beneficios de almacenamiento:
+	Un lugar de confianza, escalable y seguro para los datos.
+	Estos son los beneficios clave de los servicios de almacenamiento de aws, en primer lugar, los servicios 
+	de almacenamiento de aws son elasticos. 
+	
+	Los clientes pueden escalas la capacidad a medida que cambian los requisitos y almacenar una cantidad ilimitada 
+	de objetos. 
+	
+	En segundo lugar, los servicios de almacenamiento de aws son flexibles. los clientes pueden elegir tipos de 
+	volúmenes, ya sean procesamiento de transacciones online (IOPS) estándar o aprovisionados. 
+	
+	En tercer lugar, los servicios de almacenamiento de aws son seguros. amazon S3 soporta la transferencia de datos
+	en transport layer security (TLS) y el servicio puede estaclecerse para que cifre datos automáticamente cuando se 
+	lo cargue. los clientes tambien pueden configurar politicas de bucket para mantener permisos de objetos y controlar
+	el acceso a datos con aws identity and access management (IAM). 
+	
+	Amazon EBS le ofrece la capacidad de copiar instantáneas en las regiones de aws, permitiendo la expansión geografica,
+	la migración del centro de datos y la recuperación de desastres. 
+	
+	Por último, los servicios de almacenamiento de aws tiene costos menores. los clientes pagan solo por el almacenamiento
+	y el rendimiento.

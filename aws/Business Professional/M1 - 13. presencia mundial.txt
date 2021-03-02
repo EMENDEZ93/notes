@@ -1,0 +1,17 @@
+Presencia Mundial:
+	la infraestructura global de aws les permite a los clientes migrar a la nube en minutos y establecer
+	operaciones en todo el mundo. 
+	pero, ¿Sabias que aws es el único proveedor que tiene alta disponibilidad de compatibilidad nativa en
+	su infraestructura?
+	
+	Alta disponibilidad hace referencia a servicios e infraestructura que son constantemente operativos durante
+	un gran cantidad de tiempo deseado.
+	
+	La infraestructura global de aws brinda alta disponibilidad verdadera mediante el alojamiento de recursos de 
+	informatica en la nube en 20 ubicaciones geograficas en todo el mundo, denominadas regiones de aws, y 
+	proximamente se incorporaran nuevas regiones. 
+	
+	El almacenamiento de recursos en varias ubicaciones ofrece redundancia y durabilidad. 
+	la rendundancia protege a los clientes de los errores mediante la duplicación de copias de sus datos. 
+	de modo que, si los servicios en la nube se dañan o no estan disponibles, los usuarios del cliente 
+	tiene acceso inmediato y seguro a las versiones de respaldo. 

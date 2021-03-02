@@ -1,4 +1,0 @@
-Notación Húngara:
-Antiguamente, cuando trabajábamos con lenguajes en los que la longitud de los nombres era un reto, incumpliamos esta regla a nuestro pesar.
-
-Fortran forzaba las codificaciones convirtiendo la primera letra de un tipo en código.

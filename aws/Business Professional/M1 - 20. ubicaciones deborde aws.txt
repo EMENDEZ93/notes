@@ -1,0 +1,15 @@
+Ubicaciones de borde de aws:
+	una ubicación de borde aloja un red de entrega de contenido solida que puede usarse para almacenar en cache y
+	entregar sitios web completos y contenido de streaming, estatico y dinamico. 
+	
+	Las solicitudes de contenido se enrutan automaticamente a la ubicación de borde más cercana de modo que el contenido
+	se entregue con el mejor rendimiento posible. las ubicaciones de borde están situadas en la mayoria de las grandes
+	ciudades del mundo. 
+	
+	Amazon CloudFront:
+		es un servicio web para la entrega de contenido. 
+		se integra con otros servicios de aws para brindar a los desarrolladores y negocios una forma sencilla de
+		distribuir contenido a los usuarios finales con baja latencia y altas velocidades de transferencia de datos.
+		los cliente no necesitan administrar redes de borde complejas ni comprometerse con contratos 
+		caros de redes de entrega de contenido. 
+		

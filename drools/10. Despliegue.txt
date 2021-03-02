@@ -1,0 +1,15 @@
+KieBase:
+	El KieBasees un repositorio de todas las definiciones de conocimiento de la aplicación. Contendrá reglas, procesos, funciones y
+	modelos de tipo. El KieBasesí mismo no contiene datos; en cambio, las sesiones se crean a partir de las KieBasecuales se pueden 
+	insertar datos y desde las cuales se pueden iniciar instancias de proceso. El KieBasepuede obtenerse de la que KieContainercontiene 
+	el KieModuledonde KieBasese ha definido.
+	
+KieBase
+	A veces, por ejemplo, en un entorno OSGi, es KieBasenecesario resolver los tipos que no están en el cargador de clases predeterminado. 
+	En este caso, será necesario crear un KieBaseConfigurationcon un cargador de clases adicional y pasarlo KieContaineral crear uno nuevo a 
+	KieBasepartir de él.
+
+	Crear una nueva KieBase con un ClassLoader personalizado:
+		KieServices kieServices = KieServices.Factory.get();
+		KieBaseConfiguration kbaseConf = kieServices.newKieBaseConfiguration( null, MyType.class.getClassLoader() );
+		KieBase kbase = kieContainer.newKieBase( kbaseConf );

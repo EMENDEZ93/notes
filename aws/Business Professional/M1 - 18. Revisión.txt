@@ -1,0 +1,15 @@
+Revisión:
+	ya ha cubierto una gran cantidad de información. 
+	tomese un momento para pensar en lo que aprendio hasta ahora sobre la informatica en la nube en aws. 
+	
+	Aprendio que la informatica en la nube es la entrega bajo demanda de recursos de ti a travez de internet
+	con precios de pago por uso. 
+	
+	La informatica en la nube tiene tres modelos de implementación:
+		public.
+		privado.
+		hibrido. 
+		
+	aws es un proveedor de servicios en la nube que administra y mantiene la infraestructura tecnologica 
+	para que los clientes puedan acceder de manera segura a esos recursos. ademas, aws comparte las 
+	responsabilidades de seguridad con los clientes. 

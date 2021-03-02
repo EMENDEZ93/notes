@@ -1,0 +1,33 @@
+Ejecución:
+	Dudas:
+		el excel lleva las validaciones solas? como hace para validar.
+		va ser una aplicación web, o un ejecutable cada vez que generen la validación 7%
+		existe algun problemas con las sesiones ? stateful & stateless, como las utilizo?
+	
+		la actualización de esas reglas son externar? se va inyectar como librerio o bean?
+		
+		tendriamos problemas con los test en una aplicación web?
+		
+		tabla de decision == excel?
+		
+		como manejar el control de todas las validaciones desde excel?
+		
+		Falta:
+			llevar el tema a una aplicación web si es necesario. 
+			y controlar los errores si alguna sentencia esta mal escrita en el excel.
+		
+		Temas por revisar:
+			funciones condicionales.
+		
+	Jhon:
+		Tendria algun tipo de seguridad o solo la utilizan como deseen?
+		
+		hechos:
+			CT
+			condiciones de sumarización
+			operaciones.
+			group.
+			
+		
+	tratar que todo sea excel.
+		

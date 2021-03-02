@@ -1,0 +1,31 @@
+Tipos de socios:
+    los dos tipos de socios que existen:
+        Consultores:
+            los socios consultores de APN son empresas que ofrencen servicios profesionales para ayudar a los clientes a:
+                diseñar.
+                crear. 
+                construir.
+                migrar.
+                administrar.
+                sus cargas de trabajo y sus aplicaciones en AWS.  
+
+            los socios consultores incluyen:
+                integradores de sistemas.
+                Consultores Estrategicos.
+                Agencias.
+                Proveedores de servicios administrados.  
+                Distribuidores de valor añadido. 
+
+            ¿Quieres trabajar con clientes de AWS para ayudarlos a implementer productos y servicios de aws, migrar desde sus centros
+            de datos locales a AWS y optimizar AWS? 
+                de ser asi, desea convertirse en un socio consultor de aws. 
+
+        Tecnologicos:
+            los socios tecnologicos de apn proporcionan soluciones de software que pueden estar alojadas en los productos y 
+            servicios de AWS o integradas en ellos. 
+
+            Entre los socios tecnologicos de APN se encuentra:
+                los proveedores de software independiente (ISV) que crean herramientas para desarrolladores de software
+                como servicio o platafomas como servicio, y los proveedores de administración y seguridad. 
+
+            ¿Deseas crear una aplicación en AWS 

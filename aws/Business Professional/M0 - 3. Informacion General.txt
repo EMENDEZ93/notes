@@ -1,0 +1,9 @@
+Información General:
+	en este curso, conocerá el valor de AWS y de la comunidad de la red de socios de aws, o apn.
+	Ademas, explorará la interacción con clientes, loa productos y los servicios de AWS y las estrategia de 
+	comercialización.
+		Modulo 1: El valore de AWS
+		Modulo 2: Red de socios de aws
+		Modulo 3: Interacción con clientes
+		Modulo 4: Soluciones de productos y servicios de aws.
+		Modulo 5: Estrategia de salida al mercado.

@@ -1,0 +1,13 @@
+Funcion del socio:
+    los socios de apn pueden ayudar a compensar las áreasque los clientes creen que les falta la experiencia necesaria para migrar
+    o crear, y cuando no tiene los recursos necesarios para completar su proyecto de manera oportuna. 
+
+    Cuando los socios interviene, los clientes pueden centrarse en su negocio principal y lograr sus objetivos. 
+    La nube es la forma más facil de administrar la infraestructura, pero lso clientes necesitan socios que los ayuden a hacer
+    transicion a una infraestructura en la nube, migrar aplicaciones, aprovechar todo el potencial de aws. y desarrollar y 
+    transfomar sus negocios. 
+
+    Transición a una infraestructura en la nube. 
+    Migrar aplicaciones. 
+    Aprovechar AWS.
+    Desarrollar y transfomar. 

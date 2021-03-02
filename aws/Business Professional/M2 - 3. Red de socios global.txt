@@ -1,0 +1,11 @@
+Red de socios global:
+    la red de socios de aws, o apn, es la red de soporte global de aws se centra en ayudar a los socios de apn 
+    a utilizar aws para crear y mantener soluciones y negocios exitosos. 
+
+    apn brinda soporte técnico empresarial, de marketing y de salida al mercado.
+    por ejemplo:
+        la red proporciona una comunicad activa y herramientas, como la central de socios, para que sea posible interactuar con otros
+        socios de apn y aprender de ellos. 
+
+    Ademas, puede acceder a material sobre marketing y recursos técnicos como la base de conocimiento, 
+    para desarrollar su experiencia. 

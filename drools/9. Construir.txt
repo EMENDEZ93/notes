@@ -1,0 +1,29 @@
+Creando y construyendo un Proyecto Kie:
+	Un proyecto Kie tiene la estructura de un proyecto normal de Maven con la única particularidad de incluir un archivo kmodule.xml definir en una
+	forma declarativa forma en que la KieBases y KieSessions que se pueden crear a partir de ella. Este archivo debe colocarse en la 
+	carpeta de recursos / META-INF del proyecto Maven, mientras que todos los demás artefactos de Kie, como archivos DRL o Excel, deben 
+	almacenarse en la carpeta de recursos o en cualquier otra subcarpeta debajo de ella.
+
+	Dado que se han proporcionado valores predeterminados significativos para todos los aspectos de configuración, el archivo kmodule.xml 
+	más simple puede contener solo una etiqueta kmodule vacía como la siguiente:
+
+	Ejemplo 1. Un archivo kmodule.xml vacío:
+		<?xml version="1.0" encoding="UTF-8"?>
+		<kmodule xmlns="http://www.drools.org/xsd/kmodule"/>
+		
+	De esta manera, el kmodule contendrá un único valor predeterminado KieBase. Todos los activos de Kie almacenados en la carpeta de recursos,
+	o cualquiera de sus subcarpetas, se compilarán y agregarán. Para desencadenar la construcción de estos artefactos es suficiente crear un 
+	KieContainerpara ellos.
+	
+	KeiContainer:
+		Para este caso simple, es suficiente crear un KieContainerarchivo que lea los archivos que se construirán desde el classpath:
+		
+	Crear un KieContainer desde el classpath:
+		KieServices kieServices = KieServices.Factory.get();
+		KieContainer kContainer = kieServices.getKieClasspathContainer();
+		
+	`KieServices` es la interfaz desde donde es posible acceder a todas las instalaciones de Kie Building y Runtime:
+	
+	KieServices:
+		De esta manera, todas las fuentes de Java y los recursos de Kie se compilan y se implementan en KieContainer, lo que hace que 
+		sus contenidos estén disponibles para su uso en tiempo de ejecución.

@@ -1,0 +1,6 @@
+Que es una regla:
+	Las reglas DRL (Drools Rule Language) son reglas comerciales que usted define directamente en .drlarchivos de texto. Estos archivos DRL son
+	la fuente en la que se representan todos los demás activos de reglas en Business Central. Puede crear y administrar archivos DRL dentro de 
+	la interfaz de Business Central, o crearlos externamente como parte de un proyecto Maven o Java utilizando Red Hat CodeReady Studio u otro 
+	entorno de desarrollo integrado (IDE). Un archivo DRL puede contener una o más reglas que definen como mínimo las condiciones de la regla 
+	( when) y las acciones ( then). El diseñador de DRL en Business Central proporciona resaltado de sintaxis para Java, DRL y XML.

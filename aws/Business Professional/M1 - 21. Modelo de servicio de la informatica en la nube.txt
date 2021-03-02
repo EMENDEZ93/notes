@@ -1,0 +1,27 @@
+Modelo de servicio de la informatica en la nube:
+	puede añadir ahora otra capa a su compresión. 
+	Buscando en el modelo de servicio de la informatica en la nube. 
+	
+	el modelo de servicio de la informatica en la nube fragmenta la arquitectura de una implementación de la nube. 
+	Cada tipo de servicio en la nube y método de implementació le proporciona diferentes niveles de control, 
+	flexibilidad y administración. sus clientes pueden elegir un nivel. 
+	
+	Tiene tres niveles principales de servicio:
+		Infraestructurs como servicio (IaaS)
+		Plataforma como servicio (Paas)
+		Software como servicio (SaaS)
+	Los niveles se denominan colectivamente como una pila. 
+	
+	Y los cimientos de la pila son la IAAS, que contiene las piezas esenciales de infraestructura para la TI en la 
+	nube. Esto incluye acceso a caracteristicas de redes, a hardware y a espacio de almacenamiento de datos. 
+	en este nivel, el cliente tiene el nivel mas alto de flexibilidad y control similar a los recursos tradicionales
+	de Ti. 
+	
+	La PAAS incluye la infraestructura subyacente asi como los sistemas operativos. en este nivel, los clientes
+	pueden enfocarse en la implementación y la administración de las aplicaciones. y no deben preocuparse por 
+	el mantenimiento del software.
+	
+	Con el SAAS, el nivel superior del modelo, los cliente utilizan la pila completa con un producto completo 
+	ejecutando y administrando por el proveedor del servicio como una aplicación de usuario final como el email.
+	Mientras que el cliente tiene la menor cantidad de control en este nivel tiene la libertar de pensar acerca de 
+	como se mantine el servicio o de como se administra la infraestructura subyacente. 

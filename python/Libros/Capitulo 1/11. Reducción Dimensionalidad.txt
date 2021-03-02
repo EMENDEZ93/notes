@@ -1,0 +1,8 @@
+reducción de dimensionalidad:
+	muchas veces trabajamos con datos de alta dimensionalidad (cada observación muestra un elevado numero de medidas)
+	la cual puede suponer un reto para el espacio de almacenamiento limitado y rendimiento computacional de los algoritmos
+	del aprendizaje automatico.
+	
+	La reducción de dimensionalidad sin supervisión es un enfoque utilizado con frecuencia en el preprocesamiento de rendimiento
+	predictivo de ciertos algoritmos y comprimir los datos en un subespacio dimensional más pequeño, manteniendo la mayor parte de
+	la información importante.

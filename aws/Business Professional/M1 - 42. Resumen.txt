@@ -1,0 +1,12 @@
+Resumen:
+    para repasar, en este módulo exploró estos conceptos de informática en la nube. 
+        la informática en la nube es la provisión bajo demanda de recursos de ti a traves de internet mediante un modelo
+        de precios de pago por uso.
+
+        Los beneficios de usar AWS incluyen el liderago de aws, la variedad de servicios y el ritmo de innovación, 
+        la cultura de amazon, la huella global, la seguridad, la comunidad de apn y la nube hibrida.
+
+        aws ofrece un amplico conjunto de productos, servicios y caracteristicas. 
+
+        aws proporciona una infraestructura de informatica global redundante con regiones globales zonas de disponibilidad y 
+        ubicaciones de borde.

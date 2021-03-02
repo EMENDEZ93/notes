@@ -1,0 +1,20 @@
+Beneficios de la seguirdad, la identidad y la conformidad:
+    cifrado, administración de acceso y cargas de trabajo reguladas y protegidas.
+    A continuación, verá algunos de los beneficios de seguridad de AWS, identidad y servicios de 
+    cumplimientos. 
+
+    Em primer lugar, aws ayuda a los clientes a cumplir sus requisitos de conformidad administrando numerosos
+    programas de conformidad en su infraestructura. 
+
+    esto quiere decir que la segmentación de la conformidad de su cliente ya se ha completado. 
+
+    en segundo lugar, los clientes pueden recortar costos con los centro de datos de aws que mantienn los
+    estandares más altos de seguidad sin que los clientes deban administrar sus propias instalaciones. 
+
+    en tercer lugar, la seguridad aumenta con el uso de la nube de aws de su cliente. 
+
+    la infraestructura de la nube de aws esta diseñada con el fin de mantener los datos seguros para 
+    todos los tamaños de negocios. 
+
+    y por ultimo, la infraestructura de aws ponen en su lugar importantes defensas para ayudar a proteger
+    la privacidad de su cliente. todos los datos se almacenan en centro de datos de aws de alta seguidad. 

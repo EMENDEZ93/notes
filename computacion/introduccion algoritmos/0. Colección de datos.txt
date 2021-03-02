@@ -1,0 +1,3 @@
+Coleción de datos:
+	una colección de datos es una estructura y puede ser almacenada en memoria centran o en archivos
+	de datos externos guardados en unidades de almacenamiento magnetico, como discos cintas CD, DVD, etc.

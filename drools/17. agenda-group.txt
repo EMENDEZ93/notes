@@ -1,0 +1,6 @@
+agenda-group:
+    Una cadena que identifica un grupo de agenda al que desea asignar la regla. Los grupos de agenda le 
+    permiten dividir la agenda para proporcionar más control de ejecución sobre grupos de reglas. 
+    Solo se pueden activar las reglas en un grupo de agenda que ha adquirido un enfoque.
+
+Ejemplo: agenda-group "GroupName"

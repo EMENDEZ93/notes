@@ -1,0 +1,5 @@
+Objetivo de APN:
+    el principal objetivo de la red de socios de aws es brindarle soporte a medida que construye, desarrolla y mantiene su 
+    negocio de aws. 
+
+    

@@ -1,0 +1,11 @@
+Libro ejercicios 1.1:
+	si observamos la situación de julian, sus cliente no conocen la informatica en la nube y utilizan
+	modelos de nube privada o locales. 
+	
+	En el escenario principal, julian anticipa las necesidades del cliente en función de las tendencias
+	recientes en los negocios de sus clientes. 
+	
+	Observó que sus clientes buscan ofrecer servicios para los mercados internacionales.
+	ademas, necesitan aumentar la velocidad y la agilidad para respaldar sus bases de clientes en 
+	crecimiento. por ultimo, sus clientes quieren reducir los costos de infraestructura relacionados con la
+	ejecución y mantenimiento de un centro de datos. 

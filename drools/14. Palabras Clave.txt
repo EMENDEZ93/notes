@@ -1,0 +1,22 @@
+Palabras Clave:
+	import.
+	global.
+	function.
+	query.
+	rule.
+	EOF.
+	
+	package
+	import
+	function  // Optional
+	query  // Optional
+	declare   // Optional
+	global   // Optional
+	rule "rule name"
+	    // Attributes
+	    when
+	        // Conditions
+	    then
+	        // Actions
+	end
+	rule "rule2 name"	

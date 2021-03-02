@@ -1,0 +1,7 @@
+Facts:
+	son los argumentos que entran al motor de reglas. 
+	Basicamente son POJOs:
+		Facts.
+		POJOs
+		Bean.
+	Podemos definirlos dentro de drools directamente para ser compiladas por el motor.

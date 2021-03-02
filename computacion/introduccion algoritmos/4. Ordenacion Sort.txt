@@ -1,0 +1,12 @@
+Ordenación Sort:
+	La ordenación o clasificación de datos (sort) es una operación que consiste en disponer un conjunot o estructura de 
+	datos en determinado orden respecto a uno de los campos de elementos del conjunto;
+	Por ejemplo:
+		cada elemento del conjunto de datos de una guia telefonia tiene tres campos:
+			nombre.
+			dirección.
+			numero telefonico,
+		la guia telefónica dispone los nombres en orden alfabetico; los elementos numéricos se pueden arreglar
+		de forma creciente o decreciente de acuerdo con cada valor numérico. 
+		en terminologia de ordenación, el elemento por el cual se organiza un conjunto de datos se denomina clave.
+		

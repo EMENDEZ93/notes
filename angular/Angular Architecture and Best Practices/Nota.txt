@@ -1,0 +1,14 @@
+Course Prerequisite:
+	TypeScript.
+	Angular
+	Angular CLI
+	
+Architecture Considerations:
+	app overview.
+	app feature.
+	domain security.
+	domain rules.
+	services/communication.
+	data models.
+	feature component
+	shared functionality.

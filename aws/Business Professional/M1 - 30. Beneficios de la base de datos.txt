@@ -1,0 +1,21 @@
+Beneficios de la base de datos:
+	diseñado especificamente para casos de uso de aplicaciones específicas. 
+	estos son los beneficios clave de los servicios de base de datos de aws. 
+	
+	en primer lugar, las bases de datos de aws son fáciles de administrar. 
+	los clientes no necesitan preocuparse por las tareas de administración de las bases de datos, como el aprovisionamiento
+	de servidores, la reparación, la configuración, las copias de seguridad y la recuperación. 
+	
+	aws monitoriza continuamente los clúster para mantener las cargas de trabajo activas y en funcionamiento, de modo que los 
+	clientes puedan enfocarse en un desarrollo de aplicaciones de mayor valor. en segundo lugar, las bases de datos 
+	de aws están disponibles y son duraderas. funcionan sobre la misma infraestructura de extrama confianza utilizada 
+	por otros productos de amazon web services. 
+	Por ejemplo:
+		cuando un cliente aprovisiona una instancia de base de datos de multiples zonas de disponibilidad, amazon RDS
+		replica en forma sincronizada los datos con una instancia de espera en una zona de disponiblida diferente.
+		
+	En tercer lugar, las bases de datos de aws son altamente escalables, los clientes pueden escalar el cómputo de sus
+	bases de datos y recursos de almacenamiento con un solo par de clics o con una llamadas a la api, a menudo sin
+	tiempo de espera.
+	
+	por último, las bases de datos de aws son rapidas y seguras.

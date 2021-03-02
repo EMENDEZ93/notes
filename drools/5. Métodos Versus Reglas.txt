@@ -1,0 +1,26 @@
+Métodos Vs Reglas:
+	La gente a menudo confunde métodos y reglas, y los nuevos usuarios de la reglas preguntan regularmente:
+		"¿Como llama una Regla?" Después de la última sección, arhoa se siente como un experto en reglas y respuestas
+		a eso es obvia, peri sin embargo, resumamos la diferencias.
+		
+		public void helloWorld(Person person) {
+			if ( person.getName().equals( "Chuck" ) ) {
+				System.out.println( "Hello Chuck" );
+			}
+		}
+		
+		Los metodos se llaman directamente.
+		Se pasan instancias especificas.
+		Una llamada da como resultados un sola ejecución.
+		
+		rule "Hello World"
+			when
+				Person( name == "Chuck" )
+			then
+				System.out.println( "Hello Chuck" );
+				end		
+				
+		Las reglas se ejecutan haciendo coincidir cualquier dato siempre que se inserte en el motor.
+		Las reglas nunca se pueden invocar directamente.
+		Las instancias especificas no se pueden pasar a una regla.
+		Dependiendo de los partidos, una regla puede dispararse una o varias veces, o no hacerlo.

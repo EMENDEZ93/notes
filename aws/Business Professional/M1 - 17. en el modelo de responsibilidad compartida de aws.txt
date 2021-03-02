@@ -1,0 +1,6 @@
+Evaluación de conocimiento:
+	en el modelo de responsabilida compartida de aws, ¿Cuales de las siguientes opciones son administradas por el
+	cliente de aws?
+	Sistema operativo.
+	autorizaciones del grupo de seguridad.
+	configuración de la red y el firewall.

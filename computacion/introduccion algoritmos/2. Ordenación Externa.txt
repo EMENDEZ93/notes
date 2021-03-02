@@ -1,0 +1,2 @@
+Ordenación Externa:
+	si los datos se almacenan en un archivo, el proceso de ordenación se llama ordenación externa.

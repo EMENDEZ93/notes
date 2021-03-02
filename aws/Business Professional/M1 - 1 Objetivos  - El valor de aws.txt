@@ -1,0 +1,9 @@
+El valore de aws - Objetivos:
+	en este módulo, se cubren los aspectos fundamentales de la informatica en la nube, 
+	los beneficios de usar la nube de aws, la razón por la que los productos y servicios de aws
+	son la mejor opción para los clientes y el valor de los servicios principales de aws.
+	
+	Explicar la informática en la nube.
+	Identificar la propuesta de valor de aws.
+	Enumerar los principales productos y servicios de aws.
+	Identificar el valor de los servicios de aws. 

@@ -1,0 +1,6 @@
+Clasificación Multiclase:
+	un ejemplo tipico de esto es el reconocimiento de un caracter manuscrito.
+	Aqui podemos recoger un conjunto de datos de entrenamiento que consisten en mutiples
+	ejemplos manuscritos de cada letra del alfabeto.
+	Ahora si un usuario proporciona un nuevo carácter manuscrito dessde un dispositivo de entrada
+	nuestro modelo predictivo sera capaz de predecir la letra correcta del alfabeto con cierta precisión.

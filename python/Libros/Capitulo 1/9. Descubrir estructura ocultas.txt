@@ -1,0 +1,6 @@
+Descubrir estructuras ocultas con el aprendizaje sin supervisión:
+	cuando entrenamos nuestro modelos sabemos la respuesta correcta de antemano, y en el reforzado definimos una medida
+	de recompensa para acciones concretas mediante el agente. si embargo, en el aprendizaje sin supervisión
+	tratamos con datos sin etiquetar o datos de estructura desconocida. con las técnicas de aprendeizaje sin supervisiónm,
+	podemos explorar la estructura de nuestros datos para extraer información significativa sin la ayuda de una variable
+	de resultado conocida o una funcción de recompensa.

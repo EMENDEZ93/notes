@@ -1,0 +1,136 @@
+Sesiones sin estado de KIE:
+	una sesion kie sin estado es una sesión que no utiliza interferencia para realizar cambios iterativos en los hechos a lo largo
+	del tiempo. en una sesión kie sin estado, los datos de una invocación previa de la sesión kie (el estado de sesión anterior=
+	se descartan entre invocaciones de sesión, mientras que en una sesión kie con estado, esos datos se retienen. una sesión kie sin 
+	estao se comporta de manera similar una función en que los resultados que procude están determinados por el contenido de la 
+	base KIE y por los que datos que se sepan a la sesión KIE para su ejecución en un momento especifico. 
+	la sesión kie no tiene memoria de ningun dato que se haya pasado previamente a la sesión kie. 
+	
+	Las sesopmes KIE sin estado se usan comúnmente para los siguientes casos de uso:
+		Validacióne:
+			como validar que una persona es elegible para una hipoteca.
+			
+		Calculo:
+			como calcular una prima hipotecarias.
+			
+		Enrutamiento y filtrado:
+			como ordenar los correos electornicos entrantes en carpetas o enviar correos electronicos entrantes a un destino.
+			
+		Por ejemplo, considere el siguiente modelo de datos de licenci de conducir y la Regla DRL de muestra:
+			public class Applicant {
+				private String name;
+				private int age;
+				private boolean valid;
+				// Getter and setter methods
+			}
+			
+		Ejemplo de regla DRL para la solicitud de licencia de conducir:
+			
+			package com.company.license
+
+			rule "Is of valid age"
+			when
+			  $a : Applicant(age < 18)
+			then
+			  $a.setValid(false);
+			end
+			
+		La "Is of valid age" regla descalifica a cualquier solicitante menor de 18 años. cuando el applicant Objeto se inserta en 
+		el motor drools, el motor drools evalúa las restricciones para cada regla y busca una coincidencia. 
+		La objectType:
+			restricción siempre esta implicita, despues de lo cual se evalúa cualquier cantida de restricciones de campo explicitas. la 
+			variable $a es una variable de enlace que hace referencia al objeto coincidente en la consecuencia de la regla.
+			 
+			El signo de dolar:
+				es opcional y ayuda a diferenciar entre nombres de variables y nombre de campo. 
+				
+		en este ejemplo, la regla de muestra y todos los demas archivos en la En este ejemplo, la regla de muestra y todos los demás
+		archivos en la ~/resources carpeta del proyecto drools se crean con el siguiente codigo.
+		
+		Crear el contenedor KIE:
+			KieServices kieServices = KieServices.Factory.get();
+			KieContainer kContainer = KieServices.getKieClasspathContainer();
+			
+		Este codigo compila todos los archivos de reglas encontrados en la ruta de la clase y agrega el resultado de esta compilación
+		un KieModule objeto, en el KieContainer.
+		
+		Finalmentre, el StatelessKieSesion objeto se instancia desde KieContainer y se ejecuta contra datos especificados:
+		
+		Instanciar la sesión KIE sin estado e ingresar datos:
+			StatelessKieSession kSession = kContainer.newStatelessKieSession();
+			Applicant applicant = new Applicant("Mr John Smith", 16);
+			assertTrue(applicant.isValid());
+			ksession.execute(applicant);
+			assertFalse(applicant.isValid());		
+		
+		en una configuración de sesion kie sin estado, la execute() llamada actua como un metodo combinado que crea una 
+		instancia del KieSession objeto, agrega todos los datos del usuario y ejecuta comando, llamadas fireAllRule() y 
+		luego llamadas del usuario dispose(). por lo tanto, con una sesión kie sin estado, no necesita llamar fireAllRules() o
+		llamar dispose() despues de la invocación de sesion como lo hace con una sesión kie con estado. 
+		
+		en este caso, el solicitante especificado es mejor de 18 años, por lo que se rechaza la solicitud.
+		
+		Para un caso de uso más complejo, vea el siguiente ejemplo. este ejemplo utiliza una sesión KIE sin estado y ejecuta reglas
+		contra un lista iterable de objetos, como una colección.
+		
+		Modelo de datos ampliado para la solicitud de licencias de condutor:
+			public class Applicant {
+				private String name;
+				private int age;
+				// Getter and setter methods
+			}
+		
+			public class Application {
+				private Date dateApplied;
+				private boolean valid:
+				// Getter and setter methods
+			}
+		
+		Conjunto de reglas DRL ampliado para la solicitud de licencia de conducir:
+		
+			rule "Is of valid age"
+			when
+				Applicant(age < 18)
+				$a : Application()
+			then
+				$a.setValid(false);
+			end
+
+			rule "Application was made this year"
+			when
+				$a : Application(dateApplied > "01-jan-2009")
+			then
+				$a.setValid(false);
+			end
+			
+		Fuente java ampliada con ejecucion iterable en una sesión kie sin estado:
+			StatelessKieSession ksession = kbase.newStatelessKnowledgeSession();
+			Applicant applicant = new Applicant("Mr John Smith", 16);
+			Application application = new Application();
+
+			assertTrue(application.isValid());
+			ksession.execute(Arrays.asList(new Object[] { application, applicant }));  (1)
+			assertFalse(application.isValid());
+
+			ksession.execute
+				(CommandFactory.newInsertIterable(new Object[] { application, applicant }));  (2)
+
+			List<Command> cmds = new ArrayList<Command>();  (3)
+			cmds.add(CommandFactory.newInsert(new Person("Mr John Smith"), "mrSmith"));
+			cmds.add(CommandFactory.newInsert(new Person("Mr John Doe"), "mrDoe"));
+
+			BatchExecutionResults results = ksession.execute(CommandFactory.newBatchExecution(cmds));
+			assertEquals(new Person("Mr John Smith"), results.getValue("mrSmith"));
+		
+		(1) metodo para ejecutar reglas contra una colleción iterable de objetos producidos por el Arrays.asList() metodo.
+			cada elemento de la colección se inserta antes de que se ejecuten las reglas coincidentes. los metodos 
+			execute(Object object) y execute(Iterable objects) son envoltorios alrededor de execute(Command command) 
+			metodo que proviene de la BatchExecutor interfaz.
+			
+		(2) Ejecución de la colección iterable de objetos utilizando la CommandFactory interfaz. 
+		
+		(3) BatchExecutor y CommandFactory configuraciones para trabajar con muchos comandos diferentes o identificadores de 
+			salida de resultados. La CommandFactory interfaz es compatible con otros comandos que se puedn utilizar en el 
+			BatchExecutor, como startProcessm Query, y SetGlobal.
+		
+		

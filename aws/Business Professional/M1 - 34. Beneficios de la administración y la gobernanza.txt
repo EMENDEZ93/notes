@@ -1,0 +1,31 @@
+Beneficios de la administración y la gobernanza:
+    control total para su entorno en la nube.
+
+    en primer lugar, los clientes pueden mantener controles de confianza y uniformes sin restringir la velocidad de desarrollo. 
+    aws proporcionan un conjunto de herramientas de administración que funcionan juntas y están integradas con cada parte de la 
+    plataforma de aws. 
+
+    en segundo lugar, los clientes pueden aprovisionar, monitorizar y automatizar en forma programática, todos los componentes 
+    en su entorno en la nube por ejemplo:
+        los clientes pueden crear una colección de archivos aprobados de formacíon de la nube de aws para asegurarse de que la 
+        organización solo implemente recursos de conformidad y aprobados. 
+    
+    en tercer lugar, los clientes pueden recopilar y realizar un seguimiento de las métricas.
+    por ejemplo:
+        amazon cloudWatch monitoriza recursos en la nube de aws y las aplicaciones que los clientes ejecutan en aws, y puede 
+        configurarse para reaccionar automáticamente a los cambios de los recursos de aws. 
+
+    y por ultimo, los clientes pueden controlar sus recursos de infraestructura con la conformidad y la gobernanza adecuadas.
+    por ejemplo, actividades de usuario de registros de aws cloudtrail en una organización. 
+
+    Confiable:
+        proporcionar controles uniformes.
+
+    Facilidad de uso:
+        provisión de manera programática. 
+
+    Monitorizar:
+        recopilar y realizar el seguimiento de metricas.
+
+    Administrar:
+        cumplir con la gobernanza y el cumplimiento. 

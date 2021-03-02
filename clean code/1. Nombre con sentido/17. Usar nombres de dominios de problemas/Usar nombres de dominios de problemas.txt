@@ -1,7 +1,0 @@
-Usar nombres de dominios de problemas:
-    cuando no exista un término ode programación para lo que esté haciendo, use el nombre del dominio del problema.
-    Al menos al programador que mantenga su código podrá preguntar el significado a un experto en dominios.
-    
-    Separar los conceptos de dominio de soluciones y de problemas es parte del trabajo de un buen programador y diseñador.
-
-    El código que tenga más relación con los conceptos del dominio de problemas tendrá nombres extraidos de dicho dominio.

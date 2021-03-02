@@ -1,0 +1,71 @@
+Seguridad y conformidad de aws:
+	otro componenete clave de aws es la seguridad y la conformidad con frecuencia, puede que escuche
+	a los clientes preguntar:
+	¿La nube es segura para mis aplicaciones y datos criticos?:
+		para ayudar a los clientes a comprender la seguridad en la nube de aws creamos el modelo de 
+		Responsabilidad Compartida de aws.
+		Este modelo muestra como aws comparte las responsabilidades de seguridad con los clientes,
+	
+	principalmente, aws administra la seguridad de la nube. esto incluye la infraestructura subyacente 
+	que ejecuta los servicios que aws ofrece, como servicios de hardware, software, redees e instalaciones que ejecutan 
+	amazon web services. 
+	
+	aws tambien es responsable de las configuraciones de seguridad de sus productos que se consideran como
+	servicios administrados.
+	
+	En cambio los clinetes son responsables de administrar la seguridad en la nube. 
+	esto hace referencia a las medidas de seguridad que el cliente implementa y opera que están relacionada con la 
+	seguridad del contenido del cliente en las aplicaciones. 
+	
+	Los clientes mantienen el control de la seguridad que implementan para proteger su propio contenido, plataforma, 
+	aplicaciones, sistemas y redes, tal como sucederia con las aplicaciones en un centro de datos fisico. 
+	
+	Como socio consulto, puede aumentar la calidad para los clientes al crear soluciones que aborden sus áreas de 
+	responsabilidad en la nube, como soluciones que controlan la administración y la seguridad de los sistemas operativos
+	redes y configuraciones de firewall. 
+	
+
+Cliente:
+	responsable de seguridad dentro de la nube.
+	Datos del clientes:
+		Plataforma.
+		aplicaciones.
+		identity and access management.
+		configuración del firewall.
+		la red.
+		el sistema operativo.
+		Cifrado de datos del lado del cliente y autenticación de integridad de los datos. 
+		Cifrado del lado del servidor (sistema de archivos y datos)
+		Protección del trafico en la red (cifrado/integridad/identidad)
+		
+AWS: 
+	responsable de seguridad DE la nube.
+	Informatica.
+	Almacenamiento.
+	Base de datos.
+	Redes.
+	Infraestructura global de aws. 
+	regiones.
+	zonas de disponibilidad.
+	ubicaciones de borde.
+	
+	Como parte del modelo de responsabilidad compartida, aws es responsable de obtener certificaciones y 
+	acreditaciones para la nube de aws.
+	
+	Aws tiene 58 certificaciones y acreditaciones, la cantidad más alta en comparación con el resto de los proveedores
+	de la nube. aws tambien cumple con los requisitos de decenas de leyes, reglamentos, homologaciones y marcos adicionales
+	en paises y regiones de todo el mundo en todos los mercados verticales y en el sector publico, a su vez, los clientes 
+	son responsable de cumplir con cualquier ley y reglamento aplicables, en algunos casos, aws ofrece funcionalidad, 
+	como caracteristicas de seguridad propiciadores y acuerdos legales, para respaldar la conformidad de cliente. 
+	
+	el sitio web de conformidad de aws brinda información sobre estas certificaciones y acreditaciones, que son 
+	evaluadar por auditores externos independientes. este sitio contiene las acreditaciones y los marcos de conformidad 
+	de aws que incluyen requisitos de seguridad publicada o de conformidad para un objetivo especifico, como un sector
+	o función determinados. 
+
+	
+	
+	
+	
+	
+	

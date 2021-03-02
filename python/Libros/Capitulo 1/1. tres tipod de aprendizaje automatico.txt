@@ -1,0 +1,14 @@
+Aprendizaje Supervisado:
+	datos etiquetados.
+	feedback directo.
+	predicción de resultados/Futuro
+
+Aprendizaje No Supervisado:
+	sin etiquetas
+	Sin feedback
+	Encontrar Estructuras Ocultas en datos.
+	
+Aprendizaje Reforzado:
+	Proceso de decisión
+	Sistema de recompesa.
+	Aprender series de acciones.

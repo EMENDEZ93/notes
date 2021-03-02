@@ -1,0 +1,14 @@
+El viaja como socio:
+	el primer paso en su recorrido como socio es:
+		1. registrarse como tal:
+			si estas realizando que ya se ha registrado como socio a través de la red de socios de aws
+			o APN.
+			
+			APN es un programa de socios global que ayuda a los socios a usar aws para crear negocios exitosos.
+			Como Julian, es posible que usted tambien se encuentra en el inicio de su recorrido como socio. 
+			APN puede respaldarlo a lo largo de su recorrido, desde el avance en su formación sobre la nube de aws,
+			hasta ayudar a su empresa a usar aws para incrementar los ingresos 
+			
+			support.
+			education.
+			revenue.

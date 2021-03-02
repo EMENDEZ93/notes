@@ -1,0 +1,6 @@
+Abstract-Factory
+Adapter
+
+
+Microservices Pattern:
+	file:///D:/Documents/Libros/DDD/Microservice%20Patterns.pdf

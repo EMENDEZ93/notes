@@ -1,7 +1,0 @@
-Ya tenemos suficiente codificaciones como para tener que añadir otras nuevas. al codificar información o ámbitos en un nombre se dificulta la descodificación.
-
-No parece razonable que todos los nuevos empleados tengan que aprender otro lenguaje de codificación además del código con el que van a trabajar.
-
-Es una carga mental innecesaria a la hora de intentar solucionar un problemas.
-
-Los nombres codificados resultan impronunciable y suelen escribirse de forma incorrecta.

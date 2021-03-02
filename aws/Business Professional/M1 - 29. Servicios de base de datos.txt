@@ -1,0 +1,48 @@
+Servicios de base de datos:
+	diseñado especificamente para casos de uso de aplicaciones especificas.
+	aws ofrece el rango más amplio de bases de datos construidas con un propósito para casos de uso de aplicaciones 
+	especificas. 
+
+	Los servicios de bases de datos de aws se ocupan de las tareas de administración de la base de datos que lleven más
+	tiempo, como copias de seguridad administración de parches y replicación, permitiendo a los clientes perseguir 
+	un desarrollo de aplicaciones de mayor valor o refinamientos de bases de datos.
+	
+	Amazon relation database service (amazon RDS):
+		capacidad modificable y rentable.
+		es un servicio de base de datos relacional administrado con una elección de seis motores de bases de datos
+		populares:
+			amazon aurora.
+			postgres.
+			mysql.
+			mariadb.
+			oracle.
+			sql server.
+		los cliente pueden configurar, operar y escalar una base de datos relacional en la nube que aprovisiona una 
+		capacidad rentable y de tamaño modificable. 
+		
+		Los clientes pueden usar el servicio de migración de bases de datos de aws para migrar o replicar las bases 
+		de datos existentes a amazon RDS, sin la necesidad de aprovisionar infraestructura, instalar y mantener el 
+		software de base de datos. 
+		
+		amazon RDS tiene muchas otras caracteristicas que mejoran la fiabilidad parabases de datos de producción
+		criticas, inclusive copias de seguridad automatizadas, instantaneas de base de datos, y un reemplazo de 
+		alojamiento automatico. 
+		
+	Amazon Aurora:
+		es una base de datos relacional compatible con mysql y postgres diseñada para la nube que combina el rendimiento
+		y la disponibilidad de las bases de datos empresas tradicionales con la simplicidad y la rentabilidad de las 
+		bases de datos de código abierto. 
+		
+		amazon aurora esta completamente administrado por amazon RDS. 
+		
+	Amazon DynamoDB es un valor clave y una base de datos de documentos que entrega el rendimiento en milisegundos de
+	un solo digito en cualquier escala proporciona un rendimiento rápido y precible con la escalabilidad sin errores. 
+	con tan solo unos clic en la consola de administración de aws los clientes pueden lanzar una nueva tabla de base 
+	de datos de amazon DynamonBD, escalar su capacidad solicitada sin tiempo de espera o la degradación de rendimiento y
+	ganar visibilidad en el uso de recursos y las métricas de rendimiento. 
+	
+	Los clientes pueden monitorizar el estado y el rendimiento de las tablas de amazon dynamoDB usando amazon cloud watch
+	amazon elasticache es un servicio de almacenamiento en cache que facilita la implementación operación y escalada de 
+	una cache en memoria en la nube. mejorar el rendimiento de las aplicaciones web permitiendo a los clientes recuperar 
+	información de un sistema de almacenamiento de caché en memoria administrado en lugar de confiar completamente en 
+	bases de datos más lentas basadas en el disco. 

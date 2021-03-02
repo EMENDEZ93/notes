@@ -1,0 +1,4 @@
+Ordenación interna:
+	cuando los datos se guardan en u arreglo, una lista enlazada o un arbol, se les llama ordenación interna; 
+	estos datos se almacenan exlusivamente para tratamiento interno que se utilizan para gestión 
+	masiva de datos y seguardan en arreglos de una o varias dimensiones. 

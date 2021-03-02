@@ -1,0 +1,156 @@
+Stateful:
+	un sesión KIE con estado es una sesión que usa inferencia para hacer cambios iterativos a los hechos a lo largo del tiempo.
+	En una sesion KIE con estado, los datos de una invocación previa de la sesión KIE (el estado de sesión anterior) se retiene entre
+	invocaciones de sesión, mientras que en una sesión KIE sin estado, esos datos se descartan. 
+	
+	Asegirese de llamar al dispose() método despues de ejecutar una sesión KIE con estado para que no se produzcan perdidas de memoria
+	entre invocaciones de sesión. 
+	
+	Las sesiones KIE con estado se usan comúnmente para los siguientes casos de uso:
+		Monitoreo:
+			como monitorear un mercado de valores y automatizar el proceso de compra.
+			
+		Diagnosticos:
+			como ejecutar procesos de detección de fallas o procesos de diagnostico médico. 
+			
+		Logistica:
+			como el seguimiento de paquetes y el aprovisionamiento de entregas.
+			
+		Garantizar el cumplimiento:
+			como varificar la legalidad de las operaciones de mercado. 
+			
+	Por ejemplo:
+		considere el siguiente modelo de datos de alarma contra incendios y ejemplo de reglas DRL:
+			
+		Modelo de datos para rociadores y alarma contra incendios:
+
+     		public class Room {
+     		  private String name;
+     		  // Getter and setter methods
+     		}
+
+     		public class Sprinkler {
+     		  private Room room;
+     		  private boolean on;
+     		  // Getter and setter methods
+     		}
+
+     		public class Fire {
+     		  private Room room;
+     		  // Getter and setter methods
+     		}
+
+     		public class Alarm { }		
+
+		Ejemplo de conjunto de reglas DRL para activar rociadores y alarma
+
+			rule "When there is a fire turn on the sprinkler"
+			when
+			  Fire($room : room)
+			  $sprinkler : Sprinkler(room == $room, on == false)
+			then
+			  modify($sprinkler) { setOn(true) };
+			  System.out.println("Turn on the sprinkler for room "+$room.getName());
+			end
+
+			rule "Raise the alarm when we have one or more fires"
+			when
+			    exists Fire()
+			then
+			    insert( new Alarm() );
+			    System.out.println( "Raise the alarm" );
+			end
+
+			rule "Cancel the alarm when all the fires have gone"
+			when
+			    not Fire()
+			    $alarm : Alarm()
+			then
+			    delete( $alarm );
+			    System.out.println( "Cancel the alarm" );
+			end
+
+
+			rule "Status output when things are ok"
+			when
+			    not Alarm()
+			    not Sprinkler( on == true )
+			then
+			    System.out.println( "Everything is ok" );
+			end		
+
+		Para la When there is a fire turn on the sprinklerregla, cuando se produce un incendio, las instancias de la Fireclase 
+		se crean para esa sala y se insertan en la sesión KIE. La regla agrega una restricción para la roomcoincidencia específica
+		en la Fireinstancia para que solo se verifique el aspersor para esa habitación. Cuando se ejecuta esta regla, se activa el 
+		aspersor. Las otras reglas de muestra determinan cuándo se activa o desactiva la alarma en consecuencia.			
+
+		Mientras que una sesión KIE sin estado se basa en la sintaxis estándar de Java para modificar un campo, una sesión KIE con 
+		estado se basa en la modifydeclaración en las reglas para notificar los cambios al motor Drools. El motor Drools razona sobre
+		los cambios y evalúa el impacto en las ejecuciones de reglas posteriores. Este proceso es parte de la capacidad del motor 
+		Drools para usar inferencia y mantenimiento de verdad y es esencial en sesiones KIE con estado.
+
+		En este ejemplo, las reglas de muestra y todos los demás archivos en la ~/resourcescarpeta del proyecto Drools se crean 
+		con el siguiente código:
+
+			Crear el contenedor KIE:
+				KieServices kieServices = KieServices.Factory.get();
+				KieContainer kContainer = KieServices.getKieClasspathContainer();
+
+			Este código compila todos los archivos de reglas encontrados en la ruta de clase y agrega el resultado de esta
+			compilación, un KieModuleobjeto, en el KieContainer.
+
+			Finalmente el KieSession objeto se instancia desde KieContainer y se ejecuta contra datos especificados:
+				Instanciar la sesión KIE con estado e ingresar datos
+
+					KieSession ksession = kContainer.newKieSession();
+
+					String[] names = new String[]{"kitchen", "bedroom", "office", "livingroom"};
+					Map<String,Room> name2room = new HashMap<String,Room>();
+					for( String name: names ){
+					    Room room = new Room( name );
+					    name2room.put( name, room );
+					    ksession.insert( room );
+					    Sprinkler sprinkler = new Sprinkler( room );
+					    ksession.insert( sprinkler );
+					}
+
+					ksession.fireAllRules();
+
+					Salida de la consola
+					> Everything is ok
+
+					Con los datos agregados, el motor Drools completa todas las coincidencias de patrones pero no se han ejecutado reglas,
+					por lo que aparece el mensaje de verificación configurado. A medida que los nuevos datos desencadenan condiciones
+					de regla, el motor Drools ejecuta reglas para activar la alarma y luego cancelar la alarma que se ha activado:					
+
+					Ingrese datos nuevos para activar reglas:
+						Fire kitchenFire = new Fire( name2room.get( "kitchen" ) );
+						Fire officeFire = new Fire( name2room.get( "office" ) );
+
+						FactHandle kitchenFireHandle = ksession.insert( kitchenFire );
+						FactHandle officeFireHandle = ksession.insert( officeFire );
+
+						ksession.fireAllRules();						
+
+					Salida de la consola
+						> Raise the alarm
+						> Turn on the sprinkler for room kitchen
+						> Turn on the sprinkler for room office						
+
+						ksession.delete( kitchenFireHandle );
+						ksession.delete( officeFireHandle );
+
+						ksession.fireAllRules();		
+
+					Salida de la consola
+						> Cancel the alarm
+						> Turn off the sprinkler for room office
+						> Turn off the sprinkler for room kitchen
+						> Everything is ok											
+
+					En este caso, se mantiene una referencia para el FactHandleobjeto devuelto . Un identificador de hechos es una
+					referencia interna del motor a la instancia insertada y permite que las instancias se retraigan o modifiquen 
+					más tarde.
+
+					Como lo ilustra este ejemplo, los datos y resultados de sesiones KIE anteriores con estado (la alarma activada) 
+					afectan la invocación de sesiones posteriores (cancelación de alarma).						

@@ -1,0 +1,16 @@
+Productos y servicios de aws:
+	aws cuenta con varios servicios de infraestructura de bloques de creación en las categorias de:
+		informatica.
+		almacenamiento.
+		base de datos.
+		seguridad. 
+		administración.
+		redes. 
+	
+	Los servicios y productos de aws ofrecen a los clientes un alto grado de flexibilidad arquitectonica. 
+	Los clientes de aws utilizan estos productos y servicios para impulsar una amplia variedad de cargas de trabajo
+	y aplicaciones, incluidas aplicaciones web y móviles, procesamiento y almacenamiento de datos, almacenamiento
+	y archivado. 
+	
+	Comprender cada categoria es fundamental para crear soluciones efectivas. 
+	en esta sección, obtendra mas información sobre estas categorias. 

@@ -1,0 +1,29 @@
+Servicios de redes:
+    aislar la infraestructura de la nube y escalar la capacidad de gestion de solicitudes.
+    aws disponen de varias capacidades de redes:
+    
+    Amazon virtual private cloud, o VPC:
+        Crear una red virtual en la nube.
+        permite a los clientes crear una red virtual en la nube de aws. 
+        los clientes pueden aprovisionar una sección privada y aislada de la red en la que pueden implementar recursos. 
+
+        amazon VPC proporciona caracteristicas de seguridad avanzadas, como grupos de seguirdad y listas de control de acceso 
+        a la red. 
+
+    los productos de redes de aws trabajan en conjunto para satisfacer las necesidades de su aplicación. 
+    por ejemplo:
+        elastic load balancing funciona con amazon VPC para proporcionar caracteristicas solidad de redes y seguridad. 
+    
+    AWS Direct Connect:
+        Establecer un enlace entre un centro de datos y aws. 
+        es una conexión privada entre el centro de datos del cliente y aws. esto vincula sus redes internas a una ubicación 
+        de AWS Direct Connect a traves de un cable de fibra optica ethernet estandar de 1 gigabit o 10 gigabit. 
+
+        Un extremo del cable está conectado al router de su cliente, y el otro extremo está conectado a un router
+        de aws direct connect. 
+
+    Amazon Route 53:
+        enrutar a los usuarios finales a aplicaciones de internet. 
+        es un servicio de DNS altamente escalable que enruta a los usuarios finales a aplicaciones de internet 
+        al traducir nombre humanos legibles en direcciones ip numéricas como 192.0.2.1 que los equipos usan para conectarse entre si. 
+

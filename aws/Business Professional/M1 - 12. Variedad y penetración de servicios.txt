@@ -1,0 +1,13 @@
+Variedad y penetración de servicios:
+	hace referencia a la gran variedad de productos y servicios de aws.
+	una de las razones impulsoras por la cual los clientes migran tan rápido a la nube es la 
+	amplia selección de servicios que ofrece, en especial aws. 
+	
+	aws ha desarrollado la más amplia colección de productos y servicios disponibles entre los 
+	proveedores de servicios en la nube. 
+	
+	aws ofrece más de 165 servicios con funciones completas, que van desde cómputos y 
+	almacenamiento, hasta aprendizaje automatico, analisis y servicios de IoT. 
+	
+	aws continúa innovando a buen ritmo, expandiendo sus servicios para admitir prácticamente cualquier
+	carga de trabajo en la nube. 
