@@ -48,3 +48,9 @@ docker system prune -a
     elimina contenedores parados
     imaganes no usadas.
     volumenes y redes que no esten usando.
+    
+Stop all the containers
+    sudo docker stop $(sudo docker ps -a -q)
+
+Remove all the containers
+    sudo docker rm $(sudo docker ps -a -q)
