@@ -2,6 +2,9 @@
 sudo -u postgres psql
 sudo -u postgres psql bice
 
+// list all database
+SELECT datname FROM pg_database;
+
 drop database name_db;
 
 // reload/restore postgres backup
