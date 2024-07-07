@@ -1,5 +1,0 @@
-los multi-stage es una funcionalidad introducida recientemente y que ayuda a crear imágenes muy pequeñas. permite resetear el sistema de ficheros de la imagen que se esta construyendo, cambiar a otro sistema de fichero, pero importar ficheros de la imagen anterior.
-
-tenemos un ejemplo en docker-for-dev/go-multi-stage
-
-el primer FROM linea inicializa el sistema de ficheros con una imagen que lleva go instalado. en esa imagen añadimos el directorio actual con todo su contexto y hacer el build de nuestro programa Go. luego viene una nueva instruccion FROM que inicializa el sistema de ficheros con una imagen alpine sin nada instalado. la instruccion COPY copia el binario generado en el stage anterior y lo copia en la imagen actual. el resultado es una imagen muy pequeña, ya que no lleva el compilador de go incluido solo lleva el binario que necesitamos.

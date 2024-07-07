@@ -1,9 +1,0 @@
-aumenta la reusabilidad de tus Dockerfile entre distintos entornos y aplicaciones parametrizando tus dockerfiles con argumentos. los argumentos son valores que se pasan como parámetros a cada build aunque pueden tener valores por defecto, y que puedes utilizar en las instrucciones de tu Dockerfile por ejemplo, el Dockerfile:
-
-FROM ubuntu
-ARG user=root
-ARG password
-RUN echo $user $password
-
-puede ser parametrizado de la siguiente manera:
-    docker build -t imagen --build-arg password=secret .
