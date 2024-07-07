@@ -1,3 +1,0 @@
-El concept de microservicios tiene sus origines en la arquitectura soa - service oriented architectura:
-    soa se basa en el antiguao principio de divide y venceras, sostiene un modelo distribuido para el desarrollo de aplicacions frentes
-    a soluciones clasicas mas monoliticas
