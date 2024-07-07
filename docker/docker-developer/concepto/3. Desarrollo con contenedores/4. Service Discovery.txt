@@ -1,1 +1,0 @@
-por defecto, docker-compose crea una red para correr los servicios definidos en el fichero docker-compose.yml del tipo bridge y con el nombre del direcotrio actual. dentro de dicha red, los contenedores son accesible con el nombre del servicio.
